@@ -83,7 +83,7 @@ export const Navbar = () => {
           <Link
             to="/"
             className={cn(
-              "tracking-[0.4em] text-lg uppercase transition-colors duration-500",
+              "tracking-[0.5em] text-sm md:text-lg uppercase transition-colors duration-500",
               !isScrolled && !isOpen && location.pathname === '/' ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(false)}
@@ -145,9 +145,9 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden fixed inset-0 bg-surface-container-lowest z-[90] flex flex-col"
+            className="md:hidden fixed inset-0 bg-surface-container-lowest/98 backdrop-blur-2xl z-[90] flex flex-col"
           >
-            <div className="flex-1 flex flex-col items-center justify-center space-y-10 px-12 pt-32 pb-16">
+            <div className="flex-1 flex flex-col items-center justify-center space-y-8 px-12 pt-20">
               {NAV_LINKS.map((link) => (
                 <motion.div
                   key={link.name}
@@ -156,7 +156,7 @@ export const Navbar = () => {
                   <Link
                     to={link.path}
                     className={cn(
-                      "font-serif italic tracking-[0.05em] text-4xl transition-colors duration-500",
+                      "font-sans uppercase tracking-[0.6em] text-sm transition-all duration-700",
                       location.pathname === link.path ? "text-zinc-900" : "text-zinc-300 hover:text-zinc-900"
                     )}
                     onClick={() => setIsOpen(false)}
@@ -168,28 +168,25 @@ export const Navbar = () => {
             </div>
 
             {/* Mobile Socials */}
-            <motion.div 
-              variants={itemVariants}
-              className="px-12 py-16 border-t border-zinc-900/5 flex flex-col items-center space-y-8"
-            >
+            <div className="px-12 py-12 flex flex-col items-center space-y-6">
               <div className="flex items-center space-x-8">
-                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                  <Instagram size={20} strokeWidth={1.5} />
-                </a>
-                <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                  <Facebook size={20} strokeWidth={1.5} />
-                </a>
-                <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                  <MessageCircle size={20} strokeWidth={1.5} />
-                </a>
-                <a href={SOCIAL_LINKS.phone} className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                  <Phone size={20} strokeWidth={1.5} />
-                </a>
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Instagram size={18} strokeWidth={1.2} />
+                </motion.a>
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Facebook size={18} strokeWidth={1.2} />
+                </motion.a>
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <MessageCircle size={18} strokeWidth={1.2} />
+                </motion.a>
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.phone} className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Phone size={18} strokeWidth={1.2} />
+                </motion.a>
               </div>
-              <span className="font-sans uppercase tracking-[0.2em] text-[8px] text-zinc-300">
+              <motion.span variants={itemVariants} className="font-sans uppercase tracking-[0.2em] text-[7px] text-zinc-300">
                 © {new Date().getFullYear()} ALEX BEGOPOULOS
-              </span>
-            </motion.div>
+              </motion.span>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
