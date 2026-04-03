@@ -69,13 +69,13 @@ export const Navbar = () => {
     <>
       <nav
         className={cn(
-          "fixed top-0 w-full z-50 transition-all duration-500",
+          "fixed top-0 w-full z-[100] transition-all duration-500",
           isScrolled || isOpen
             ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-zinc-900/5" 
             : "bg-surface/80 backdrop-blur-md py-8"
         )}
       >
-        <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-50">
+        <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
           <Link
             to="/"
             className="tracking-[0.3em] text-lg text-zinc-900 uppercase"
@@ -134,7 +134,7 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden fixed inset-0 bg-surface z-40 flex flex-col items-center justify-center"
+            className="md:hidden fixed inset-0 bg-surface z-[90] flex flex-col items-center justify-center"
           >
             <div className="flex flex-col items-center space-y-10 px-12">
               {NAV_LINKS.map((link) => (
