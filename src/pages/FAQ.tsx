@@ -27,18 +27,18 @@ const FAQ_DATA = [
 
 const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
   return (
-    <div className="border-b border-stone-200">
+    <div className="border-b border-zinc-200">
       <button
         onClick={onClick}
         className="w-full py-8 flex justify-between items-center text-left group"
       >
-        <span className="text-xl md:text-2xl font-serif text-stone-800 group-hover:text-stone-500 transition-colors">
+        <span className="text-xl md:text-2xl font-serif text-zinc-800 group-hover:text-zinc-500 transition-colors">
           {question}
         </span>
         <motion.div
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="text-stone-400"
+          className="text-zinc-400"
         >
           <Plus className="w-6 h-6" strokeWidth={1} />
         </motion.div>
@@ -52,7 +52,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="pb-8 text-stone-600 text-lg leading-relaxed max-w-3xl">
+            <p className="pb-8 max-w-3xl">
               {answer}
             </p>
           </motion.div>
@@ -69,8 +69,8 @@ export const FAQ = () => {
     <div className="bg-surface min-h-screen pt-40 pb-24">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-stone-900">Häufig gestellte Fragen</h1>
-          <p className="text-stone-500 tracking-widest uppercase text-xs md:text-sm">Alles, was Sie wissen müssen</p>
+          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-zinc-900">Häufig gestellte Fragen</h1>
+          <p className="text-zinc-500 tracking-widest uppercase text-xs md:text-sm">Alles, was Sie wissen müssen</p>
         </div>
 
         <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-sm">

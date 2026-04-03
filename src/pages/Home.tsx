@@ -70,10 +70,10 @@ export const Home: React.FC = () => {
           <h2 className="font-serif italic text-3xl md:text-6xl text-zinc-900 leading-tight mb-8">
             Echte Emotionen. <br className="hidden md:block"/>Zeitlose Ästhetik.
           </h2>
-          <p className="font-sans font-light text-zinc-600 leading-relaxed max-w-md mb-8 text-sm tracking-wide">
+          <p className="max-w-md mb-8 tracking-wide">
             Als Ihr <strong>Hochzeitsfotograf in Hannover</strong> begleite ich Sie nicht nur in Niedersachsen, sondern dort, wo Ihre Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
           </p>
-          <p className="font-sans font-light text-zinc-600 leading-relaxed max-w-md mb-12 text-sm tracking-wide">
+          <p className="max-w-md mb-12 tracking-wide">
             Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit Ihrer Liebsten. Ich erschaffe visuelle Erbstücke, die die Atmosphäre Ihres großen Tages auch nach Jahrzehnten noch spürbar machen.
           </p>
           <div className="flex items-center gap-4">

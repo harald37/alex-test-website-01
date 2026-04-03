@@ -18,14 +18,14 @@ export const PortfolioPage: React.FC = () => {
         <h1 className="font-serif text-5xl md:text-[84px] leading-none text-zinc-900 tracking-tighter mb-8">Portfolio</h1>
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="font-sans font-light text-on-surface-variant text-xl leading-relaxed italic mb-6">
+            <p className="text-xl leading-relaxed italic mb-6">
               Die Kunst, das Unsichtbare sichtbar zu machen. Momente, die bleiben, wenn das Licht verblasst.
             </p>
             <div className="h-px w-24 bg-zinc-900/10 mb-6"></div>
           </div>
-          <div className="font-sans font-light text-zinc-600 leading-loose text-base">
+          <div className="">
             <p className="mb-4">
-              Als <span className="font-medium text-zinc-900">Hochzeitsfotograf in Hannover</span> begleite ich Paare an ihrem wichtigsten Tag, um authentische, emotionale und zeitlose Geschichten in Bildern zu erzählen. Mein Portfolio umfasst nicht nur urbane Reportagen in der niedersächsischen Landeshauptstadt, sondern auch exklusive <span class="font-medium text-zinc-900">Destination Weddings</span> und intime Elopements in ganz Europa.
+              Als <span className="font-medium text-zinc-900">Hochzeitsfotograf in Hannover</span> begleite ich Paare an ihrem wichtigsten Tag, um authentische, emotionale und zeitlose Geschichten in Bildern zu erzählen. Mein Portfolio umfasst nicht nur urbane Reportagen in der niedersächsischen Landeshauptstadt, sondern auch exklusive <span className="font-medium text-zinc-900">Destination Weddings</span> und intime Elopements in ganz Europa.
             </p>
             <p>
               Ob in den Herrenhäuser Gärten, einer rustikalen Scheune in der Region Hannover oder bei einer freien Trauung an der toskanischen Küste – mein Fokus liegt auf der Fine Art Fotografie, die Natürlichkeit und Eleganz vereint. Entdecken Sie hier meine liebsten Arbeiten aus den Bereichen Natur, Urban und Elopement.

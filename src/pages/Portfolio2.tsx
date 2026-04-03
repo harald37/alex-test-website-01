@@ -25,7 +25,7 @@ export const Portfolio2 = () => {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-serif text-6xl md:text-[84px] leading-none text-stone-900 tracking-tighter mb-8"
+            className="font-serif text-6xl md:text-[84px] leading-none text-zinc-900 tracking-tighter mb-8"
           >
             Portfolio
           </motion.h1>
@@ -35,19 +35,19 @@ export const Portfolio2 = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <p className="font-sans font-light text-stone-500 text-xl leading-relaxed italic mb-6">
+              <p className="text-zinc-500 text-xl italic mb-6">
                 Die Kunst, das Unsichtbare sichtbar zu machen. Momente, die bleiben, wenn das Licht verblasst.
               </p>
-              <div className="h-px w-24 bg-stone-900/10 mb-6"></div>
+              <div className="h-px w-24 bg-zinc-900/10 mb-6"></div>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="font-sans font-light text-stone-600 leading-loose text-base"
+              className=""
             >
               <p className="mb-4">
-                Als <span className="font-medium text-stone-900">Hochzeitsfotograf in Hannover</span> begleite ich Paare an ihrem wichtigsten Tag, um authentische, emotionale und zeitlose Geschichten in Bildern zu erzählen. Mein Portfolio umfasst nicht nur urbane Reportagen in der niedersächsischen Landeshauptstadt, sondern auch exklusive <span className="font-medium text-stone-900">Destination Weddings</span> und intime Elopements in ganz Europa.
+                Als <span className="font-medium text-zinc-900">Hochzeitsfotograf in Hannover</span> begleite ich Paare an ihrem wichtigsten Tag, um authentische, emotionale und zeitlose Geschichten in Bildern zu erzählen. Mein Portfolio umfasst nicht nur urbane Reportagen in der niedersächsischen Landeshauptstadt, sondern auch exklusive <span className="font-medium text-zinc-900">Destination Weddings</span> und intime Elopements in ganz Europa.
               </p>
               <p>
                 Ob in den Herrenhäuser Gärten, einer rustikalen Scheune in der Region Hannover oder bei einer freien Trauung an der toskanischen Küste – mein Fokus liegt auf der Fine Art Fotografie, die Natürlichkeit und Eleganz vereint. Entdecken Sie hier meine liebsten Arbeiten aus den Bereichen Natur, Urban und Elopement.
@@ -57,17 +57,17 @@ export const Portfolio2 = () => {
         </section>
 
         {/* Category Filter */}
-        <div className="sticky top-[88px] z-40 bg-surface/80 backdrop-blur-md py-8 mb-12 border-b border-stone-900/5">
+        <div className="sticky top-[88px] z-40 bg-surface/80 backdrop-blur-md py-8 mb-12 border-b border-zinc-900/5">
           <ul className="flex items-center gap-8 md:gap-12 overflow-x-auto no-scrollbar">
             {CATEGORIES.map((cat) => (
               <li key={cat.id}>
                 <button 
                   onClick={() => setActiveCategory(cat.id)}
                   className={cn(
-                    "whitespace-nowrap font-sans tracking-widest uppercase text-[11px] pb-2 border-b-2 transition-all duration-300",
+                    "whitespace-nowrap tracking-widest uppercase text-[11px] pb-2 border-b-2 transition-all duration-300",
                     activeCategory === cat.id 
-                      ? "text-stone-900 font-medium border-stone-900" 
-                      : "text-stone-400 font-light border-transparent hover:text-stone-900 hover:border-stone-300"
+                      ? "text-zinc-900 font-medium border-zinc-900" 
+                      : "text-zinc-400 font-light border-transparent hover:text-zinc-900 hover:border-zinc-300"
                   )}
                 >
                   {cat.name}
@@ -88,7 +88,7 @@ export const Portfolio2 = () => {
               transition={{ duration: 0.5, delay: idx * 0.05 }}
               className="break-inside-avoid group cursor-pointer"
             >
-              <div className="overflow-hidden bg-stone-100">
+              <div className="overflow-hidden bg-zinc-100">
                 <img 
                   src={image.url} 
                   alt={image.alt} 
@@ -103,7 +103,7 @@ export const Portfolio2 = () => {
 
         {/* Load More */}
         <div className="mt-24 text-center">
-          <button className="inline-block bg-stone-900 text-white px-16 py-6 font-sans tracking-[0.2em] uppercase text-xs hover:bg-stone-800 transition-all duration-300 active:opacity-80">
+          <button className="inline-block bg-zinc-900 text-white px-16 py-6 font-sans tracking-[0.2em] uppercase text-xs hover:bg-zinc-800 transition-all duration-300 active:opacity-80">
             Mehr entdecken
           </button>
         </div>

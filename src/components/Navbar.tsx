@@ -71,14 +71,14 @@ export const Navbar = () => {
         className={cn(
           "fixed top-0 w-full z-50 transition-all duration-500",
           isScrolled || isOpen
-            ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-stone-900/5" 
+            ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-zinc-900/5" 
             : "bg-surface/80 backdrop-blur-md py-8"
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-50">
           <Link
             to="/"
-            className="font-sans font-light tracking-[0.3em] text-lg text-on-surface uppercase"
+            className="tracking-[0.3em] text-lg text-zinc-900 uppercase"
             onClick={() => setIsOpen(false)}
           >
             ALEX BEGOPOULOS
@@ -95,8 +95,8 @@ export const Navbar = () => {
                   className={cn(
                     "font-sans uppercase tracking-widest text-xs transition-colors duration-500 pb-1",
                     isActive
-                      ? "text-on-surface border-b border-on-surface"
-                      : "text-on-surface/60 hover:text-on-surface"
+                      ? "text-zinc-900 border-b border-zinc-900"
+                      : "text-zinc-400 hover:text-zinc-900"
                   )}
                 >
                   {link.name}
@@ -107,7 +107,7 @@ export const Navbar = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-on-surface p-2 focus:outline-none"
+            className="md:hidden text-zinc-900 p-2 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >
@@ -146,7 +146,7 @@ export const Navbar = () => {
                     to={link.path}
                     className={cn(
                       "font-serif italic tracking-[0.1em] text-4xl transition-colors",
-                      location.pathname === link.path ? "text-stone-900 font-medium" : "text-stone-400 hover:text-stone-900"
+                      location.pathname === link.path ? "text-zinc-900 font-medium" : "text-zinc-400 hover:text-zinc-900"
                     )}
                     onClick={() => setIsOpen(false)}
                   >

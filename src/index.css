@@ -3,10 +3,10 @@
 
 @theme {
   --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Jost", sans-serif;
+  --font-sans: "Inter", sans-serif;
   --font-headline: "Cormorant Garamond", serif;
-  --font-body: "Jost", sans-serif;
-  --font-label: "Jost", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
 
   --color-surface: #faf9f7;
   --color-on-surface: #2f3331;
@@ -22,11 +22,15 @@
 
 @layer base {
   body {
-    @apply bg-surface text-on-surface font-body antialiased;
+    @apply bg-surface text-zinc-600 font-body font-light text-base antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline;
+    @apply font-headline text-zinc-900;
+  }
+
+  p {
+    @apply leading-loose;
   }
 }
 
