@@ -8,77 +8,79 @@ export const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-surface">
-        <div className="absolute inset-0 z-0">
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-zinc-900">
+        <div className="absolute inset-0 z-0 bg-zinc-900">
           <img 
             src={IMAGES.HERO} 
-            alt="Paar im Sonnenuntergang" 
-            className="w-full h-full object-cover opacity-80 grayscale-[30%]"
+            alt="Elegante Hochzeitsreportage" 
+            className="w-full h-full object-cover opacity-60 grayscale"
             referrerPolicy="no-referrer"
           />
+          {/* Dark overlay for contrast */}
+          <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="relative z-10 text-center flex flex-col items-center max-w-4xl px-4">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="font-serif italic text-4xl md:text-8xl tracking-tighter text-zinc-900 mb-4 uppercase"
-          >
-            Alex Begopoulos
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="font-serif italic text-xl md:text-3xl text-zinc-700 mb-12"
-          >
-            Hochzeitsfotograf Hannover & Weltweit
-          </motion.p>
+        
+        <div className="relative z-10 text-center flex flex-col items-center max-w-5xl px-6">
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
+            className="flex flex-col items-center"
           >
-            <Link 
-              to="/portfolio" 
-              className="bg-primary text-on-primary font-sans uppercase tracking-widest text-xs px-11 py-5 hover:bg-zinc-800 transition-all duration-500"
+            <span className="font-sans uppercase tracking-[0.6em] text-[10px] md:text-xs text-white/40 mb-12 block">
+              Authentische Hochzeitsreportagen
+            </span>
+            
+            <h1 className="font-sans uppercase tracking-[0.4em] text-3xl md:text-6xl lg:text-7xl text-white/90 mb-12 font-light">
+              Alex Begopoulos
+            </h1>
+            
+            <div className="w-12 h-[1px] bg-white/10 mb-12" />
+            
+            <p className="font-serif italic text-xl md:text-3xl text-white/70 mb-24 max-w-2xl leading-relaxed">
+              Authentische Momente & zeitlose Ästhetik <br className="hidden md:block" /> 
+              in Hannover & weltweit
+            </p>
+            
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.5 }}
             >
-              Portfolio entdecken
-            </Link>
+              <Link 
+                to="/portfolio" 
+                className="group relative inline-flex items-center justify-center px-20 py-7 overflow-hidden font-sans uppercase tracking-[0.3em] text-[9px] text-white/80 transition-all duration-700"
+              >
+                {/* Button background animation */}
+                <div className="absolute inset-0 border border-white/10 group-hover:border-white/30 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out" />
+                
+                <span className="relative z-10 group-hover:text-zinc-900 transition-colors duration-500">
+                  Portfolio entdecken
+                </span>
+              </Link>
+            </motion.div>
           </motion.div>
-        </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-          <div className="w-[1px] h-16 bg-zinc-300 animate-pulse"></div>
         </div>
       </section>
 
       {/* Philosophy Block */}
-      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] md:min-h-[819px] items-center bg-surface-container-lowest">
-        <div className="relative h-[400px] md:h-full p-6 md:p-32 flex items-center justify-center">
-          <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden">
-            <img 
-              src={IMAGES.PHILOSOPHY} 
-              alt="Nahaufnahme Eheringe" 
-              className="w-full h-full object-cover grayscale"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r border-b border-outline-variant/30"></div>
-          </div>
-        </div>
-        <div className="p-8 md:p-32 flex flex-col justify-center">
-          <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-6 md:mb-8 block">Die Vision eines Geschichtenerzählers</span>
-          <h2 className="font-serif italic text-3xl md:text-6xl text-zinc-900 leading-tight mb-8">
+      <section className="py-32 md:py-48 px-6 md:px-24 bg-surface-container-lowest flex flex-col items-center text-center">
+        <div className="max-w-3xl">
+          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-12 block">Die Vision eines Geschichtenerzählers</span>
+          <h2 className="font-serif italic text-4xl md:text-7xl text-zinc-900 leading-[1.1] mb-12">
             Echte Emotionen. <br className="hidden md:block"/>Zeitlose Ästhetik.
           </h2>
-          <p className="max-w-md mb-8 tracking-wide">
+          <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12" />
+          <p className="tracking-wide text-zinc-600 leading-relaxed mb-8 text-lg">
             Als Ihr <strong>Hochzeitsfotograf in Hannover</strong> begleite ich Sie nicht nur in Niedersachsen, sondern dort, wo Ihre Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
           </p>
-          <p className="max-w-md mb-12 tracking-wide">
-            Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit Ihrer Liebsten. Ich erschaffe visuelle Erbstücke, die die Atmosphäre Ihres großen Tages auch nach Jahrzehnten noch spürbar machen.
+          <p className="tracking-wide text-zinc-600 leading-relaxed mb-16 text-lg">
+            Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit Ihrer Liebsten.
           </p>
-          <div className="flex items-center gap-4">
-            <span className="h-[1px] w-12 bg-primary"></span>
-            <Link to="/portfolio" className="font-sans uppercase tracking-widest text-[10px] text-zinc-900 hover:underline underline-offset-8 transition-all">Zur Galerie</Link>
+          <div className="flex flex-col items-center group">
+            <Link to="/portfolio" className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-900 transition-all mb-4">Zur Galerie</Link>
+            <span className="h-[1px] w-12 bg-zinc-900/20 group-hover:w-24 transition-all duration-500"></span>
           </div>
         </div>
       </section>
@@ -99,7 +101,7 @@ export const Home: React.FC = () => {
               transition={{ delay: index * 0.2 }}
               className="group cursor-pointer"
             >
-              <div className={cn("aspect-[2/3] overflow-hidden mb-8", index === 1 && "md:mt-16")}>
+              <div className="aspect-[2/3] overflow-hidden mb-8">
                 <img 
                   src={story.url} 
                   alt={story.title} 
@@ -117,18 +119,22 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Quote Section */}
-      <section className="py-48 px-8 bg-surface-container-low text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="font-serif italic text-3xl md:text-5xl text-zinc-800 leading-relaxed mb-12">
+      <section className="py-48 px-8 bg-surface-container-lowest text-center">
+        <div className="max-w-3xl mx-auto">
+          <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-16"></div>
+          <h2 className="font-serif italic text-3xl md:text-5xl text-zinc-800 leading-relaxed mb-16">
             "Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen."
           </h2>
           <Link 
             to="/contact" 
-            className="inline-block bg-primary text-on-primary font-sans uppercase tracking-widest text-[10px] px-12 py-5 hover:bg-zinc-800 transition-all"
+            className="group relative inline-flex items-center justify-center px-16 py-6 overflow-hidden font-sans uppercase tracking-[0.3em] text-[9px] text-zinc-900 transition-all duration-700"
           >
-            Erzählen Sie mir Ihre Geschichte
+            <div className="absolute inset-0 border border-zinc-900/10 group-hover:border-zinc-900/30 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-zinc-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out" />
+            <span className="relative z-10 group-hover:text-white transition-colors duration-500">
+              Erzählen Sie mir Ihre Geschichte
+            </span>
           </Link>
-          <div className="w-12 h-[1px] bg-zinc-300 mx-auto mt-12"></div>
         </div>
       </section>
     </div>

@@ -69,16 +69,21 @@ export const Navbar = () => {
     <>
       <nav
         className={cn(
-          "fixed top-0 w-full z-[100] transition-all duration-500",
+          "fixed top-0 w-full z-[100] transition-all duration-700",
           isScrolled || isOpen
-            ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-zinc-900/5" 
-            : "bg-surface/80 backdrop-blur-md py-8"
+            ? "bg-surface/95 backdrop-blur-xl py-5 border-b border-zinc-900/5" 
+            : location.pathname === '/' 
+              ? "bg-transparent py-8" 
+              : "bg-surface/80 backdrop-blur-md py-8"
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
           <Link
             to="/"
-            className="tracking-[0.3em] text-lg text-zinc-900 uppercase"
+            className={cn(
+              "tracking-[0.4em] text-lg uppercase transition-colors duration-500",
+              !isScrolled && !isOpen && location.pathname === '/' ? "text-white" : "text-zinc-900"
+            )}
             onClick={() => setIsOpen(false)}
           >
             ALEX BEGOPOULOS
@@ -88,15 +93,16 @@ export const Navbar = () => {
           <div className="hidden md:flex items-center space-x-12">
             {NAV_LINKS.map((link) => {
               const isActive = location.pathname === link.path;
+              const isHero = !isScrolled && !isOpen && location.pathname === '/';
               return (
                 <Link
                   key={link.name}
                   to={link.path}
                   className={cn(
-                    "font-sans uppercase tracking-widest text-xs transition-colors duration-500 pb-1",
+                    "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b",
                     isActive
-                      ? "text-zinc-900 border-b border-zinc-900"
-                      : "text-zinc-400 hover:text-zinc-900"
+                      ? isHero ? "text-white border-white" : "text-zinc-900 border-zinc-900"
+                      : isHero ? "text-white/60 border-transparent hover:text-white" : "text-zinc-400 border-transparent hover:text-zinc-900"
                   )}
                 >
                   {link.name}
@@ -107,7 +113,10 @@ export const Navbar = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-zinc-900 p-2 focus:outline-none"
+            className={cn(
+              "md:hidden p-2 focus:outline-none transition-colors duration-500",
+              !isScrolled && !isOpen && location.pathname === '/' ? "text-white" : "text-zinc-900"
+            )}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >

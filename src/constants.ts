@@ -1,6 +1,6 @@
 export const IMAGES = {
-  HERO: "https://lh3.googleusercontent.com/aida-public/AB6AXuDUl-jXcDBXnu-oP22e0f8ezgKSQxIS6FDmwDaQRy29kMtFk90bUHUbEXZYsmJmf_fLNZCsh6KmJNnCdfvJfGc91ll9gyPEZKNtn6uitsPpQKSzBocoz-4rwdTd8q3vDAgzJuL-cJNx3b9aodkLK4rgbdHdgmFHEI-MUmPwyX3vSmEu9ksUEaz5Zy-fTqFSRvT44SkRhjlpGdTL4IP8yG00TFua4dMrWL-QeG0hq2hCmbJ-sD5T3bmEpHA4Dtr0vO2_r_zbRIzOA9o",
-  PHILOSOPHY: "https://lh3.googleusercontent.com/aida-public/AB6AXuCU9E0Ztw-ZLwF1m_Z71pwEus2ZfenJRLRXx73LoFP9GLtRyWWobBcG7RalP3JJmkD0bW_r6fV4qbNR1PIThJBAc-1bVxqsV6DHVSPEvvlCS-mr3CHGS0_diXIef4VP4v1XTVF7EEddKEb1gKusDkK9LpwD6KwEz8jooCcEKPbb5EDdQLVa466B4XrzBdysya7cCL1O5drVJsr_5jWbgnJ3JUS3JKoRVXSWdycddmmnsN4u1NGZINe3sMvlq5ISA2tNjuKz0J0JIGs",
+  HERO: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=2000",
+  PHILOSOPHY: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1000",
   STORIES: [
     {
       url: "https://lh3.googleusercontent.com/aida-public/AB6AXuDkZuLhWPW-zZzkLwk32y9EXTYqmqfhynl4m8ZqTZB6fJZc96fIBHu1nDrxCwUeLeoeZnhpEZsG6tBFH1fOKspFdV4NL9syVO0B3gZpbL7deHbN8cpgD9xbc4dhp934vbAAWw9sg_cmujHwMRBxQPMKNrtwEZ6JckeVjNP8lPz2DFMFaH8bjSAXGVhHzFdAUvq_J4QFqf6x35fSq6AMmDTjeGQnfR_z4R0p0oCfXr2OtGYop9VT-Atm_Z3_qQu8U16OXTBx8yBn5-c",
