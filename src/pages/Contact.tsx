@@ -11,8 +11,8 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-surface min-h-screen pt-40 pb-24">
+      <div className="max-w-7xl mx-auto px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           {/* Info Side */}
           <motion.div

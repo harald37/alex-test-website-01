@@ -64,8 +64,8 @@ export const FAQ = () => {
   const [openIndex, setOpenIndex] = React.useState<number | null>(0);
 
   return (
-    <div className="bg-stone-50 min-h-screen py-24">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-surface min-h-screen pt-40 pb-24">
+      <div className="max-w-4xl mx-auto px-12">
         <div className="text-center mb-20">
           <h1 className="text-5xl font-serif mb-6 text-stone-900">Häufig gestellte Fragen</h1>
           <p className="text-stone-500 tracking-widest uppercase text-sm">Alles, was Sie wissen müssen</p>

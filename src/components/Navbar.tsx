@@ -1,74 +1,81 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "motion/react";
-import { Camera, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "../constants";
 import { cn } from "../lib/utils";
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <Camera className="w-8 h-8 text-stone-800 group-hover:scale-110 transition-transform" />
-            <span className="text-2xl font-serif tracking-tight text-stone-900">Alex Begopoulos</span>
-          </Link>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex space-x-8">
-            {NAV_LINKS.map((link) => (
+  return (
+    <nav
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-500",
+        isScrolled ? "bg-surface/80 backdrop-blur-xl py-6" : "bg-transparent py-8"
+      )}
+    >
+      <div className="flex justify-between items-center w-full px-12 max-w-screen-2xl mx-auto">
+        <Link
+          to="/"
+          className="font-sans font-light tracking-[0.3em] text-lg text-on-surface uppercase"
+        >
+          ALEX BEGOPOULOS
+        </Link>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center space-x-12">
+          {NAV_LINKS.map((link) => {
+            const isActive = location.pathname === link.path;
+            return (
               <Link
-                key={link.path}
+                key={link.name}
                 to={link.path}
                 className={cn(
-                  "text-sm font-medium tracking-widest uppercase transition-colors hover:text-stone-500",
-                  location.pathname === link.path ? "text-stone-900" : "text-stone-400"
+                  "font-sans uppercase tracking-widest text-xs transition-colors duration-500 pb-1",
+                  isActive
+                    ? "text-on-surface border-b border-on-surface"
+                    : "text-on-surface/60 hover:text-on-surface"
                 )}
               >
                 {link.name}
               </Link>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-stone-800 p-2"
-            >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+            );
+          })}
         </div>
+
+        {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-on-surface"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {/* Mobile Nav */}
       {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-white border-b border-stone-200 py-4"
-        >
-          <div className="flex flex-col items-center space-y-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsOpen(false)}
-                className={cn(
-                  "text-sm font-medium tracking-widest uppercase py-2",
-                  location.pathname === link.path ? "text-stone-900" : "text-stone-400"
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </motion.div>
+        <div className="md:hidden absolute top-full left-0 w-full bg-surface border-t border-outline-variant/10 py-8 px-12 space-y-6 flex flex-col items-center animate-in fade-in slide-in-from-top-4">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="font-sans uppercase tracking-widest text-xs text-on-surface"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
       )}
     </nav>
   );

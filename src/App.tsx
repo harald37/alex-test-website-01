@@ -5,8 +5,10 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
-import { Portfolio } from "./pages/Portfolio";
+import { Home } from "./pages/Home";
+import { PortfolioPage } from "./pages/PortfolioPage";
 import { About } from "./pages/About";
+import { Services } from "./pages/Services";
 import { FAQ } from "./pages/FAQ";
 import { Contact } from "./pages/Contact";
 
@@ -15,8 +17,10 @@ export default function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Portfolio />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/leistungen" element={<Services />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
