@@ -70,11 +70,9 @@ export const Navbar = () => {
       <nav
         className={cn(
           "fixed top-0 w-full z-50 transition-all duration-500",
-          isOpen 
-            ? "bg-surface" 
-            : (isScrolled 
-                ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-stone-900/5" 
-                : "bg-surface/80 backdrop-blur-md py-8")
+          isScrolled || isOpen
+            ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-stone-900/5" 
+            : "bg-surface/80 backdrop-blur-md py-8"
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-50">
@@ -147,7 +145,7 @@ export const Navbar = () => {
                   <Link
                     to={link.path}
                     className={cn(
-                      "font-sans uppercase tracking-[0.4em] text-2xl transition-colors",
+                      "font-serif italic tracking-[0.1em] text-4xl transition-colors",
                       location.pathname === link.path ? "text-stone-900 font-medium" : "text-stone-400 hover:text-stone-900"
                     )}
                     onClick={() => setIsOpen(false)}

@@ -79,7 +79,7 @@ export const Services = () => {
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12 lg:col-span-6 text-center lg:text-left">
             <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">01.</span>
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Das Kennenlernen & Planung</h3>
             <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
@@ -110,7 +110,7 @@ export const Services = () => {
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="col-span-12 lg:col-span-6 lg:order-1">
+          <div className="col-span-12 lg:col-span-6 lg:order-1 text-center lg:text-left">
             <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">02.</span>
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Die Hochzeitsbegleitung</h3>
             <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
@@ -141,7 +141,7 @@ export const Services = () => {
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12 lg:col-span-6 text-center lg:text-left">
             <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">03.</span>
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Die Nachbearbeitung & Galerie</h3>
             <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
