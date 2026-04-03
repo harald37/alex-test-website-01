@@ -22,13 +22,18 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-500",
-        isOpen ? "bg-transparent" : (isScrolled ? "bg-surface/80 backdrop-blur-xl py-6" : "bg-transparent py-8")
+        isOpen 
+          ? "bg-surface" 
+          : (isScrolled 
+              ? "bg-surface/90 backdrop-blur-xl py-6 border-b border-stone-900/5" 
+              : "bg-surface/80 backdrop-blur-md py-8")
       )}
     >
-      <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto">
+      <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-50">
         <Link
           to="/"
           className="font-sans font-light tracking-[0.3em] text-lg text-on-surface uppercase"
+          onClick={() => setIsOpen(false)}
         >
           ALEX BEGOPOULOS
         </Link>
@@ -56,10 +61,11 @@ export const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-on-surface"
+          className="md:hidden text-on-surface p-2"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={28} strokeWidth={1.5} /> : <Menu size={28} strokeWidth={1.5} />}
         </button>
       </div>
 
@@ -67,9 +73,10 @@ export const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="md:hidden fixed inset-0 bg-surface z-40 flex flex-col items-center justify-center"
           >
             <div className="flex flex-col items-center space-y-10 px-12">
@@ -78,11 +85,14 @@ export const Navbar = () => {
                   key={link.name}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
+                  transition={{ delay: 0.1 + i * 0.05 }}
                 >
                   <Link
                     to={link.path}
-                    className="font-sans uppercase tracking-[0.3em] text-lg text-on-surface hover:text-stone-500 transition-colors"
+                    className={cn(
+                      "font-sans uppercase tracking-[0.4em] text-xl transition-colors",
+                      location.pathname === link.path ? "text-stone-900 font-medium" : "text-stone-400 hover:text-stone-900"
+                    )}
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
