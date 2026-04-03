@@ -105,6 +105,7 @@ export const IMAGES = {
 export const NAV_LINKS = [
   { name: "Home", path: "/" },
   { name: "Portfolio", path: "/portfolio" },
+  { name: "Portfolio 2", path: "/portfolio-2" },
   { name: "Über mich", path: "/about" },
   { name: "Leistungen", path: "/leistungen" },
   { name: "FAQ", path: "/faq" },
