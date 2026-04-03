@@ -44,14 +44,14 @@ export const Services = () => {
       </section>
 
       {/* Intro Text */}
-      <section className="py-32 px-12">
+      <section className="py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-4xl mx-auto text-center">
           <span className="font-sans uppercase tracking-[0.3em] text-xs text-stone-400 mb-8 block">Full Service Begleitung</span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif text-4xl md:text-6xl leading-tight mb-12 italic text-stone-900"
+            className="font-serif text-3xl md:text-6xl leading-tight mb-12 italic text-stone-900"
           >
             Handgefertigte Erinnerungen für die Ewigkeit
           </motion.h2>
@@ -64,7 +64,7 @@ export const Services = () => {
       </section>
 
       {/* Service 01: Planning */}
-      <section className="pb-32 px-12 lg:px-24">
+      <section className="pb-24 md:pb-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -95,7 +95,7 @@ export const Services = () => {
       </section>
 
       {/* Service 02: Coverage */}
-      <section className="bg-stone-50 py-32 px-12 lg:px-24">
+      <section className="bg-stone-50 py-24 md:py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
@@ -126,7 +126,7 @@ export const Services = () => {
       </section>
 
       {/* Service 03: Post-Processing */}
-      <section className="py-32 px-12 lg:px-24">
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}

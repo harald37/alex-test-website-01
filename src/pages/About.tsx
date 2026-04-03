@@ -5,9 +5,9 @@ import { Camera, Heart, Star } from "lucide-react";
 
 export const About = () => {
   return (
-    <div className="bg-surface pt-40 pb-24">
-      <section className="max-w-7xl mx-auto px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div className="bg-surface pt-32 md:pt-40 pb-24">
+      <section className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -27,8 +27,8 @@ export const About = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h1 className="text-5xl font-serif mb-8 text-stone-900">Über mich</h1>
-            <div className="space-y-6 text-stone-600 text-lg leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-serif mb-8 text-stone-900">Über mich</h1>
+            <div className="space-y-6 text-stone-600 text-base md:text-lg leading-relaxed">
               <p>
                 Hallo, ich bin Alex. Seit über einem Jahrzehnt widme ich mich der Kunst, 
                 Momente einzufangen, die sonst im Fluss der Zeit verloren gehen würden.

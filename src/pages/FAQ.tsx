@@ -35,11 +35,13 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
         <span className="text-xl md:text-2xl font-serif text-stone-800 group-hover:text-stone-500 transition-colors">
           {question}
         </span>
-        {isOpen ? (
-          <Minus className="w-6 h-6 text-stone-400" />
-        ) : (
-          <Plus className="w-6 h-6 text-stone-400" />
-        )}
+        <motion.div
+          animate={{ rotate: isOpen ? 45 : 0 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="text-stone-400"
+        >
+          <Plus className="w-6 h-6" />
+        </motion.div>
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -65,13 +67,13 @@ export const FAQ = () => {
 
   return (
     <div className="bg-surface min-h-screen pt-40 pb-24">
-      <div className="max-w-4xl mx-auto px-12">
+      <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
-          <h1 className="text-5xl font-serif mb-6 text-stone-900">Häufig gestellte Fragen</h1>
-          <p className="text-stone-500 tracking-widest uppercase text-sm">Alles, was Sie wissen müssen</p>
+          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-stone-900">Häufig gestellte Fragen</h1>
+          <p className="text-stone-500 tracking-widest uppercase text-xs md:text-sm">Alles, was Sie wissen müssen</p>
         </div>
 
-        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm">
+        <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-sm">
           {FAQ_DATA.map((item, idx) => (
             <AccordionItem
               key={idx}

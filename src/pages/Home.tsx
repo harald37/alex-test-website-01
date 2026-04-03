@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="font-serif italic text-5xl md:text-8xl tracking-tighter text-zinc-900 mb-4 uppercase"
+            className="font-serif italic text-4xl md:text-8xl tracking-tighter text-zinc-900 mb-4 uppercase"
           >
             Alex Begopoulos
           </motion.h1>
@@ -53,8 +53,8 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Philosophy Block */}
-      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[819px] items-center bg-surface-container-lowest">
-        <div className="relative h-[614px] md:h-full p-12 md:p-32 flex items-center justify-center">
+      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] md:min-h-[819px] items-center bg-surface-container-lowest">
+        <div className="relative h-[400px] md:h-full p-6 md:p-32 flex items-center justify-center">
           <div className="relative w-full max-w-md aspect-[3/4] overflow-hidden">
             <img 
               src={IMAGES.PHILOSOPHY} 
@@ -65,10 +65,10 @@ export const Home: React.FC = () => {
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r border-b border-outline-variant/30"></div>
           </div>
         </div>
-        <div className="p-12 md:p-32 flex flex-col justify-center">
-          <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-8 block">Die Vision eines Geschichtenerzählers</span>
-          <h2 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight mb-8">
-            Echte Emotionen. <br/>Zeitlose Ästhetik.
+        <div className="p-8 md:p-32 flex flex-col justify-center">
+          <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-6 md:mb-8 block">Die Vision eines Geschichtenerzählers</span>
+          <h2 className="font-serif italic text-3xl md:text-6xl text-zinc-900 leading-tight mb-8">
+            Echte Emotionen. <br className="hidden md:block"/>Zeitlose Ästhetik.
           </h2>
           <p className="font-sans font-light text-zinc-600 leading-relaxed max-w-md mb-8 text-sm tracking-wide">
             Als Ihr <strong>Hochzeitsfotograf in Hannover</strong> begleite ich Sie nicht nur in Niedersachsen, sondern dort, wo Ihre Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
@@ -84,12 +84,12 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Featured Stories */}
-      <section className="py-32 px-12 md:px-24 bg-surface" id="portfolio">
-        <div className="text-center mb-24">
-          <h2 className="font-serif italic text-4xl text-zinc-900">Ausgewählte Reportagen</h2>
+      <section className="py-24 md:py-32 px-6 md:px-24 bg-surface" id="portfolio">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="font-serif italic text-3xl md:text-4xl text-zinc-900">Ausgewählte Reportagen</h2>
           <p className="font-sans text-[10px] uppercase tracking-widest text-zinc-400 mt-4">In Hannover, Niedersachsen & Weltweit</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[120px] max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-[120px] max-w-7xl mx-auto">
           {IMAGES.STORIES.map((story, index) => (
             <motion.div 
               key={index}

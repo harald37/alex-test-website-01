@@ -12,10 +12,10 @@ export const PortfolioPage: React.FC = () => {
     : IMAGES.PORTFOLIO.filter(img => img.category.toLowerCase() === filter);
 
   return (
-    <main className="pt-40 pb-24 px-12 max-w-screen-2xl mx-auto">
+    <main className="pt-32 md:pt-40 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
       {/* Editorial Header */}
-      <section className="mb-20">
-        <h1 className="font-serif text-[84px] leading-none text-zinc-900 tracking-tighter mb-8">Portfolio</h1>
+      <section className="mb-16 md:mb-20">
+        <h1 className="font-serif text-5xl md:text-[84px] leading-none text-zinc-900 tracking-tighter mb-8">Portfolio</h1>
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="font-sans font-light text-on-surface-variant text-xl leading-relaxed italic mb-6">
@@ -35,8 +35,8 @@ export const PortfolioPage: React.FC = () => {
       </section>
 
       {/* Category Filter */}
-      <div className="sticky top-[96px] z-40 bg-surface py-8 mb-12 border-b border-on-surface/5">
-        <ul className="flex items-center gap-12 overflow-x-auto no-scrollbar">
+      <div className="sticky top-[88px] z-40 bg-surface py-6 md:py-8 mb-8 md:mb-12 border-b border-on-surface/5">
+        <ul className="flex items-center gap-8 md:gap-12 overflow-x-auto no-scrollbar">
           {categories.map((cat) => (
             <li key={cat}>
               <button 

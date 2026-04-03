@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "../constants";
 import { cn } from "../lib/utils";
+import { motion, AnimatePresence } from "motion/react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ export const Navbar = () => {
         isScrolled ? "bg-surface/80 backdrop-blur-xl py-6" : "bg-transparent py-8"
       )}
     >
-      <div className="flex justify-between items-center w-full px-12 max-w-screen-2xl mx-auto">
+      <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto">
         <Link
           to="/"
           className="font-sans font-light tracking-[0.3em] text-lg text-on-surface uppercase"
@@ -63,20 +64,27 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Nav */}
-      {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-surface border-t border-outline-variant/10 py-8 px-12 space-y-6 flex flex-col items-center animate-in fade-in slide-in-from-top-4">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className="font-sans uppercase tracking-widest text-xs text-on-surface"
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="md:hidden fixed inset-0 top-[88px] bg-surface z-40 flex flex-col items-center justify-center space-y-8 px-12"
+          >
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                className="font-sans uppercase tracking-[0.2em] text-sm text-on-surface"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

@@ -11,16 +11,16 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-surface min-h-screen pt-40 pb-24">
-      <div className="max-w-7xl mx-auto px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+    <div className="bg-surface min-h-screen pt-32 md:pt-40 pb-24">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24">
           {/* Info Side */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <h1 className="text-5xl font-serif mb-8 text-stone-900">Lassen Sie uns sprechen</h1>
-            <p className="text-stone-600 text-lg mb-12 leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-serif mb-8 text-stone-900">Lassen Sie uns sprechen</h1>
+            <p className="text-stone-600 text-base md:text-lg mb-12 leading-relaxed">
               Egal ob es um Ihre Hochzeit, ein Porträt-Shooting oder ein kreatives Projekt geht – 
               ich freue mich darauf, von Ihnen zu hören. Füllen Sie einfach das Formular aus 
               oder kontaktieren Sie mich direkt.
@@ -64,7 +64,7 @@ export const Contact = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-stone-50 rounded-3xl p-8 md:p-12"
+            className="bg-stone-50 rounded-2xl md:rounded-3xl p-6 md:p-12"
           >
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">
