@@ -29,6 +29,18 @@ export const Footer = () => {
 
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
           <Link
+            to="/hochzeitsfotograf-hannover"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Hochzeitsfotograf Hannover
+          </Link>
+          <Link
+            to="/hochzeitsfotograf-braunschweig"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Hochzeitsfotograf Braunschweig
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

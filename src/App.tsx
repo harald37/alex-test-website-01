@@ -13,6 +13,8 @@ import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { FAQ } from "./pages/FAQ";
 import { Contact } from "./pages/Contact";
+import { Hannover } from "./pages/SEO/Hannover";
+import { Braunschweig } from "./pages/SEO/Braunschweig";
 
 export default function App() {
   return (
@@ -27,6 +29,8 @@ export default function App() {
           <Route path="/leistungen" element={<Services />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
+          <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
         </Routes>
       </Layout>
     </Router>
