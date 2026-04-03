@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "../constants";
+import { Menu, X, Instagram, Facebook, Phone, MessageCircle } from "lucide-react";
+import { NAV_LINKS, SOCIAL_LINKS } from "../constants";
 import { cn } from "../lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -70,11 +70,13 @@ export const Navbar = () => {
       <nav
         className={cn(
           "fixed top-0 w-full z-[100] transition-all duration-700",
-          isScrolled || isOpen
-            ? "bg-surface/95 backdrop-blur-xl py-5 border-b border-zinc-900/5" 
-            : location.pathname === '/' 
-              ? "bg-transparent py-8" 
-              : "bg-surface/80 backdrop-blur-md py-8"
+          isOpen
+            ? "bg-transparent py-8"
+            : isScrolled
+              ? "bg-surface/95 backdrop-blur-xl py-5 border-b border-zinc-900/5" 
+              : location.pathname === '/' 
+                ? "bg-transparent py-8" 
+                : "bg-surface/80 backdrop-blur-md py-8"
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
@@ -143,9 +145,9 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden fixed inset-0 bg-surface z-[90] flex flex-col items-center justify-center"
+            className="md:hidden fixed inset-0 bg-surface-container-lowest z-[90] flex flex-col"
           >
-            <div className="flex flex-col items-center space-y-10 px-12">
+            <div className="flex-1 flex flex-col items-center justify-center space-y-10 px-12 pt-32 pb-16">
               {NAV_LINKS.map((link) => (
                 <motion.div
                   key={link.name}
@@ -154,8 +156,8 @@ export const Navbar = () => {
                   <Link
                     to={link.path}
                     className={cn(
-                      "font-serif italic tracking-[0.1em] text-4xl transition-colors",
-                      location.pathname === link.path ? "text-zinc-900 font-medium" : "text-zinc-400 hover:text-zinc-900"
+                      "font-serif italic tracking-[0.05em] text-4xl transition-colors duration-500",
+                      location.pathname === link.path ? "text-zinc-900" : "text-zinc-300 hover:text-zinc-900"
                     )}
                     onClick={() => setIsOpen(false)}
                   >
@@ -164,6 +166,30 @@ export const Navbar = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* Mobile Socials */}
+            <motion.div 
+              variants={itemVariants}
+              className="px-12 py-16 border-t border-zinc-900/5 flex flex-col items-center space-y-8"
+            >
+              <div className="flex items-center space-x-8">
+                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Instagram size={20} strokeWidth={1.5} />
+                </a>
+                <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Facebook size={20} strokeWidth={1.5} />
+                </a>
+                <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <MessageCircle size={20} strokeWidth={1.5} />
+                </a>
+                <a href={SOCIAL_LINKS.phone} className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Phone size={20} strokeWidth={1.5} />
+                </a>
+              </div>
+              <span className="font-sans uppercase tracking-[0.2em] text-[8px] text-zinc-300">
+                © {new Date().getFullYear()} ALEX BEGOPOULOS
+              </span>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { NAV_LINKS } from "../constants";
+import { SOCIAL_LINKS } from "../constants";
+import { Instagram, Facebook, Phone, MessageCircle } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -10,16 +11,23 @@ export const Footer = () => {
           Alex Begopoulos
         </div>
 
+        {/* Social Icons */}
+        <div className="flex items-center space-x-10">
+          <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+            <Instagram size={18} strokeWidth={1.5} />
+          </a>
+          <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+            <Facebook size={18} strokeWidth={1.5} />
+          </a>
+          <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+            <MessageCircle size={18} strokeWidth={1.5} />
+          </a>
+          <a href={SOCIAL_LINKS.phone} className="text-zinc-400 hover:text-zinc-900 transition-colors">
+            <Phone size={18} strokeWidth={1.5} />
+          </a>
+        </div>
+
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-            >
-              {link.name}
-            </Link>
-          ))}
           <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"

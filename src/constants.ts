@@ -104,9 +104,16 @@ export const IMAGES = {
 
 export const NAV_LINKS = [
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Portfolio 2", path: "/portfolio-2" },
   { name: "Über mich", path: "/about" },
   { name: "Leistungen", path: "/leistungen" },
   { name: "FAQ", path: "/faq" },
   { name: "Kontakt", path: "/contact" }
 ];
+
+export const SOCIAL_LINKS = {
+  instagram: "https://instagram.com/alexbegopoulos",
+  facebook: "https://facebook.com/alexbegopoulos",
+  whatsapp: "https://wa.me/49123456789",
+  phone: "tel:+49123456789",
+  email: "mailto:hello@alexbegopoulos.com"
+};

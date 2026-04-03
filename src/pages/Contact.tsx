@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
-import { Send, Mail, Phone, MapPin } from "lucide-react";
+import { Send, Mail, Phone, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { SOCIAL_LINKS } from "../constants";
 
 export const Contact = () => {
   const [submitted, setSubmitted] = React.useState(false);
@@ -11,49 +12,61 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-surface min-h-screen pt-32 md:pt-40 pb-24">
+    <div className="bg-surface min-h-screen pt-32 md:pt-48 pb-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-32">
           {/* Info Side */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="text-4xl md:text-5xl font-serif mb-8 text-zinc-900">Lassen Sie uns sprechen</h1>
-            <p className="mb-12">
+            <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Kontakt</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif italic mb-12 text-zinc-900 leading-tight">Lassen Sie uns <br /> sprechen</h1>
+            <p className="mb-16 text-zinc-600 leading-relaxed tracking-wide max-w-md">
               Egal ob es um Ihre Hochzeit, ein Porträt-Shooting oder ein kreatives Projekt geht – 
               ich freue mich darauf, von Ihnen zu hören. Füllen Sie einfach das Formular aus 
               oder kontaktieren Sie mich direkt.
             </p>
 
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6">
-                <div className="p-4 bg-zinc-50 rounded-2xl">
-                  <Mail className="w-6 h-6 text-zinc-400" />
+            <div className="space-y-12">
+              <div className="flex items-start space-x-6 group">
+                <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
+                  <Mail className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-xl mb-1">Email</h4>
-                  <p className="text-zinc-500">hello@alexbegopoulos.com</p>
+                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Email</h4>
+                  <a href={SOCIAL_LINKS.email} className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">hello@alexbegopoulos.com</a>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-6">
-                <div className="p-4 bg-zinc-50 rounded-2xl">
-                  <Phone className="w-6 h-6 text-zinc-400" />
+              <div className="flex items-start space-x-6 group">
+                <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
+                  <Phone className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-xl mb-1">Telefon</h4>
-                  <p className="text-zinc-500">+49 123 456 789</p>
+                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Telefon & WhatsApp</h4>
+                  <div className="flex flex-col space-y-3">
+                    <a href={SOCIAL_LINKS.phone} className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">+49 123 456 789</a>
+                    <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-zinc-400 hover:text-zinc-900 transition-colors text-[10px] uppercase tracking-[0.2em]">
+                      <MessageCircle size={14} />
+                      <span>Direkt via WhatsApp</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6">
-                <div className="p-4 bg-zinc-50 rounded-2xl">
-                  <MapPin className="w-6 h-6 text-zinc-400" />
+              <div className="flex items-start space-x-6 group">
+                <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
+                  <Instagram className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-xl mb-1">Studio</h4>
-                  <p className="text-zinc-500">Berlin, Deutschland</p>
+                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Social Media</h4>
+                  <div className="flex items-center space-x-6">
+                    <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Instagram</a>
+                    <span className="text-zinc-200">/</span>
+                    <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Facebook</a>
+                  </div>
                 </div>
               </div>
             </div>
