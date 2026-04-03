@@ -40,7 +40,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="text-stone-400"
         >
-          <Plus className="w-6 h-6" />
+          <Plus className="w-6 h-6" strokeWidth={1} />
         </motion.div>
       </button>
       <AnimatePresence>

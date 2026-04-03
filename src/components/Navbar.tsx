@@ -22,7 +22,7 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-500",
-        isScrolled ? "bg-surface/80 backdrop-blur-xl py-6" : "bg-transparent py-8"
+        isOpen ? "bg-transparent" : (isScrolled ? "bg-surface/80 backdrop-blur-xl py-6" : "bg-transparent py-8")
       )}
     >
       <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto">
@@ -67,21 +67,29 @@ export const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden fixed inset-0 top-[88px] bg-surface z-40 flex flex-col items-center justify-center space-y-8 px-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="md:hidden fixed inset-0 bg-surface z-40 flex flex-col items-center justify-center"
           >
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                className="font-sans uppercase tracking-[0.2em] text-sm text-on-surface"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+            <div className="flex flex-col items-center space-y-10 px-12">
+              {NAV_LINKS.map((link, i) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <Link
+                    to={link.path}
+                    className="font-sans uppercase tracking-[0.3em] text-lg text-on-surface hover:text-stone-500 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

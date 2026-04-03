@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const Services = () => {
   return (
-    <div className="bg-surface">
+    <div className="bg-surface overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[80vh] overflow-hidden">
         <motion.div 
@@ -28,7 +28,7 @@ export const Services = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-white font-serif text-5xl md:text-8xl italic font-light tracking-tight mb-4"
+            className="text-white font-serif text-4xl md:text-8xl italic font-light tracking-tight mb-4"
           >
             Ihre Geschichte in Bildern
           </motion.h1>
@@ -64,7 +64,7 @@ export const Services = () => {
       </section>
 
       {/* Service 01: Planning */}
-      <section className="pb-24 md:pb-32 px-6 md:px-12 lg:px-24">
+      <section className="pb-24 md:pb-32 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -80,9 +80,9 @@ export const Services = () => {
             />
           </motion.div>
           <div className="col-span-12 lg:col-span-6">
-            <span className="font-sans text-5xl font-extralight text-stone-200 mb-6 block">01.</span>
-            <h3 className="font-serif text-4xl md:text-5xl mb-8 italic text-stone-900">Das Kennenlernen & Planung</h3>
-            <div className="space-y-6 text-stone-600 font-sans font-light leading-relaxed text-lg">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">01.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Das Kennenlernen & Planung</h3>
+            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
               <p>
                 Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir Ihre Wünsche und Visionen.
               </p>
@@ -95,7 +95,7 @@ export const Services = () => {
       </section>
 
       {/* Service 02: Coverage */}
-      <section className="bg-stone-50 py-24 md:py-32 px-6 md:px-12 lg:px-24">
+      <section className="bg-stone-50 py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
@@ -111,9 +111,9 @@ export const Services = () => {
             />
           </motion.div>
           <div className="col-span-12 lg:col-span-6 lg:order-1">
-            <span className="font-sans text-5xl font-extralight text-stone-200 mb-6 block">02.</span>
-            <h3 className="font-serif text-4xl md:text-5xl mb-8 italic text-stone-900">Die Hochzeitsbegleitung</h3>
-            <div className="space-y-6 text-stone-600 font-sans font-light leading-relaxed text-lg">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">02.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Die Hochzeitsbegleitung</h3>
+            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
               <p>
                 An Ihrem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
               </p>
@@ -126,7 +126,7 @@ export const Services = () => {
       </section>
 
       {/* Service 03: Post-Processing */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24">
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -142,9 +142,9 @@ export const Services = () => {
             />
           </motion.div>
           <div className="col-span-12 lg:col-span-6">
-            <span className="font-sans text-5xl font-extralight text-stone-200 mb-6 block">03.</span>
-            <h3 className="font-serif text-4xl md:text-5xl mb-8 italic text-stone-900">Die Nachbearbeitung & Galerie</h3>
-            <div className="space-y-6 text-stone-600 font-sans font-light leading-relaxed text-lg">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">03.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Die Nachbearbeitung & Galerie</h3>
+            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
               <p>
                 Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
               </p>
@@ -157,13 +157,13 @@ export const Services = () => {
       </section>
 
       {/* Extras Section */}
-      <section className="bg-stone-50 py-32 px-12">
+      <section className="bg-stone-50 py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-24">
-            <span className="font-sans uppercase tracking-[0.3em] text-xs text-stone-400 block mb-4">Das gewisse Extra</span>
+          <div className="text-center mb-16 md:mb-24">
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-stone-400 block mb-4">Das gewisse Extra</span>
             <h2 className="font-serif text-4xl md:text-6xl italic text-stone-900">Besondere Leistungen</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
             {/* Album */}
             <motion.div 
               whileHover={{ y: -10 }}
@@ -213,13 +213,13 @@ export const Services = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-40 px-6">
-        <div className="max-w-4xl mx-auto text-center border-y border-stone-200 py-24">
-          <h2 className="font-serif text-5xl md:text-7xl italic mb-12 text-stone-900">Lassen Sie uns Ihre Geschichte erzählen.</h2>
-          <p className="font-sans text-stone-500 uppercase tracking-[0.2em] mb-16 text-sm">Ich freue mich darauf, Sie bei einem ersten Gespräch kennenzulernen.</p>
+      <section className="py-24 md:py-40 px-6">
+        <div className="max-w-4xl mx-auto text-center border-y border-stone-200 py-16 md:py-24">
+          <h2 className="font-serif text-3xl md:text-7xl italic mb-8 md:mb-12 text-stone-900">Lassen Sie uns Ihre Geschichte erzählen.</h2>
+          <p className="font-sans text-stone-500 uppercase tracking-[0.2em] mb-10 md:mb-16 text-xs md:text-sm">Ich freue mich darauf, Sie bei einem ersten Gespräch kennenzulernen.</p>
           <Link 
             to="/contact"
-            className="inline-flex items-center gap-4 bg-stone-900 text-white font-sans uppercase tracking-widest text-xs px-16 py-6 hover:bg-stone-800 transition-all duration-300"
+            className="inline-flex items-center gap-4 bg-stone-900 text-white font-sans uppercase tracking-widest text-[10px] md:text-xs px-12 md:px-16 py-5 md:py-6 hover:bg-stone-800 transition-all duration-300"
           >
             <span>Jetzt Anfragen</span>
             <ArrowRight className="w-4 h-4" />
