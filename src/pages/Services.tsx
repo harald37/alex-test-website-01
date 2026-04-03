@@ -65,12 +65,12 @@ export const Services = () => {
 
       {/* Service 01: Planning */}
       <section className="pb-24 md:pb-32 px-6 md:px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="col-span-12 lg:col-span-6"
+            className="w-full"
           >
             <img 
               src={IMAGES.SERVICES.PLANNING} 
@@ -79,14 +79,14 @@ export const Services = () => {
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="col-span-12 lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">01.</span>
-            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Das Kennenlernen & Planung</h3>
-            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
-              <p>
+          <div className="w-full flex flex-col items-center lg:items-start">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block text-center lg:text-left w-full">01.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900 text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
+            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg w-full text-center lg:text-left">
+              <p className="max-w-xl mx-auto lg:mx-0">
                 Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir Ihre Wünsche und Visionen.
               </p>
-              <p>
+              <p className="max-w-xl mx-auto lg:mx-0">
                 Ich unterstütze Sie aktiv bei der <strong>Timeline-Planung</strong> Ihres Hochzeitstages, damit wir das schönste Licht für Ihre Paarfotos nutzen können. Zudem übernehme ich das <strong>Location-Scouting</strong> vorab, um verborgene Juwele für Ihr Shooting zu finden – in der Region Hannover und an jedem anderen Ort der Welt.
               </p>
             </div>
@@ -96,12 +96,12 @@ export const Services = () => {
 
       {/* Service 02: Coverage */}
       <section className="bg-stone-50 py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="col-span-12 lg:col-span-6 lg:order-2"
+            className="w-full lg:order-2"
           >
             <img 
               src={IMAGES.SERVICES.COVERAGE} 
@@ -110,14 +110,14 @@ export const Services = () => {
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="col-span-12 lg:col-span-6 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">02.</span>
-            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Die Hochzeitsbegleitung</h3>
-            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
-              <p>
+          <div className="w-full lg:order-1 flex flex-col items-center lg:items-start">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block text-center lg:text-left w-full">02.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900 text-center lg:text-left w-full">Die Hochzeitsbegleitung</h3>
+            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg w-full text-center lg:text-left">
+              <p className="max-w-xl mx-auto lg:mx-0">
                 An Ihrem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
               </p>
-              <p>
+              <p className="max-w-xl mx-auto lg:mx-0">
                 Vom ersten Pinselstrich beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein. Ich dokumentiere nicht nur was passiert, sondern wie es sich anfühlt. So entstehen lebendige Erinnerungen, die Ihre Persönlichkeit widerspiegeln.
               </p>
             </div>
@@ -126,13 +126,13 @@ export const Services = () => {
       </section>
 
       {/* Service 03: Post-Processing */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-12 gap-12 lg:gap-24 items-center">
+      <section className="py-24 md:pb-32 px-6 md:px-12 lg:px-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="col-span-12 lg:col-span-6"
+            className="w-full"
           >
             <img 
               src={IMAGES.SERVICES.POST} 
@@ -141,14 +141,14 @@ export const Services = () => {
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="col-span-12 lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block">03.</span>
-            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900">Die Nachbearbeitung & Galerie</h3>
-            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg">
-              <p>
+          <div className="w-full flex flex-col items-center lg:items-start">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-stone-200 mb-4 md:mb-6 block text-center lg:text-left w-full">03.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-stone-900 text-center lg:text-left w-full">Die Nachbearbeitung & Galerie</h3>
+            <div className="space-y-4 md:space-y-6 text-stone-600 font-sans font-light leading-relaxed text-base md:text-lg w-full text-center lg:text-left">
+              <p className="max-w-xl mx-auto lg:mx-0">
                 Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
               </p>
-              <p>
+              <p className="max-w-xl mx-auto lg:mx-0">
                 Sie erhalten innerhalb weniger Wochen Zugang zu einer passwortgeschützten, eleganten <strong>Online-Galerie</strong>. Dort können Sie alle Bilder in voller Auflösung herunterladen und unkompliziert mit Ihren Liebsten teilen. Eine zeitlose Kollektion, die Sie immer wieder in diesen besonderen Tag zurückversetzt.
               </p>
             </div>
