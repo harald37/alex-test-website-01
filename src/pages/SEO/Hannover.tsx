@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Camera, Heart, MapPin, MessageCircle, Phone, Plus } from "lucide-react";
 import { IMAGES, SOCIAL_LINKS } from "../../constants";
 import { Testimonials } from "../../components/Testimonials";
+import { Button } from "../../components/ui/Button";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
   return (
@@ -142,10 +143,9 @@ export const Hannover = () => {
           ))}
         </div>
         <div className="mt-12 text-center">
-          <Link to="/portfolio" className="group inline-flex items-center gap-4 font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-900">
+          <Button to="/portfolio" variant="link">
             Gesamtes Portfolio ansehen
-            <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
-          </Link>
+          </Button>
         </div>
       </section>
 
@@ -223,10 +223,9 @@ export const Hannover = () => {
               <p className="text-zinc-600 leading-relaxed tracking-wide mb-8">
                 Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Hannover und Umgebung bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
               </p>
-              <Link to="/about" className="group inline-flex items-center gap-4 font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-900">
+              <Button to="/about" variant="link">
                 Mehr über mich erfahren
-                <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -254,10 +253,9 @@ export const Hannover = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <Link to="/faq" className="group inline-flex items-center gap-4 font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-900">
+            <Button to="/faq" variant="link">
               Alle FAQs ansehen
-              <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
-            </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -272,9 +270,9 @@ export const Hannover = () => {
             Schreibt mir eine Nachricht und lasst uns über eure Pläne sprechen. Ich freue mich darauf, euch kennenzulernen.
           </p>
           <div className="flex flex-col items-center gap-12 pt-8">
-            <Link to="/contact" className="bg-white text-zinc-900 px-16 py-6 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-zinc-200 transition-colors">
+            <Button to="/contact" variant="white">
               Termin anfragen
-            </Link>
+            </Button>
             <div className="flex items-center gap-12">
               <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors flex flex-col items-center gap-2 group">
                 <MessageCircle size={28} strokeWidth={1} />

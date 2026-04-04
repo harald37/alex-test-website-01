@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { IMAGES } from "../constants";
 import { Book, Users, Camera, Globe, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Button } from "../components/ui/Button";
 
 export const Services = () => {
   return (
@@ -237,13 +238,9 @@ export const Services = () => {
         <div className="max-w-4xl mx-auto text-center border-y border-zinc-200 py-16 md:py-24">
           <h2 className="font-serif text-3xl md:text-7xl italic mb-8 md:mb-12 text-zinc-900">Lasst uns eure Geschichte erzählen.</h2>
           <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] mb-10 md:mb-16 text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
-          <Link 
-            to="/contact"
-            className="inline-flex items-center gap-4 bg-zinc-900 text-white font-sans uppercase tracking-widest text-[10px] md:text-xs px-12 md:px-16 py-5 md:py-6 hover:bg-zinc-800 transition-all duration-300"
-          >
-            <span>Jetzt Anfragen</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <Button to="/contact">
+            Jetzt Anfragen
+          </Button>
         </div>
       </section>
     </div>

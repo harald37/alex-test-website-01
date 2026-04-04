@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { IMAGES } from '../constants';
 import { cn } from '../lib/utils';
 import { Testimonials } from '../components/Testimonials';
+import { Button } from '../components/ui/Button';
 
 export const Home: React.FC = () => {
   return (
@@ -48,18 +49,9 @@ export const Home: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.5 }}
             >
-              <Link 
-                to="/portfolio" 
-                className="group relative inline-flex items-center justify-center px-20 py-7 overflow-hidden font-sans uppercase tracking-[0.3em] text-[9px] text-white/80 transition-all duration-700"
-              >
-                {/* Button background animation */}
-                <div className="absolute inset-0 border border-white/10 group-hover:border-white/30 transition-colors duration-500" />
-                <div className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out" />
-                
-                <span className="relative z-10 group-hover:text-zinc-900 transition-colors duration-500">
-                  Portfolio entdecken
-                </span>
-              </Link>
+              <Button to="/portfolio" dark>
+                Portfolio entdecken
+              </Button>
             </motion.div>
           </motion.div>
         </div>
@@ -80,42 +72,108 @@ export const Home: React.FC = () => {
             Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit eurer Liebsten.
           </p>
           <div className="flex flex-col items-center group">
-            <Link to="/portfolio" className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-900 transition-all mb-4">Zur Galerie</Link>
             <span className="h-[1px] w-12 bg-zinc-900/20 group-hover:w-24 transition-all duration-500"></span>
           </div>
         </div>
       </section>
 
-      {/* Featured Stories */}
-      <section className="py-24 md:py-32 px-6 md:px-24 bg-surface" id="portfolio">
-        <div className="text-center mb-16 md:mb-24">
-          <h2 className="font-serif italic text-3xl md:text-4xl text-zinc-900">Ausgewählte Reportagen</h2>
-          <p className="font-sans text-[10px] uppercase tracking-widest text-zinc-400 mt-4">In Hannover, Niedersachsen & Weltweit</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-[120px] max-w-7xl mx-auto">
-          {IMAGES.STORIES.map((story, index) => (
+      {/* Highlights Section */}
+      <section className="py-24 md:py-48 px-6 md:px-12 bg-surface" id="highlights">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="text-center mb-24 md:mb-32">
+            <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Eingefangene Augenblicke</span>
+            <h2 className="font-serif italic text-4xl md:text-7xl text-zinc-900 leading-tight">
+              Momente, die <br className="hidden md:block" /> die Zeit überdauern.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+            {/* Large Featured Image */}
             <motion.div 
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-              className="group cursor-pointer"
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="md:col-span-7 aspect-[4/5] md:aspect-[16/10] overflow-hidden bg-zinc-100 group"
             >
-              <div className="aspect-[2/3] overflow-hidden mb-8">
-                <img 
-                  src={story.url} 
-                  alt={story.title} 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 mb-2">{story.location}</span>
-                <h3 className="font-serif text-2xl text-zinc-900 italic">{story.title}</h3>
-              </div>
+              <img 
+                src={IMAGES.PORTFOLIO_2[0].url} 
+                alt="Highlight 1" 
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
             </motion.div>
-          ))}
+
+            {/* Side Image Staggered */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="md:col-span-5 aspect-[4/5] overflow-hidden bg-zinc-100 mt-0 md:mt-24 group"
+            >
+              <img 
+                src={IMAGES.PORTFOLIO[0].url} 
+                alt="Highlight 2" 
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Small Detail Image */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="md:col-span-4 aspect-square overflow-hidden bg-zinc-100 group"
+            >
+              <img 
+                src={IMAGES.PORTFOLIO_2[1].url} 
+                alt="Highlight 3" 
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Vertical Image */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className="md:col-span-4 aspect-[2/3] overflow-hidden bg-zinc-100 -mt-0 md:-mt-32 group"
+            >
+              <img 
+                src={IMAGES.PORTFOLIO[2].url} 
+                alt="Highlight 4" 
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+
+            {/* Final Image */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className="md:col-span-4 aspect-[4/5] overflow-hidden bg-zinc-100 group"
+            >
+              <img 
+                src={IMAGES.PORTFOLIO_2[5].url} 
+                alt="Highlight 5" 
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
+            </motion.div>
+          </div>
+
+          <div className="mt-24 md:mt-32 text-center">
+            <Button to="/portfolio" variant="link">
+              Das gesamte Portfolio ansehen
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -129,16 +187,9 @@ export const Home: React.FC = () => {
           <h2 className="font-serif italic text-3xl md:text-5xl text-zinc-800 leading-relaxed mb-16">
             "Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen."
           </h2>
-          <Link 
-            to="/contact" 
-            className="group relative inline-flex items-center justify-center px-16 py-6 overflow-hidden font-sans uppercase tracking-[0.3em] text-[9px] text-zinc-900 transition-all duration-700"
-          >
-            <div className="absolute inset-0 border border-zinc-900/10 group-hover:border-zinc-900/30 transition-colors duration-500" />
-            <div className="absolute inset-0 bg-zinc-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out" />
-            <span className="relative z-10 group-hover:text-white transition-colors duration-500">
-              Erzählt mir eure Geschichte
-            </span>
-          </Link>
+          <Button to="/contact">
+            Erzählt mir eure Geschichte
+          </Button>
         </div>
       </section>
     </div>

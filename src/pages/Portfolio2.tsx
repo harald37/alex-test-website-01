@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { IMAGES } from "../constants";
 import { cn } from "../lib/utils";
+import { Button } from "../components/ui/Button";
 
 export const Portfolio2 = () => {
   const [filter, setFilter] = useState("all");
@@ -107,13 +108,9 @@ export const Portfolio2 = () => {
 
       {/* Load More */}
       <div className="mt-32 text-center">
-        <button className="group relative inline-flex items-center justify-center px-20 py-7 overflow-hidden font-sans uppercase tracking-[0.3em] text-[9px] text-zinc-900 transition-all duration-700">
-          <div className="absolute inset-0 border border-zinc-900/10 group-hover:border-zinc-900/30 transition-colors duration-500" />
-          <div className="absolute inset-0 bg-zinc-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out" />
-          <span className="relative z-10 group-hover:text-white transition-colors duration-500">
-            Mehr entdecken
-          </span>
-        </button>
+        <Button>
+          Mehr entdecken
+        </Button>
       </div>
     </main>
   );

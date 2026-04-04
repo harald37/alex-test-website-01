@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { Send, Mail, Phone, Instagram, Facebook, MessageCircle } from "lucide-react";
 import { SOCIAL_LINKS } from "../constants";
+import { Button } from "../components/ui/Button";
 
 export const Contact = () => {
   const [submitted, setSubmitted] = React.useState(false);
@@ -197,18 +198,14 @@ export const Contact = () => {
                   </label>
                 </div>
 
-                <button 
+                <Button 
                   type="submit"
                   disabled={!privacyAccepted}
-                  className={`w-full py-4 rounded-xl font-medium tracking-widest uppercase text-sm transition-all flex items-center justify-center space-x-3 ${
-                    privacyAccepted 
-                      ? "bg-zinc-900 text-white hover:bg-zinc-800" 
-                      : "bg-zinc-200 text-zinc-400 cursor-not-allowed"
-                  }`}
+                  className="w-full"
                 >
                   <span>Nachricht senden</span>
-                  <Send className="w-4 h-4" />
-                </button>
+                  <Send className="w-4 h-4 ml-3" />
+                </Button>
               </form>
             )}
           </motion.div>
