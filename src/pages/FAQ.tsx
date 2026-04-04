@@ -22,6 +22,30 @@ const FAQ_DATA = [
   {
     question: "Was passiert bei schlechtem Wetter?",
     answer: "Bei Porträt-Shootings können wir flexibel verschieben. Bei Hochzeiten nutzen wir die Gegebenheiten vor Ort oder nutzen stilvolle Indoor-Optionen."
+  },
+  {
+    question: "Wie lange dauert das Paarshooting?",
+    answer: "Um die Magie und Romantik eurer Liebe bestmöglich einzufangen, empfehle ich das Shooting idealerweise während des Sonnenuntergangs durchzuführen. Das warme, sanfte Licht der 'Golden Hour' verleiht den Fotos eine ganz besondere Atmosphäre und sorgt für eine natürliche, romantische Stimmung. Die genaue Dauer hängt von eurer individuellen Planung ab, aber ich empfehle meistens etwa 45 bis 60 Minuten für das Paarshooting einzuplanen."
+  },
+  {
+    question: "Reist du auch oder begleitest du nur in Niedersachsen?",
+    answer: "Egal wo ihr euren besonderen Tag erleben wollt: Ich freue mich darauf, euch begleiten zu dürfen! Außerhalb von Niedersachsen fallen lediglich zusätzliche Anfahrts- und eventuell nötige Übernachtungskosten an."
+  },
+  {
+    question: "Bietest du auch Drohnenaufnahmen an?",
+    answer: "Ja, bei meinen Ganztagsbegleitungen sind Luftaufnahmen immer inklusive. Bitte beachtet jedoch, dass der Drohnenflug stark vom Wetter und den örtlichen Bedingungen (wie z.B. Flugverbotszonen) abhängig ist."
+  },
+  {
+    question: "Was passiert, nachdem wir dich angefragt haben?",
+    answer: "Zuerst lernen wir uns in einem unverbindlichen Videotelefonat (z.B. per Zoom oder Skype) kennen. Alternativ können wir natürlich auch telefonieren oder uns persönlich treffen. Dabei erkläre ich euch meine Arbeitsweise, wir besprechen eure Visionen und ich beantworte all eure Fragen. Sämtliche Vorgespräche sind für euch kostenfrei und völlig unverbindlich."
+  },
+  {
+    question: "Reist du auch oder begleitest du nur in Niedersachsen?",
+    answer: "Egal wo ihr euren besonderen Tag erleben wollt: Ich freue mich darauf, euch begleiten zu dürfen! Außerhalb von Niedersachsen fallen lediglich zusätzliche Anfahrts- und eventuell nötige Übernachtungskosten an. Ich bin für euch deutschlandweit und weltweit buchbar."
+  },
+  {
+    question: "Bietest du auch Drohnenaufnahmen an?",
+    answer: "Ja, bei meinen Ganztagsbegleitungen sind Luftaufnahmen immer inklusive. Bitte beachtet jedoch, dass der Drohnenflug stark vom Wetter und den örtlichen Bedingungen (wie z.B. Flugverbotszonen) abhängig ist."
   }
 ];
 

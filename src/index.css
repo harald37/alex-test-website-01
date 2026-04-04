@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:wght@100;200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,300;1,300&family=Inter:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:wght@100;200;300;400;500;600;700&family=Noto+Serif:ital,wght@0,300;1,300&family=Inter:wght@300;400&family=Mrs+Saint+Delafield&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,6 +7,7 @@
   --font-headline: "Cormorant Garamond", serif;
   --font-body: "Inter", sans-serif;
   --font-label: "Inter", sans-serif;
+  --font-signature: "Mrs Saint Delafield", cursive;
 
   --color-surface: #faf9f7;
   --color-on-surface: #2f3331;
@@ -45,5 +46,16 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+input[type="date"]:focus::-webkit-calendar-picker-indicator,
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
 }
 

@@ -5,9 +5,13 @@ import { SOCIAL_LINKS } from "../constants";
 
 export const Contact = () => {
   const [submitted, setSubmitted] = React.useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = React.useState(false);
+  const [dateValue, setDateValue] = React.useState("");
+  const [foundValue, setFoundValue] = React.useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // In a real app, this would send to alex.begopoulos@yahoo.de
     setSubmitted(true);
   };
 
@@ -36,7 +40,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Email</h4>
-                  <a href={SOCIAL_LINKS.email} className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">hello@alexbegopoulos.com</a>
+                  <a href="mailto:alex.begopoulos@yahoo.de" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">alex.begopoulos@yahoo.de</a>
                 </div>
               </div>
               
@@ -77,7 +81,7 @@ export const Contact = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-zinc-50 rounded-2xl md:rounded-3xl p-6 md:p-12"
+            className="bg-zinc-50 rounded-2xl md:rounded-3xl p-6 md:p-12 lg:mt-12"
           >
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">
@@ -111,30 +115,96 @@ export const Contact = () => {
                     />
                   </div>
                 </div>
-                
-                <div>
-                  <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Betreff</label>
-                  <select className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all">
-                    <option>Hochzeit</option>
-                    <option>Porträt</option>
-                    <option>Event</option>
-                    <option>Sonstiges</option>
-                  </select>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Telefonnummer</label>
+                    <input 
+                      required
+                      type="tel" 
+                      className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
+                      placeholder="Ihre Telefonnummer"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitsdatum</label>
+                    <input 
+                      required
+                      type="date" 
+                      value={dateValue}
+                      onChange={(e) => setDateValue(e.target.value)}
+                      className={`w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all font-sans ${dateValue ? 'text-zinc-600' : 'text-zinc-400'}`}
+                    />
+                  </div>
                 </div>
 
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitslocation (optional)</label>
+                    <input 
+                      type="text" 
+                      className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
+                      placeholder="Wo feiert ihr?"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Wie habt ihr mich gefunden? (optional)</label>
+                    <div className="relative">
+                      <select 
+                        value={foundValue}
+                        onChange={(e) => setFoundValue(e.target.value)}
+                        className={`w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all appearance-none font-sans cursor-pointer ${foundValue ? 'text-zinc-600' : 'text-zinc-400'}`}
+                      >
+                        <option value="" disabled>Bitte wählen...</option>
+                        <option>Google Suche</option>
+                        <option>Instagram</option>
+                        <option>Pinterest</option>
+                        <option>Facebook</option>
+                        <option>Empfehlung von Freunden</option>
+                        <option>Hochzeitsportal</option>
+                        <option>Sonstiges</option>
+                      </select>
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                 <div>
                   <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Nachricht</label>
                   <textarea 
                     required
-                    rows={6}
+                    rows={4}
                     className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all resize-none"
                     placeholder="Erzählen Sie mir von Ihren Plänen..."
                   />
                 </div>
 
+                <div className="flex items-start space-x-3">
+                  <input 
+                    type="checkbox" 
+                    id="privacy"
+                    required
+                    checked={privacyAccepted}
+                    onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                    className="mt-1 w-4 h-4 rounded border-zinc-300 text-zinc-900 focus:ring-zinc-500"
+                  />
+                  <label htmlFor="privacy" className="text-xs text-zinc-500 leading-relaxed">
+                    Ich akzeptiere die <a href="/datenschutz" className="underline hover:text-zinc-900">Datenschutzbestimmungen</a> und stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden.
+                  </label>
+                </div>
+
                 <button 
                   type="submit"
-                  className="w-full bg-zinc-900 text-white py-4 rounded-xl font-medium tracking-widest uppercase text-sm hover:bg-zinc-800 transition-all flex items-center justify-center space-x-3"
+                  disabled={!privacyAccepted}
+                  className={`w-full py-4 rounded-xl font-medium tracking-widest uppercase text-sm transition-all flex items-center justify-center space-x-3 ${
+                    privacyAccepted 
+                      ? "bg-zinc-900 text-white hover:bg-zinc-800" 
+                      : "bg-zinc-200 text-zinc-400 cursor-not-allowed"
+                  }`}
                 >
                   <span>Nachricht senden</span>
                   <Send className="w-4 h-4" />

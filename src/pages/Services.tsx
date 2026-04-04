@@ -156,58 +156,78 @@ export const Services = () => {
         </div>
       </section>
 
-      {/* Extras Section */}
-      <section className="bg-zinc-50 py-24 md:py-32 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
+      {/* Included in Every Coverage */}
+      <section className="py-24 md:py-32 px-6 md:px-12 bg-white">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 block mb-4">Das gewisse Extra</span>
-            <h2 className="font-serif text-4xl md:text-6xl italic text-zinc-900">Besondere Leistungen</h2>
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 block mb-4">Das Rundum-Sorglos-Paket</span>
+            <h2 className="font-serif text-4xl md:text-6xl italic text-zinc-900 uppercase leading-tight">
+              In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit enthalten
+            </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16">
-            {/* Album */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center"
-            >
-              <Book className="w-10 h-10 mb-8 text-zinc-400 font-light" strokeWidth={1} />
-              <h4 className="font-sans uppercase tracking-widest text-sm mb-6 font-medium text-zinc-900">Fine Art Alben</h4>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                Handgefertigte Alben aus edlen Materialien. Ein haptisches Erlebnis und ein Erbstück für zukünftige Generationen.
-              </p>
-            </motion.div>
-            {/* Second Shooter */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center"
-            >
-              <Users className="w-10 h-10 mb-8 text-zinc-400 font-light" strokeWidth={1} />
-              <h4 className="font-sans uppercase tracking-widest text-sm mb-6 font-medium text-zinc-900">Second Shooter</h4>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                Für große Hochzeitsgesellschaften empfehle ich einen zweiten Fotografen, um keinen Moment und keine Perspektive zu verpassen.
-              </p>
-            </motion.div>
-            {/* Engagement */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center"
-            >
-              <Camera className="w-10 h-10 mb-8 text-zinc-400 font-light" strokeWidth={1} />
-              <h4 className="font-sans uppercase tracking-widest text-sm mb-6 font-medium text-zinc-900">Engagement Shootings</h4>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                Ein entspanntes Shooting vor der Hochzeit, um sich an die Kamera zu gewöhnen und wunderschöne Bilder für Einladungen zu erhalten.
-              </p>
-            </motion.div>
-            {/* Worldwide */}
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="flex flex-col items-center text-center"
-            >
-              <Globe className="w-10 h-10 mb-8 text-zinc-400 font-light" strokeWidth={1} />
-              <h4 className="font-sans uppercase tracking-widest text-sm mb-6 font-medium text-zinc-900">Weltweite Reise</h4>
-              <p className="text-zinc-500 text-sm leading-relaxed">
-                Ich begleite Sie dorthin, wo Ihre Liebe Sie hinführt. Ob Toskana, Mallorca oder Paris – ich bin dabei.
-              </p>
-            </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            {[
+              "Persönliche Beratung & individueller Zeitplan für euren Tag",
+              "Exklusiver Wedding Guide mit wertvollen Planungstipps",
+              "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
+              "Natürliche Retusche eurer Paarfotos für ein perfektes Ergebnis",
+              "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
+              "Passwortgeschützte Online-Galerie für euch und eure Gäste (12 Monate)",
+              "Mobile Galerie-App für den schnellen Zugriff von überall",
+              "Alle Fotos in voller Auflösung und ohne Wasserzeichen",
+              "Integrierter Online-Shop für hochwertige Abzüge und Wandbilder",
+              "Edles Fine-Art Album (20x20 cm) als bleibende Erinnerung",
+              "Drohnenaufnahmen für einzigartige Perspektiven (wetterabhängig)",
+              "Kontinuierliche Unterstützung und Beratung während der gesamten Planung"
+            ].map((item, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05 }}
+                className="flex items-start gap-4 group"
+              >
+                <div className="mt-1 flex-shrink-0 w-5 h-5 border border-zinc-900 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span className="text-zinc-600 text-sm md:text-base font-light tracking-wide">{item}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Extras Section */}
+      <section className="bg-[#2D332F] py-24 md:py-40 px-6 md:px-12 text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20 md:mb-32">
+            <h2 className="font-serif text-4xl md:text-7xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-24">
+            {[
+              { title: "Engagement Shooting", desc: "Ein entspanntes Kennenlernen vor der Kamera vor eurem großen Tag" },
+              { title: "Zweitfotograf / Assistenz", desc: "Eine zusätzliche Perspektive für noch mehr eingefangene Details" },
+              { title: "After-Wedding-Session", desc: "Stressfreie Paarfotos an eurem Wunschort – ganz ohne Zeitdruck" },
+              { title: "Exklusive Print-Produkte", desc: "Von hochwertigen Wandbildern bis hin zu edlen Triplex-Aufstellern" },
+              { title: "Retusche & KI-Editierung", desc: "Ganz nach den individuellen Wünschen der Kunden" },
+              { title: "Physische Sicherung", desc: "Eure gesamte Hochzeitsreportage auf einem hochwertigen USB-Stick" }
+            ].map((option, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="text-center space-y-4"
+              >
+                <h4 className="font-serif text-2xl md:text-3xl italic text-white">{option.title}</h4>
+                <p className="text-white/70 text-sm italic font-light tracking-wider max-w-[250px] mx-auto">
+                  {option.desc}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

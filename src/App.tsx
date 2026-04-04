@@ -13,6 +13,8 @@ import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { FAQ } from "./pages/FAQ";
 import { Contact } from "./pages/Contact";
+import { Imprint } from "./pages/Imprint";
+import { Privacy } from "./pages/Privacy";
 import { Hannover } from "./pages/SEO/Hannover";
 import { Braunschweig } from "./pages/SEO/Braunschweig";
 
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/leistungen" element={<Services />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/impressum" element={<Imprint />} />
+          <Route path="/datenschutz" element={<Privacy />} />
           <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
           <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
         </Routes>
