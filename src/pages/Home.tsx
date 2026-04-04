@@ -74,10 +74,10 @@ export const Home: React.FC = () => {
           </h2>
           <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12" />
           <p className="tracking-wide text-zinc-600 leading-relaxed mb-8 text-lg">
-            Als Ihr <strong>Hochzeitsfotograf in Hannover</strong> begleite ich Sie nicht nur in Niedersachsen, sondern dort, wo Ihre Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
+            Als dein <strong>Hochzeitsfotograf in Hannover</strong> begleite ich euch nicht nur in Niedersachsen, sondern dort, wo eure Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
           </p>
           <p className="tracking-wide text-zinc-600 leading-relaxed mb-16 text-lg">
-            Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit Ihrer Liebsten.
+            Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit eurer Liebsten.
           </p>
           <div className="flex flex-col items-center group">
             <Link to="/portfolio" className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-900 transition-all mb-4">Zur Galerie</Link>
@@ -136,7 +136,7 @@ export const Home: React.FC = () => {
             <div className="absolute inset-0 border border-zinc-900/10 group-hover:border-zinc-900/30 transition-colors duration-500" />
             <div className="absolute inset-0 bg-zinc-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left ease-out" />
             <span className="relative z-10 group-hover:text-white transition-colors duration-500">
-              Erzählen Sie mir Ihre Geschichte
+              Erzählt mir eure Geschichte
             </span>
           </Link>
         </div>

@@ -30,7 +30,7 @@ export const Services = () => {
             transition={{ delay: 0.5 }}
             className="text-white font-serif text-4xl md:text-8xl italic font-light tracking-tight mb-4"
           >
-            Ihre Geschichte in Bildern
+            Eure Geschichte in Bildern
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -57,7 +57,7 @@ export const Services = () => {
           </motion.h2>
           <div className="space-y-8 text-zinc-600">
             <p>
-              Als Ihr <strong>Hochzeitsfotograf in Hannover</strong> und ganz <strong>Niedersachsen</strong> begleite ich Sie auf Ihrem Weg zum Ja-Wort. Mein Ziel ist es, nicht nur Bilder zu machen, sondern Kunstwerke zu schaffen, die die Emotionen Ihres Tages konservieren. Ob in der vertrauten Heimat oder als Destination Wedding – ich bin für Sie <strong>weltweit buchbar</strong>.
+              Als euer <strong>Hochzeitsfotograf in Hannover</strong> und ganz <strong>Niedersachsen</strong> begleite ich euch auf eurem Weg zum Ja-Wort. Mein Ziel ist es, nicht nur Bilder zu machen, sondern Kunstwerke zu schaffen, die die Emotionen eures Tages konservieren. Ob in der vertrauten Heimat oder als Destination Wedding – ich bin für euch <strong>weltweit buchbar</strong>.
             </p>
           </div>
         </div>
@@ -84,10 +84,10 @@ export const Services = () => {
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
             <div className="space-y-4 md:space-y-6 text-zinc-600 w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
-                Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir Ihre Wünsche und Visionen.
+                Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir eure Wünsche und Visionen.
               </p>
               <p className="max-w-xl mx-auto lg:mx-0">
-                Ich unterstütze Sie aktiv bei der <strong>Timeline-Planung</strong> Ihres Hochzeitstages, damit wir das schönste Licht für Ihre Paarfotos nutzen können. Zudem übernehme ich das <strong>Location-Scouting</strong> vorab, um verborgene Juwele für Ihr Shooting zu finden – in der Region Hannover und an jedem anderen Ort der Welt.
+                Ich unterstütze euch aktiv bei der <strong>Timeline-Planung</strong> eures Hochzeitstages, damit wir das schönste Licht für eure Paarfotos nutzen können. Zudem übernehme ich das <strong>Location-Scouting</strong> vorab, um verborgene Juwele für euer Shooting zu finden – in der Region Hannover und an jedem anderen Ort der Welt.
               </p>
             </div>
           </div>
@@ -115,10 +115,10 @@ export const Services = () => {
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Die Hochzeitsbegleitung</h3>
             <div className="space-y-4 md:space-y-6 text-zinc-600 w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
-                An Ihrem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
+                An eurem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
               </p>
               <p className="max-w-xl mx-auto lg:mx-0">
-                Vom ersten Pinselstrich beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein. Ich dokumentiere nicht nur was passiert, sondern wie es sich anfühlt. So entstehen lebendige Erinnerungen, die Ihre Persönlichkeit widerspiegeln.
+                Vom ersten Pinselstrich beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein. Ich dokumentiere nicht nur was passiert, sondern wie es sich anfühlt. So entstehen lebendige Erinnerungen, die eure Persönlichkeit widerspiegeln.
               </p>
             </div>
           </div>
@@ -149,7 +149,7 @@ export const Services = () => {
                 Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
               </p>
               <p className="max-w-xl mx-auto lg:mx-0">
-                Sie erhalten innerhalb weniger Wochen Zugang zu einer passwortgeschützten, eleganten <strong>Online-Galerie</strong>. Dort können Sie alle Bilder in voller Auflösung herunterladen und unkompliziert mit Ihren Liebsten teilen. Eine zeitlose Kollektion, die Sie immer wieder in diesen besonderen Tag zurückversetzt.
+                Ihr erhaltet innerhalb weniger Wochen Zugang zu einer passwortgeschützten, eleganten <strong>Online-Galerie</strong>. Dort könnt ihr alle Bilder in voller Auflösung herunterladen und unkompliziert mit euren Liebsten teilen. Eine zeitlose Kollektion, die euch immer wieder in diesen besonderen Tag zurückversetzt.
               </p>
             </div>
           </div>
@@ -235,8 +235,8 @@ export const Services = () => {
       {/* Call to Action */}
       <section className="py-24 md:py-40 px-6">
         <div className="max-w-4xl mx-auto text-center border-y border-zinc-200 py-16 md:py-24">
-          <h2 className="font-serif text-3xl md:text-7xl italic mb-8 md:mb-12 text-zinc-900">Lassen Sie uns Ihre Geschichte erzählen.</h2>
-          <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] mb-10 md:mb-16 text-xs md:text-sm">Ich freue mich darauf, Sie bei einem ersten Gespräch kennenzulernen.</p>
+          <h2 className="font-serif text-3xl md:text-7xl italic mb-8 md:mb-12 text-zinc-900">Lasst uns eure Geschichte erzählen.</h2>
+          <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] mb-10 md:mb-16 text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
           <Link 
             to="/contact"
             className="inline-flex items-center gap-4 bg-zinc-900 text-white font-sans uppercase tracking-widest text-[10px] md:text-xs px-12 md:px-16 py-5 md:py-6 hover:bg-zinc-800 transition-all duration-300"

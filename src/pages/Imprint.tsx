@@ -50,7 +50,7 @@ export const Imprint: React.FC = () => {
               <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-zinc-900 underline underline-offset-4 ml-1">
                 https://ec.europa.eu/consumers/odr/
               </a>.<br />
-              Unsere E-Mail-Adresse finden Sie oben im Impressum.
+              Unsere E-Mail-Adresse findest du oben im Impressum.
             </p>
           </div>
 

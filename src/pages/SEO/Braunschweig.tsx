@@ -113,7 +113,7 @@ export const Braunschweig = () => {
                 "Emotionale Hochzeitsfotografie in der Löwenstadt und Umgebung."
               </p>
               <p className="text-zinc-600 leading-relaxed tracking-wide">
-                Als Ihr Hochzeitsfotograf in Braunschweig begleite ich Sie an Ihrem besonderen Tag. Ob im Braunschweiger Dom, im Schloss Richmond oder in einer der vielen charmanten Locations in der Region – ich halte Ihre emotionalsten Momente in zeitlosen Bildern fest.
+                Als euer Hochzeitsfotograf in Braunschweig begleite ich euch an eurem besonderen Tag. Ob im Braunschweiger Dom, im Schloss Richmond oder in einer der vielen charmanten Locations in der Region – ich halte eure emotionalsten Momente in zeitlosen Bildern fest.
               </p>
             </div>
           </div>
@@ -221,7 +221,7 @@ export const Braunschweig = () => {
               <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-6 block">Der Fotograf</span>
               <h2 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight mb-8">Hallo, ich bin Alex.</h2>
               <p className="text-zinc-600 leading-relaxed tracking-wide mb-8">
-                Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Braunschweig und der gesamten Region bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für Ihre Geschichte.
+                Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Braunschweig und der gesamten Region bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
               </p>
               <Link to="/about" className="group inline-flex items-center gap-4 font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-900">
                 Mehr über mich erfahren
@@ -266,10 +266,10 @@ export const Braunschweig = () => {
       <section className="py-32 px-6 md:px-12 bg-[#2D332F] text-white text-center">
         <div className="max-w-3xl mx-auto space-y-12">
           <h2 className="font-serif italic text-4xl md:text-6xl leading-tight font-medium">
-            Bereit für Ihre Geschichte <br /> in Braunschweig?
+            Bereit für eure Geschichte <br /> in Braunschweig?
           </h2>
           <p className="text-zinc-100 leading-relaxed tracking-wide max-w-2xl mx-auto">
-            Schreiben Sie mir eine Nachricht und lassen Sie uns über Ihre Pläne sprechen. Ich freue mich darauf, Sie kennenzulernen.
+            Schreibt mir eine Nachricht und lasst uns über eure Pläne sprechen. Ich freue mich darauf, euch kennenzulernen.
           </p>
           <div className="flex flex-col items-center gap-12 pt-8">
             <Link to="/contact" className="bg-white text-zinc-900 px-16 py-6 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-zinc-200 transition-colors">

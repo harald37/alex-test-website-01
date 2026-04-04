@@ -4,11 +4,11 @@ import { Plus, Minus } from "lucide-react";
 
 const FAQ_DATA = [
   {
-    question: "Wie weit im Voraus sollte ich buchen?",
+    question: "Wie weit im Voraus solltet ihr buchen?",
     answer: "Für Hochzeiten empfehle ich eine Buchung 12-18 Monate im Voraus. Porträt-Shootings können meist 4-8 Wochen im Voraus geplant werden."
   },
   {
-    question: "Bieten Sie auch Videoaufnahmen an?",
+    question: "Bietest du auch Videoaufnahmen an?",
     answer: "Ja, ich biete sowohl Fotografie als auch cinematische Highlight-Filme an. Diese können einzeln oder als Paket gebucht werden."
   },
   {
@@ -17,7 +17,7 @@ const FAQ_DATA = [
   },
   {
     question: "Sind die Bilder bearbeitet?",
-    answer: "Ja, jedes einzelne Bild, das Sie erhalten, wird von mir persönlich in meinem charakteristischen Stil bearbeitet (Farbe, Kontrast, Belichtung)."
+    answer: "Ja, jedes einzelne Bild, das ihr erhaltet, wird von mir persönlich in meinem charakteristischen Stil bearbeitet (Farbe, Kontrast, Belichtung)."
   },
   {
     question: "Was passiert bei schlechtem Wetter?",
@@ -94,7 +94,7 @@ export const FAQ = () => {
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-serif mb-6 text-zinc-900">Häufig gestellte Fragen</h1>
-          <p className="text-zinc-500 tracking-widest uppercase text-xs md:text-sm">Alles, was Sie wissen müssen</p>
+          <p className="text-zinc-500 tracking-widest uppercase text-xs md:text-sm">Alles, was ihr wissen müsst</p>
         </div>
 
         <div className="bg-white rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-sm">

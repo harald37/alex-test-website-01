@@ -26,11 +26,11 @@ export const Contact = () => {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Kontakt</span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif italic mb-12 text-zinc-900 leading-tight">Lassen Sie uns <br /> sprechen</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif italic mb-12 text-zinc-900 leading-tight">Lasst uns <br /> sprechen</h1>
             <p className="mb-16 text-zinc-600 leading-relaxed tracking-wide max-w-md">
-              Egal ob es um Ihre Hochzeit, ein Porträt-Shooting oder ein kreatives Projekt geht – 
-              ich freue mich darauf, von Ihnen zu hören. Füllen Sie einfach das Formular aus 
-              oder kontaktieren Sie mich direkt.
+              Egal ob es um eure Hochzeit, ein Porträt-Shooting oder ein kreatives Projekt geht – 
+              ich freue mich darauf, von euch zu hören. Füllt einfach das Formular aus 
+              oder kontaktiert mich direkt.
             </p>
 
             <div className="space-y-12">
@@ -90,7 +90,7 @@ export const Contact = () => {
                 </div>
                 <h3 className="text-3xl font-serif mb-4">Vielen Dank!</h3>
                 <p>
-                  Ihre Nachricht wurde erfolgreich versendet. Ich werde mich so schnell wie möglich bei Ihnen melden.
+                  Deine Nachricht wurde erfolgreich versendet. Ich werde mich so schnell wie möglich bei dir melden.
                 </p>
               </div>
             ) : (
@@ -102,7 +102,7 @@ export const Contact = () => {
                       required
                       type="text" 
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
-                      placeholder="Ihr Name"
+                      placeholder="Eure Namen"
                     />
                   </div>
                   <div>
@@ -111,7 +111,7 @@ export const Contact = () => {
                       required
                       type="email" 
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
-                      placeholder="ihre@email.de"
+                      placeholder="eure@email.de"
                     />
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export const Contact = () => {
                       required
                       type="tel" 
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
-                      placeholder="Ihre Telefonnummer"
+                      placeholder="Eure Telefonnummer"
                     />
                   </div>
                   <div>
@@ -179,7 +179,7 @@ export const Contact = () => {
                     required
                     rows={4}
                     className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all resize-none"
-                    placeholder="Erzählen Sie mir von Ihren Plänen..."
+                    placeholder="Erzählt mir von euren Plänen..."
                   />
                 </div>
 
