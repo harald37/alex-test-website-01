@@ -58,37 +58,37 @@ export const IMAGES = {
   ],
   PORTFOLIO_2: [
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0ujF5i-buYnTgv1sjjR0MaStIBwI9mKNXwVrn4c5uzGU4Qa44ycgtS2DZ-jsZDFW0v0QkJpn6GtVTFe2oK0x-EvKWgJgjmAiA4TaMJYNVFT4hu1s8lXSj2sxy8GJZHK0z80BvTF2pWeQB7_dxcrByz3v3N5vPZ4zKCSTejCS57GQffQ8Ix0qVZG4blVnsdxLEt3IdxRf9c9IpiVQFRuYw0c95NDo7Y1LA8eGsIr7ERgM3rhEp_aXD5hThpoNt6iahibnStVggu6r_w",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0ujF5i-buYnTgv1sjjR0MaStIBwI9mKNXwVrn4c5uzGU4Qa44ycgtS2DZ-jsZDFW0v0QkJpn6GtVTFe2oK0x-EvKWgJgjmAiA4TaMJYNVFT4hu1s8lXSj2sxy8GJZHK0z80BvTF2pWeQB7_dxcrByz3v3N5vPZ4zKCSTejCS57GQffQ8Ix0qVZG4blVnsdxLEt3IdxRf9c9IpiVQFRuYw0c95NDo7Y1LA8eGsIr7ERgM3rhEp_aXD5hThpoNt6iahibnStVggu6r_w=s2000",
       category: "elopement",
       alt: "Hochzeitsfotograf Hannover - Romantisches Paar auf Waldweg"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0uiHCWky94KGNCaJuxmZ1bFcgFO1F__tRcpez7dfU4i_1TwzYgLJ3EhV9HQd8uvj4HZB_LguK6dsAuciptE2V4YIDoNmMhN0z8swCyPDoVE3owEaBUEkZQbNkzFk5kKgTHxQ8WkcQup7WOsw8zlB-P9-1wkyHZTFSRQedRcZbo9kKi-lWv2bj_H6lzfMXvlVjM_Prsz1deSI-6w6x9HrrY72pEvN7eShLwCxoR-n6Lt0Vp1TINBOugHvIkCdQBDOigyt7vMDWYfe",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0uiHCWky94KGNCaJuxmZ1bFcgFO1F__tRcpez7dfU4i_1TwzYgLJ3EhV9HQd8uvj4HZB_LguK6dsAuciptE2V4YIDoNmMhN0z8swCyPDoVE3owEaBUEkZQbNkzFk5kKgTHxQ8WkcQup7WOsw8zlB-P9-1wkyHZTFSRQedRcZbo9kKi-lWv2bj_H6lzfMXvlVjM_Prsz1deSI-6w6x9HrrY72pEvN7eShLwCxoR-n6Lt0Vp1TINBOugHvIkCdQBDOigyt7vMDWYfe=s2000",
       category: "natur",
       alt: "Detailaufnahme Brautpaar Lachen"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0uhLYM8ds8F_qVwzSfTs3MxptQtHUhgLHe155JUQISTV5xa6aSdOTbuCZkBYa3AjcU4XwIxVdtBrjPLcAAPIXsJcybqksWhbkG451l6ny2mGnI0QXxoqjqvp9aGCnfc6-GYGMiNIHTBWKeydgLMMG81eFLUC_FjS1X-viIWAP2p4djQFgie4U6zgtfgr85lUaUJI2plhhAFangUff7TOVRfEN1vaIslRskCb2ID7K87CgW-k93PLYQnIP9raCkNCTaI6fJfOdyhb",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0uhLYM8ds8F_qVwzSfTs3MxptQtHUhgLHe155JUQISTV5xa6aSdOTbuCZkBYa3AjcU4XwIxVdtBrjPLcAAPIXsJcybqksWhbkG451l6ny2mGnI0QXxoqjqvp9aGCnfc6-GYGMiNIHTBWKeydgLMMG81eFLUC_FjS1X-viIWAP2p4djQFgie4U6zgtfgr85lUaUJI2plhhAFangUff7TOVRfEN1vaIslRskCb2ID7K87CgW-k93PLYQnIP9raCkNCTaI6fJfOdyhb=s2000",
       category: "natur",
       alt: "Paar auf Holzbank bei Sonnenuntergang"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0uj1gZvcFgqzYmEP8oWTn4Enq5N6Fq3DOkUsqASs6ziNce184QcaJ_TSbB9laI8FlFuE4rWQoHyGl5IMWErdY6bCHUcDUYIfc27y508kpUPitqo9D8p8n8tZGS6Q0mUgFmaOYjoSaZTXTWkrtVltrWSTwXkKlqHBJqmE11USNvSUbnxikSmITOq0c_ylvTauM-nwet-h_zselRylHxNOC7kVupzJzqFv1x2Alpllm2ZIoT_5LykKviMO4HMBxadEgHeDOBRWYArn",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0uj1gZvcFgqzYmEP8oWTn4Enq5N6Fq3DOkUsqASs6ziNce184QcaJ_TSbB9laI8FlFuE4rWQoHyGl5IMWErdY6bCHUcDUYIfc27y508kpUPitqo9D8p8n8tZGS6Q0mUgFmaOYjoSaZTXTWkrtVltrWSTwXkKlqHBJqmE11USNvSUbnxikSmITOq0c_ylvTauM-nwet-h_zselRylHxNOC7kVupzJzqFv1x2Alpllm2ZIoT_5LykKviMO4HMBxadEgHeDOBRWYArn=s2000",
       category: "urban",
       alt: "Lachendes Paar im Waldweg"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0uiODGYtL1aQhIB1pXuFJfpEKL_LIPAm565xB1gEJ3rWJ2_39jpr5jiU3moc2_8aFieVos4xxAGCLsDk4fRnaGTMJqTtcSVeCxLOuIv6u970LtPhO0SBsqoHxjDGYvz_j2Xj-aIWSEupsO92wtSvf0QSbOHGAcmsW4tc3FYVYFU_23D2BgjuCdoClNvNP4DivnI9TPqE6EqYkkiDV9dQUL9behbsASl8IAVScgZpu4S2gl4qpLrRn-SNv9xx6U0hVQDr0MBOf5po",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0uiODGYtL1aQhIB1pXuFJfpEKL_LIPAm565xB1gEJ3rWJ2_39jpr5jiU3moc2_8aFieVos4xxAGCLsDk4fRnaGTMJqTtcSVeCxLOuIv6u970LtPhO0SBsqoHxjDGYvz_j2Xj-aIWSEupsO92wtSvf0QSbOHGAcmsW4tc3FYVYFU_23D2BgjuCdoClNvNP4DivnI9TPqE6EqYkkiDV9dQUL9behbsASl8IAVScgZpu4S2gl4qpLrRn-SNv9xx6U0hVQDr0MBOf5po=s2000",
       category: "natur",
       alt: "Paar am Seeufer bei herbstlichem Licht"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0uiJazjLKVh1zAoqW_Qw_EE8btnkybn4g29qnzsrzgk8C03DQu0O4GGOvusC8bRhzHfvKhQeJK7Hd2tH861gtSmAjZ1v3VkJsWTJ2dT2hHL7kkT9hmXTIj272qsyKbG6k4SPgsn5LDny_GyxNmEh5JR0jsqvgZ00GrY0rpX1EtO95Uctm3ICUTANsAQKlti2EWCPn5fIeZSaT0clvkoW6IkYwJFZjht1eW8fCvRArso8DlSYyIRKbTk7A8e9xSp7JsWNzhk34eeO",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0uiJazjLKVh1zAoqW_Qw_EE8btnkybn4g29qnzsrzgk8C03DQu0O4GGOvusC8bRhzHfvKhQeJK7Hd2tH861gtSmAjZ1v3VkJsWTJ2dT2hHL7kkT9hmXTIj272qsyKbG6k4SPgsn5LDny_GyxNmEh5JR0jsqvgZ00GrY0rpX1EtO95Uctm3ICUTANsAQKlti2EWCPn5fIeZSaT0clvkoW6IkYwJFZjht1eW8fCvRArso8DlSYyIRKbTk7A8e9xSp7JsWNzhk34eeO=s2000",
       category: "elopement",
       alt: "Erster Tanz bei Nacht mit Lichterketten"
     },
     {
-      url: "https://lh3.googleusercontent.com/aida/ADBb0uhMqZRXXeayKfMYuOc1kkwNW6i3skK9vNdiJWbZPmoti_NmJdYEZwydE1RTQGUjPyDrgPEBxFK8fd3gKV7SMKMkFbrcVqs6k-UMG4dXPc8x7AOM4O3PYImBUqEJZdGPqGxvmZzbttH-55BrwhGZpi5A0ayuUXZfkdRKos7RBhnZGCINcvgg6JBbIENVayBezMF_XBw9DNnRWWHt6fow98els3rT2AG2JTb7-nHJ1Fe2vyuc0JbPAUgPZj4H9k7qzjfuepT9pqWpQg",
+      url: "https://lh3.googleusercontent.com/aida/ADBb0uhMqZRXXeayKfMYuOc1kkwNW6i3skK9vNdiJWbZPmoti_NmJdYEZwydE1RTQGUjPyDrgPEBxFK8fd3gKV7SMKMkFbrcVqs6k-UMG4dXPc8x7AOM4O3PYImBUqEJZdGPqGxvmZzbttH-55BrwhGZpi5A0ayuUXZfkdRKos7RBhnZGCINcvgg6JBbIENVayBezMF_XBw9DNnRWWHt6fow98els3rT2AG2JTb7-nHJ1Fe2vyuc0JbPAUgPZj4H9k7qzjfuepT9pqWpQg=s2000",
       category: "natur",
       alt: "Kuss unter weißem Regenschirm"
     }
