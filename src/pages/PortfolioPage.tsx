@@ -5,11 +5,30 @@ import { cn } from '../lib/utils';
 
 export const PortfolioPage: React.FC = () => {
   const [filter, setFilter] = useState('all');
+  const scrollAnchorRef = React.useRef<HTMLDivElement>(null);
   const categories = ['all', 'natur', 'urban', 'elopement'];
 
   const filteredImages = filter === 'all' 
     ? IMAGES.PORTFOLIO 
     : IMAGES.PORTFOLIO.filter(img => img.category.toLowerCase() === filter);
+
+  // Scroll to filter bar when filter changes
+  React.useEffect(() => {
+    if (scrollAnchorRef.current) {
+      requestAnimationFrame(() => {
+        const headerHeight = window.innerWidth < 768 ? 64 : 88;
+        const elementPosition = scrollAnchorRef.current?.getBoundingClientRect().top ?? 0;
+        const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+        if (window.scrollY > offsetPosition) {
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      });
+    }
+  }, [filter]);
 
   return (
     <main className="pt-48 md:pt-64 pb-32 px-6 md:px-12 max-w-screen-2xl mx-auto bg-surface-container-lowest">
@@ -29,6 +48,9 @@ export const PortfolioPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Scroll Anchor */}
+      <div ref={scrollAnchorRef} className="h-px w-full" />
 
       {/* Category Filter */}
       <div className="sticky top-[64px] md:top-[88px] z-40 bg-surface-container-lowest/90 backdrop-blur-md pt-6 pb-2 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
