@@ -7,62 +7,133 @@ export const About = () => {
   return (
     <div className="bg-surface pt-32 md:pt-40 pb-24">
       <section className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+        {/* Intro Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-32">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="relative aspect-[3/4] overflow-hidden"
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative"
           >
-            <img 
-              src={IMAGES.ABOUT} 
-              alt="Alex Begopoulos" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-zinc-100 -z-10" />
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl relative z-10">
+              <img 
+                src={IMAGES.ABOUT} 
+                alt="Alex Begopoulos" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 w-full h-full border border-zinc-200 rounded-2xl -z-0" />
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h1 className="text-4xl md:text-5xl font-serif mb-8 text-zinc-900">Über mich</h1>
-            <div className="space-y-6 text-zinc-600">
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-4 block">Der Mensch hinter der Kamera</span>
+            <h1 className="text-4xl md:text-6xl font-serif mb-8 text-zinc-900 leading-tight">Hi, ich bin Alex.</h1>
+            <div className="space-y-6 text-zinc-600 text-lg leading-relaxed">
               <p>
-                Hallo, ich bin Alex. Seit über einem Jahrzehnt widme ich mich der Kunst, 
-                Momente einzufangen, die sonst im Fluss der Zeit verloren gehen würden.
+                Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten.
               </p>
               <p>
-                Meine Fotografie ist geprägt von einer tiefen Liebe zum Detail und einem 
-                Auge für die subtilen Emotionen. Ich glaube, dass jedes Bild eine 
-                Geschichte erzählt – eine Geschichte von Liebe, Freude und menschlicher Verbindung.
+                Wenn ich nicht hinter der Kamera stehe, reise ich leidenschaftlich gern, tauche in neue Kulturen ein und lasse mich von ihnen inspirieren. Außerdem schlägt mein Herz für Fußball, Gaming und aktuelle Tech‑Trends.
               </p>
-              <p>
-                Wenn ich nicht gerade hinter der Kamera stehe, finde ich Inspiration in der 
-                Natur, in alten Filmen und in der Stille eines frühen Morgens.
-              </p>
-            </div>
-
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
-              <div className="text-center p-6 bg-zinc-50 rounded-2xl">
-                <Camera className="w-8 h-8 text-zinc-400 mx-auto mb-4" />
-                <h4 className="font-serif text-xl mb-1">10+ Jahre</h4>
-                <p className="text-sm text-zinc-500 uppercase tracking-widest">Erfahrung</p>
-              </div>
-              <div className="text-center p-6 bg-zinc-50 rounded-2xl">
-                <Heart className="w-8 h-8 text-zinc-400 mx-auto mb-4" />
-                <h4 className="font-serif text-xl mb-1">500+</h4>
-                <p className="text-sm text-zinc-500 uppercase tracking-widest">Shootings</p>
-              </div>
-              <div className="text-center p-6 bg-zinc-50 rounded-2xl">
-                <Star className="w-8 h-8 text-zinc-400 mx-auto mb-4" />
-                <h4 className="font-serif text-xl mb-1">Top Rated</h4>
-                <p className="text-sm text-zinc-500 uppercase tracking-widest">Service</p>
-              </div>
             </div>
           </motion.div>
         </div>
+
+        {/* Style Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-32">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="order-2 lg:order-1"
+          >
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-4 block">Meine Philosophie</span>
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 text-zinc-900">Mein Bildstil</h2>
+            <div className="space-y-6 text-zinc-600 leading-relaxed">
+              <p>
+                Euer Hochzeitstag gehört euch. Ihr sollt lachen, weinen und feiern, ohne ständig an die Kamera denken zu müssen. Deshalb ist mein Stil vor allem eines: authentisch und unaufdringlich.
+              </p>
+              <p>
+                Ich sehe mich als stiller Beobachter, der die zärtlichen Blicke, die herzhaften Lacher und die ausgelassenen Momente auf der Tanzfläche einfängt, so wie sie passieren.
+              </p>
+              <p>
+                Um diesen natürlichen Look zu erreichen, liebe ich es, mit dem vorhandenen Sonnenlicht zu arbeiten. Statt gestellter Posen mit hartem Blitzlicht nutze ich oft eine offene Blende.
+              </p>
+              <p className="italic font-serif text-zinc-900 text-xl">
+                "Für euch bedeutet das: Ihr werdet vom Hintergrund abgehoben und es entsteht dieser weiche, fast malerische Bildstil, der den Fokus voll und ganz auf euch und eure Emotionen legt."
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="order-1 lg:order-2 grid grid-cols-2 gap-4"
+          >
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=800" 
+                alt="Photography Style" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-12">
+              <img 
+                src="https://images.unsplash.com/photo-1452721226468-f95fb66ebf83?auto=format&fit=crop&q=80&w=800" 
+                alt="Natural Light" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Hobbies / Inspiration Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-zinc-900 rounded-[2rem] p-8 md:p-20 text-white overflow-hidden relative"
+        >
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl md:text-5xl font-serif mb-6">Inspiration & Leidenschaft</h3>
+              <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
+                Wenn ich nicht gerade die Liebe anderer Menschen dokumentiere, findet man mich oft auf Reisen. Das Eintauchen in fremde Kulturen schärft meinen Blick für das Wesentliche und lässt mich die Welt immer wieder neu entdecken.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                {['Reisen', 'Fußball', 'Gaming', 'Tech-Trends', 'Kultur'].map((tag) => (
+                  <span key={tag} className="px-4 py-2 border border-white/10 rounded-full text-xs uppercase tracking-widest">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800" 
+                alt="Travel" 
+                className="rounded-xl aspect-square object-cover opacity-60 hover:opacity-100 transition-opacity"
+                referrerPolicy="no-referrer"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" 
+                alt="Tech" 
+                className="rounded-xl aspect-square object-cover opacity-60 hover:opacity-100 transition-opacity"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
+        </motion.div>
       </section>
     </div>
   );

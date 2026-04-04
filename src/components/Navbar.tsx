@@ -69,11 +69,11 @@ export const Navbar = () => {
     <>
       <nav
         className={cn(
-          "fixed top-0 w-full z-[100] transition-all duration-700",
+          "fixed top-0 w-full z-[100] transition-[padding,background-color,backdrop-filter] duration-500",
           isOpen
             ? "bg-transparent py-8"
             : isScrolled
-              ? "bg-surface/95 backdrop-blur-xl py-5 border-b border-zinc-900/5" 
+              ? "bg-surface/95 backdrop-blur-xl py-5" 
               : location.pathname === '/' 
                 ? "bg-transparent py-8" 
                 : "bg-surface/80 backdrop-blur-md py-8"
@@ -135,6 +135,14 @@ export const Navbar = () => {
             </AnimatePresence>
           </button>
         </div>
+        
+        {/* Border Line - Absolute to prevent layout shifts */}
+        <div 
+          className={cn(
+            "absolute bottom-0 left-0 right-0 h-[1px] transition-colors duration-500",
+            isScrolled && !isOpen ? "bg-zinc-100" : "bg-transparent"
+          )} 
+        />
       </nav>
 
       {/* Mobile Nav Overlay */}
