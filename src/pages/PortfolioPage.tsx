@@ -31,26 +31,20 @@ export const PortfolioPage: React.FC = () => {
       </section>
 
       {/* Category Filter */}
-      <div className="sticky top-[72px] md:top-[88px] z-40 bg-surface-container-lowest/90 backdrop-blur-md h-12 md:h-20 border-b border-zinc-900/5 mb-12 md:mb-16">
-        <ul className="flex items-center justify-center gap-6 md:gap-12 h-full w-full overflow-x-auto no-scrollbar px-4">
+      <div className="sticky top-[72px] md:top-[88px] z-40 bg-surface-container-lowest/90 backdrop-blur-md py-4 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
+        <ul className="flex items-center justify-center gap-8 md:gap-12 overflow-x-auto no-scrollbar px-4 md:px-0">
           {categories.map((cat) => (
-            <li key={cat} className="h-full flex items-center">
+            <li key={cat}>
               <button 
                 onClick={() => setFilter(cat)}
                 className={cn(
-                  "font-sans uppercase tracking-[0.3em] text-[9px] md:text-[10px] transition-all duration-500 whitespace-nowrap relative h-full flex items-center",
+                  "font-sans uppercase tracking-[0.3em] text-[9px] md:text-[10px] pb-1 border-b transition-all duration-500 whitespace-nowrap",
                   filter === cat 
-                    ? "text-zinc-900" 
-                    : "text-zinc-400 hover:text-zinc-900"
+                    ? "text-zinc-900 border-zinc-900" 
+                    : "text-zinc-400 border-transparent hover:text-zinc-900"
                 )}
               >
-                <span className="relative">{cat === 'all' ? 'Alle' : cat.charAt(0).toUpperCase() + cat.slice(1)}</span>
-                {filter === cat && (
-                  <motion.div 
-                    layoutId="activeFilter"
-                    className="absolute bottom-0 left-0 right-0 h-[1px] bg-zinc-900"
-                  />
-                )}
+                {cat === 'all' ? 'Alle' : cat.charAt(0).toUpperCase() + cat.slice(1)}
               </button>
             </li>
           ))}
