@@ -223,7 +223,7 @@ export const Services = () => {
                 className="text-center space-y-4"
               >
                 <h4 className="font-serif text-2xl md:text-3xl italic text-white">{option.title}</h4>
-                <p className="text-white/70 text-sm italic font-light tracking-wider max-w-[250px] mx-auto">
+                <p className="text-white/90 text-sm italic font-light tracking-wider max-w-[250px] mx-auto">
                   {option.desc}
                 </p>
               </motion.div>

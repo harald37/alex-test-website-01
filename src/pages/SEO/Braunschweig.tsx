@@ -154,7 +154,7 @@ export const Braunschweig = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 block mb-4">Das Rundum-Sorglos-Paket</span>
-            <h2 className="font-serif text-3xl md:text-5xl italic text-zinc-900 uppercase leading-tight">
+            <h2 className="font-serif text-3xl md:text-4xl italic text-zinc-900 uppercase leading-tight">
               In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit in Braunschweig enthalten
             </h2>
           </div>
@@ -196,7 +196,7 @@ export const Braunschweig = () => {
                 className="text-center space-y-3"
               >
                 <h4 className="font-serif text-xl md:text-2xl italic text-white">{option.title}</h4>
-                <p className="text-white/70 text-xs italic font-light tracking-wider max-w-[200px] mx-auto">
+                <p className="text-white/90 text-xs italic font-light tracking-wider max-w-[200px] mx-auto">
                   {option.desc}
                 </p>
               </motion.div>
@@ -232,6 +232,9 @@ export const Braunschweig = () => {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* FAQ Short */}
       <section className="py-32 px-6 md:px-12 max-w-screen-2xl mx-auto">
         <div className="max-w-3xl mx-auto">
@@ -259,16 +262,13 @@ export const Braunschweig = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <Testimonials />
-
       {/* Contact CTA */}
       <section className="py-32 px-6 md:px-12 bg-[#2D332F] text-white text-center">
         <div className="max-w-3xl mx-auto space-y-12">
-          <h2 className="font-serif italic text-4xl md:text-6xl leading-tight font-medium">
+          <h2 className="font-serif italic text-3xl md:text-4xl leading-tight font-medium text-white">
             Bereit für eure Geschichte <br /> in Braunschweig?
           </h2>
-          <p className="text-zinc-100 leading-relaxed tracking-wide max-w-2xl mx-auto">
+          <p className="text-white/70 leading-relaxed tracking-wide max-w-lg mx-auto text-sm">
             Schreibt mir eine Nachricht und lasst uns über eure Pläne sprechen. Ich freue mich darauf, euch kennenzulernen.
           </p>
           <div className="flex flex-col items-center gap-12 pt-8">
