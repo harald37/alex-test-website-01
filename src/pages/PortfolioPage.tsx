@@ -31,7 +31,7 @@ export const PortfolioPage: React.FC = () => {
       </section>
 
       {/* Category Filter */}
-      <div className="sticky top-[72px] md:top-[88px] z-40 bg-surface-container-lowest/90 backdrop-blur-md py-4 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
+      <div className="sticky top-[72px] md:top-[88px] z-40 bg-surface-container-lowest/90 backdrop-blur-md pt-4 pb-2 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
         <ul className="flex items-center justify-center gap-8 md:gap-12 overflow-x-auto no-scrollbar px-4 md:px-0">
           {categories.map((cat) => (
             <li key={cat}>
