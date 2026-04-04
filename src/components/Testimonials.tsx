@@ -32,7 +32,7 @@ export const Testimonials = () => {
       {/* High-Resolution Background from User */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://lh3.googleusercontent.com/aida/ADBb0uhLYM8ds8F_qVwzSfTs3MxptQtHUhgLHe155JUQISTV5xa6aSdOTbuCZkBYa3AjcU4XwIxVdtBrjPLcAAPIXsJcybqksWhbkG451l6ny2mGnI0QXxoqjqvp9aGCnfc6-GYGMiNIHTBWKeydgLMMG81eFLUC_FjS1X-viIWAP2p4djQFgie4U6zgtfgr85lUaUJI2plhhAFangUff7TOVRfEN1vaIslRskCb2ID7K87CgW-k93PLYQnIP9raCkNCTaI6fJfOdyhb" 
+          src="https://lh3.googleusercontent.com/aida/ADBb0uhMqZRXXeayKfMYuOc1kkwNW6i3skK9vNdiJWbZPmoti_NmJdYEZwydE1RTQGUjPyDrgPEBxFK8fd3gKV7SMKMkFbrcVqs6k-UMG4dXPc8x7AOM4O3PYImBUqEJZdGPqGxvmZzbttH-55BrwhGZpi5A0ayuUXZfkdRKos7RBhnZGCINcvgg6JBbIENVayBezMF_XBw9DNnRWWHt6fow98els3rT2AG2JTb7-nHJ1Fe2vyuc0JbPAUgPZj4H9k7qzjfuepT9pqWpQg" 
           alt="Testimonial Background" 
           className="w-full h-full object-cover opacity-80"
           referrerPolicy="no-referrer"
