@@ -204,7 +204,7 @@ export const Contact = () => {
                   className="w-full"
                 >
                   <span>Nachricht senden</span>
-                  <Send className="w-4 h-4 ml-3" />
+                  <Send className="w-4 h-4" />
                 </Button>
               </form>
             )}

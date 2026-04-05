@@ -66,7 +66,7 @@ export const Button: React.FC<ButtonProps> = ({
   );
 
   const content = variant === 'white' ? (
-    <span className="relative z-10">{children}</span>
+    <span className="relative z-10 flex items-center justify-center gap-3 whitespace-nowrap flex-nowrap">{children}</span>
   ) : (
     <>
       <div className={cn(
@@ -81,7 +81,7 @@ export const Button: React.FC<ButtonProps> = ({
         )} />
       )}
       <span className={cn(
-        "relative z-10 transition-colors duration-500",
+        "relative z-10 transition-colors duration-500 flex items-center justify-center gap-3 whitespace-nowrap flex-nowrap",
         dark ? "group-hover:text-zinc-900" : "group-hover:text-white",
         disabled && "group-hover:text-zinc-400"
       )}>
