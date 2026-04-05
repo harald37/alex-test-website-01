@@ -23,7 +23,7 @@ export const About = () => {
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 w-full h-full border border-zinc-200 rounded-2xl -z-0" />
+            <div className="absolute -bottom-6 -left-6 w-full h-full border border-zinc-200 rounded-2xl -z-0 hidden md:block" />
           </motion.div>
 
           <motion.div
@@ -34,7 +34,7 @@ export const About = () => {
           >
             <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-4 block">Der Mensch hinter der Kamera</span>
             <h1 className="text-4xl md:text-6xl font-serif mb-8 text-zinc-900 leading-tight">Hi, ich bin Alex.</h1>
-            <div className="space-y-6 text-zinc-600 text-lg leading-relaxed">
+            <div className="space-y-6 text-zinc-600 text-base md:text-lg leading-relaxed">
               <p>
                 Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten.
               </p>
@@ -55,7 +55,7 @@ export const About = () => {
           >
             <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 mb-4 block">Meine Philosophie</span>
             <h2 className="text-3xl md:text-5xl font-serif mb-8 text-zinc-900">Mein Bildstil</h2>
-            <div className="space-y-6 text-zinc-600 leading-relaxed">
+            <div className="space-y-6 text-zinc-600 text-base md:text-lg leading-relaxed">
               <p>
                 Euer Hochzeitstag gehört euch. Ihr sollt lachen, weinen und feiern, ohne ständig an die Kamera denken zu müssen. Deshalb ist mein Stil vor allem eines: authentisch und unaufdringlich.
               </p>
@@ -106,7 +106,7 @@ export const About = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-5xl font-serif mb-6">Inspiration & Leidenschaft</h3>
-              <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
+              <p className="text-zinc-400 text-base md:text-lg mb-8 leading-relaxed">
                 Wenn ich nicht gerade die Liebe anderer Menschen dokumentiere, findet man mich oft auf Reisen. Das Eintauchen in fremde Kulturen schärft meinen Blick für das Wesentliche und lässt mich die Welt immer wieder neu entdecken.
               </p>
               <div className="flex flex-wrap gap-4">

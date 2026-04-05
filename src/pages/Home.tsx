@@ -65,10 +65,10 @@ export const Home: React.FC = () => {
             Echte Emotionen. <br className="hidden md:block"/>Zeitlose Ästhetik.
           </h2>
           <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12" />
-          <p className="tracking-wide text-zinc-600 leading-relaxed mb-8 text-lg">
+          <p className="tracking-wide text-zinc-600 leading-relaxed mb-8 text-base md:text-lg">
             Als dein <strong>Hochzeitsfotograf in Hannover</strong> begleite ich euch nicht nur in Niedersachsen, sondern dort, wo eure Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
           </p>
-          <p className="tracking-wide text-zinc-600 leading-relaxed mb-16 text-lg">
+          <p className="tracking-wide text-zinc-600 leading-relaxed mb-16 text-base md:text-lg">
             Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit eurer Liebsten.
           </p>
           <div className="flex flex-col items-center group">

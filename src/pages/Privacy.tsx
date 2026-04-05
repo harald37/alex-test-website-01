@@ -7,7 +7,7 @@ export const Privacy: React.FC = () => {
         <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Rechtliches</span>
         <h1 className="font-serif italic text-5xl md:text-7xl text-zinc-900 leading-none tracking-tight mb-16">Datenschutz</h1>
         
-        <div className="space-y-12 text-zinc-600 leading-relaxed tracking-wide">
+        <div className="space-y-12 text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide">
           <div>
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-4">1. Datenschutz auf einen Blick</h2>
             <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Allgemeine Hinweise</h3>

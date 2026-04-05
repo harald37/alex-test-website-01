@@ -113,7 +113,7 @@ export const Hannover = () => {
               <p className="text-xl md:text-2xl leading-relaxed text-zinc-800 italic font-serif">
                 "Authentische Hochzeitsreportagen in der Landeshauptstadt und Umgebung."
               </p>
-              <p className="text-zinc-600 leading-relaxed tracking-wide">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide">
                 Als euer Hochzeitsfotograf in Hannover begleite ich euch an eurem besonderen Tag. Ob in den Herrenhäuser Gärten, im Neuen Rathaus oder in einer der vielen charmanten Locations in der Region – ich halte eure emotionalsten Momente in zeitlosen Bildern fest.
               </p>
             </div>
@@ -172,7 +172,7 @@ export const Hannover = () => {
                 <div className="mt-1 flex-shrink-0 w-5 h-5 border border-zinc-900 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </div>
-                <span className="text-zinc-600 text-sm font-light tracking-wide">{item}</span>
+                <span className="text-zinc-600 text-sm md:text-base font-light tracking-wide">{item}</span>
               </motion.div>
             ))}
           </div>
@@ -196,7 +196,7 @@ export const Hannover = () => {
                 className="text-center space-y-3"
               >
                 <h4 className="font-serif text-xl md:text-2xl italic text-white">{option.title}</h4>
-                <p className="text-white/90 text-xs italic font-light tracking-wider max-w-[200px] mx-auto">
+                <p className="text-white/90 text-sm md:text-base italic font-light tracking-wider max-w-[200px] mx-auto">
                   {option.desc}
                 </p>
               </motion.div>
@@ -220,7 +220,7 @@ export const Hannover = () => {
             <div>
               <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-6 block">Der Fotograf</span>
               <h2 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight mb-8">Hallo, ich bin Alex.</h2>
-              <p className="text-zinc-600 leading-relaxed tracking-wide mb-8">
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide mb-8">
                 Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Hannover und Umgebung bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
               </p>
               <Button to="/about" variant="link">
@@ -266,7 +266,7 @@ export const Hannover = () => {
           <h2 className="font-serif italic text-3xl md:text-4xl leading-tight font-medium text-white">
             Bereit für eure Geschichte <br /> in Hannover?
           </h2>
-          <p className="text-white/70 leading-relaxed tracking-wide max-w-lg mx-auto text-sm">
+          <p className="text-white/70 text-base md:text-lg leading-relaxed tracking-wide max-w-lg mx-auto">
             Schreibt mir eine Nachricht und lasst uns über eure Pläne sprechen. Ich freue mich darauf, euch kennenzulernen.
           </p>
           <div className="flex flex-col items-center gap-12 pt-8">

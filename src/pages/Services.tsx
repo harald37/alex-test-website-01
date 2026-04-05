@@ -56,7 +56,7 @@ export const Services = () => {
           >
             Handgefertigte Erinnerungen für die Ewigkeit
           </motion.h2>
-          <div className="space-y-8 text-zinc-600">
+          <div className="space-y-8 text-zinc-600 text-base md:text-lg">
             <p>
               Als euer <strong>Hochzeitsfotograf in Hannover</strong> und ganz <strong>Niedersachsen</strong> begleite ich euch auf eurem Weg zum Ja-Wort. Mein Ziel ist es, nicht nur Bilder zu machen, sondern Kunstwerke zu schaffen, die die Emotionen eures Tages konservieren. Ob in der vertrauten Heimat oder als Destination Wedding – ich bin für euch <strong>weltweit buchbar</strong>.
             </p>
@@ -83,7 +83,7 @@ export const Services = () => {
           <div className="w-full flex flex-col items-center lg:items-start">
             <span className="font-sans text-4xl md:text-5xl font-extralight text-zinc-200 mb-4 md:mb-6 block text-center lg:text-left w-full">01.</span>
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
-            <div className="space-y-4 md:space-y-6 text-zinc-600 w-full text-center lg:text-left">
+            <div className="space-y-4 md:space-y-6 text-zinc-600 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
                 Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir eure Wünsche und Visionen.
               </p>
@@ -114,7 +114,7 @@ export const Services = () => {
           <div className="w-full lg:order-1 flex flex-col items-center lg:items-start">
             <span className="font-sans text-4xl md:text-5xl font-extralight text-zinc-200 mb-4 md:mb-6 block text-center lg:text-left w-full">02.</span>
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Die Hochzeitsbegleitung</h3>
-            <div className="space-y-4 md:space-y-6 text-zinc-600 w-full text-center lg:text-left">
+            <div className="space-y-4 md:space-y-6 text-zinc-600 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
                 An eurem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
               </p>
@@ -145,7 +145,7 @@ export const Services = () => {
           <div className="w-full flex flex-col items-center lg:items-start">
             <span className="font-sans text-4xl md:text-5xl font-extralight text-zinc-200 mb-4 md:mb-6 block text-center lg:text-left w-full">03.</span>
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Die Nachbearbeitung & Galerie</h3>
-            <div className="space-y-4 md:space-y-6 text-zinc-600 w-full text-center lg:text-left">
+            <div className="space-y-4 md:space-y-6 text-zinc-600 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
                 Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
               </p>
@@ -224,7 +224,7 @@ export const Services = () => {
                 className="text-center space-y-4"
               >
                 <h4 className="font-serif text-2xl md:text-3xl italic text-white">{option.title}</h4>
-                <p className="text-white/90 text-sm italic font-light tracking-wider max-w-[250px] mx-auto">
+                <p className="text-white/90 text-sm md:text-base italic font-light tracking-wider max-w-[250px] mx-auto">
                   {option.desc}
                 </p>
               </motion.div>

@@ -43,7 +43,7 @@ export const PortfolioPage: React.FC = () => {
             <p className="text-xl md:text-2xl leading-relaxed text-zinc-800 italic font-serif">
               "Die Kunst, das Unsichtbare sichtbar zu machen. Momente, die bleiben, wenn das Licht verblasst."
             </p>
-            <p className="text-zinc-600 leading-relaxed tracking-wide">
+            <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide">
               Als <span className="font-medium text-zinc-900">Hochzeitsfotograf in Hannover</span> begleite ich Paare an ihrem wichtigsten Tag, um authentische, emotionale und zeitlose Geschichten in Bildern zu erzählen. Mein Fokus liegt auf der Fine Art Fotografie, die Natürlichkeit und Eleganz vereint.
             </p>
           </div>

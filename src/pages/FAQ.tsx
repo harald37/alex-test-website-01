@@ -76,7 +76,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="pb-8 max-w-3xl">
+            <p className="pb-8 max-w-3xl text-zinc-600 text-base md:text-lg leading-relaxed">
               {answer}
             </p>
           </motion.div>

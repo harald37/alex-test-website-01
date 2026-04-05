@@ -67,7 +67,7 @@ export const Contact = () => {
           >
             <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Kontakt</span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif italic mb-12 text-zinc-900 leading-tight">Lasst uns <br /> sprechen</h1>
-            <p className="mb-16 text-zinc-600 leading-relaxed tracking-wide max-w-md">
+            <p className="mb-16 text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide max-w-md">
               Egal ob es um eure Hochzeit, ein Porträt-Shooting oder ein kreatives Projekt geht – 
               ich freue mich darauf, von euch zu hören. Füllt einfach das Formular aus 
               oder kontaktiert mich direkt.

@@ -11,11 +11,14 @@ export default async function handler(req: any, res: any) {
 
   const { name, email, phone, date, location, found, message } = req.body;
 
-  const resendKey = process.env.RESEND_API_KEY;
+  const resendKey = process.env.RESEND_API_KEY || process.env.VITE_RESEND_API_KEY;
 
   if (!resendKey) {
-    console.error("RESEND_API_KEY is missing in environment variables");
-    return res.status(500).json({ error: "Server configuration error" });
+    console.error("CRITICAL: RESEND_API_KEY is missing in environment variables.");
+    return res.status(500).json({ 
+      error: "Server configuration error",
+      details: "API Key not found in environment. Please check Vercel settings."
+    });
   }
 
   const resend = new Resend(resendKey);
