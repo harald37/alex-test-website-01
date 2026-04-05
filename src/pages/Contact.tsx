@@ -6,14 +6,53 @@ import { Button } from "../components/ui/Button";
 
 export const Contact = () => {
   const [submitted, setSubmitted] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
   const [privacyAccepted, setPrivacyAccepted] = React.useState(false);
-  const [dateValue, setDateValue] = React.useState("");
-  const [foundValue, setFoundValue] = React.useState("");
+  
+  // Form state
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    phone: "",
+    date: "",
+    location: "",
+    found: "",
+    message: ""
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send to alex.begopoulos@yahoo.de
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setError(data.error || "Etwas ist schiefgelaufen. Bitte versuche es später erneut.");
+      }
+    } catch (err) {
+      console.error("Submission error:", err);
+      setError("Verbindung zum Server fehlgeschlagen. Bitte prüfe deine Internetverbindung.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   return (
@@ -96,12 +135,20 @@ export const Contact = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {error && (
+                  <div className="bg-red-50 text-red-600 p-4 rounded-xl text-sm mb-6">
+                    {error}
+                  </div>
+                )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Name</label>
                     <input 
                       required
                       type="text" 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
                       placeholder="Eure Namen"
                     />
@@ -111,6 +158,9 @@ export const Contact = () => {
                     <input 
                       required
                       type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
                       placeholder="eure@email.de"
                     />
@@ -123,6 +173,9 @@ export const Contact = () => {
                     <input 
                       required
                       type="tel" 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
                       placeholder="Eure Telefonnummer"
                     />
@@ -132,9 +185,10 @@ export const Contact = () => {
                     <input 
                       required
                       type="date" 
-                      value={dateValue}
-                      onChange={(e) => setDateValue(e.target.value)}
-                      className={`w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all font-sans ${dateValue ? 'text-zinc-600' : 'text-zinc-400'}`}
+                      name="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      className={`w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all font-sans ${formData.date ? 'text-zinc-600' : 'text-zinc-400'}`}
                     />
                   </div>
                 </div>
@@ -144,6 +198,9 @@ export const Contact = () => {
                     <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitslocation (optional)</label>
                     <input 
                       type="text" 
+                      name="location"
+                      value={formData.location}
+                      onChange={handleChange}
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
                       placeholder="Wo feiert ihr?"
                     />
@@ -152,9 +209,10 @@ export const Contact = () => {
                     <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Wie habt ihr mich gefunden? (optional)</label>
                     <div className="relative">
                       <select 
-                        value={foundValue}
-                        onChange={(e) => setFoundValue(e.target.value)}
-                        className={`w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all appearance-none font-sans cursor-pointer ${foundValue ? 'text-zinc-600' : 'text-zinc-400'}`}
+                        name="found"
+                        value={formData.found}
+                        onChange={handleChange}
+                        className={`w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all appearance-none font-sans cursor-pointer ${formData.found ? 'text-zinc-600' : 'text-zinc-400'}`}
                       >
                         <option value="" disabled>Bitte wählen...</option>
                         <option>Google Suche</option>
@@ -178,6 +236,9 @@ export const Contact = () => {
                   <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Nachricht</label>
                   <textarea 
                     required
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={4}
                     className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all resize-none"
                     placeholder="Erzählt mir von euren Plänen..."
@@ -200,10 +261,10 @@ export const Contact = () => {
 
                 <Button 
                   type="submit"
-                  disabled={!privacyAccepted}
+                  disabled={!privacyAccepted || loading}
                   className="w-full"
                 >
-                  <span>Nachricht senden</span>
+                  <span>{loading ? "Wird gesendet..." : "Nachricht senden"}</span>
                   <Send className="w-4 h-4" />
                 </Button>
               </form>
