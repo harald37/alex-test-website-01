@@ -93,7 +93,7 @@ export const IMAGES = {
       alt: "Kuss unter weißem Regenschirm"
     }
   ],
-  ABOUT: "https://lh3.googleusercontent.com/aida-public/AB6AXuCU9E0Ztw-ZLwF1m_Z71pwEus2ZfenJRLRXx73LoFP9GLtRyWWobBcG7RalP3JJmkD0bW_r6fV4qbNR1PIThJBAc-1bVxqsV6DHVSPEvvlCS-mr3CHGS0_diXIef4VP4v1XTVF7EEddKEb1gKusDkK9LpwD6KwEz8jooCcEKPbb5EDdQLVa466B4XrzBdysya7cCL1O5drVJsr_5jWbgnJ3JUS3JKoRVXSWdycddmmnsN4u1NGZINe3sMvlq5ISA2tNjuKz0J0JIGs",
+  ABOUT: "https://github.com/harald37/alex-test-website-01/blob/main/public/assets/images/about/portrait-hochzeitsfotograf-alex-begopoulos.webp?raw=true",
   SERVICES: {
     HERO: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
     PLANNING: "https://lh3.googleusercontent.com/aida-public/AB6AXuDZSngqsbTJhtOjFb7Z5mJDq9FhuxBROI-n5jDGl_vmf9Ys9hDBWX--FTPQD_aod_GI44pHYuYvRjys1A9PAj69xt9d_zA2d7SQira-2w40zdVoOPsmkCT2xjZR_QKZSlYu0InIyKvWjJppMi1-SqVdFAO-qBm3rIjlm63TG29M_FOepB4JcllGaJYRGUpx1SZVro1Aos5bngVve0rg0DN3QKWWUbVp02_nDJzdX0WSmEkoT3tXbHnbnAoWWgkLXhH1xMqDvGAP75M",
