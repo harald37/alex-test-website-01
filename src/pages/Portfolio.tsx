@@ -4,21 +4,30 @@ import { IMAGES } from "../constants";
 import { cn } from "../lib/utils";
 import { Button } from "../components/ui/Button";
 
-export const Portfolio2 = () => {
+export const Portfolio = () => {
   const [filter, setFilter] = useState("all");
   const scrollAnchorRef = React.useRef<HTMLDivElement>(null);
-  const categories = ["all", "hochzeit", "natur", "urban", "elopement"];
+  const categories = ["all", "hochzeit", "portrait"];
+
+  const sortedPortfolio = [...IMAGES.PORTFOLIO_2].sort((a, b) => {
+    if (a.category === "hochzeit" && b.category === "portrait") return -1;
+    if (a.category === "portrait" && b.category === "hochzeit") return 1;
+    return 0;
+  });
 
   const filteredImages = filter === "all" 
-    ? IMAGES.PORTFOLIO_2 
-    : IMAGES.PORTFOLIO_2.filter(img => img.category.toLowerCase() === filter);
+    ? sortedPortfolio 
+    : sortedPortfolio.filter(img => img.category.toLowerCase() === filter);
+
+  const weddingImages = filteredImages.filter(img => img.category === "hochzeit");
+  const portraitImages = filteredImages.filter(img => img.category === "portrait");
 
   // Scroll to filter bar when filter changes
   React.useEffect(() => {
     if (scrollAnchorRef.current) {
       // Use requestAnimationFrame to ensure the DOM is ready
       requestAnimationFrame(() => {
-        const headerHeight = window.innerWidth < 768 ? 64 : 68;
+        const headerHeight = window.innerWidth < 768 ? 64 : 80;
         const elementPosition = scrollAnchorRef.current?.getBoundingClientRect().top ?? 0;
         const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 
@@ -56,7 +65,7 @@ export const Portfolio2 = () => {
       <div ref={scrollAnchorRef} className="h-px w-full" />
 
       {/* Category Filter */}
-      <div className="sticky top-[64px] md:top-[68px] z-40 bg-surface-container-lowest/90 backdrop-blur-md pt-6 pb-2 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
+      <div className="sticky top-[64px] md:top-[80px] z-40 bg-surface-container-lowest/90 backdrop-blur-md pt-6 pb-2 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
         <ul className="flex items-center justify-center gap-8 md:gap-12 overflow-x-auto no-scrollbar px-4 md:px-0">
           {categories.map((cat) => (
             <li key={cat}>
@@ -77,28 +86,57 @@ export const Portfolio2 = () => {
       </div>
 
       {/* Masonry Grid */}
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-12">
+      <div className="space-y-12">
         <AnimatePresence mode="popLayout">
-          {filteredImages.map((item, index) => (
-            <motion.div
-              layout
-              key={item.url}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              className="break-inside-avoid mb-12 group cursor-pointer"
-            >
-              <div className="overflow-hidden bg-zinc-100">
-                <img 
-                  src={item.url} 
-                  alt={item.alt} 
-                  className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            </motion.div>
-          ))}
+          {weddingImages.length > 0 && (
+            <div className="columns-1 md:columns-2 lg:columns-3 gap-8">
+              {weddingImages.map((item, index) => (
+                <motion.div
+                  layout
+                  key={item.url}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                  className="break-inside-avoid mb-12 group cursor-pointer"
+                >
+                  <div className="overflow-hidden bg-zinc-100">
+                    <img 
+                      src={item.url} 
+                      alt={item.alt} 
+                      className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
+          
+          {portraitImages.length > 0 && (
+            <div className="columns-1 md:columns-2 lg:columns-3 gap-8">
+              {portraitImages.map((item, index) => (
+                <motion.div
+                  layout
+                  key={item.url}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                  className="break-inside-avoid mb-12 group cursor-pointer"
+                >
+                  <div className="overflow-hidden bg-zinc-100">
+                    <img 
+                      src={item.url} 
+                      alt={item.alt} 
+                      className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
         </AnimatePresence>
       </div>
 

@@ -235,6 +235,211 @@ export const IMAGES = {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495558/brautstrauss-schloss-salder-salzgitter.webp",
       category: "hochzeit",
       alt: "Detailaufnahme des Brautstraußes vor der Kulisse von Schloss Salder"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502240/portrait-enna-steinhuder-meer-01.webp",
+      category: "portrait",
+      alt: "Sinnliches Portrait von Enna am Steinhuder Meer bei Sonnenuntergang"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502239/portrait-daria-steinhuder-meer-03.webp",
+      category: "portrait",
+      alt: "Portrait Shooting mit Daria am Ufer des Steinhuder Meers"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502238/portrait-daria-steinhuder-meer-02.webp",
+      category: "portrait",
+      alt: "Natürliches Portrait von Daria am Steinhuder Meer - Outdoor Fotografie"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502237/portrait-daria-steinhuder-meer-01.webp",
+      category: "portrait",
+      alt: "Daria posiert am Steinhuder Meer für ein Portrait Shooting"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502237/portrait-daria-schwarzer-see-garbsen.webp",
+      category: "portrait",
+      alt: "Portrait von Daria am Schwarzen See in Garbsen - Natürliches Licht"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502235/portrait-daria-neues-rathaus-hannover.webp",
+      category: "portrait",
+      alt: "Elegantes Portrait Shooting mit Daria vor dem Neuen Rathaus Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502235/portrait-daria-ihmezentrum-hannover.webp",
+      category: "portrait",
+      alt: "Urbanes Portrait von Daria am Ihmezentrum in Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502234/portrait-daria-blauer-see-garbsen.webp",
+      category: "portrait",
+      alt: "Portrait von Daria am Blauen See in Garbsen - Sommerliches Licht"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502233/portait-melissa-linden-hannover.webp",
+      category: "portrait",
+      alt: "Charakterstarkes Portrait von Melissa im Stadtteil Linden, Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502232/portait-male-georgengarten-hannover-04.webp",
+      category: "portrait",
+      alt: "Männliches Portrait Shooting im Georgengarten Hannover - Naturkulisse"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502231/portait-male-georgengarten-hannover-03.webp",
+      category: "portrait",
+      alt: "Portrait eines Mannes im Georgengarten Hannover bei weichem Licht"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502230/portait-male-georgengarten-hannover-02.webp",
+      category: "portrait",
+      alt: "Authentisches Männerportrait im Georgengarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502230/portait-male-georgengarten-hannover-01.webp",
+      category: "portrait",
+      alt: "Portrait Shooting mit einem Mann im herbstlichen Georgengarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502229/portait-lisa-herrenhaeuser-gaerten-hannover-02.webp",
+      category: "portrait",
+      alt: "Portrait von Lisa in den barocken Herrenhäuser Gärten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502228/portait-lisa-herrenhaeuser-gaerten-hannover-01.webp",
+      category: "portrait",
+      alt: "Lisa posiert in den Herrenhäuser Gärten Hannover für ein Portrait"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502227/portait-kila-maschpark-hannover.webp",
+      category: "portrait",
+      alt: "Verträumtes Portrait von Kila im Maschpark Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502226/portait-kathi-nord-lb-hannover-02.webp",
+      category: "portrait",
+      alt: "Modernes Portrait von Kathi vor der Nord/LB Architektur in Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502225/portait-kathi-nord-lb-hannover-01.webp",
+      category: "portrait",
+      alt: "Urbanes Portrait Shooting mit Kathi an der Nord/LB Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502224/portait-kathi-georgengarten-hannover-04.webp",
+      category: "portrait",
+      alt: "Kathi im Georgengarten Hannover - Natürliches Portrait Shooting"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502223/portait-kathi-georgengarten-hannover-03.webp",
+      category: "portrait",
+      alt: "Portrait von Kathi unter Bäumen im Georgengarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502223/portait-kathi-georgengarten-hannover-02.webp",
+      category: "portrait",
+      alt: "Lachendes Portrait von Kathi im Georgengarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502222/portait-kathi-georgengarten-hannover-01.webp",
+      category: "portrait",
+      alt: "Kathi posiert im Georgengarten Hannover für ein Outdoor Portrait"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502221/Shalinee6_jackywagon.webp",
+      category: "portrait",
+      alt: "Portrait von Shalinee - Ausdrucksstarke Fotografie"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502220/portrait-stefanie-vahrenwald-list-hannover-03.webp",
+      category: "portrait",
+      alt: "Portrait von Stefanie im Stadtteil Vahrenwald-List, Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502219/portrait-stefanie-vahrenwald-list-hannover-02.webp",
+      category: "portrait",
+      alt: "Natürliches Portrait Shooting mit Stefanie in Hannover List"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502218/portrait-rachel-altwarmbuechener-see-hannover-02.webp",
+      category: "portrait",
+      alt: "Portrait von Rachel am Altwarmbüchener See in Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502218/portrait-stefanie-vahrenwald-list-hannover-01.webp",
+      category: "portrait",
+      alt: "Stefanie posiert für ein Portrait in Hannover Vahrenwald"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502217/portrait-rachel-altwarmbuechener-see-hannover-01.webp",
+      category: "portrait",
+      alt: "Rachel am Ufer des Altwarmbüchener Sees - Portrait Fotografie"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502216/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-03.webp",
+      category: "portrait",
+      alt: "Portrait von La Sarita im Berggarten der Herrenhäuser Gärten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502215/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-02.webp",
+      category: "portrait",
+      alt: "Exotisches Flair: Portrait von La Sarita im Berggarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502214/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-01.webp",
+      category: "portrait",
+      alt: "La Sarita posiert im herbstlichen Berggarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502214/portrait-isarina-maschsee-hannover-02.webp",
+      category: "portrait",
+      alt: "Portrait von Isarina am Maschsee Hannover bei Sonnenuntergang"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502213/portrait-isarina-maschsee-hannover-01.webp",
+      category: "portrait",
+      alt: "Isarina am Maschsee Hannover - Natürliches Portrait Shooting"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502212/portrait-hanna-herrenhaeuser-gaerten-berggarten-06.webp",
+      category: "portrait",
+      alt: "Portrait von Hanna im Berggarten Hannover - Fokus auf Augen"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502211/portrait-hanna-herrenhaeuser-gaerten-berggarten-05.webp",
+      category: "portrait",
+      alt: "Hanna posiert im Berggarten Hannover für ein Fine Art Portrait"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502210/portrait-hanna-herrenhaeuser-gaerten-berggarten-03.webp",
+      category: "portrait",
+      alt: "Portrait Shooting mit Hanna in der Natur des Berggartens Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502209/portrait-hanna-herrenhaeuser-gaerten-berggarten-02.webp",
+      category: "portrait",
+      alt: "Natürliches Licht Portrait von Hanna im Berggarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502209/portrait-hanna-herrenhaeuser-gaerten-berggarten-04.webp",
+      category: "portrait",
+      alt: "Hanna im Berggarten Hannover - Ausdrucksstarkes Portrait"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502208/portrait-hanna-herrenhaeuser-gaerten-berggarten-01.webp",
+      category: "portrait",
+      alt: "Portrait von Hanna zwischen Pflanzen im Berggarten Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502207/portrait-franziska-eilenriede-hannover.webp",
+      category: "portrait",
+      alt: "Portrait von Franziska im Stadtwald Eilenriede Hannover"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775502207/portrait-enna-steinhuder-meer-02.webp",
+      category: "portrait",
+      alt: "Enna am Steinhuder Meer - Stimmungsvolles Portrait Shooting"
     }
   ],
   ABOUT: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775476335/portrait-hochzeitsfotograf-alex-begopoulos.webp",
@@ -249,7 +454,6 @@ export const IMAGES = {
 export const NAV_LINKS = [
   { name: "Home", path: "/" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Portfolio 2", path: "/portfolio-2" },
   { name: "Über mich", path: "/about" },
   { name: "Leistungen", path: "/leistungen" },
   { name: "FAQ", path: "/faq" },
