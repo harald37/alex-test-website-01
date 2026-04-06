@@ -98,23 +98,23 @@ export const Home: React.FC = () => {
             >
               <img 
                 src={IMAGES.PORTFOLIO_2[0].url} 
-                alt="Highlight 1" 
+                alt={IMAGES.PORTFOLIO_2[0].alt} 
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
 
-            {/* Side Image Staggered */}
+            {/* Side Image */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-5 aspect-[4/5] overflow-hidden bg-zinc-100 mt-0 md:mt-24 group"
+              className="md:col-span-5 aspect-[4/5] overflow-hidden bg-zinc-100 group"
             >
               <img 
-                src={IMAGES.PORTFOLIO[0].url} 
-                alt="Highlight 2" 
+                src={IMAGES.PORTFOLIO_2[2].url} 
+                alt={IMAGES.PORTFOLIO_2[2].alt} 
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -129,8 +129,8 @@ export const Home: React.FC = () => {
               className="md:col-span-4 aspect-square overflow-hidden bg-zinc-100 group"
             >
               <img 
-                src={IMAGES.PORTFOLIO_2[1].url} 
-                alt="Highlight 3" 
+                src={IMAGES.PORTFOLIO_2[12].url} 
+                alt={IMAGES.PORTFOLIO_2[12].alt} 
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -142,11 +142,11 @@ export const Home: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-4 aspect-[2/3] overflow-hidden bg-zinc-100 -mt-0 md:-mt-32 group"
+              className="md:col-span-4 aspect-[2/3] overflow-hidden bg-zinc-100 group"
             >
               <img 
-                src={IMAGES.PORTFOLIO[2].url} 
-                alt="Highlight 4" 
+                src={IMAGES.PORTFOLIO_2[1].url} 
+                alt={IMAGES.PORTFOLIO_2[1].alt} 
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -161,8 +161,8 @@ export const Home: React.FC = () => {
               className="md:col-span-4 aspect-[4/5] overflow-hidden bg-zinc-100 group"
             >
               <img 
-                src={IMAGES.PORTFOLIO_2[5].url} 
-                alt="Highlight 5" 
+                src={IMAGES.PORTFOLIO_2[6].url} 
+                alt={IMAGES.PORTFOLIO_2[6].alt} 
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
