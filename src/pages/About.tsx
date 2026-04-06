@@ -105,13 +105,13 @@ export const About = () => {
         >
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl md:text-5xl font-serif mb-6">Inspiration & Leidenschaft</h3>
+              <h3 className="text-3xl md:text-5xl font-serif mb-6 text-white">Inspiration & Leidenschaft</h3>
               <p className="text-zinc-400 text-base md:text-lg mb-8 leading-relaxed">
                 Wenn ich nicht gerade die Liebe anderer Menschen dokumentiere, findet man mich oft auf Reisen. Das Eintauchen in fremde Kulturen schärft meinen Blick für das Wesentliche und lässt mich die Welt immer wieder neu entdecken.
               </p>
               <div className="flex flex-wrap gap-4">
-                {['Reisen', 'Fußball', 'Gaming', 'Tech-Trends', 'Kultur'].map((tag) => (
-                  <span key={tag} className="px-4 py-2 border border-white/10 rounded-full text-xs uppercase tracking-widest">
+                {['Reisen', 'Fußball', 'Gaming', 'Tech-Trends', 'Kultur', 'Programmierung', 'Design'].map((tag) => (
+                  <span key={tag} className="px-4 py-2 border border-white/10 rounded-full text-xs uppercase tracking-widest text-zinc-300">
                     {tag}
                   </span>
                 ))}
