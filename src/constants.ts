@@ -55,8 +55,22 @@ export const IMAGES = {
       category: "Elopement",
       location: "Toscana"
     }
-  ],
-  PORTFOLIO_2: [
+  ],  PORTFOLIO_2: [
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
+      category: "hochzeit",
+      alt: "Braut wird vom Bräutigam im Wald bei Uelzen zärtlich umarmt"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495572/hochzeitspaar-unter-regenschirm-in-der-natur-schloss-salder-salzgitter.webp",
+      category: "hochzeit",
+      alt: "Hochzeitspaar unter einem Regenschirm im Park von Schloss Salder in Salzgitter"
+    },
+    {
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
+      category: "hochzeit",
+      alt: "Brautpaar blickt gemeinsam Richtung Maschsee in Hannover - Hochzeitsfotografie"
+    },
     {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495596/braut-steigt-aus-auto-standesamtliche-trauung-uelzen.webp",
       category: "hochzeit",
@@ -115,7 +129,7 @@ export const IMAGES = {
     {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495583/umarmung-braut-und-freundin-nach-standesamtlicher-trauung-uelzen.webp",
       category: "hochzeit",
-      alt: "Herzliche Umarmung zwischen Braut und Freundin nach der standesamtlichen Trauung"
+      alt: "Herzliche Umarmung zwischen Braut and Freundin nach der standesamtlichen Trauung"
     },
     {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495582/shooting-braut-und-braeutigam-laecheln-sich-an-im-wald.webp",
@@ -163,19 +177,9 @@ export const IMAGES = {
       alt: "Stimmungsvoller Hochzeitstanz unter freiem Himmel im Garten in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495572/hochzeitspaar-unter-regenschirm-in-der-natur-schloss-salder-salzgitter.webp",
-      category: "hochzeit",
-      alt: "Hochzeitspaar unter einem Regenschirm im Park von Schloss Salder in Salzgitter"
-    },
-    {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495571/hochzeitspaar-lacht-sich-zu-stadtpark-langenhagen.webp",
       category: "hochzeit",
       alt: "Lachendes Hochzeitspaar im Stadtpark Langenhagen - Natürliche Hochzeitsfotos"
-    },
-    {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
-      category: "hochzeit",
-      alt: "Brautpaar blickt gemeinsam Richtung Maschsee in Hannover - Hochzeitsfotografie"
     },
     {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495569/hochzeitslocation-im-eigenen-garten-hannover.webp",
@@ -186,11 +190,6 @@ export const IMAGES = {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495568/detailshot-eines-stuhls-deko-freie-trauung.webp",
       category: "hochzeit",
       alt: "Detailaufnahme der Stuhldekoration bei einer freien Trauung"
-    },
-    {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
-      category: "hochzeit",
-      alt: "Braut wird vom Bräutigam im Wald bei Uelzen zärtlich umarmt"
     },
     {
       url: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495566/detailshot-braut-und-braeutigam-halten-sich-die-haende-hannover.webp",
