@@ -87,14 +87,14 @@ export const Home: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
-            {/* Large Featured Image */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+            {/* Image 1 - Large */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-7 aspect-[4/5] md:aspect-[16/10] overflow-hidden bg-zinc-100 group"
+              className="md:col-span-2 aspect-[16/9] overflow-hidden bg-zinc-100 group"
             >
               <img 
                 src={IMAGES.PORTFOLIO_2[0].url} 
@@ -104,13 +104,13 @@ export const Home: React.FC = () => {
               />
             </motion.div>
 
-            {/* Side Image */}
+            {/* Image 2 */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-5 aspect-[4/5] overflow-hidden bg-zinc-100 group"
+              className="aspect-[4/5] overflow-hidden bg-zinc-100 group"
             >
               <img 
                 src={IMAGES.PORTFOLIO_2[2].url} 
@@ -120,13 +120,13 @@ export const Home: React.FC = () => {
               />
             </motion.div>
 
-            {/* Small Detail Image */}
+            {/* Image 3 */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-4 aspect-square overflow-hidden bg-zinc-100 group"
+              className="aspect-[4/5] overflow-hidden bg-zinc-100 group"
             >
               <img 
                 src={IMAGES.PORTFOLIO_2[12].url} 
@@ -136,13 +136,13 @@ export const Home: React.FC = () => {
               />
             </motion.div>
 
-            {/* Vertical Image */}
+            {/* Image 4 */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-4 aspect-[2/3] overflow-hidden bg-zinc-100 group"
+              className="aspect-[4/5] overflow-hidden bg-zinc-100 group"
             >
               <img 
                 src={IMAGES.PORTFOLIO_2[1].url} 
@@ -152,13 +152,13 @@ export const Home: React.FC = () => {
               />
             </motion.div>
 
-            {/* Final Image */}
+            {/* Image 5 */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-4 aspect-[4/5] overflow-hidden bg-zinc-100 group"
+              className="aspect-[4/5] overflow-hidden bg-zinc-100 group"
             >
               <img 
                 src={IMAGES.PORTFOLIO_2[6].url} 
