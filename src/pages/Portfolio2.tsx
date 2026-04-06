@@ -7,7 +7,7 @@ import { Button } from "../components/ui/Button";
 export const Portfolio2 = () => {
   const [filter, setFilter] = useState("all");
   const scrollAnchorRef = React.useRef<HTMLDivElement>(null);
-  const categories = ["all", "natur", "urban", "elopement"];
+  const categories = ["all", "hochzeit", "natur", "urban", "elopement"];
 
   const filteredImages = filter === "all" 
     ? IMAGES.PORTFOLIO_2 
@@ -18,7 +18,7 @@ export const Portfolio2 = () => {
     if (scrollAnchorRef.current) {
       // Use requestAnimationFrame to ensure the DOM is ready
       requestAnimationFrame(() => {
-        const headerHeight = window.innerWidth < 768 ? 64 : 88;
+        const headerHeight = window.innerWidth < 768 ? 64 : 68;
         const elementPosition = scrollAnchorRef.current?.getBoundingClientRect().top ?? 0;
         const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 
@@ -56,7 +56,7 @@ export const Portfolio2 = () => {
       <div ref={scrollAnchorRef} className="h-px w-full" />
 
       {/* Category Filter */}
-      <div className="sticky top-[64px] md:top-[88px] z-40 bg-surface-container-lowest/90 backdrop-blur-md pt-6 pb-2 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
+      <div className="sticky top-[64px] md:top-[68px] z-40 bg-surface-container-lowest/90 backdrop-blur-md pt-6 pb-2 md:py-8 mb-12 md:mb-16 border-b border-zinc-900/5">
         <ul className="flex items-center justify-center gap-8 md:gap-12 overflow-x-auto no-scrollbar px-4 md:px-0">
           {categories.map((cat) => (
             <li key={cat}>
@@ -89,17 +89,13 @@ export const Portfolio2 = () => {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="break-inside-avoid mb-12 group cursor-pointer"
             >
-              <div className="overflow-hidden bg-zinc-100 mb-6">
+              <div className="overflow-hidden bg-zinc-100">
                 <img 
                   src={item.url} 
                   alt={item.alt} 
                   className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105 grayscale-[20%] group-hover:grayscale-0"
                   referrerPolicy="no-referrer"
                 />
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-zinc-400">{item.category}</span>
-                <h3 className="font-serif italic text-2xl text-zinc-900">Hochzeitsreportage</h3>
               </div>
             </motion.div>
           ))}
