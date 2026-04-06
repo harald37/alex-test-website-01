@@ -79,7 +79,7 @@ export const About = () => {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-2xl">
               <img 
-                src="https://res.cloudinary.com/du3ubrgjt/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
+                src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
                 alt="Alex in den Bergen" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -87,7 +87,7 @@ export const About = () => {
             </div>
             <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-12">
               <img 
-                src="https://res.cloudinary.com/du3ubrgjt/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
+                src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
                 alt="Alex und Katharina" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

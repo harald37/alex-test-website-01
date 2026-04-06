@@ -93,7 +93,7 @@ export const IMAGES = {
       alt: "Kuss unter weißem Regenschirm"
     }
   ],
-  ABOUT: "https://res.cloudinary.com/du3ubrgjt/image/upload/v1775476335/portrait-hochzeitsfotograf-alex-begopoulos.webp",
+  ABOUT: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775476335/portrait-hochzeitsfotograf-alex-begopoulos.webp",
   SERVICES: {
     HERO: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
     PLANNING: "https://lh3.googleusercontent.com/aida-public/AB6AXuDZSngqsbTJhtOjFb7Z5mJDq9FhuxBROI-n5jDGl_vmf9Ys9hDBWX--FTPQD_aod_GI44pHYuYvRjys1A9PAj69xt9d_zA2d7SQira-2w40zdVoOPsmkCT2xjZR_QKZSlYu0InIyKvWjJppMi1-SqVdFAO-qBm3rIjlm63TG29M_FOepB4JcllGaJYRGUpx1SZVro1Aos5bngVve0rg0DN3QKWWUbVp02_nDJzdX0WSmEkoT3tXbHnbnAoWWgkLXhH1xMqDvGAP75M",
