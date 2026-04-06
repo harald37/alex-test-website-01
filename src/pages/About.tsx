@@ -79,8 +79,8 @@ export const About = () => {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=800" 
-                alt="Photography Style" 
+                src="https://res.cloudinary.com/du3ubrgjt/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
+                alt="Alex in den Bergen" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
