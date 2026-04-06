@@ -202,23 +202,23 @@ export const Portfolio = () => {
           >
             <button
               onClick={(e) => { e.stopPropagation(); closeLightbox(); }}
-              className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors p-2 z-[210]"
+              className="absolute top-4 right-4 md:top-8 md:right-8 text-white/50 hover:text-white transition-colors p-3 z-[210] bg-black/20 md:bg-transparent rounded-full backdrop-blur-sm md:backdrop-blur-none"
             >
-              <X size={32} strokeWidth={1} />
+              <X size={24} className="md:w-8 md:h-8" strokeWidth={1.5} />
             </button>
 
             <button
               onClick={prevImage}
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-4 z-[210]"
+              className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-3 md:p-4 z-[210] bg-black/20 md:bg-transparent rounded-full backdrop-blur-sm md:backdrop-blur-none"
             >
-              <ChevronLeft size={48} strokeWidth={1} />
+              <ChevronLeft size={32} className="md:w-12 md:h-12" strokeWidth={1} />
             </button>
 
             <button
               onClick={nextImage}
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-4 z-[210]"
+              className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-3 md:p-4 z-[210] bg-black/20 md:bg-transparent rounded-full backdrop-blur-sm md:backdrop-blur-none"
             >
-              <ChevronRight size={48} strokeWidth={1} />
+              <ChevronRight size={32} className="md:w-12 md:h-12" strokeWidth={1} />
             </button>
 
             <motion.div
@@ -233,7 +233,7 @@ export const Portfolio = () => {
               <img
                 src={filteredImages[selectedImageIndex].url}
                 alt={filteredImages[selectedImageIndex].alt}
-                className="max-w-full max-h-[90vh] object-contain shadow-2xl"
+                className="max-w-full max-h-[80vh] md:max-h-[90vh] object-contain shadow-2xl"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
