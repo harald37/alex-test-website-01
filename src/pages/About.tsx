@@ -87,8 +87,8 @@ export const About = () => {
             </div>
             <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-12">
               <img 
-                src="https://images.unsplash.com/photo-1452721226468-f95fb66ebf83?auto=format&fit=crop&q=80&w=800" 
-                alt="Natural Light" 
+                src="https://res.cloudinary.com/du3ubrgjt/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
+                alt="Alex und Katharina" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
