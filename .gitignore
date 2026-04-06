@@ -6,3 +6,6 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Ignore local images to prevent overwriting GitHub assets
+public/assets/images/
