@@ -115,6 +115,44 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* About Me Short */}
+      <section className="bg-zinc-50 py-32 px-6 md:px-12">
+        <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="aspect-[3/4] overflow-hidden"
+          >
+            <img 
+              src={IMAGES.ABOUT} 
+              alt="Alex Begopoulos" 
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="space-y-12"
+          >
+            <div>
+              <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-6 block">Der Fotograf</span>
+              <h2 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight mb-8">Hallo, ich bin Alex.</h2>
+              <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide mb-8">
+                Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Hannover und Umgebung bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
+              </p>
+              <Button to="/about" variant="link">
+                Mehr über mich erfahren
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <Testimonials />
 
