@@ -58,21 +58,41 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Philosophy Block */}
-      <section className="py-32 md:py-48 px-6 md:px-24 bg-surface-container-lowest flex flex-col items-center text-center">
-        <div className="max-w-3xl">
+      <section className="py-32 md:py-48 px-6 md:px-24 bg-surface-container-lowest flex flex-col items-center">
+        <div className="max-w-5xl w-full text-center">
           <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-12 block">Die Vision eines Geschichtenerzählers</span>
-          <h2 className="font-serif italic text-4xl md:text-7xl text-zinc-900 leading-[1.1] mb-12">
+          <h2 className="font-serif italic text-4xl md:text-7xl text-zinc-900 leading-[1.1] mb-16">
             Echte Emotionen. <br className="hidden md:block"/>Zeitlose Ästhetik.
           </h2>
-          <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12" />
-          <p className="tracking-wide text-zinc-600 leading-relaxed mb-8 text-base md:text-lg">
-            Als dein <strong>Hochzeitsfotograf in Hannover</strong> begleite ich euch nicht nur in Niedersachsen, sondern dort, wo eure Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins. 
-          </p>
-          <p className="tracking-wide text-zinc-600 leading-relaxed mb-16 text-base md:text-lg">
-            Meine Fotografie ist eine leise Beobachtung. Ich suche die Momente zwischen den Gesten: das unbewusste Lächeln, das Glänzen in den Augen beim Ja-Wort und die tiefe Verbundenheit eurer Liebsten.
-          </p>
-          <div className="flex flex-col items-center group">
-            <span className="h-[1px] w-12 bg-zinc-900/20 group-hover:w-24 transition-all duration-500"></span>
+          
+          <div className="grid md:grid-cols-3 gap-12 md:gap-24 mb-24 text-left">
+            <div className="space-y-6">
+              <span className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400">01. Authentizität</span>
+              <p className="text-zinc-600 leading-relaxed tracking-wide text-sm md:text-base">
+                Kein steifes Posing. Ich begleite euch als stiller Beobachter und fange die Momente ein, wie sie wirklich passieren – ungestellt und ehrlich.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <span className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400">02. Diskretion</span>
+              <p className="text-zinc-600 leading-relaxed tracking-wide text-sm md:text-base">
+                An eurem Tag bin ich Teil der Gesellschaft, nicht der Regisseur. So entstehen Bilder von euren Liebsten, die sich völlig unbeobachtet fühlen.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <span className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400">03. Zeitlosigkeit</span>
+              <p className="text-zinc-600 leading-relaxed tracking-wide text-sm md:text-base">
+                Trends kommen und gehen. Mein Fine-Art Stil sorgt dafür, dass eure Bilder auch in 30 Jahren noch modern und elegant wirken.
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-8">
+            <p className="tracking-wide text-zinc-600 leading-relaxed text-base md:text-lg italic font-serif">
+              "Als dein Hochzeitsfotograf in Hannover begleite ich euch nicht nur in Niedersachsen, sondern dort, wo eure Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins."
+            </p>
+            <div className="flex flex-col items-center group pt-8">
+              <span className="h-[1px] w-12 bg-zinc-900/20 group-hover:w-24 transition-all duration-500"></span>
+            </div>
           </div>
         </div>
       </section>
@@ -87,7 +107,7 @@ export const Home: React.FC = () => {
             </h2>
           </div>
 
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8">
+          <div className="columns-2 md:columns-2 lg:columns-3 gap-4 md:gap-8">
             {[0, 2, 12, 1, 6, 8, 14, 15, 16].map((index, i) => (
               <motion.div 
                 key={index}
@@ -163,9 +183,11 @@ export const Home: React.FC = () => {
           <h2 className="font-serif italic text-3xl md:text-5xl text-zinc-800 leading-relaxed mb-16">
             "Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen."
           </h2>
-          <Button to="/contact">
-            Erzählt mir eure Geschichte
-          </Button>
+          <div className="flex justify-center">
+            <Button to="/contact">
+              Erzählt mir eure Geschichte
+            </Button>
+          </div>
         </div>
       </section>
     </div>

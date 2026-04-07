@@ -16,6 +16,7 @@ import { Imprint } from "./pages/Imprint";
 import { Privacy } from "./pages/Privacy";
 import { Hannover } from "./pages/SEO/Hannover";
 import { Braunschweig } from "./pages/SEO/Braunschweig";
+import { HeroShowcase } from "./pages/HeroShowcase";
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/datenschutz" element={<Privacy />} />
           <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
           <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
+          <Route path="/hero-showcase" element={<HeroShowcase />} />
         </Routes>
       </Layout>
     </Router>
