@@ -461,7 +461,7 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = {
-  instagram: "https://instagram.com/alexbegopoulos",
+  instagram: "https://instagram.com/alexbegopoulos.weddings",
   facebook: "https://facebook.com/alexbegopoulos",
   whatsapp: "https://wa.me/4915165264449",
   phone: "tel:+4915165264449",

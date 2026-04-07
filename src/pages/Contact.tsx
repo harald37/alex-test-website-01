@@ -107,7 +107,7 @@ export const Contact = () => {
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Social Media</h4>
                   <div className="flex items-center space-x-6">
-                    <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Instagram</a>
+                    <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">alexbegopoulos.weddings</a>
                     <span className="text-zinc-200">/</span>
                     <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Facebook</a>
                   </div>
