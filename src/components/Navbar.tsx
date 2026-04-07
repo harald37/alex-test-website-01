@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// Refresh UI trigger
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, Phone, MessageCircle, Mail } from "lucide-react";
 import { NAV_LINKS, SOCIAL_LINKS } from "../constants";
@@ -93,8 +92,8 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-12">
-            <div className="flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-12">
+            <div className="flex items-center space-x-4 lg:space-x-8">
               {NAV_LINKS.map((link) => {
                 const isActive = location.pathname === link.path;
                 const isHero = !isScrolled && !isOpen && location.pathname === '/';
@@ -103,7 +102,7 @@ export const Navbar = () => {
                     key={link.name}
                     to={link.path}
                     className={cn(
-                      "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b",
+                      "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b whitespace-nowrap",
                       isActive
                         ? isHero ? "text-white border-white" : "text-zinc-900 border-zinc-900"
                         : isHero ? "text-white/60 border-transparent hover:text-white" : "text-zinc-400 border-transparent hover:text-zinc-900"
