@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SOCIAL_LINKS } from "../constants";
-import { Instagram, Facebook, Phone, MessageCircle } from "lucide-react";
+import { Instagram, Facebook, Phone, MessageCircle, Mail } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -18,6 +18,9 @@ export const Footer = () => {
           </a>
           <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
             <Facebook size={18} strokeWidth={1.5} />
+          </a>
+          <a href={SOCIAL_LINKS.email} className="text-zinc-400 hover:text-zinc-900 transition-colors">
+            <Mail size={18} strokeWidth={1.5} />
           </a>
           <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
             <MessageCircle size={18} strokeWidth={1.5} />

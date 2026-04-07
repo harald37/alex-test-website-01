@@ -105,12 +105,18 @@ export const Contact = () => {
                   <Instagram className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Social Media</h4>
-                  <div className="flex items-center space-x-6">
-                    <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">alexbegopoulos.weddings</a>
-                    <span className="text-zinc-200">/</span>
-                    <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Facebook</a>
-                  </div>
+                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Instagram</h4>
+                  <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">alexbegopoulos.weddings</a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-6 group">
+                <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
+                  <Facebook className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
+                </div>
+                <div>
+                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Facebook</h4>
+                  <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Alex Begopoulos</a>
                 </div>
               </div>
             </div>

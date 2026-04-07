@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Instagram, Facebook, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, Instagram, Facebook, Phone, MessageCircle, Mail } from "lucide-react";
 import { NAV_LINKS, SOCIAL_LINKS } from "../constants";
 import { cn } from "../lib/utils";
 import { motion, AnimatePresence } from "motion/react";
@@ -93,24 +93,82 @@ export const Navbar = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-12">
-            {NAV_LINKS.map((link) => {
-              const isActive = location.pathname === link.path;
-              const isHero = !isScrolled && !isOpen && location.pathname === '/';
-              return (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className={cn(
-                    "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b",
-                    isActive
-                      ? isHero ? "text-white border-white" : "text-zinc-900 border-zinc-900"
-                      : isHero ? "text-white/60 border-transparent hover:text-white" : "text-zinc-400 border-transparent hover:text-zinc-900"
-                  )}
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
+            <div className="flex items-center space-x-8">
+              {NAV_LINKS.map((link) => {
+                const isActive = location.pathname === link.path;
+                const isHero = !isScrolled && !isOpen && location.pathname === '/';
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    className={cn(
+                      "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b",
+                      isActive
+                        ? isHero ? "text-white border-white" : "text-zinc-900 border-zinc-900"
+                        : isHero ? "text-white/60 border-transparent hover:text-white" : "text-zinc-400 border-transparent hover:text-zinc-900"
+                    )}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
+            </div>
+
+            <div className="w-[1px] h-4 bg-zinc-200/20 mx-2" />
+
+            <div className="flex items-center space-x-6">
+              <a 
+                href={SOCIAL_LINKS.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={cn(
+                  "transition-colors duration-500",
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                )}
+              >
+                <Instagram size={16} strokeWidth={1.5} />
+              </a>
+              <a 
+                href={SOCIAL_LINKS.facebook} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={cn(
+                  "transition-colors duration-500",
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                )}
+              >
+                <Facebook size={16} strokeWidth={1.5} />
+              </a>
+              <a 
+                href={SOCIAL_LINKS.email} 
+                className={cn(
+                  "transition-colors duration-500",
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                )}
+              >
+                <Mail size={16} strokeWidth={1.5} />
+              </a>
+              <a 
+                href={SOCIAL_LINKS.whatsapp} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={cn(
+                  "transition-colors duration-500",
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                )}
+              >
+                <MessageCircle size={16} strokeWidth={1.5} />
+              </a>
+              <a 
+                href={SOCIAL_LINKS.phone} 
+                className={cn(
+                  "transition-colors duration-500",
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                )}
+              >
+                <Phone size={16} strokeWidth={1.5} />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Toggle */}
@@ -183,6 +241,9 @@ export const Navbar = () => {
                 </motion.a>
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
                   <Facebook size={18} strokeWidth={1.2} />
+                </motion.a>
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.email} className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                  <Mail size={18} strokeWidth={1.2} />
                 </motion.a>
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
                   <MessageCircle size={18} strokeWidth={1.2} />
