@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Instagram, Facebook, Phone, MessageCircle, Mail } from "lucide-react";
+import { Menu, X, Instagram, Phone, MessageCircle, Mail } from "lucide-react";
 import { NAV_LINKS, SOCIAL_LINKS } from "../constants";
 import { cn } from "../lib/utils";
 import { motion, AnimatePresence } from "motion/react";
@@ -129,17 +129,6 @@ export const Navbar = () => {
                 <Instagram size={16} strokeWidth={1.5} />
               </a>
               <a 
-                href={SOCIAL_LINKS.facebook} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className={cn(
-                  "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
-                )}
-              >
-                <Facebook size={16} strokeWidth={1.5} />
-              </a>
-              <a 
                 href={SOCIAL_LINKS.email} 
                 className={cn(
                   "transition-colors duration-500",
@@ -229,9 +218,6 @@ export const Navbar = () => {
               <div className="flex items-center space-x-8">
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
                   <Instagram size={18} strokeWidth={1.2} />
-                </motion.a>
-                <motion.a variants={itemVariants} href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                  <Facebook size={18} strokeWidth={1.2} />
                 </motion.a>
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.email} className="text-zinc-400 hover:text-zinc-900 transition-colors">
                   <Mail size={18} strokeWidth={1.2} />
