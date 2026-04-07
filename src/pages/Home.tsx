@@ -87,70 +87,24 @@ export const Home: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {/* Image 1 - Large Landscape */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-2 aspect-[16/9] overflow-hidden bg-zinc-100 group rounded-sm"
-            >
-              <img 
-                src={IMAGES.PORTFOLIO_2[0].url} 
-                alt={IMAGES.PORTFOLIO_2[0].alt} 
-                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-
-            {/* Image 2 - Vertical Portrait */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:row-span-2 aspect-[3/4] lg:aspect-auto overflow-hidden bg-zinc-100 group rounded-sm"
-            >
-              <img 
-                src={IMAGES.PORTFOLIO_2[2].url} 
-                alt={IMAGES.PORTFOLIO_2[2].alt} 
-                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-
-            {/* Image 3 - Square/Landscape */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="aspect-[3/2] overflow-hidden bg-zinc-100 group rounded-sm"
-            >
-              <img 
-                src={IMAGES.PORTFOLIO_2[12].url} 
-                alt={IMAGES.PORTFOLIO_2[12].alt} 
-                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-
-            {/* Image 4 - Square/Landscape */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="aspect-[3/2] overflow-hidden bg-zinc-100 group rounded-sm"
-            >
-              <img 
-                src={IMAGES.PORTFOLIO_2[1].url} 
-                alt={IMAGES.PORTFOLIO_2[1].alt} 
-                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8">
+            {[0, 2, 12, 1, 6, 8, 14, 15, 16].map((index, i) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                className="break-inside-avoid bg-zinc-100 group rounded-sm overflow-hidden mb-6 md:mb-8"
+              >
+                <img 
+                  src={IMAGES.PORTFOLIO_2[index].url} 
+                  alt={IMAGES.PORTFOLIO_2[index].alt} 
+                  className="w-full h-auto transition-transform duration-[2s] group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+              </motion.div>
+            ))}
           </div>
 
           <div className="mt-24 md:mt-32 text-center">
