@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+// Refresh UI trigger
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '../constants';

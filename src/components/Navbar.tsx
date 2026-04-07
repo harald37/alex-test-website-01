@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// Refresh UI trigger
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, Phone, MessageCircle, Mail } from "lucide-react";
 import { NAV_LINKS, SOCIAL_LINKS } from "../constants";

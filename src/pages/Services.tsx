@@ -1,4 +1,5 @@
 import React from "react";
+// Refresh UI trigger
 import { motion } from "motion/react";
 import { IMAGES } from "../constants";
 import { Book, Users, Camera, Globe, ArrowRight } from "lucide-react";
