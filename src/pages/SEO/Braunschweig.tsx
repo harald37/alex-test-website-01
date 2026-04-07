@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Camera, Heart, MapPin, MessageCircle, Phone, Plus } from "lucide-react";
 import { IMAGES, SOCIAL_LINKS } from "../../constants";
-import { Testimonials } from "../../components/Testimonials";
+import { GreenBannerTestimonials } from "../../components/GreenBannerTestimonials";
 import { Button } from "../../components/ui/Button";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
@@ -180,7 +180,7 @@ export const Braunschweig = () => {
       </section>
 
       {/* Weitere Optionen */}
-      <section className="bg-[#2D332F] py-24 md:py-32 px-6 md:px-12 text-white">
+      <section className="bg-[#1a2e26] py-24 md:py-32 px-6 md:px-12 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <h2 className="font-serif text-3xl md:text-5xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>
@@ -232,7 +232,7 @@ export const Braunschweig = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials />
+      <GreenBannerTestimonials />
 
       {/* FAQ Short */}
       <section className="py-32 px-6 md:px-12 max-w-screen-2xl mx-auto">
@@ -261,7 +261,7 @@ export const Braunschweig = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-32 px-6 md:px-12 bg-[#2D332F] text-white text-center">
+      <section className="py-32 px-6 md:px-12 bg-[#1a2e26] text-white text-center">
         <div className="max-w-3xl mx-auto space-y-12">
           <h2 className="font-serif italic text-3xl md:text-4xl leading-tight font-medium text-white">
             Bereit für eure Geschichte <br /> in Braunschweig?
@@ -277,10 +277,6 @@ export const Braunschweig = () => {
               <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors flex flex-col items-center gap-2 group">
                 <MessageCircle size={28} strokeWidth={1} />
                 <span className="text-[8px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">WhatsApp</span>
-              </a>
-              <a href={SOCIAL_LINKS.phone} className="text-white/50 hover:text-white transition-colors flex flex-col items-center gap-2 group">
-                <Phone size={28} strokeWidth={1} />
-                <span className="text-[8px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Telefon</span>
               </a>
             </div>
           </div>

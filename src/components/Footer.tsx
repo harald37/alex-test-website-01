@@ -25,9 +25,6 @@ export const Footer = () => {
           <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
             <MessageCircle size={18} strokeWidth={1.5} />
           </a>
-          <a href={SOCIAL_LINKS.phone} className="text-zinc-400 hover:text-zinc-900 transition-colors">
-            <Phone size={18} strokeWidth={1.5} />
-          </a>
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
@@ -42,6 +39,12 @@ export const Footer = () => {
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >
             Hochzeitsfotograf Braunschweig
+          </Link>
+          <Link
+            to="/testimonial-comparison"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Design-Vergleich
           </Link>
           <Link
             to="/impressum"

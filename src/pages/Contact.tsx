@@ -86,16 +86,12 @@ export const Contact = () => {
               
               <div className="flex items-start space-x-6 group">
                 <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
-                  <Phone className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
+                  <MessageCircle className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Telefon & WhatsApp</h4>
+                  <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">WhatsApp</h4>
                   <div className="flex flex-col space-y-3">
-                    <a href={SOCIAL_LINKS.phone} className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">+49 151 65264449</a>
-                    <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-zinc-400 hover:text-zinc-900 transition-colors text-[10px] uppercase tracking-[0.2em]">
-                      <MessageCircle size={14} />
-                      <span>Direkt via WhatsApp</span>
-                    </a>
+                    <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">Direkt via WhatsApp</a>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '../constants';
 import { cn } from '../lib/utils';
-import { Testimonials } from '../components/Testimonials';
+import { GreenBannerTestimonials } from '../components/GreenBannerTestimonials';
 import { Button } from '../components/ui/Button';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -226,7 +226,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials />
+      <GreenBannerTestimonials />
 
       {/* Quote Section */}
       <section className="py-48 px-8 bg-surface-container-lowest text-center">

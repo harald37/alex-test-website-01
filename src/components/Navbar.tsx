@@ -159,15 +159,6 @@ export const Navbar = () => {
               >
                 <MessageCircle size={16} strokeWidth={1.5} />
               </a>
-              <a 
-                href={SOCIAL_LINKS.phone} 
-                className={cn(
-                  "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
-                )}
-              >
-                <Phone size={16} strokeWidth={1.5} />
-              </a>
             </div>
           </div>
 
@@ -247,9 +238,6 @@ export const Navbar = () => {
                 </motion.a>
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
                   <MessageCircle size={18} strokeWidth={1.2} />
-                </motion.a>
-                <motion.a variants={itemVariants} href={SOCIAL_LINKS.phone} className="text-zinc-400 hover:text-zinc-900 transition-colors">
-                  <Phone size={18} strokeWidth={1.2} />
                 </motion.a>
               </div>
               <motion.span variants={itemVariants} className="font-sans uppercase tracking-[0.2em] text-[7px] text-zinc-300">
