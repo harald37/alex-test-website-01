@@ -200,7 +200,7 @@ export const Home: React.FC = () => {
             <img 
               src={IMAGES.ABOUT} 
               alt="Alex Begopoulos" 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+              className="w-full h-full object-cover transition-all duration-1000"
               referrerPolicy="no-referrer"
             />
           </motion.div>
