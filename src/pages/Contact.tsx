@@ -80,7 +80,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Email</h4>
-                  <a href="mailto:alex.begopoulos@yahoo.de" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">alex.begopoulos@yahoo.de</a>
+                  <a href="mailto:info@hochzeitsfotograf-alex.de" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">info@hochzeitsfotograf-alex.de</a>
                 </div>
               </div>
               
@@ -91,7 +91,7 @@ export const Contact = () => {
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Telefon & WhatsApp</h4>
                   <div className="flex flex-col space-y-3">
-                    <a href={SOCIAL_LINKS.phone} className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">+49 123 456 789</a>
+                    <a href={SOCIAL_LINKS.phone} className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">+49 151 65264449</a>
                     <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-zinc-400 hover:text-zinc-900 transition-colors text-[10px] uppercase tracking-[0.2em]">
                       <MessageCircle size={14} />
                       <span>Direkt via WhatsApp</span>

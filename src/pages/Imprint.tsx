@@ -11,18 +11,18 @@ export const Imprint: React.FC = () => {
           <div>
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-4">Angaben gemäß § 5 TMG</h2>
             <p>
-              Alex Begopoulos<br />
-              Fotografie & Design<br />
-              Musterstraße 123<br />
-              30159 Hannover
+              ALEX BEGOPOULOS | Hochzeitsfotograf Hannover<br /><br />
+              Alexandros Begopoulos<br />
+              Engelsburg 2<br />
+              30629 Hannover
             </p>
           </div>
 
           <div>
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-4">Kontakt</h2>
             <p>
-              Telefon: +49 (0) 123 456789<br />
-              E-Mail: hello@alexbegopoulos.com
+              Telefon: 015165264449<br />
+              E-Mail: info@hochzeitsfotograf-alex.de
             </p>
           </div>
 
@@ -30,16 +30,17 @@ export const Imprint: React.FC = () => {
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-4">Umsatzsteuer-ID</h2>
             <p>
               Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-              DE123456789
+              DE355173603<br />
+              Handwerkskammer Hannover: Betriebs-Nr.: 0336048
             </p>
           </div>
 
           <div>
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-4">Redaktionell verantwortlich</h2>
             <p>
-              Alex Begopoulos<br />
-              Musterstraße 123<br />
-              30159 Hannover
+              Alexandros Begopoulos<br />
+              Engelsburg 2<br />
+              30629 Hannover
             </p>
           </div>
 
@@ -50,7 +51,7 @@ export const Imprint: React.FC = () => {
               <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-zinc-900 underline underline-offset-4 ml-1">
                 https://ec.europa.eu/consumers/odr/
               </a>.<br />
-              Unsere E-Mail-Adresse findest du oben im Impressum.
+              Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
           </div>
 
@@ -58,6 +59,12 @@ export const Imprint: React.FC = () => {
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-4">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
             <p>
               Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </div>
+
+          <div className="pt-8 border-t border-zinc-900/5">
+            <p className="text-xs text-zinc-400">
+              Quelle: <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-900 transition-colors underline underline-offset-4">https://www.e-recht24.de/impressum-generator.html</a>
             </p>
           </div>
         </div>

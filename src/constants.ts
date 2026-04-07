@@ -463,7 +463,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = {
   instagram: "https://instagram.com/alexbegopoulos",
   facebook: "https://facebook.com/alexbegopoulos",
-  whatsapp: "https://wa.me/49123456789",
-  phone: "tel:+49123456789",
-  email: "mailto:hello@alexbegopoulos.com"
+  whatsapp: "https://wa.me/4915165264449",
+  phone: "tel:+4915165264449",
+  email: "mailto:info@hochzeitsfotograf-alex.de"
 };
