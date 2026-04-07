@@ -276,17 +276,28 @@ export const Home: React.FC = () => {
 
             <motion.div
               key={selectedImageIndex}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={(_, info) => {
+                const swipeThreshold = 50;
+                if (info.offset.x > swipeThreshold) {
+                  prevImage();
+                } else if (info.offset.x < -swipeThreshold) {
+                  nextImage();
+                }
+              }}
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: -20 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="relative max-w-full max-h-full flex flex-col items-center"
+              className="relative max-w-full max-h-full flex flex-col items-center cursor-grab active:cursor-grabbing"
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={highlightImages[selectedImageIndex].url}
                 alt={highlightImages[selectedImageIndex].alt}
-                className="max-w-full max-h-[80vh] md:max-h-[90vh] object-contain shadow-2xl"
+                className="max-w-full max-h-[80vh] md:max-h-[90vh] object-contain shadow-2xl pointer-events-none"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
