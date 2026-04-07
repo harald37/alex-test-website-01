@@ -65,7 +65,7 @@ export const Services = () => {
       </section>
 
       {/* Service 01: Planning */}
-      <section className="pb-24 md:pb-32 px-6 md:px-12 lg:px-24 overflow-hidden">
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#1a2e26] text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -81,9 +81,9 @@ export const Services = () => {
             />
           </motion.div>
           <div className="w-full flex flex-col items-center lg:items-start">
-            <span className="font-sans text-4xl md:text-5xl font-extralight text-zinc-200 mb-4 md:mb-6 block text-center lg:text-left w-full">01.</span>
-            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
-            <div className="space-y-4 md:space-y-6 text-zinc-600 text-base md:text-lg w-full text-center lg:text-left">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-white/10 mb-4 md:mb-6 block text-center lg:text-left w-full">01.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-white text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
+            <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
                 Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir eure Wünsche und Visionen.
               </p>
@@ -127,7 +127,7 @@ export const Services = () => {
       </section>
 
       {/* Service 03: Post-Processing */}
-      <section className="py-24 md:pb-32 px-6 md:px-12 lg:px-24 overflow-hidden">
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#1a2e26] text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -143,9 +143,9 @@ export const Services = () => {
             />
           </motion.div>
           <div className="w-full flex flex-col items-center lg:items-start">
-            <span className="font-sans text-4xl md:text-5xl font-extralight text-zinc-200 mb-4 md:mb-6 block text-center lg:text-left w-full">03.</span>
-            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-zinc-900 text-center lg:text-left w-full">Die Nachbearbeitung & Galerie</h3>
-            <div className="space-y-4 md:space-y-6 text-zinc-600 text-base md:text-lg w-full text-center lg:text-left">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-white/10 mb-4 md:mb-6 block text-center lg:text-left w-full">03.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-white text-center lg:text-left w-full">Die Nachbearbeitung & Galerie</h3>
+            <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
                 Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
               </p>
@@ -170,7 +170,7 @@ export const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {[
               "Persönliche Beratung & individueller Zeitplan für euren Tag",
-              "Exklusiver Wedding Guide mit wertvollen Planungstipps",
+              "Exklusiver Wedding Guide with wertvollen Planungstipps",
               "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
               "Natürliche Retusche eurer Paarfotos für ein perfektes Ergebnis",
               "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
@@ -201,7 +201,7 @@ export const Services = () => {
       </section>
 
       {/* Extras Section */}
-      <section className="bg-[#2D332F] py-24 md:py-40 px-6 md:px-12 text-white">
+      <section className="bg-[#1a2e26] py-24 md:py-40 px-6 md:px-12 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 md:mb-32">
             <h2 className="font-serif text-4xl md:text-7xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>
@@ -224,7 +224,7 @@ export const Services = () => {
                 className="text-center space-y-4"
               >
                 <h4 className="font-serif text-2xl md:text-3xl italic text-white">{option.title}</h4>
-                <p className="text-white/90 text-sm md:text-base italic font-light tracking-wider max-w-[250px] mx-auto">
+                <p className="text-white/70 text-sm md:text-base italic font-light tracking-wider max-w-[250px] mx-auto">
                   {option.desc}
                 </p>
               </motion.div>
@@ -234,13 +234,15 @@ export const Services = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 md:py-40 px-6">
-        <div className="max-w-4xl mx-auto text-center border-y border-zinc-200 py-16 md:py-24">
-          <h2 className="font-serif text-3xl md:text-7xl italic mb-8 md:mb-12 text-zinc-900">Lasst uns eure Geschichte erzählen.</h2>
-          <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] mb-10 md:mb-16 text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
-          <Button to="/contact">
-            Jetzt Anfragen
-          </Button>
+      <section className="py-32 px-6 md:px-40 bg-white text-zinc-900 text-center">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <h2 className="font-serif text-3xl md:text-7xl italic text-zinc-900 leading-tight">Lasst uns eure Geschichte erzählen.</h2>
+          <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
+          <div className="flex justify-center">
+            <Button to="/contact">
+              Jetzt Anfragen
+            </Button>
+          </div>
         </div>
       </section>
     </div>

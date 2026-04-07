@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Camera, Heart, MapPin, MessageCircle, Phone, Plus } from "lucide-react";
 import { IMAGES, SOCIAL_LINKS } from "../../constants";
 import { GreenBannerTestimonials } from "../../components/GreenBannerTestimonials";
+import { HomePortfolioGrid } from "../../components/HomePortfolioGrid";
 import { Button } from "../../components/ui/Button";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
@@ -121,33 +122,8 @@ export const Braunschweig = () => {
         </div>
       </section>
 
-      {/* Image Teaser */}
-      <section className="px-6 md:px-12 max-w-screen-2xl mx-auto mb-32">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {IMAGES.STORIES.slice().reverse().map((img, idx) => (
-            <motion.div 
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="aspect-[4/5] overflow-hidden bg-zinc-100"
-            >
-              <img 
-                src={img.url} 
-                alt={img.title} 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
-              />
-            </motion.div>
-          ))}
-        </div>
-        <div className="mt-12 text-center">
-          <Button to="/portfolio" variant="link">
-            Gesamtes Portfolio ansehen
-          </Button>
-        </div>
-      </section>
+      {/* Portfolio Highlights */}
+      <HomePortfolioGrid />
 
       {/* Included in Every Coverage */}
       <section className="py-24 md:py-32 px-6 md:px-12 bg-white">
