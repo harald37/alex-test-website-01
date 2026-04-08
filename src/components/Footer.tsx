@@ -89,6 +89,12 @@ export const Footer = () => {
             SEO-Strategie
           </Link>
           <Link
+            to="/hero-layout-test"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Hero-Layout-Test
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

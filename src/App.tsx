@@ -24,6 +24,7 @@ import LogoShowcase from "./pages/LogoShowcase";
 import ButtonShowcase from "./pages/ButtonShowcase";
 import ButtonTest from "./pages/ButtonTest";
 import SEOTest from "./pages/SEOTest";
+import HeroLayoutTest from "./pages/HeroLayoutTest";
 
 export default function App() {
   return (
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/button-showcase" element={<ButtonShowcase />} />
           <Route path="/button-test" element={<ButtonTest />} />
           <Route path="/seo-test" element={<SEOTest />} />
+          <Route path="/hero-layout-test" element={<HeroLayoutTest />} />
         </Routes>
       </Layout>
     </Router>
