@@ -53,6 +53,18 @@ export const Footer = () => {
             Hero-Showcase
           </Link>
           <Link
+            to="/hero-variants"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Hero-Varianten
+          </Link>
+          <Link
+            to="/menu-comparison"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Menü-Vergleich
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

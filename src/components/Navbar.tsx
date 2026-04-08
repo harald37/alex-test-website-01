@@ -84,7 +84,7 @@ export const Navbar = () => {
             to="/"
             className={cn(
               "tracking-[0.5em] text-sm md:text-lg uppercase transition-colors duration-500",
-              !isScrolled && !isOpen && location.pathname === '/' ? "text-white" : "text-zinc-900"
+              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(false)}
           >
@@ -155,7 +155,7 @@ export const Navbar = () => {
           <button
             className={cn(
               "md:hidden p-2 focus:outline-none transition-colors duration-500",
-              !isScrolled && !isOpen && location.pathname === '/' ? "text-white" : "text-zinc-900"
+              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
@@ -191,7 +191,7 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden fixed inset-0 bg-surface-container-lowest/98 backdrop-blur-2xl z-[90] flex flex-col"
+            className="md:hidden fixed inset-0 bg-[#1a2e26] z-[90] flex flex-col"
           >
             <div className="flex-1 flex flex-col items-center justify-center space-y-8 px-12 pt-20">
               {NAV_LINKS.map((link) => (
@@ -203,7 +203,7 @@ export const Navbar = () => {
                     to={link.path}
                     className={cn(
                       "font-sans uppercase tracking-[0.6em] text-sm transition-all duration-700",
-                      location.pathname === link.path ? "text-zinc-900" : "text-zinc-300 hover:text-zinc-900"
+                      location.pathname === link.path ? "text-white" : "text-white/40 hover:text-white"
                     )}
                     onClick={() => setIsOpen(false)}
                   >
@@ -216,17 +216,17 @@ export const Navbar = () => {
             {/* Mobile Socials */}
             <div className="px-12 py-12 flex flex-col items-center space-y-6">
               <div className="flex items-center space-x-8">
-                <motion.a variants={itemVariants} href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
                   <Instagram size={18} strokeWidth={1.2} />
                 </motion.a>
-                <motion.a variants={itemVariants} href={SOCIAL_LINKS.email} className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.email} className="text-white/40 hover:text-white transition-colors">
                   <Mail size={18} strokeWidth={1.2} />
                 </motion.a>
-                <motion.a variants={itemVariants} href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
+                <motion.a variants={itemVariants} href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
                   <MessageCircle size={18} strokeWidth={1.2} />
                 </motion.a>
               </div>
-              <motion.span variants={itemVariants} className="font-sans uppercase tracking-[0.2em] text-[7px] text-zinc-300">
+              <motion.span variants={itemVariants} className="font-sans uppercase tracking-[0.2em] text-[7px] text-white/20">
                 © {new Date().getFullYear()} ALEX BEGOPOULOS
               </motion.span>
             </div>
