@@ -81,23 +81,23 @@ export const Navbar = () => {
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
           {/* Mobile Toggle Placeholder to keep logo centered */}
-          <div className="md:hidden w-10" />
+          <div className="lg:hidden w-10" />
 
           <Link
             to="/"
             className={cn(
-              "flex flex-col md:flex-row items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0",
+              "flex flex-col lg:flex-row items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 lg:static lg:left-auto lg:translate-x-0",
               isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(false)}
           >
-            <span className="tracking-[0.6em] text-xs md:text-lg uppercase leading-none mb-1 md:mb-0 md:mr-4">ALEX</span>
+            <span className="tracking-[0.6em] text-xs md:text-lg uppercase leading-none mb-1 lg:mb-0 lg:mr-4">ALEX</span>
             <span className="tracking-[0.6em] text-xs md:text-lg uppercase leading-none">BEGOPOULOS</span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-12 ml-auto">
-            <div className="flex items-center space-x-4 lg:space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-12 ml-auto pl-12">
+            <div className="flex items-center space-x-4 xl:space-x-8">
               {NAV_LINKS.map((link) => {
                 const isActive = location.pathname === link.path;
                 const isHero = !isScrolled && !isOpen && location.pathname === '/';
@@ -158,7 +158,7 @@ export const Navbar = () => {
           {/* Mobile Toggle */}
           <button
             className={cn(
-              "md:hidden p-2 focus:outline-none transition-colors duration-500 relative z-[110]",
+              "lg:hidden p-2 focus:outline-none transition-colors duration-500 relative z-[110]",
               isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(!isOpen)}
@@ -195,7 +195,7 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden fixed inset-0 bg-[#1a2e26] z-[90] flex flex-col"
+            className="lg:hidden fixed inset-0 bg-[#1a2e26] z-[90] flex flex-col"
           >
             <div className="flex-1 flex flex-col items-center justify-center space-y-8 px-12 pt-20">
               {NAV_LINKS.map((link) => (

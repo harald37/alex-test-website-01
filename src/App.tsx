@@ -21,6 +21,8 @@ import HeroShowcase from "./pages/HeroShowcase";
 import HeroVariants from "./pages/HeroVariants";
 import MenuComparison from "./pages/MenuComparison";
 import LogoShowcase from "./pages/LogoShowcase";
+import ButtonShowcase from "./pages/ButtonShowcase";
+import ButtonTest from "./pages/ButtonTest";
 
 export default function App() {
   return (
@@ -43,6 +45,8 @@ export default function App() {
           <Route path="/hero-variants" element={<HeroVariants />} />
           <Route path="/menu-comparison" element={<MenuComparison />} />
           <Route path="/logo-showcase" element={<LogoShowcase />} />
+          <Route path="/button-showcase" element={<ButtonShowcase />} />
+          <Route path="/button-test" element={<ButtonTest />} />
         </Routes>
       </Layout>
     </Router>

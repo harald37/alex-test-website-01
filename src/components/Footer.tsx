@@ -71,6 +71,18 @@ export const Footer = () => {
             Logo-Varianten
           </Link>
           <Link
+            to="/button-showcase"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Button-Varianten
+          </Link>
+          <Link
+            to="/button-test"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Button-Test
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

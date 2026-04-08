@@ -35,12 +35,6 @@ export const Home: React.FC = () => {
               Authentische Hochzeitsreportagen
             </span>
             
-            <h1 className="font-sans uppercase tracking-[0.4em] text-3xl md:text-6xl lg:text-7xl text-white/90 mb-12 font-light">
-              Alex Begopoulos
-            </h1>
-            
-            <div className="w-12 h-[1px] bg-white/10 mb-12" />
-            
             <p className="font-serif italic text-xl md:text-3xl text-white/70 mb-24 max-w-2xl leading-relaxed">
               Authentische Momente & zeitlose Ästhetik <br className="hidden md:block" /> 
               in Hannover & weltweit
