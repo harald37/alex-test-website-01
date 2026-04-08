@@ -14,6 +14,7 @@ const VARIANT_IMAGES = [
   "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495590/brautpaar-freie-trauung-hannover.webp",
   "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495587/braeutigam-tragt-die-braut-am-feldweg.webp",
   "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495586/braeutigam-schaut-braut-an-freie-trauung-hannover.webp",
+  "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp",
 ];
 
 const CREATIVE_VARIANTS = [

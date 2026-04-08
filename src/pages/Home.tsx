@@ -15,8 +15,8 @@ export const Home: React.FC = () => {
       <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-zinc-900">
         <div className="absolute inset-0 z-0 bg-zinc-900">
           <img 
-            src={IMAGES.HERO} 
-            alt="Elegante Hochzeitsreportage" 
+            src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp" 
+            alt="Elegante Hochzeitsreportage Hannover" 
             className="w-full h-full object-cover opacity-60 grayscale"
             referrerPolicy="no-referrer"
           />

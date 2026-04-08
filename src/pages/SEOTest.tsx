@@ -382,6 +382,26 @@ export const SEOTest = () => {
         </section>
       </div>
 
+      {/* Variante 18: Night Dance (Requested) */}
+      <div className="mb-32">
+        <VariantHeader id="18" title="Night Dance (Requested)" />
+        <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-zinc-950 mx-4 md:mx-6 rounded-3xl">
+          <div className="absolute inset-0 z-0">
+            <img src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp" className="w-full h-full object-cover opacity-60" alt="Hochzeitstanz bei Nacht mit Kuss" />
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
+          </div>
+          <div className="relative z-10 text-center px-6 max-w-4xl mt-32 md:mt-48">
+            <h1 className="font-sans uppercase tracking-[0.2em] md:tracking-[0.3em] text-2xl md:text-5xl text-white mb-6 font-light leading-tight">
+              Hochzeitsfotograf <br/> <span className="text-[#c5a059]">Hannover</span>
+            </h1>
+            <p className="font-serif italic text-lg md:text-2xl text-white/80 mb-10">
+              Magische Momente, die für immer bleiben.
+            </p>
+            <Button to="/contact" dark className="bg-white text-zinc-950 hover:bg-zinc-200">Eure Geschichte erzählen</Button>
+          </div>
+        </section>
+      </div>
+
       <div className="max-w-3xl mx-auto text-center px-6 mt-32">
         <h2 className="font-serif text-3xl italic mb-8 text-zinc-900">Fazit zur SEO-Strategie</h2>
         <div className="text-left space-y-6 text-zinc-600">
