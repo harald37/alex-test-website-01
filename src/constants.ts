@@ -445,9 +445,9 @@ export const IMAGES = {
   ABOUT: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775476335/portrait-hochzeitsfotograf-alex-begopoulos.webp",
   SERVICES: {
     HERO: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
-    PLANNING: "https://lh3.googleusercontent.com/aida-public/AB6AXuDZSngqsbTJhtOjFb7Z5mJDq9FhuxBROI-n5jDGl_vmf9Ys9hDBWX--FTPQD_aod_GI44pHYuYvRjys1A9PAj69xt9d_zA2d7SQira-2w40zdVoOPsmkCT2xjZR_QKZSlYu0InIyKvWjJppMi1-SqVdFAO-qBm3rIjlm63TG29M_FOepB4JcllGaJYRGUpx1SZVro1Aos5bngVve0rg0DN3QKWWUbVp02_nDJzdX0WSmEkoT3tXbHnbnAoWWgkLXhH1xMqDvGAP75M",
-    COVERAGE: "https://lh3.googleusercontent.com/aida-public/AB6AXuAT7vRl3nY9wSjbTjzPcXXJzb3KGmt2v1yWdZQg-ml_AC1F3185UbXKvHsU620O4JFr8BhEmigRoqC7bqyKwv-B1lA2nrxUX_3OionChg6gsHpv2L33mQ40J-N10V7VVzMijeKMPsf29bJ55jUx39gziBDlrOuh7mV65mqIOOo_Q9_r74pDbrPLP0rS5gDKXzy-e8eq6x96MMcAShzjKW5gikAnss10RDunbGpK5buUWPctynoxQSszS9KBEMvfyhAnQZgGbN0nR_w",
-    POST: "https://lh3.googleusercontent.com/aida-public/AB6AXuDqX310QxkMjedSJwDGayEOKWSA2U2KbS-9rK-nNS8E40wMg3G5PBG6E6KSFmSC7XtBkmaE73FpaWFqPsMzkxIq_7rHruDuH44EHt68cPy-oIxX6YYWAWR3NUW6Ick0hBiMos8THuGauaUEHW6U9s5yWU-RH0HuWhfVoiNQxFtW4olbQC8ocC9zU3BGykOAUWXaabEt7dFtBaS-BEiyD--M0kAeH_xquYncLO3ygZJVuIsFhMxvSPCmWCgXNsVCX1lTa0g0n56SfQM"
+    PLANNING: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
+    COVERAGE: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
+    POST: "https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495566/detailshot-braut-und-braeutigam-halten-sich-die-haende-hannover.webp"
   }
 };
 

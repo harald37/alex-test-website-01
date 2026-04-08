@@ -38,29 +38,53 @@ export const GreenBannerTestimonials = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="text-center"
+              className="text-center w-full"
             >
               <p className="font-serif text-xl md:text-3xl italic text-white/90 leading-relaxed mb-12 max-w-3xl mx-auto">
                 "{REVIEWS[currentIndex].text}"
               </p>
+              
               <div className="font-serif text-lg md:text-xl italic text-white/60">
                 — {REVIEWS[currentIndex].names}
               </div>
             </motion.div>
           </AnimatePresence>
 
-          {/* Navigation Arrows */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-0 w-full flex justify-between pointer-events-none">
+          {/* Mobile Navigation Controls (Static) */}
+          <div className="flex md:hidden items-center justify-center space-x-8 mt-12">
             <button 
               onClick={prev} 
-              className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -ml-4 md:-ml-12"
+              className="text-white/40 hover:text-white transition-colors p-2"
+              aria-label="Previous review"
+            >
+              <ChevronLeft size={24} strokeWidth={1.5} />
+            </button>
+            
+            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/20">
+              {currentIndex + 1} / {REVIEWS.length}
+            </span>
+
+            <button 
+              onClick={next} 
+              className="text-white/40 hover:text-white transition-colors p-2"
+              aria-label="Next review"
+            >
+              <ChevronRight size={24} strokeWidth={1.5} />
+            </button>
+          </div>
+
+          {/* Navigation Arrows (Desktop) */}
+          <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 w-full justify-between pointer-events-none">
+            <button 
+              onClick={prev} 
+              className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -ml-12"
               aria-label="Previous review"
             >
               <ChevronLeft size={32} strokeWidth={1} />
             </button>
             <button 
               onClick={next} 
-              className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -mr-4 md:-mr-12"
+              className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -mr-12"
               aria-label="Next review"
             >
               <ChevronRight size={32} strokeWidth={1} />

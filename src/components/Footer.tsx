@@ -47,6 +47,12 @@ export const Footer = () => {
             Design-Vergleich
           </Link>
           <Link
+            to="/hero-showcase"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Hero-Showcase
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

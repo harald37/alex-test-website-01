@@ -76,7 +76,7 @@ export const Services = () => {
             <img 
               src={IMAGES.SERVICES.PLANNING} 
               alt="Planung & Vorgespräch" 
-              className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-sm"
+              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
               referrerPolicy="no-referrer"
             />
           </motion.div>
@@ -107,7 +107,7 @@ export const Services = () => {
             <img 
               src={IMAGES.SERVICES.COVERAGE} 
               alt="Hochzeitsbegleitung" 
-              className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-sm"
+              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
               referrerPolicy="no-referrer"
             />
           </motion.div>
@@ -138,7 +138,7 @@ export const Services = () => {
             <img 
               src={IMAGES.SERVICES.POST} 
               alt="Nachbearbeitung & Galerie" 
-              className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-sm"
+              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
               referrerPolicy="no-referrer"
             />
           </motion.div>

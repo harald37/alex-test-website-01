@@ -17,6 +17,7 @@ import { Privacy } from "./pages/Privacy";
 import { Hannover } from "./pages/SEO/Hannover";
 import { Braunschweig } from "./pages/SEO/Braunschweig";
 import { TestimonialComparison } from "./pages/TestimonialComparison";
+import HeroShowcase from "./pages/HeroShowcase";
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
           <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
           <Route path="/testimonial-comparison" element={<TestimonialComparison />} />
+          <Route path="/hero-showcase" element={<HeroShowcase />} />
         </Routes>
       </Layout>
     </Router>
