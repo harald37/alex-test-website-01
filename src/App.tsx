@@ -20,6 +20,7 @@ import { TestimonialComparison } from "./pages/TestimonialComparison";
 import HeroShowcase from "./pages/HeroShowcase";
 import HeroVariants from "./pages/HeroVariants";
 import MenuComparison from "./pages/MenuComparison";
+import LogoShowcase from "./pages/LogoShowcase";
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
           <Route path="/hero-showcase" element={<HeroShowcase />} />
           <Route path="/hero-variants" element={<HeroVariants />} />
           <Route path="/menu-comparison" element={<MenuComparison />} />
+          <Route path="/logo-showcase" element={<LogoShowcase />} />
         </Routes>
       </Layout>
     </Router>

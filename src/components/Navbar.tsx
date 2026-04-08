@@ -80,19 +80,23 @@ export const Navbar = () => {
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
+          {/* Mobile Toggle Placeholder to keep logo centered */}
+          <div className="md:hidden w-10" />
+
           <Link
             to="/"
             className={cn(
-              "tracking-[0.5em] text-sm md:text-lg uppercase transition-colors duration-500",
+              "flex flex-col items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0",
               isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(false)}
           >
-            ALEX BEGOPOULOS
+            <span className="tracking-[0.6em] text-xs md:text-sm uppercase leading-none mb-1">ALEX</span>
+            <span className="tracking-[0.6em] text-xs md:text-sm uppercase leading-none">BEGOPOULOS</span>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-12">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-12 ml-auto">
             <div className="flex items-center space-x-4 lg:space-x-8">
               {NAV_LINKS.map((link) => {
                 const isActive = location.pathname === link.path;
@@ -154,7 +158,7 @@ export const Navbar = () => {
           {/* Mobile Toggle */}
           <button
             className={cn(
-              "md:hidden p-2 focus:outline-none transition-colors duration-500",
+              "md:hidden p-2 focus:outline-none transition-colors duration-500 relative z-[110]",
               isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(!isOpen)}
