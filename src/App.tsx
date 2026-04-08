@@ -25,6 +25,7 @@ import ButtonShowcase from "./pages/ButtonShowcase";
 import ButtonTest from "./pages/ButtonTest";
 import SEOTest from "./pages/SEOTest";
 import HeroLayoutTest from "./pages/HeroLayoutTest";
+import ScrollIndicatorTest from "./pages/ScrollIndicatorTest";
 
 export default function App() {
   return (
@@ -51,6 +52,7 @@ export default function App() {
           <Route path="/button-test" element={<ButtonTest />} />
           <Route path="/seo-test" element={<SEOTest />} />
           <Route path="/hero-layout-test" element={<HeroLayoutTest />} />
+          <Route path="/scroll-indicator-test" element={<ScrollIndicatorTest />} />
         </Routes>
       </Layout>
     </Router>

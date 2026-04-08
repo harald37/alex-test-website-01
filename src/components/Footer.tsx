@@ -95,6 +95,12 @@ export const Footer = () => {
             Hero-Layout-Test
           </Link>
           <Link
+            to="/scroll-indicator-test"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Scroll-Indicator-Test
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

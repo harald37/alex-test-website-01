@@ -6,7 +6,7 @@ import { cn } from '../lib/utils';
 import { GreenBannerTestimonials } from '../components/GreenBannerTestimonials';
 import { HomePortfolioGrid } from '../components/HomePortfolioGrid';
 import { Button } from '../components/ui/Button';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 
 export const Home: React.FC = () => {
   return (
@@ -39,15 +39,23 @@ export const Home: React.FC = () => {
               Authentische Momente & zeitlose Ästhetik <br className="hidden md:block" /> 
               in Hannover & weltweit
             </p>
-            
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
+          </motion.div>
+        </div>
+
+        {/* Scroll Indicator Variant 4 */}
+        <div className="absolute bottom-12 left-0 w-full flex justify-center z-20">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+            className="flex flex-col items-center gap-2"
+          >
+            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-white/40">Scroll</span>
+            <motion.div 
+              animate={{ y: [0, 5, 0] }} 
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             >
-              <Button to="/portfolio" dark>
-                Portfolio entdecken
-              </Button>
+              <ChevronDown className="w-4 h-4 text-white/40" />
             </motion.div>
           </motion.div>
         </div>
