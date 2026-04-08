@@ -83,6 +83,12 @@ export const Footer = () => {
             Button-Test
           </Link>
           <Link
+            to="/seo-test"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            SEO-Strategie
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

@@ -23,6 +23,7 @@ import MenuComparison from "./pages/MenuComparison";
 import LogoShowcase from "./pages/LogoShowcase";
 import ButtonShowcase from "./pages/ButtonShowcase";
 import ButtonTest from "./pages/ButtonTest";
+import SEOTest from "./pages/SEOTest";
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
           <Route path="/logo-showcase" element={<LogoShowcase />} />
           <Route path="/button-showcase" element={<ButtonShowcase />} />
           <Route path="/button-test" element={<ButtonTest />} />
+          <Route path="/seo-test" element={<SEOTest />} />
         </Routes>
       </Layout>
     </Router>
