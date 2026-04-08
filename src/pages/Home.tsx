@@ -24,18 +24,18 @@ export const Home: React.FC = () => {
           <div className="absolute inset-0 bg-black/30" />
         </div>
         
-        <div className="relative z-10 text-center flex flex-col items-center max-w-5xl px-6">
+        <div className="relative z-10 w-full h-full flex flex-col items-center justify-end text-center px-6 pb-24 md:pb-32">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col items-center"
           >
-            <span className="font-sans uppercase tracking-[0.6em] text-[10px] md:text-xs text-white/40 mb-12 block">
+            <span className="font-sans uppercase tracking-[0.6em] text-[10px] md:text-xs text-white/40 mb-8 block">
               Authentische Hochzeitsreportagen
             </span>
             
-            <p className="font-serif italic text-xl md:text-3xl text-white/70 mb-24 max-w-2xl leading-relaxed">
+            <p className="font-serif italic text-xl md:text-3xl text-white/70 mb-12 max-w-2xl leading-relaxed">
               Authentische Momente & zeitlose Ästhetik <br className="hidden md:block" /> 
               in Hannover & weltweit
             </p>
@@ -43,7 +43,7 @@ export const Home: React.FC = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.5 }}
+              transition={{ duration: 1, delay: 1 }}
             >
               <Button to="/portfolio" dark>
                 Portfolio entdecken
