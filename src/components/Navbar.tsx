@@ -86,13 +86,13 @@ export const Navbar = () => {
           <Link
             to="/"
             className={cn(
-              "flex flex-col items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0",
+              "flex flex-col md:flex-row items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0",
               isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
             )}
             onClick={() => setIsOpen(false)}
           >
-            <span className="tracking-[0.6em] text-xs md:text-sm uppercase leading-none mb-1">ALEX</span>
-            <span className="tracking-[0.6em] text-xs md:text-sm uppercase leading-none">BEGOPOULOS</span>
+            <span className="tracking-[0.6em] text-xs md:text-lg uppercase leading-none mb-1 md:mb-0 md:mr-4">ALEX</span>
+            <span className="tracking-[0.6em] text-xs md:text-lg uppercase leading-none">BEGOPOULOS</span>
           </Link>
 
           {/* Desktop Nav */}
