@@ -24,12 +24,12 @@ export const Home: React.FC = () => {
           <div className="absolute inset-0 bg-black/30" />
         </div>
         
-        <div className="relative z-10 w-full h-full flex flex-col items-center justify-end text-center px-6 pb-24 md:pb-32">
+        <div className="relative z-10 w-full h-full flex flex-col items-center md:items-start justify-end text-center md:text-left px-6 md:px-24 pb-24 md:pb-32">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center md:items-start"
           >
             <span className="font-sans uppercase tracking-[0.6em] text-[10px] md:text-xs text-white/40 mb-8 block">
               Authentische Hochzeitsreportagen
