@@ -162,7 +162,7 @@ export const Services = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 block mb-4">Das Rundum-Sorglos-Paket</span>
-            <h2 className="font-serif text-4xl md:text-6xl italic text-zinc-900 uppercase leading-tight">
+            <h2 className="font-serif text-3xl md:text-6xl italic text-zinc-900 uppercase leading-tight px-4">
               In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit enthalten
             </h2>
           </div>
