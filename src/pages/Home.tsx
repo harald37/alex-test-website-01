@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-zinc-900">
+      <section className="relative h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-zinc-900">
         <div className="absolute inset-0 z-0 bg-zinc-900">
           <img 
             src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp" 
