@@ -29,6 +29,8 @@ import ScrollIndicatorTest from "./pages/ScrollIndicatorTest";
 import { TestIntros } from "./pages/TestIntros";
 import { TestHome } from "./pages/TestHome";
 import { HomeTest } from "./pages/HomeTest";
+import { HomeTest2 } from "./pages/HomeTest2";
+import { HomeVariantsShowcase } from "./pages/HomeVariantsShowcase";
 
 export default function App() {
   return (
@@ -59,6 +61,8 @@ export default function App() {
           <Route path="/test-intros" element={<TestIntros />} />
           <Route path="/test-home" element={<TestHome />} />
           <Route path="/home-test" element={<HomeTest />} />
+          <Route path="/home-test-2" element={<HomeTest2 />} />
+          <Route path="/home-variants-showcase" element={<HomeVariantsShowcase />} />
         </Routes>
       </Layout>
     </Router>

@@ -119,6 +119,18 @@ export const Footer = () => {
             Home-Test
           </Link>
           <Link
+            to="/home-test-2"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Home-Test 2
+          </Link>
+          <Link
+            to="/home-variants-showcase"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Hero-Varianten (15)
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >
