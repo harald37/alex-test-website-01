@@ -33,6 +33,7 @@ import { HomeTest2 } from "./pages/HomeTest2";
 import { HomeVariantsShowcase } from "./pages/HomeVariantsShowcase";
 import { QuoteVariants } from "./pages/QuoteVariants";
 import { CopyVariants } from "./pages/CopyVariants";
+import { TestCenter } from "./pages/TestCenter";
 
 export default function App() {
   return (
@@ -50,23 +51,7 @@ export default function App() {
           <Route path="/datenschutz" element={<Privacy />} />
           <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
           <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
-          <Route path="/testimonial-comparison" element={<TestimonialComparison />} />
-          <Route path="/hero-showcase" element={<HeroShowcase />} />
-          <Route path="/hero-variants" element={<HeroVariants />} />
-          <Route path="/menu-comparison" element={<MenuComparison />} />
-          <Route path="/logo-showcase" element={<LogoShowcase />} />
-          <Route path="/button-showcase" element={<ButtonShowcase />} />
-          <Route path="/button-test" element={<ButtonTest />} />
-          <Route path="/seo-test" element={<SEOTest />} />
-          <Route path="/hero-layout-test" element={<HeroLayoutTest />} />
-          <Route path="/scroll-indicator-test" element={<ScrollIndicatorTest />} />
-          <Route path="/test-intros" element={<TestIntros />} />
-          <Route path="/test-home" element={<TestHome />} />
-          <Route path="/home-test" element={<HomeTest />} />
-          <Route path="/home-test-2" element={<HomeTest2 />} />
-          <Route path="/home-variants-showcase" element={<HomeVariantsShowcase />} />
-          <Route path="/quote-variants" element={<QuoteVariants />} />
-          <Route path="/copy-variants" element={<CopyVariants />} />
+          <Route path="/test" element={<TestCenter />} />
         </Routes>
       </Layout>
     </Router>

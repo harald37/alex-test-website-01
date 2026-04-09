@@ -41,106 +41,10 @@ export const Footer = () => {
             Hochzeitsfotograf Braunschweig
           </Link>
           <Link
-            to="/testimonial-comparison"
+            to="/test"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >
-            Design-Vergleich
-          </Link>
-          <Link
-            to="/hero-showcase"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Hero-Showcase
-          </Link>
-          <Link
-            to="/hero-variants"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Hero-Varianten
-          </Link>
-          <Link
-            to="/menu-comparison"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Menü-Vergleich
-          </Link>
-          <Link
-            to="/logo-showcase"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Logo-Varianten
-          </Link>
-          <Link
-            to="/button-showcase"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Button-Varianten
-          </Link>
-          <Link
-            to="/button-test"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Button-Test
-          </Link>
-          <Link
-            to="/seo-test"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            SEO-Strategie
-          </Link>
-          <Link
-            to="/hero-layout-test"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Hero-Layout-Test
-          </Link>
-          <Link
-            to="/scroll-indicator-test"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Scroll-Indicator-Test
-          </Link>
-          <Link
-            to="/test-intros"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Subpage-Intros
-          </Link>
-          <Link
-            to="/test-home"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Home-Intros
-          </Link>
-          <Link
-            to="/home-test"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Home-Test
-          </Link>
-          <Link
-            to="/home-test-2"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Home-Test 2
-          </Link>
-          <Link
-            to="/home-variants-showcase"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Hero-Varianten (15)
-          </Link>
-          <Link
-            to="/quote-variants"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Zitat-Varianten (30)
-          </Link>
-          <Link
-            to="/copy-variants"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
-          >
-            Text-Varianten (30)
+            Test Center
           </Link>
           <Link
             to="/impressum"
