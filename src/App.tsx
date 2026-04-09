@@ -26,6 +26,8 @@ import ButtonTest from "./pages/ButtonTest";
 import SEOTest from "./pages/SEOTest";
 import HeroLayoutTest from "./pages/HeroLayoutTest";
 import ScrollIndicatorTest from "./pages/ScrollIndicatorTest";
+import { TestIntros } from "./pages/TestIntros";
+import { TestHome } from "./pages/TestHome";
 
 export default function App() {
   return (
@@ -53,6 +55,8 @@ export default function App() {
           <Route path="/seo-test" element={<SEOTest />} />
           <Route path="/hero-layout-test" element={<HeroLayoutTest />} />
           <Route path="/scroll-indicator-test" element={<ScrollIndicatorTest />} />
+          <Route path="/test-intros" element={<TestIntros />} />
+          <Route path="/test-home" element={<TestHome />} />
         </Routes>
       </Layout>
     </Router>

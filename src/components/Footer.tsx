@@ -101,6 +101,18 @@ export const Footer = () => {
             Scroll-Indicator-Test
           </Link>
           <Link
+            to="/test-intros"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Subpage-Intros
+          </Link>
+          <Link
+            to="/test-home"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Home-Intros
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >

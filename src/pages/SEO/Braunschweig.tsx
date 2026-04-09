@@ -184,7 +184,7 @@ export const Braunschweig = () => {
       {/* About Me Short */}
       <section className="bg-zinc-50 py-32 px-6 md:px-12">
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-24 items-center">
-          <div className="aspect-[3/4] overflow-hidden md:order-last">
+          <div className="aspect-[3/4] overflow-hidden rounded-2xl md:order-last">
             <img 
               src={IMAGES.ABOUT} 
               alt="Alex Begopoulos" 

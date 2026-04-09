@@ -122,7 +122,7 @@ export const Home: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="aspect-[3/4] overflow-hidden"
+            className="aspect-[3/4] overflow-hidden rounded-2xl"
           >
             <img 
               src={IMAGES.ABOUT} 
