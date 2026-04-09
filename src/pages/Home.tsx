@@ -83,7 +83,7 @@ export const Home: React.FC = () => {
           >
             <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12"></div>
             <h2 className="font-serif italic text-2xl md:text-5xl text-zinc-900 leading-relaxed mb-24 max-w-4xl mx-auto">
-              Ihr findet mich in Hannover, aber buchen könnt ihr mich für eure Hochzeit in ganz Niedersachsen, Deutschland und für exklusive Destination Weddings.
+              Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail.
             </h2>
           </motion.div>
           
@@ -110,7 +110,7 @@ export const Home: React.FC = () => {
 
           <div className="max-w-3xl mx-auto space-y-8">
             <p className="tracking-wide text-zinc-600 leading-relaxed text-base md:text-lg italic font-serif">
-              "Als dein Hochzeitsfotograf in Hannover begleite ich euch nicht nur in Niedersachsen, sondern dort, wo eure Geschichte geschrieben wird – ob in den sanften Hügeln der Toskana oder im urbanen Herz Berlins."
+              Ihr findet mich in Hannover, aber buchen könnt ihr mich für eure Hochzeit in ganz Niedersachsen, Deutschland und für exklusive Destination Weddings.
             </p>
             <div className="flex flex-col items-center group pt-8">
               <span className="h-[1px] w-12 bg-zinc-900/20 group-hover:w-24 transition-all duration-500"></span>
