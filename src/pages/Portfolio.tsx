@@ -155,6 +155,7 @@ export const Portfolio = () => {
                       alt={item.alt} 
                       className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
                     />
                   </div>
                 </motion.div>
@@ -181,6 +182,7 @@ export const Portfolio = () => {
                       alt={item.alt} 
                       className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
                     />
                   </div>
                 </motion.div>

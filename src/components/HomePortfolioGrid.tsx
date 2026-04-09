@@ -82,6 +82,7 @@ export const HomePortfolioGrid: React.FC = () => {
                   alt={image.alt} 
                   className="w-full h-auto transition-transform duration-[2s] group-hover:scale-105"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
               </motion.div>
             ))}
