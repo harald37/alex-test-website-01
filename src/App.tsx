@@ -28,6 +28,7 @@ import HeroLayoutTest from "./pages/HeroLayoutTest";
 import ScrollIndicatorTest from "./pages/ScrollIndicatorTest";
 import { TestIntros } from "./pages/TestIntros";
 import { TestHome } from "./pages/TestHome";
+import { HomeTest } from "./pages/HomeTest";
 
 export default function App() {
   return (
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="/scroll-indicator-test" element={<ScrollIndicatorTest />} />
           <Route path="/test-intros" element={<TestIntros />} />
           <Route path="/test-home" element={<TestHome />} />
+          <Route path="/home-test" element={<HomeTest />} />
         </Routes>
       </Layout>
     </Router>
