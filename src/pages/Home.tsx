@@ -6,7 +6,7 @@ import { cn } from '../lib/utils';
 import { GreenBannerTestimonials } from '../components/GreenBannerTestimonials';
 import { HomePortfolioGrid } from '../components/HomePortfolioGrid';
 import { Button } from '../components/ui/Button';
-import { X, ChevronLeft, ChevronRight, ChevronDown, Quote } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 
 export const Home: React.FC = () => {
   return (
@@ -76,17 +76,15 @@ export const Home: React.FC = () => {
           <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-12 block">Meine Philosophie</span>
           
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-32"
           >
-            <div className="bg-white shadow-2xl shadow-zinc-200/50 p-10 md:p-20 rounded-[40px] text-center max-w-5xl mx-auto border border-zinc-50">
-              <h2 className="font-serif italic text-2xl md:text-5xl text-zinc-900 leading-relaxed">
-                Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail.
-              </h2>
-            </div>
+            <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12"></div>
+            <h2 className="font-serif italic text-2xl md:text-5xl text-zinc-900 leading-relaxed mb-24 max-w-4xl mx-auto">
+              Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail.
+            </h2>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-12 md:gap-24 mb-24 text-left">
