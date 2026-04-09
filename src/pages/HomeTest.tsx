@@ -58,7 +58,7 @@ export const HomeTest: React.FC = () => {
         </div>
 
         {/* Scroll Indicator Variant 4 */}
-        <div className="absolute bottom-12 left-0 w-full flex justify-center z-20">
+        <div className="absolute bottom-6 left-0 w-full flex justify-center z-20">
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
