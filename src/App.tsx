@@ -31,6 +31,7 @@ import { TestHome } from "./pages/TestHome";
 import { HomeTest } from "./pages/HomeTest";
 import { HomeTest2 } from "./pages/HomeTest2";
 import { HomeVariantsShowcase } from "./pages/HomeVariantsShowcase";
+import { QuoteVariants } from "./pages/QuoteVariants";
 
 export default function App() {
   return (
@@ -63,6 +64,7 @@ export default function App() {
           <Route path="/home-test" element={<HomeTest />} />
           <Route path="/home-test-2" element={<HomeTest2 />} />
           <Route path="/home-variants-showcase" element={<HomeVariantsShowcase />} />
+          <Route path="/quote-variants" element={<QuoteVariants />} />
         </Routes>
       </Layout>
     </Router>

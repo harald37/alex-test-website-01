@@ -131,6 +131,12 @@ export const Footer = () => {
             Hero-Varianten (15)
           </Link>
           <Link
+            to="/quote-variants"
+            className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
+          >
+            Zitat-Varianten (30)
+          </Link>
+          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-zinc-400 hover:text-zinc-900 transition-all"
           >
