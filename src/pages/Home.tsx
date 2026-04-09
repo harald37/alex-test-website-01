@@ -74,9 +74,18 @@ export const Home: React.FC = () => {
       <section className="py-32 md:py-48 px-6 md:px-24 bg-surface-container-lowest flex flex-col items-center">
         <div className="max-w-5xl w-full text-center">
           <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-12 block">Meine Philosophie</span>
-          <h2 className="font-serif italic text-2xl md:text-5xl text-zinc-900 leading-relaxed mb-24 max-w-4xl mx-auto">
-            "Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail."
-          </h2>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12"></div>
+            <h2 className="font-serif italic text-2xl md:text-5xl text-zinc-900 leading-relaxed mb-24 max-w-4xl mx-auto">
+              Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail.
+            </h2>
+          </motion.div>
           
           <div className="grid md:grid-cols-3 gap-12 md:gap-24 mb-24 text-left">
             <div className="space-y-6">
