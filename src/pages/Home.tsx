@@ -41,14 +41,13 @@ export const Home: React.FC = () => {
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col items-center md:items-start"
           >
-            <span className="font-sans uppercase tracking-[0.6em] text-[10px] md:text-xs text-white/40 mb-8 block">
-              Authentische Hochzeitsreportagen
-            </span>
+            <h1 className="font-sans uppercase tracking-[0.6em] text-[10px] md:text-xs text-white/40 mb-8 block">
+              Hochzeitsfotograf Hannover
+            </h1>
             
-            <p className="font-serif italic text-xl md:text-3xl text-white/70 mb-12 max-w-2xl leading-relaxed">
-              Authentische Momente & zeitlose Ästhetik <br className="hidden md:block" /> 
-              in Hannover & weltweit
-            </p>
+            <h2 className="font-serif italic text-4xl md:text-6xl lg:text-7xl text-white mb-0 leading-tight max-w-4xl">
+              Authentische Hochzeitsreportagen
+            </h2>
           </motion.div>
         </div>
 
@@ -74,9 +73,9 @@ export const Home: React.FC = () => {
       {/* Philosophy Block */}
       <section className="py-32 md:py-48 px-6 md:px-24 bg-surface-container-lowest flex flex-col items-center">
         <div className="max-w-5xl w-full text-center">
-          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-12 block">Die Vision eines Geschichtenerzählers</span>
-          <h2 className="font-serif italic text-4xl md:text-7xl text-zinc-900 leading-[1.1] mb-16">
-            Echte Emotionen. <br className="hidden md:block"/>Zeitlose Ästhetik.
+          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-12 block">Meine Philosophie</span>
+          <h2 className="font-serif italic text-3xl md:text-5xl text-zinc-900 leading-relaxed mb-24 max-w-4xl mx-auto">
+            "Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail."
           </h2>
           
           <div className="grid md:grid-cols-3 gap-12 md:gap-24 mb-24 text-left">
