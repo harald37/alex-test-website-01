@@ -57,397 +57,397 @@ export const IMAGES = {
     }
   ],  PORTFOLIO_2: [
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
       category: "hochzeit",
       alt: "Braut wird vom Bräutigam im Wald bei Uelzen zärtlich umarmt"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495572/hochzeitspaar-unter-regenschirm-in-der-natur-schloss-salder-salzgitter.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495572/hochzeitspaar-unter-regenschirm-in-der-natur-schloss-salder-salzgitter.webp",
       category: "hochzeit",
       alt: "Hochzeitspaar unter einem Regenschirm im Park von Schloss Salder in Salzgitter"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
       category: "hochzeit",
       alt: "Brautpaar blickt gemeinsam Richtung Maschsee in Hannover - Hochzeitsfotografie"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495596/braut-steigt-aus-auto-standesamtliche-trauung-uelzen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495596/braut-steigt-aus-auto-standesamtliche-trauung-uelzen.webp",
       category: "hochzeit",
       alt: "Braut steigt aus Hochzeitsauto vor dem Standesamt in Uelzen - Hochzeitsfotograf Alex Begopoulos"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495595/braut-richtet-fliege-des-brautigams.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495595/braut-richtet-fliege-des-brautigams.webp",
       category: "hochzeit",
       alt: "Braut richtet liebevoll die Fliege des Bräutigams - Detailaufnahme Hochzeitsreportage"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495594/brautpaar-sektempfang-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495594/brautpaar-sektempfang-hannover.webp",
       category: "hochzeit",
       alt: "Fröhliches Brautpaar beim Sektempfang nach der Trauung in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495593/brautpaar-paarshooting-im-feld.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495593/brautpaar-paarshooting-im-feld.webp",
       category: "hochzeit",
       alt: "Romantisches Brautpaar Shooting in einem goldenen Feld bei Sonnenuntergang"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495592/brautpaar-laueft-fotografen-entgegen-paarshooting-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495592/brautpaar-laueft-fotografen-entgegen-paarshooting-hannover.webp",
       category: "hochzeit",
       alt: "Lachendes Brautpaar läuft dem Fotografen entgegen - Paarshooting in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495590/brautpaar-freie-trauung-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495590/brautpaar-freie-trauung-hannover.webp",
       category: "hochzeit",
       alt: "Emotionale freie Trauung in Hannover - Das Brautpaar hält Händchen"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495589/braut-mit-trauzeugin.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495589/braut-mit-trauzeugin.webp",
       category: "hochzeit",
       alt: "Braut und Trauzeugin teilen einen innigen Moment vor der Hochzeit"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495588/braeutigam-und-trauzeuge-laufen-im-feld.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495588/braeutigam-und-trauzeuge-laufen-im-feld.webp",
       category: "hochzeit",
       alt: "Bräutigam und Trauzeuge laufen entspannt durch ein Feld - Hochzeitsfotografie Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495587/braeutigam-tragt-die-braut-am-feldweg.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495587/braeutigam-tragt-die-braut-am-feldweg.webp",
       category: "hochzeit",
       alt: "Bräutigam trägt seine Braut über einen Feldweg - Authentische Hochzeitsfotos"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495586/braeutigam-schaut-braut-an-freie-trauung-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495586/braeutigam-schaut-braut-an-freie-trauung-hannover.webp",
       category: "hochzeit",
       alt: "Verliebter Blick des Bräutigams zu seiner Braut während der freien Trauung"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495584/auszug-kapelle-uelzen-empfang-gaeste.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495584/auszug-kapelle-uelzen-empfang-gaeste.webp",
       category: "hochzeit",
       alt: "Auszug des Brautpaares aus der Kapelle in Uelzen mit jubelnden Gästen"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495583/umarmung-braut-und-freundin-nach-standesamtlicher-trauung-uelzen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495583/umarmung-braut-und-freundin-nach-standesamtlicher-trauung-uelzen.webp",
       category: "hochzeit",
       alt: "Herzliche Umarmung zwischen Braut and Freundin nach der standesamtlichen Trauung"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495582/shooting-braut-und-braeutigam-laecheln-sich-an-im-wald.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495582/shooting-braut-und-braeutigam-laecheln-sich-an-im-wald.webp",
       category: "hochzeit",
       alt: "Braut und Bräutigam lächeln sich beim Shooting im Wald verliebt an"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495581/sinnliches-portrait-brautpaar-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495581/sinnliches-portrait-brautpaar-hannover.webp",
       category: "hochzeit",
       alt: "Sinnliches Portrait eines Brautpaares in Hannover - Fine Art Hochzeitsfotografie"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495580/portrait-braut-mit-brautstrauss-am-feldweg.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495580/portrait-braut-mit-brautstrauss-am-feldweg.webp",
       category: "hochzeit",
       alt: "Portrait der Braut mit ihrem Brautstrauß auf einem Feldweg bei Sonnenuntergang"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495579/oma-umarmt-braut-nach-freier-trauung-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495579/oma-umarmt-braut-nach-freier-trauung-hannover.webp",
       category: "hochzeit",
       alt: "Rührender Moment: Oma umarmt die Braut nach der freien Trauung in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495578/naechtlicher-location-shot-hochzeit-im-eigenen-garten-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495578/naechtlicher-location-shot-hochzeit-im-eigenen-garten-hannover.webp",
       category: "hochzeit",
       alt: "Nächtliche Aufnahme der Hochzeitslocation im eigenen Garten in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495577/kapelle-uelzen-standesamtliche-trauung.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495577/kapelle-uelzen-standesamtliche-trauung.webp",
       category: "hochzeit",
       alt: "Die Kapelle in Uelzen als festlicher Ort für die standesamtliche Trauung"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495575/hochzeitstorte-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495575/hochzeitstorte-hannover.webp",
       category: "hochzeit",
       alt: "Stilvolle Hochzeitstorte bei einer Feier in Hannover - Hochzeitsdetails"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp",
       category: "hochzeit",
       alt: "Romantischer Hochzeitstanz im Garten bei Nacht mit einem Kuss"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495573/hochzeitstanz-im-eigenen-garten-bei-nacht-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495573/hochzeitstanz-im-eigenen-garten-bei-nacht-hannover.webp",
       category: "hochzeit",
       alt: "Stimmungsvoller Hochzeitstanz unter freiem Himmel im Garten in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495571/hochzeitspaar-lacht-sich-zu-stadtpark-langenhagen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495571/hochzeitspaar-lacht-sich-zu-stadtpark-langenhagen.webp",
       category: "hochzeit",
       alt: "Lachendes Hochzeitspaar im Stadtpark Langenhagen - Natürliche Hochzeitsfotos"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495569/hochzeitslocation-im-eigenen-garten-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495569/hochzeitslocation-im-eigenen-garten-hannover.webp",
       category: "hochzeit",
       alt: "Wunderschön dekorierte Hochzeitslocation im eigenen Garten in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495568/detailshot-eines-stuhls-deko-freie-trauung.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495568/detailshot-eines-stuhls-deko-freie-trauung.webp",
       category: "hochzeit",
       alt: "Detailaufnahme der Stuhldekoration bei einer freien Trauung"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495566/detailshot-braut-und-braeutigam-halten-sich-die-haende-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495566/detailshot-braut-und-braeutigam-halten-sich-die-haende-hannover.webp",
       category: "hochzeit",
       alt: "Detailaufnahme: Braut and Bräutigam halten sich fest an den Händen"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495565/detailshot-braut-und-braeutigam-halten-haende-schloss-salder-salzgitter.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495565/detailshot-braut-und-braeutigam-halten-haende-schloss-salder-salzgitter.webp",
       category: "hochzeit",
       alt: "Nahaufnahme der Hände des Brautpaares vor Schloss Salder in Salzgitter"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495563/detailbild-eheringe-mit-brautstrauss-uelzen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495563/detailbild-eheringe-mit-brautstrauss-uelzen.webp",
       category: "hochzeit",
       alt: "Detailbild der Eheringe zusammen mit dem Brautstrauß in Uelzen"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495562/close-up-bild-der-braut.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495562/close-up-bild-der-braut.webp",
       category: "hochzeit",
       alt: "Close-up Portrait der Braut - Fokus auf Emotion und Natürlichkeit"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495561/brautvater-mit-weinglas-am-abend.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495561/brautvater-mit-weinglas-am-abend.webp",
       category: "hochzeit",
       alt: "Brautvater genießt ein Glas Wein bei der abendlichen Hochzeitsfeier"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495560/close-up-braeutigam-freie-trauung-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495560/close-up-braeutigam-freie-trauung-hannover.webp",
       category: "hochzeit",
       alt: "Nahaufnahme des Bräutigams während der freien Trauung in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495559/braut-zeigt-brautstrauss-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495559/braut-zeigt-brautstrauss-hannover.webp",
       category: "hochzeit",
       alt: "Braut präsentiert stolz ihren wunderschönen Brautstrauß in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495558/braut-und-braeutigam-halten-sich-die-hände-standesamt-schloss-salder-salzgitter.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495558/braut-und-braeutigam-halten-sich-die-hände-standesamt-schloss-salder-salzgitter.webp",
       category: "hochzeit",
       alt: "Braut und Bräutigam halten Händchen vor dem Standesamt Schloss Salder"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495558/brautstrauss-schloss-salder-salzgitter.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495558/brautstrauss-schloss-salder-salzgitter.webp",
       category: "hochzeit",
       alt: "Detailaufnahme des Brautstraußes vor der Kulisse von Schloss Salder"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502240/portrait-enna-steinhuder-meer-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502240/portrait-enna-steinhuder-meer-01.webp",
       category: "portrait",
       alt: "Sinnliches Portrait von Enna am Steinhuder Meer bei Sonnenuntergang"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502239/portrait-daria-steinhuder-meer-03.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502239/portrait-daria-steinhuder-meer-03.webp",
       category: "portrait",
       alt: "Portrait Shooting mit Daria am Ufer des Steinhuder Meers"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502238/portrait-daria-steinhuder-meer-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502238/portrait-daria-steinhuder-meer-02.webp",
       category: "portrait",
       alt: "Natürliches Portrait von Daria am Steinhuder Meer - Outdoor Fotografie"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502237/portrait-daria-steinhuder-meer-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502237/portrait-daria-steinhuder-meer-01.webp",
       category: "portrait",
       alt: "Daria posiert am Steinhuder Meer für ein Portrait Shooting"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502237/portrait-daria-schwarzer-see-garbsen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502237/portrait-daria-schwarzer-see-garbsen.webp",
       category: "portrait",
       alt: "Portrait von Daria am Schwarzen See in Garbsen - Natürliches Licht"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502235/portrait-daria-neues-rathaus-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502235/portrait-daria-neues-rathaus-hannover.webp",
       category: "portrait",
       alt: "Elegantes Portrait Shooting mit Daria vor dem Neuen Rathaus Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502235/portrait-daria-ihmezentrum-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502235/portrait-daria-ihmezentrum-hannover.webp",
       category: "portrait",
       alt: "Urbanes Portrait von Daria am Ihmezentrum in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502234/portrait-daria-blauer-see-garbsen.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502234/portrait-daria-blauer-see-garbsen.webp",
       category: "portrait",
       alt: "Portrait von Daria am Blauen See in Garbsen - Sommerliches Licht"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502233/portait-melissa-linden-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502233/portait-melissa-linden-hannover.webp",
       category: "portrait",
       alt: "Charakterstarkes Portrait von Melissa im Stadtteil Linden, Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502232/portait-male-georgengarten-hannover-04.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502232/portait-male-georgengarten-hannover-04.webp",
       category: "portrait",
       alt: "Männliches Portrait Shooting im Georgengarten Hannover - Naturkulisse"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502231/portait-male-georgengarten-hannover-03.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502231/portait-male-georgengarten-hannover-03.webp",
       category: "portrait",
       alt: "Portrait eines Mannes im Georgengarten Hannover bei weichem Licht"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502230/portait-male-georgengarten-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502230/portait-male-georgengarten-hannover-02.webp",
       category: "portrait",
       alt: "Authentisches Männerportrait im Georgengarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502230/portait-male-georgengarten-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502230/portait-male-georgengarten-hannover-01.webp",
       category: "portrait",
       alt: "Portrait Shooting mit einem Mann im herbstlichen Georgengarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502229/portait-lisa-herrenhaeuser-gaerten-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502229/portait-lisa-herrenhaeuser-gaerten-hannover-02.webp",
       category: "portrait",
       alt: "Portrait von Lisa in den barocken Herrenhäuser Gärten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502228/portait-lisa-herrenhaeuser-gaerten-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502228/portait-lisa-herrenhaeuser-gaerten-hannover-01.webp",
       category: "portrait",
       alt: "Lisa posiert in den Herrenhäuser Gärten Hannover für ein Portrait"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502227/portait-kila-maschpark-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502227/portait-kila-maschpark-hannover.webp",
       category: "portrait",
       alt: "Verträumtes Portrait von Kila im Maschpark Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502226/portait-kathi-nord-lb-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502226/portait-kathi-nord-lb-hannover-02.webp",
       category: "portrait",
       alt: "Modernes Portrait von Kathi vor der Nord/LB Architektur in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502225/portait-kathi-nord-lb-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502225/portait-kathi-nord-lb-hannover-01.webp",
       category: "portrait",
       alt: "Urbanes Portrait Shooting mit Kathi an der Nord/LB Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502224/portait-kathi-georgengarten-hannover-04.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502224/portait-kathi-georgengarten-hannover-04.webp",
       category: "portrait",
       alt: "Kathi im Georgengarten Hannover - Natürliches Portrait Shooting"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502223/portait-kathi-georgengarten-hannover-03.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502223/portait-kathi-georgengarten-hannover-03.webp",
       category: "portrait",
       alt: "Portrait von Kathi unter Bäumen im Georgengarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502223/portait-kathi-georgengarten-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502223/portait-kathi-georgengarten-hannover-02.webp",
       category: "portrait",
       alt: "Lachendes Portrait von Kathi im Georgengarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502222/portait-kathi-georgengarten-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502222/portait-kathi-georgengarten-hannover-01.webp",
       category: "portrait",
       alt: "Kathi posiert im Georgengarten Hannover für ein Outdoor Portrait"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502221/Shalinee6_jackywagon.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502221/Shalinee6_jackywagon.webp",
       category: "portrait",
       alt: "Portrait von Shalinee - Ausdrucksstarke Fotografie"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502220/portrait-stefanie-vahrenwald-list-hannover-03.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502220/portrait-stefanie-vahrenwald-list-hannover-03.webp",
       category: "portrait",
       alt: "Portrait von Stefanie im Stadtteil Vahrenwald-List, Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502219/portrait-stefanie-vahrenwald-list-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502219/portrait-stefanie-vahrenwald-list-hannover-02.webp",
       category: "portrait",
       alt: "Natürliches Portrait Shooting mit Stefanie in Hannover List"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502218/portrait-rachel-altwarmbuechener-see-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502218/portrait-rachel-altwarmbuechener-see-hannover-02.webp",
       category: "portrait",
       alt: "Portrait von Rachel am Altwarmbüchener See in Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502218/portrait-stefanie-vahrenwald-list-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502218/portrait-stefanie-vahrenwald-list-hannover-01.webp",
       category: "portrait",
       alt: "Stefanie posiert für ein Portrait in Hannover Vahrenwald"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502217/portrait-rachel-altwarmbuechener-see-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502217/portrait-rachel-altwarmbuechener-see-hannover-01.webp",
       category: "portrait",
       alt: "Rachel am Ufer des Altwarmbüchener Sees - Portrait Fotografie"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502216/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-03.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502216/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-03.webp",
       category: "portrait",
       alt: "Portrait von La Sarita im Berggarten der Herrenhäuser Gärten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502215/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502215/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-02.webp",
       category: "portrait",
       alt: "Exotisches Flair: Portrait von La Sarita im Berggarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502214/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502214/portrait-la-sarita-herrenhaeuser-gaerten-berggarten-01.webp",
       category: "portrait",
       alt: "La Sarita posiert im herbstlichen Berggarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502214/portrait-isarina-maschsee-hannover-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502214/portrait-isarina-maschsee-hannover-02.webp",
       category: "portrait",
       alt: "Portrait von Isarina am Maschsee Hannover bei Sonnenuntergang"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502213/portrait-isarina-maschsee-hannover-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502213/portrait-isarina-maschsee-hannover-01.webp",
       category: "portrait",
       alt: "Isarina am Maschsee Hannover - Natürliches Portrait Shooting"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502212/portrait-hanna-herrenhaeuser-gaerten-berggarten-06.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502212/portrait-hanna-herrenhaeuser-gaerten-berggarten-06.webp",
       category: "portrait",
       alt: "Portrait von Hanna im Berggarten Hannover - Fokus auf Augen"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502211/portrait-hanna-herrenhaeuser-gaerten-berggarten-05.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502211/portrait-hanna-herrenhaeuser-gaerten-berggarten-05.webp",
       category: "portrait",
       alt: "Hanna posiert im Berggarten Hannover für ein Fine Art Portrait"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502210/portrait-hanna-herrenhaeuser-gaerten-berggarten-03.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502210/portrait-hanna-herrenhaeuser-gaerten-berggarten-03.webp",
       category: "portrait",
       alt: "Portrait Shooting mit Hanna in der Natur des Berggartens Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502209/portrait-hanna-herrenhaeuser-gaerten-berggarten-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502209/portrait-hanna-herrenhaeuser-gaerten-berggarten-02.webp",
       category: "portrait",
       alt: "Natürliches Licht Portrait von Hanna im Berggarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502209/portrait-hanna-herrenhaeuser-gaerten-berggarten-04.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502209/portrait-hanna-herrenhaeuser-gaerten-berggarten-04.webp",
       category: "portrait",
       alt: "Hanna im Berggarten Hannover - Ausdrucksstarkes Portrait"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502208/portrait-hanna-herrenhaeuser-gaerten-berggarten-01.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502208/portrait-hanna-herrenhaeuser-gaerten-berggarten-01.webp",
       category: "portrait",
       alt: "Portrait von Hanna zwischen Pflanzen im Berggarten Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502207/portrait-franziska-eilenriede-hannover.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502207/portrait-franziska-eilenriede-hannover.webp",
       category: "portrait",
       alt: "Portrait von Franziska im Stadtwald Eilenriede Hannover"
     },
     {
-      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775502207/portrait-enna-steinhuder-meer-02.webp",
+      url: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775502207/portrait-enna-steinhuder-meer-02.webp",
       category: "portrait",
       alt: "Enna am Steinhuder Meer - Stimmungsvolles Portrait Shooting"
     }
   ],
-  ABOUT: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775476335/portrait-hochzeitsfotograf-alex-begopoulos.webp",
+  ABOUT: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775476335/portrait-hochzeitsfotograf-alex-begopoulos.webp",
   SERVICES: {
     HERO: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
-    PLANNING: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
-    COVERAGE: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
-    POST: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto/v1775495566/detailshot-braut-und-braeutigam-halten-sich-die-haende-hannover.webp"
+    PLANNING: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp",
+    COVERAGE: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp",
+    POST: "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495566/detailshot-braut-und-braeutigam-halten-sich-die-haende-hannover.webp"
   }
 };
 
