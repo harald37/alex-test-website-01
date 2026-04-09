@@ -51,10 +51,10 @@ export const Testimonials = () => {
 
           <div className="absolute bottom-12 left-0 w-full flex justify-between px-12">
             <button onClick={prev} className="text-zinc-300 hover:text-zinc-900 transition-colors">
-              <ChevronLeft size={20} strokeWidth={1} />
+              <ChevronLeft aria-label="Vorheriges" size={20} strokeWidth={1} />
             </button>
             <button onClick={next} className="text-zinc-300 hover:text-zinc-900 transition-colors">
-              <ChevronRight size={20} strokeWidth={1} />
+              <ChevronRight aria-label="Nächstes" size={20} strokeWidth={1} />
             </button>
           </div>
         </div>

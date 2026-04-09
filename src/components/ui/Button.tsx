@@ -41,7 +41,7 @@ export const Button: React.FC<ButtonProps> = ({
             disabled && "hidden"
           )} />
         </span>
-        <ArrowRight className={cn(
+        <ArrowRight aria-label="Weiter" className={cn(
           "w-4 h-4 transition-transform duration-500 stroke-[1px]",
           !disabled && "group-hover:translate-x-2"
         )} />

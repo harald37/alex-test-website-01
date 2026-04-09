@@ -53,7 +53,7 @@ const MenuVariant = ({
         <div className="absolute top-0 w-full p-6 flex justify-between items-center z-10">
           <span className={cn("tracking-widest text-xs uppercase", textClass)}>Alex Begopoulos</span>
           <button onClick={() => setIsOpen(true)} className={cn("p-2", textClass)}>
-            <Menu size={24} />
+            <Menu aria-label="Menü öffnen" size={24} />
           </button>
         </div>
 
@@ -75,7 +75,7 @@ const MenuVariant = ({
             >
               <div className="p-6 flex justify-end">
                 <button onClick={() => setIsOpen(false)} className={textClass}>
-                  <X size={24} />
+                  <X aria-label="Schließen" size={24} />
                 </button>
               </div>
 
@@ -98,9 +98,9 @@ const MenuVariant = ({
 
               <div className="p-12 flex flex-col items-center space-y-4">
                 <div className="flex space-x-6">
-                  <Instagram size={16} className={inactiveTextClass} />
-                  <Mail size={16} className={inactiveTextClass} />
-                  <MessageCircle size={16} className={inactiveTextClass} />
+                  <Instagram aria-label="Instagram Profil" size={16} className={inactiveTextClass} />
+                  <Mail aria-label="E-Mail schreiben" size={16} className={inactiveTextClass} />
+                  <MessageCircle aria-label="WhatsApp Nachricht senden" size={16} className={inactiveTextClass} />
                 </div>
                 <span className={cn("text-[8px] uppercase tracking-widest", inactiveTextClass)}>
                   © 2026 ALEX BEGOPOULOS

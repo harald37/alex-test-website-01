@@ -65,7 +65,7 @@ export const Home: React.FC = () => {
               animate={{ y: [0, 5, 0] }} 
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             >
-              <ChevronDown className="w-4 h-4 text-white/40" />
+              <ChevronDown aria-label="Nach unten scrollen" className="w-4 h-4 text-white/40" />
             </motion.div>
           </motion.div>
         </div>

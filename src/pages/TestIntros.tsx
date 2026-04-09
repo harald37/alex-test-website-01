@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'motion/react';
+import { cn } from '../lib/utils';
 
 const INTROS = [
   // Portfolio
@@ -59,31 +61,135 @@ const INTROS = [
   { category: "Kontakt", headline: "Termin anfragen.", subheadline: "Sichert euch rechtzeitig euren Wunschtermin für eure Hochzeitsreportage." },
   { category: "Kontakt", headline: "Lasst uns connecten.", subheadline: "Egal ob per Formular, E-Mail oder WhatsApp – ich freue mich auf eure Nachricht." },
   { category: "Kontakt", headline: "Euer Weg zu mir.", subheadline: "Hinterlasst mir ein paar Details zu eurer Hochzeit und ich melde mich schnellstmöglich bei euch." },
-  { category: "Kontakt", headline: "Ich freue mich auf euch.", subheadline: "Lasst uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten." }
+  { category: "Kontakt", headline: "Ich freue mich auf euch.", subheadline: "Lasst uns gemeinsam Erinnerungen schaffen, die ein Leben lang halten." },
+
+  // Hannover (SEO)
+  { category: "Hannover", headline: "Hochzeitsfotograf Hannover.", subheadline: "Authentische Hochzeitsreportagen in der Landeshauptstadt und Umgebung. Momente, die bleiben." },
+  { category: "Hannover", headline: "Eure Geschichte in Hannover.", subheadline: "Vom Neuen Rathaus bis zu den Herrenhäuser Gärten – ich halte eure Liebe fest." },
+  { category: "Hannover", headline: "Liebe in der Leinestadt.", subheadline: "Natürliche und emotionale Hochzeitsfotografie für moderne Paare in Hannover." },
+  { category: "Hannover", headline: "Hannover hautnah.", subheadline: "Ungestellte Augenblicke und zeitlose Ästhetik für euren großen Tag in Hannover." },
+  { category: "Hannover", headline: "Euer Tag in Hannover.", subheadline: "Ich begleite euch diskret und aufmerksam durch eure Hochzeit in der Region Hannover." },
+
+  // Braunschweig (SEO)
+  { category: "Braunschweig", headline: "Hochzeitsfotograf Braunschweig.", subheadline: "Emotionale Hochzeitsreportagen in der Löwenstadt. Echte Momente, kunstvoll erzählt." },
+  { category: "Braunschweig", headline: "Eure Liebe in Braunschweig.", subheadline: "Vom Altstadtmarkt bis zum Richmond Park – ich dokumentiere euren Tag in Braunschweig." },
+  { category: "Braunschweig", headline: "Braunschweig bewegt.", subheadline: "Authentische Bilder, die die Magie eurer Hochzeit in Braunschweig einfangen." },
+  { category: "Braunschweig", headline: "Löwenstadt-Liebe.", subheadline: "Zeitlose Hochzeitsfotografie für Paare, die das Besondere in Braunschweig suchen." },
+  { category: "Braunschweig", headline: "Euer Moment in Braunschweig.", subheadline: "Ich halte die kleinen und großen Augenblicke eurer Hochzeit in Braunschweig fest." }
 ];
 
+const LayoutMinimal = ({ headline, subheadline }: { headline: string; subheadline: string }) => (
+  <div className="py-24 text-center max-w-3xl mx-auto">
+    <h1 className="font-serif italic text-5xl md:text-7xl text-zinc-900 mb-8">{headline}</h1>
+    <p className="text-zinc-500 uppercase tracking-[0.4em] text-xs md:text-sm leading-relaxed">{subheadline}</p>
+  </div>
+);
+
+const LayoutSplit = ({ headline, subheadline }: { headline: string; subheadline: string }) => (
+  <div className="grid md:grid-cols-2 gap-12 items-center py-20">
+    <div className="space-y-6">
+      <h1 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight">{headline}</h1>
+      <div className="w-12 h-[1px] bg-zinc-900/20" />
+      <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide">{subheadline}</p>
+    </div>
+    <div className="aspect-[4/5] bg-zinc-100 rounded-2xl overflow-hidden">
+      <img src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495567/braut-wird-von-braeutigam-umarmt-im-wald-uelzen.webp" alt="Example" className="w-full h-full object-cover grayscale" />
+    </div>
+  </div>
+);
+
+const LayoutEditorial = ({ headline, subheadline }: { headline: string; subheadline: string }) => (
+  <div className="relative h-[60vh] flex items-center justify-center overflow-hidden rounded-3xl my-12">
+    <img src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495570/hochzeitspaar-blickt-richtung-maschsee-hannover.webp" className="absolute inset-0 w-full h-full object-cover opacity-40 grayscale" alt="Background" />
+    <div className="relative z-10 text-center px-6 max-w-4xl">
+      <span className="font-sans uppercase tracking-[0.6em] text-[10px] text-zinc-500 mb-8 block">Alex Begopoulos</span>
+      <h1 className="font-serif text-5xl md:text-8xl italic text-zinc-900 mb-8 leading-none">{headline}</h1>
+      <p className="text-zinc-600 text-sm md:text-base uppercase tracking-[0.3em] max-w-2xl mx-auto">{subheadline}</p>
+    </div>
+  </div>
+);
+
+const LayoutDark = ({ headline, subheadline }: { headline: string; subheadline: string }) => (
+  <div className="bg-zinc-900 text-white p-12 md:p-24 rounded-3xl my-12">
+    <div className="max-w-2xl">
+      <span className="text-[#c5a059] font-sans uppercase tracking-[0.4em] text-[10px] mb-6 block">Premium Wedding Photography</span>
+      <h1 className="font-serif italic text-4xl md:text-7xl mb-8 leading-tight">{headline}</h1>
+      <p className="text-white/60 text-base md:text-xl font-light leading-relaxed tracking-wide">{subheadline}</p>
+    </div>
+  </div>
+);
+
 export const TestIntros = () => {
+  const [view, setView] = useState<'cards' | 'visual'>('cards');
+  const [layout, setLayout] = useState<1 | 2 | 3 | 4>(1);
+
   return (
     <div className="bg-surface min-h-screen pt-40 pb-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-zinc-900">Testseite: 50 Unterseiten-Einstiege</h1>
-          <p className="text-zinc-500 tracking-widest uppercase text-xs md:text-sm">Varianten für Headlines & Subheadlines</p>
+          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-zinc-900">Testseite: Unterseiten-Einstiege</h1>
+          <p className="text-zinc-500 tracking-widest uppercase text-xs md:text-sm mb-12">Varianten für Headlines & Subheadlines</p>
+          
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <div className="flex bg-zinc-100 p-1 rounded-lg">
+              <button 
+                onClick={() => setView('cards')}
+                className={cn("px-6 py-2 text-[10px] uppercase tracking-widest rounded-md transition-all", view === 'cards' ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500 hover:text-zinc-700")}
+              >
+                Karten-Ansicht
+              </button>
+              <button 
+                onClick={() => setView('visual')}
+                className={cn("px-6 py-2 text-[10px] uppercase tracking-widest rounded-md transition-all", view === 'visual' ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500 hover:text-zinc-700")}
+              >
+                Visuelle Beispiele
+              </button>
+            </div>
+
+            {view === 'visual' && (
+              <div className="flex bg-zinc-100 p-1 rounded-lg">
+                {[1, 2, 3, 4].map((num) => (
+                  <button 
+                    key={num}
+                    onClick={() => setLayout(num as any)}
+                    className={cn("px-4 py-2 text-[10px] uppercase tracking-widest rounded-md transition-all", layout === num ? "bg-white text-zinc-900 shadow-sm" : "text-zinc-500 hover:text-zinc-700")}
+                  >
+                    Layout {num}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="space-y-16">
-          {["Portfolio", "Über mich", "Leistungen", "FAQ", "Kontakt"].map(category => (
-            <div key={category} className="mb-12">
-              <h2 className="text-2xl font-serif text-zinc-900 border-b border-zinc-200 pb-4 mb-8">{category}</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                {INTROS.filter(intro => intro.category === category).map((intro, idx) => (
-                  <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-zinc-100">
-                    <span className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-4 block">Variante {idx + 1}</span>
-                    <h3 className="font-serif italic text-2xl text-zinc-900 mb-4">{intro.headline}</h3>
-                    <p className="text-zinc-600 text-sm leading-relaxed">{intro.subheadline}</p>
-                  </div>
-                ))}
-              </div>
+          {["Portfolio", "Über mich", "Leistungen", "FAQ", "Kontakt", "Hannover", "Braunschweig"].map(category => (
+            <div key={category} className="mb-24">
+              <h2 className="text-2xl font-serif text-zinc-900 border-b border-zinc-200 pb-4 mb-12">{category}</h2>
+              
+              {view === 'cards' ? (
+                <div className="grid md:grid-cols-2 gap-8">
+                  {INTROS.filter(intro => intro.category === category).map((intro, idx) => (
+                    <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-zinc-100">
+                      <span className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-4 block">Variante {idx + 1}</span>
+                      <h3 className="font-serif italic text-2xl text-zinc-900 mb-4">{intro.headline}</h3>
+                      <p className="text-zinc-600 text-sm leading-relaxed">{intro.subheadline}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="space-y-32">
+                  {INTROS.filter(intro => intro.category === category).slice(0, 5).map((intro, idx) => (
+                    <div key={idx} className="relative">
+                      <div className="absolute -top-12 left-0 text-[10px] uppercase tracking-widest text-zinc-300">Beispiel {idx + 1}</div>
+                      {layout === 1 && <LayoutMinimal headline={intro.headline} subheadline={intro.subheadline} />}
+                      {layout === 2 && <LayoutSplit headline={intro.headline} subheadline={intro.subheadline} />}
+                      {layout === 3 && <LayoutEditorial headline={intro.headline} subheadline={intro.subheadline} />}
+                      {layout === 4 && <LayoutDark headline={intro.headline} subheadline={intro.subheadline} />}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

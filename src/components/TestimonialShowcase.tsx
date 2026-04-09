@@ -53,8 +53,8 @@ const TestimonialVariant = ({ title, bgColor, textColor, accentColor, fontStyle 
           </AnimatePresence>
 
           <div className="flex justify-center gap-8 mt-12">
-            <button onClick={prev} className={`${accentColor} hover:scale-110 transition-transform`}><ChevronLeft size={20} strokeWidth={1} /></button>
-            <button onClick={next} className={`${accentColor} hover:scale-110 transition-transform`}><ChevronRight size={20} strokeWidth={1} /></button>
+            <button onClick={prev} className={`${accentColor} hover:scale-110 transition-transform`}><ChevronLeft aria-label="Vorheriges" size={20} strokeWidth={1} /></button>
+            <button onClick={next} className={`${accentColor} hover:scale-110 transition-transform`}><ChevronRight aria-label="Nächstes" size={20} strokeWidth={1} /></button>
           </div>
         </div>
       </div>

@@ -14,16 +14,16 @@ export const Footer = () => {
         {/* Social Icons */}
         <div className="flex items-center space-x-10">
           <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-            <Instagram size={18} strokeWidth={1.5} />
+            <Instagram aria-label="Instagram Profil" size={18} strokeWidth={1.5} />
           </a>
           <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-            <Facebook size={18} strokeWidth={1.5} />
+            <Facebook aria-label="Facebook Profil" size={18} strokeWidth={1.5} />
           </a>
           <a href={SOCIAL_LINKS.email} className="text-zinc-400 hover:text-zinc-900 transition-colors">
-            <Mail size={18} strokeWidth={1.5} />
+            <Mail aria-label="E-Mail schreiben" size={18} strokeWidth={1.5} />
           </a>
           <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-zinc-900 transition-colors">
-            <MessageCircle size={18} strokeWidth={1.5} />
+            <MessageCircle aria-label="WhatsApp Nachricht senden" size={18} strokeWidth={1.5} />
           </a>
         </div>
 

@@ -83,14 +83,14 @@ export const ParallaxTestimonials = () => {
               className="text-white/20 hover:text-white transition-colors p-2"
               aria-label="Previous review"
             >
-              <ChevronLeft size={24} strokeWidth={1} />
+              <ChevronLeft aria-label="Vorheriges" size={24} strokeWidth={1} />
             </button>
             <button 
               onClick={next} 
               className="text-white/20 hover:text-white transition-colors p-2"
               aria-label="Next review"
             >
-              <ChevronRight size={24} strokeWidth={1} />
+              <ChevronRight aria-label="Nächstes" size={24} strokeWidth={1} />
             </button>
           </div>
         </div>

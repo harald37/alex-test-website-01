@@ -86,7 +86,7 @@ export const ButtonTest = () => {
       >
         <button className="px-12 py-4 bg-zinc-900 text-white rounded-full shadow-lg shadow-zinc-900/20 hover:shadow-zinc-900/40 hover:-translate-y-0.5 transition-all flex items-center space-x-3">
           <span className="text-[10px] uppercase tracking-[0.3em]">JETZT ANFRAGEN</span>
-          <Send size={14} />
+          <Send aria-label="Nachricht senden" size={14} />
         </button>
       </TestSection>
 

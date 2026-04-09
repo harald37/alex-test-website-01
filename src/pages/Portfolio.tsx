@@ -204,21 +204,21 @@ export const Portfolio = () => {
               onClick={(e) => { e.stopPropagation(); closeLightbox(); }}
               className="absolute top-4 right-4 md:top-8 md:right-8 text-white/40 hover:text-white transition-all duration-300 p-2 md:p-3 z-[210] flex items-center justify-center"
             >
-              <X size={24} className="md:w-8 md:h-8" strokeWidth={1} />
+              <X aria-label="Schließen" size={24} className="md:w-8 md:h-8" strokeWidth={1} />
             </button>
 
             <button
               onClick={prevImage}
               className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-all duration-300 p-2 md:p-4 z-[210] flex items-center justify-center"
             >
-              <ChevronLeft size={32} className="md:w-12 md:h-12" strokeWidth={1} />
+              <ChevronLeft aria-label="Vorheriges" size={32} className="md:w-12 md:h-12" strokeWidth={1} />
             </button>
 
             <button
               onClick={nextImage}
               className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-all duration-300 p-2 md:p-4 z-[210] flex items-center justify-center"
             >
-              <ChevronRight size={32} className="md:w-12 md:h-12" strokeWidth={1} />
+              <ChevronRight aria-label="Nächstes" size={32} className="md:w-12 md:h-12" strokeWidth={1} />
             </button>
 
             <motion.div

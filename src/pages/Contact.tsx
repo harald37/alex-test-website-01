@@ -76,7 +76,7 @@ export const Contact = () => {
             <div className="space-y-12">
               <div className="flex items-start space-x-6 group">
                 <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
-                  <Mail className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
+                  <Mail aria-label="E-Mail schreiben" className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Email</h4>
@@ -86,7 +86,7 @@ export const Contact = () => {
               
               <div className="flex items-start space-x-6 group">
                 <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
-                  <MessageCircle className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
+                  <MessageCircle aria-label="WhatsApp Nachricht senden" className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">WhatsApp</h4>
@@ -98,7 +98,7 @@ export const Contact = () => {
 
               <div className="flex items-start space-x-6 group">
                 <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
-                  <Instagram className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
+                  <Instagram aria-label="Instagram Profil" className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Instagram</h4>
@@ -108,7 +108,7 @@ export const Contact = () => {
 
               <div className="flex items-start space-x-6 group">
                 <div className="p-4 bg-zinc-50 rounded-full group-hover:bg-zinc-100 transition-colors duration-500">
-                  <Facebook className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
+                  <Facebook aria-label="Facebook Profil" className="w-5 h-5 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-500" />
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Facebook</h4>
@@ -128,7 +128,7 @@ export const Contact = () => {
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">
                 <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
-                  <Send className="w-10 h-10" />
+                  <Send aria-label="Nachricht senden" className="w-10 h-10" />
                 </div>
                 <h3 className="text-3xl font-serif mb-4">Vielen Dank!</h3>
                 <p>
@@ -267,7 +267,7 @@ export const Contact = () => {
                   className="w-full"
                 >
                   <span>{loading ? "Wird gesendet..." : "Nachricht senden"}</span>
-                  <Send className="w-4 h-4" />
+                  <Send aria-label="Nachricht senden" className="w-4 h-4" />
                 </Button>
               </form>
             )}

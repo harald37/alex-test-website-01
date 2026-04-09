@@ -56,7 +56,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="text-zinc-400"
         >
-          <Plus className="w-6 h-6" strokeWidth={1} />
+          <Plus aria-label="Antwort anzeigen" className="w-6 h-6" strokeWidth={1} />
         </motion.div>
       </button>
       <AnimatePresence>

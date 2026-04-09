@@ -60,7 +60,7 @@ export const ButtonShowcase = () => {
         <ButtonVariant name="03. Ghost Icon">
           <button className="flex items-center space-x-3 text-[10px] uppercase tracking-[0.3em] group">
             <span>Mehr erfahren</span>
-            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight aria-label="Weiter" size={14} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </ButtonVariant>
 
@@ -109,7 +109,7 @@ export const ButtonShowcase = () => {
         {/* 10. Minimal Circle Icon */}
         <ButtonVariant name="10. Circle Icon">
           <button className="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center hover:border-zinc-900 transition-all">
-            <Instagram size={18} />
+            <Instagram aria-label="Instagram Profil" size={18} />
           </button>
         </ButtonVariant>
 
@@ -167,7 +167,7 @@ export const ButtonShowcase = () => {
         {/* 18. Icon Only Square */}
         <ButtonVariant name="18. Icon Square">
           <button className="w-12 h-12 bg-zinc-900 text-white flex items-center justify-center hover:bg-zinc-700 transition-all">
-            <Mail size={18} />
+            <Mail aria-label="E-Mail schreiben" size={18} />
           </button>
         </ButtonVariant>
 
@@ -211,7 +211,7 @@ export const ButtonShowcase = () => {
         {/* 24. Label & Icon */}
         <ButtonVariant name="24. Label & Icon">
           <button className="flex items-center space-x-4 px-6 py-3 bg-zinc-50 border border-zinc-100 rounded hover:bg-white hover:shadow-md transition-all">
-            <div className="p-2 bg-zinc-900 rounded text-white"><Camera size={14} /></div>
+            <div className="p-2 bg-zinc-900 rounded text-white"><Camera aria-label="Fotografie" size={14} /></div>
             <span className="text-[10px] uppercase tracking-[0.2em]">Portfolio</span>
           </button>
         </ButtonVariant>
@@ -256,7 +256,7 @@ export const ButtonShowcase = () => {
         {/* 30. Icon Left */}
         <ButtonVariant name="30. Icon Left">
           <button className="flex items-center space-x-3 px-6 py-3 border border-zinc-200 rounded hover:border-zinc-900 transition-all">
-            <Calendar size={14} />
+            <Calendar aria-label="Calendar" size={14} />
             <span className="text-[10px] uppercase tracking-[0.2em]">Termin</span>
           </button>
         </ButtonVariant>
@@ -308,7 +308,7 @@ export const ButtonShowcase = () => {
         {/* 37. Floating Pill */}
         <ButtonVariant name="37. Floating Pill">
           <button className="px-8 py-3 bg-zinc-900 text-white rounded-full shadow-lg shadow-zinc-900/20 hover:shadow-zinc-900/40 hover:-translate-y-0.5 transition-all">
-            <Send size={16} />
+            <Send aria-label="Nachricht senden" size={16} />
           </button>
         </ButtonVariant>
 

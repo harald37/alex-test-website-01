@@ -130,7 +130,7 @@ export const Navbar = () => {
                   !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
                 )}
               >
-                <Instagram size={16} strokeWidth={1.5} />
+                <Instagram aria-label="Instagram Profil" size={16} strokeWidth={1.5} />
               </a>
               <a 
                 href={SOCIAL_LINKS.email} 
@@ -139,7 +139,7 @@ export const Navbar = () => {
                   !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
                 )}
               >
-                <Mail size={16} strokeWidth={1.5} />
+                <Mail aria-label="E-Mail schreiben" size={16} strokeWidth={1.5} />
               </a>
               <a 
                 href={SOCIAL_LINKS.whatsapp} 
@@ -150,7 +150,7 @@ export const Navbar = () => {
                   !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
                 )}
               >
-                <MessageCircle size={16} strokeWidth={1.5} />
+                <MessageCircle aria-label="WhatsApp Nachricht senden" size={16} strokeWidth={1.5} />
               </a>
             </div>
           </div>
@@ -172,7 +172,7 @@ export const Navbar = () => {
                 exit={{ opacity: 0, rotate: 90 }}
                 transition={{ duration: 0.2 }}
               >
-                {isOpen ? <X size={28} strokeWidth={1.5} /> : <Menu size={28} strokeWidth={1.5} />}
+                {isOpen ? <X aria-label="Schließen" size={28} strokeWidth={1.5} /> : <Menu aria-label="Menü öffnen" size={28} strokeWidth={1.5} />}
               </motion.div>
             </AnimatePresence>
           </button>
@@ -221,13 +221,13 @@ export const Navbar = () => {
             <div className="px-12 py-12 flex flex-col items-center space-y-6">
               <div className="flex items-center space-x-8">
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
-                  <Instagram size={18} strokeWidth={1.2} />
+                  <Instagram aria-label="Instagram Profil" size={18} strokeWidth={1.2} />
                 </motion.a>
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.email} className="text-white/40 hover:text-white transition-colors">
-                  <Mail size={18} strokeWidth={1.2} />
+                  <Mail aria-label="E-Mail schreiben" size={18} strokeWidth={1.2} />
                 </motion.a>
                 <motion.a variants={itemVariants} href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition-colors">
-                  <MessageCircle size={18} strokeWidth={1.2} />
+                  <MessageCircle aria-label="WhatsApp Nachricht senden" size={18} strokeWidth={1.2} />
                 </motion.a>
               </div>
               <motion.span variants={itemVariants} className="font-sans uppercase tracking-[0.2em] text-[7px] text-white/20">

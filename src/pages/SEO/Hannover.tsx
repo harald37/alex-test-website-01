@@ -22,7 +22,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="text-zinc-400"
         >
-          <Plus className="w-5 h-5" strokeWidth={1} />
+          <Plus aria-label="Antwort anzeigen" className="w-5 h-5" strokeWidth={1} />
         </motion.div>
       </button>
       <AnimatePresence>
@@ -251,7 +251,7 @@ export const Hannover = () => {
             </Button>
             <div className="flex items-center gap-12">
               <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors flex flex-col items-center gap-2 group">
-                <MessageCircle size={28} strokeWidth={1} />
+                <MessageCircle aria-label="WhatsApp Nachricht senden" size={28} strokeWidth={1} />
                 <span className="text-[8px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">WhatsApp</span>
               </a>
             </div>

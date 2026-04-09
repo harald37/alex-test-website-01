@@ -12,7 +12,7 @@ export const TestimonialComparison = () => {
     <div className="pt-32 pb-20 bg-surface">
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-20">
         <Link to="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-zinc-900 transition-colors mb-12 group">
-          <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+          <ArrowLeft aria-label="Zurück" size={16} className="group-hover:-translate-x-1 transition-transform" />
           <span className="font-sans uppercase tracking-widest text-[10px]">Zurück zur Startseite</span>
         </Link>
         <div className="text-center">

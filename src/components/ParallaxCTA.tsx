@@ -89,7 +89,7 @@ export const ParallaxCTA = ({
             className="inline-flex items-center gap-4 px-8 py-4 border border-white/40 text-white font-sans uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-white hover:text-zinc-900 transition-all duration-500 group"
           >
             {buttonText}
-            <ArrowRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-2" strokeWidth={1} />
+            <ArrowRight aria-label="Weiter" className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-2" strokeWidth={1} />
           </a>
         </motion.div>
       </div>

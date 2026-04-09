@@ -57,7 +57,7 @@ export const GreenBannerTestimonials = () => {
               className="text-white/40 hover:text-white transition-colors p-2"
               aria-label="Previous review"
             >
-              <ChevronLeft size={24} strokeWidth={1.5} />
+              <ChevronLeft aria-label="Vorheriges" size={24} strokeWidth={1.5} />
             </button>
             
             <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/20">
@@ -69,7 +69,7 @@ export const GreenBannerTestimonials = () => {
               className="text-white/40 hover:text-white transition-colors p-2"
               aria-label="Next review"
             >
-              <ChevronRight size={24} strokeWidth={1.5} />
+              <ChevronRight aria-label="Nächstes" size={24} strokeWidth={1.5} />
             </button>
           </div>
 
@@ -80,14 +80,14 @@ export const GreenBannerTestimonials = () => {
               className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -ml-12"
               aria-label="Previous review"
             >
-              <ChevronLeft size={32} strokeWidth={1} />
+              <ChevronLeft aria-label="Vorheriges" size={32} strokeWidth={1} />
             </button>
             <button 
               onClick={next} 
               className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -mr-12"
               aria-label="Next review"
             >
-              <ChevronRight size={32} strokeWidth={1} />
+              <ChevronRight aria-label="Nächstes" size={32} strokeWidth={1} />
             </button>
           </div>
         </div>

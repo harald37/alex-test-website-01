@@ -86,7 +86,7 @@ export const ScrollIndicatorTest = () => {
         <div className="flex flex-col items-center gap-2">
           <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-white/40">Scroll</span>
           <motion.div animate={{ y: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
-            <ChevronDown className="w-4 h-4 text-white/40" />
+            <ChevronDown aria-label="Nach unten scrollen" className="w-4 h-4 text-white/40" />
           </motion.div>
         </div>
       </IndicatorContainer>
@@ -98,13 +98,13 @@ export const ScrollIndicatorTest = () => {
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 2, repeat: Infinity, delay: 0 }}
           >
-            <ChevronDown className="w-6 h-6 text-white/40" />
+            <ChevronDown aria-label="Nach unten scrollen" className="w-6 h-6 text-white/40" />
           </motion.div>
           <motion.div 
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
           >
-            <ChevronDown className="w-6 h-6 text-white/40" />
+            <ChevronDown aria-label="Nach unten scrollen" className="w-6 h-6 text-white/40" />
           </motion.div>
         </div>
       </IndicatorContainer>
@@ -181,7 +181,7 @@ export const ScrollIndicatorTest = () => {
           animate={{ y: [20, 0, 20], opacity: [0, 1, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <MousePointer2 className="w-6 h-6 text-white/40 rotate-180" />
+          <MousePointer2 aria-label="Nach oben wischen" className="w-6 h-6 text-white/40 rotate-180" />
         </motion.div>
       </IndicatorContainer>
 
@@ -211,7 +211,7 @@ export const ScrollIndicatorTest = () => {
             animate={{ rotate: [0, 10, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
           >
-            <ArrowDown className="w-4 h-4 text-white/40" />
+            <ArrowDown aria-label="Nach unten" className="w-4 h-4 text-white/40" />
           </motion.div>
         </div>
       </IndicatorContainer>
