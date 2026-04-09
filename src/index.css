@@ -23,7 +23,7 @@
 
 @layer base {
   body {
-    @apply bg-surface text-zinc-600 font-body font-light text-base antialiased;
+    @apply bg-surface text-zinc-600 font-body font-light text-base antialiased overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {

@@ -83,7 +83,7 @@ export const Home: React.FC = () => {
           >
             <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12"></div>
             <h2 className="font-serif italic text-2xl md:text-5xl text-zinc-900 leading-relaxed mb-24 max-w-4xl mx-auto">
-              Ich fange die Momente ein, die euren Tag unvergesslich machen. Ungestellt, ehrlich und mit einem Auge für das besondere Detail.
+              Ihr findet mich in Hannover, aber buchen könnt ihr mich für eure Hochzeit in ganz Niedersachsen, Deutschland und für exklusive Destination Weddings.
             </h2>
           </motion.div>
           
@@ -123,7 +123,7 @@ export const Home: React.FC = () => {
       <HomePortfolioGrid />
 
       {/* About Me Short */}
-      <section className="bg-zinc-50 py-32 px-6 md:px-12">
+      <section className="bg-zinc-50 py-32 px-6 md:px-12 overflow-hidden">
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
