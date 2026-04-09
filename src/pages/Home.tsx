@@ -15,11 +15,13 @@ export const Home: React.FC = () => {
       <section className="relative h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-zinc-900">
         <div className="absolute inset-0 z-0 bg-zinc-900">
           <img 
-            src="https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1920/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp" 
+            src="https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto:best,w_2560/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp" 
             srcSet="
               https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_600/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp 600w,
               https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1200/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp 1200w,
-              https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto,w_1920/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp 1920w
+              https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto:good,w_1920/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp 1920w,
+              https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto:best,w_2560/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp 2560w,
+              https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto:best,w_3840/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp 3840w
             "
             sizes="100vw"
             alt="Elegante Hochzeitsreportage Hannover" 
