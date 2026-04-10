@@ -40,19 +40,25 @@ export const Privacy: React.FC = () => {
           <section>
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 mb-6">2. Hosting</h2>
             <p>
-              Wir hosten die Inhalte unserer Website bei folgenden Anbietern:
+              Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
             </p>
             <div className="mt-6 space-y-6">
               <div>
-                <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Strato</h3>
+                <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Vercel</h3>
                 <p>
-                  Anbieter ist die STRATO AG, Otto-Ostrowski-Straße 7, 10249 Berlin (nachfolgend „Strato“). Wenn Sie unsere Website besuchen, erfasst Strato verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von Strato: <a href="https://www.strato.de/datenschutz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-zinc-900">https://www.strato.de/datenschutz/</a>.
+                  Anbieter ist die Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA. Wenn Sie unsere Website besuchen, erfasst Vercel verschiedene Logfiles inklusive Ihrer IP-Adressen. Vercel ist ein Cloud-Plattform-Anbieter, über den die Website bereitgestellt und ausgeliefert wird.
+                </p>
+                <p className="mt-4">
+                  Die Verwendung von Vercel erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Soweit eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar.
+                </p>
+                <p className="mt-4">
+                  Die Vercel Inc. ist nach dem EU-US Data Privacy Framework zertifiziert. Details entnehmen Sie der Datenschutzerklärung von Vercel: <a href="https://vercel.com/legal/privacy" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-zinc-900">https://vercel.com/legal/privacy</a>.
                 </p>
               </div>
               <div>
-                <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Google Cloud Platform</h3>
+                <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Strato (Domain-Betrieb)</h3>
                 <p>
-                  Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Wir nutzen die Google Cloud Platform zur Bereitstellung unserer Website. Details entnehmen Sie der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-zinc-900">https://policies.google.com/privacy</a>.
+                  Für die Bereitstellung der Domain dieser Website nutzen wir den Dienst der STRATO AG, Otto-Ostrowski-Straße 7, 10249 Berlin. Hierbei werden technisch bedingt Daten zur Sicherstellung des Domain-Betriebs und der Erreichbarkeit verarbeitet. Details entnehmen Sie der Datenschutzerklärung von Strato: <a href="https://www.strato.de/datenschutz/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-zinc-900">https://www.strato.de/datenschutz/</a>.
                 </p>
               </div>
             </div>
@@ -172,6 +178,27 @@ export const Privacy: React.FC = () => {
                 <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Google Analytics</h3>
                 <p>
                   Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics verwendet sog. „Cookies“. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-sans uppercase tracking-[0.1em] text-[10px] text-zinc-900 mb-2">Vercel Web Analytics</h3>
+                <p>
+                  Wir nutzen zur statistischen Auswertung der Besucherzugriffe auf unserer Website den Dienst Vercel Web Analytics. Anbieter ist die Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA.
+                </p>
+                <p className="mt-4">
+                  <strong>Art und Zweck der Verarbeitung</strong><br />
+                  Vercel Web Analytics ermöglicht es uns, das Nutzerverhalten auf unserer Website zu analysieren (z. B. Seitenaufrufe, Besucherzahlen und Verweildauer), um unser Webangebot stetig zu optimieren. Dieser Dienst ist datenschutzfreundlich konzipiert und verwendet ausdrücklich keine Cookies oder ähnliche Technologien, die Informationen auf Ihrem Endgerät speichern.
+                </p>
+                <p className="mt-4">
+                  Zur Messung der Zugriffe wird stattdessen ein kryptografischer Prüfwert (Hash-Wert) aus Ihrer IP-Adresse und dem User-Agent Ihres Browsers gebildet. Dieser Hash-Wert ist nicht rückrechenbar, wird nicht mit anderen Daten zusammengeführt und verfällt automatisch nach 24 Stunden. Eine Wiedererkennung über mehrere Tage hinweg oder die Erstellung persönlicher Nutzerprofile ist somit technisch ausgeschlossen.
+                </p>
+                <p className="mt-4">
+                  <strong>Rechtsgrundlage</strong><br />
+                  Die Nutzung von Vercel Web Analytics erfolgt auf Grundlage unseres berechtigten Interesses an einer anonymisierten, statistischen Analyse des Nutzerverhaltens zur Optimierung unseres Webangebots gemäß Art. 6 Abs. 1 lit. f DSGVO. Da keine Cookies gesetzt werden und keine Speicherung von Informationen auf Ihrem Endgerät stattfindet, entfällt die Pflicht zur Einholung einer Einwilligung nach § 25 Abs. 1 TTDSG.
+                </p>
+                <p className="mt-4">
+                  <strong>Datenübermittlung in die USA</strong><br />
+                  Soweit bei der Nutzung von Vercel Web Analytics Daten in die USA übertragen werden, weisen wir darauf hin, dass die Vercel Inc. nach dem EU-US Data Privacy Framework zertifiziert ist, womit ein angemessenes Datenschutzniveau gemäß Art. 45 DSGVO gewährleistet wird.
                 </p>
               </div>
             </div>

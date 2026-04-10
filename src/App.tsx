@@ -34,11 +34,13 @@ import { HomeVariantsShowcase } from "./pages/HomeVariantsShowcase";
 import { QuoteVariants } from "./pages/QuoteVariants";
 import { CopyVariants } from "./pages/CopyVariants";
 import { TestCenter } from "./pages/TestCenter";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Analytics />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
