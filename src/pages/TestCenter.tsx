@@ -22,6 +22,12 @@ import { HomeVariantsShowcase } from "./HomeVariantsShowcase";
 import { QuoteVariants } from "./QuoteVariants";
 import { CopyVariants } from "./CopyVariants";
 import { FAQVariants } from "./FAQVariants";
+import { FAQVariantsMore } from "./FAQVariantsMore";
+import { FAQVariantsEvenMore } from "./FAQVariantsEvenMore";
+import { ContactVariants } from "./ContactVariants";
+import { ContactVariantsMore } from "./ContactVariantsMore";
+import { AboutVariants } from "./AboutVariants";
+import { AboutVariantsMore } from "./AboutVariantsMore";
 
 const TEST_PAGES = [
   { id: "testimonials", label: "Testimonials", component: TestimonialComparison },
@@ -41,7 +47,13 @@ const TEST_PAGES = [
   { id: "hero-15", label: "Hero (15)", component: HomeVariantsShowcase },
   { id: "quotes", label: "Zitate (30)", component: QuoteVariants },
   { id: "copy", label: "Texte (30)", component: CopyVariants },
-  { id: "faq-cats", label: "FAQ Kategorien", component: FAQVariants },
+  { id: "faq-cats", label: "FAQ Kategorien (1-5)", component: FAQVariants },
+  { id: "faq-cats-more", label: "FAQ Kategorien (6-15)", component: FAQVariantsMore },
+  { id: "faq-cats-even-more", label: "FAQ Kategorien (16-25)", component: FAQVariantsEvenMore },
+  { id: "contact-variants", label: "Kontaktformulare (1-10)", component: ContactVariants },
+  { id: "contact-variants-more", label: "Kontaktformulare (11-25)", component: ContactVariantsMore },
+  { id: "about-variants", label: "Über Mich (1-10)", component: AboutVariants },
+  { id: "about-variants-more", label: "Über Mich (11-20)", component: AboutVariantsMore },
 ];
 
 export const TestCenter = () => {
