@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Plus, Minus, Calendar, Camera, Image, Shield, CreditCard, Users, CloudRain, Heart } from "lucide-react";
+import { Plus, Minus, Calendar, Camera, Image, Shield, CreditCard, Users, CloudRain, Heart, LayoutGrid } from "lucide-react";
 import { cn } from "../lib/utils";
 
 const FAQ_DATA = [
@@ -127,7 +127,7 @@ const FAQ_DATA = [
   }
 ];
 
-const CATEGORIES = Array.from(new Set(FAQ_DATA.map(item => item.category)));
+const CATEGORIES = ["Alle", ...Array.from(new Set(FAQ_DATA.map(item => item.category)))];
 
 const AccordionItem = ({ question, answer, image, isOpen, onClick }: any) => (
   <div className="border-b border-zinc-100 last:border-0">
@@ -184,7 +184,7 @@ export const FAQVariants = () => {
             ))}
           </div>
           <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm">
-            {FAQ_DATA.filter(item => item.category === activeCategory).map((item, idx) => (
+            {FAQ_DATA.filter(item => activeCategory === "Alle" || item.category === activeCategory).map((item, idx) => (
               <AccordionItem
                 key={item.question}
                 {...item}
@@ -216,7 +216,7 @@ export const FAQVariants = () => {
             </div>
             <div className="md:col-span-8 bg-white p-8 md:p-12 rounded-3xl shadow-sm min-h-[400px]">
               <h3 className="font-serif text-2xl italic mb-8 border-b border-zinc-100 pb-4">{activeCategory}</h3>
-              {FAQ_DATA.filter(item => item.category === activeCategory).map((item, idx) => (
+              {FAQ_DATA.filter(item => activeCategory === "Alle" || item.category === activeCategory).map((item, idx) => (
                 <AccordionItem
                   key={item.question}
                   {...item}
@@ -233,7 +233,7 @@ export const FAQVariants = () => {
           <h2 className="text-xs font-sans uppercase tracking-[0.4em] text-zinc-400 mb-12 text-center">3. Bento Grid (Kategorie-Karten)</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {CATEGORIES.map((cat, i) => {
-              const Icon = FAQ_DATA.find(item => item.category === cat)?.icon || Camera;
+              const Icon = cat === "Alle" ? LayoutGrid : FAQ_DATA.find(item => item.category === cat)?.icon || Camera;
               return (
                 <motion.div
                   key={cat}
@@ -249,11 +249,22 @@ export const FAQVariants = () => {
                   </div>
                   <h3 className="font-serif text-xl italic mb-2">{cat}</h3>
                   <p className="text-zinc-400 text-xs uppercase tracking-widest">
-                    {FAQ_DATA.filter(item => item.category === cat).length} Fragen
+                    {cat === "Alle" ? FAQ_DATA.length : FAQ_DATA.filter(item => item.category === cat).length} Fragen
                   </p>
                 </motion.div>
               );
             })}
+          </div>
+          <div className="max-w-3xl mx-auto mt-12 bg-white p-8 md:p-12 rounded-2xl shadow-sm">
+            <h3 className="font-serif text-2xl italic mb-8 border-b border-zinc-100 pb-4">{activeCategory}</h3>
+            {FAQ_DATA.filter(item => activeCategory === "Alle" || item.category === activeCategory).map((item, idx) => (
+              <AccordionItem
+                key={item.question}
+                {...item}
+                isOpen={openIndex === `bento-${idx}`}
+                onClick={() => setOpenIndex(openIndex === `bento-${idx}` ? null : `bento-${idx}`)}
+              />
+            ))}
           </div>
         </section>
 
@@ -261,7 +272,7 @@ export const FAQVariants = () => {
         <section className="mb-40">
           <h2 className="text-xs font-sans uppercase tracking-[0.4em] text-zinc-400 mb-12 text-center">4. Gestapelte Sektionen (Continuous Scroll)</h2>
           <div className="max-w-4xl mx-auto space-y-24">
-            {CATEGORIES.map(cat => (
+            {CATEGORIES.filter(cat => cat !== "Alle").map(cat => (
               <div key={cat}>
                 <div className="flex items-center gap-6 mb-8">
                   <h3 className="font-serif text-3xl italic whitespace-nowrap">{cat}</h3>
@@ -288,7 +299,7 @@ export const FAQVariants = () => {
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-wrap justify-center gap-8 mb-20">
               {CATEGORIES.map(cat => {
-                const Icon = FAQ_DATA.find(item => item.category === cat)?.icon || Camera;
+                const Icon = cat === "Alle" ? LayoutGrid : FAQ_DATA.find(item => item.category === cat)?.icon || Camera;
                 const isActive = activeCategory === cat;
                 return (
                   <button
@@ -319,7 +330,7 @@ export const FAQVariants = () => {
                 className="bg-white p-10 md:p-20 rounded-[3rem] shadow-sm border border-zinc-50"
               >
                 <div className="grid md:grid-cols-2 gap-x-16 gap-y-4">
-                  {FAQ_DATA.filter(item => item.category === activeCategory).map((item, idx) => (
+                  {FAQ_DATA.filter(item => activeCategory === "Alle" || item.category === activeCategory).map((item, idx) => (
                     <AccordionItem
                       key={item.question}
                       {...item}
