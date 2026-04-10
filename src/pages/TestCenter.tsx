@@ -36,6 +36,13 @@ import { NewStyleServices } from "./NewStyle/NewStyleServices";
 import { NewStylePortfolio } from "./NewStyle/NewStylePortfolio";
 import { NewStyleFAQ } from "./NewStyle/NewStyleFAQ";
 import { NewStyleContact } from "./NewStyle/NewStyleContact";
+import { MinimalistHome } from "./MinimalistStyle/MinimalistHome";
+import { MinimalistAbout } from "./MinimalistStyle/MinimalistAbout";
+import { MinimalistFAQ } from "./MinimalistStyle/MinimalistFAQ";
+import { ForestMonochromeHome } from "./ForestMonochrome/ForestMonochromeHome";
+import { EarthToneHome } from "./EarthTone/EarthToneHome";
+import { EarthToneAbout } from "./EarthTone/EarthToneAbout";
+import { EarthToneFAQ } from "./EarthTone/EarthToneFAQ";
 
 const TEST_PAGES = [
   { id: "testimonials", label: "Testimonials", component: TestimonialComparison, category: "Content" },
@@ -70,6 +77,13 @@ const TEST_PAGES = [
   { id: "new-style-portfolio", label: "Portfolio", component: NewStylePortfolio, category: "NEUER STIL" },
   { id: "new-style-faq", label: "FAQ", component: NewStyleFAQ, category: "NEUER STIL" },
   { id: "new-style-contact", label: "Kontakt", component: NewStyleContact, category: "NEUER STIL" },
+  { id: "min-home", label: "Home (S/W)", component: MinimalistHome, category: "MINIMALISTISCH (S/W)" },
+  { id: "min-about", label: "Über Mich (S/W)", component: MinimalistAbout, category: "MINIMALISTISCH (S/W)" },
+  { id: "min-faq", label: "FAQ (S/W)", component: MinimalistFAQ, category: "MINIMALISTISCH (S/W)" },
+  { id: "forest-mono-home", label: "Home (Monochrom)", component: ForestMonochromeHome, category: "FOREST MONOCHROME" },
+  { id: "earth-home", label: "Home (Braun)", component: EarthToneHome, category: "EARTH TONES (BRAUN)" },
+  { id: "earth-about", label: "Über Mich (Braun)", component: EarthToneAbout, category: "EARTH TONES (BRAUN)" },
+  { id: "earth-faq", label: "FAQ (Braun)", component: EarthToneFAQ, category: "EARTH TONES (BRAUN)" },
 ];
 
 export const TestCenter = () => {
