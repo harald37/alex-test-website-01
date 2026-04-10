@@ -21,6 +21,7 @@ import { HomeTest2 } from "./HomeTest2";
 import { HomeVariantsShowcase } from "./HomeVariantsShowcase";
 import { QuoteVariants } from "./QuoteVariants";
 import { CopyVariants } from "./CopyVariants";
+import { FAQVariants } from "./FAQVariants";
 
 const TEST_PAGES = [
   { id: "testimonials", label: "Testimonials", component: TestimonialComparison },
@@ -40,6 +41,7 @@ const TEST_PAGES = [
   { id: "hero-15", label: "Hero (15)", component: HomeVariantsShowcase },
   { id: "quotes", label: "Zitate (30)", component: QuoteVariants },
   { id: "copy", label: "Texte (30)", component: CopyVariants },
+  { id: "faq-cats", label: "FAQ Kategorien", component: FAQVariants },
 ];
 
 export const TestCenter = () => {
