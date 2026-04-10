@@ -9,17 +9,17 @@ export const NewStyleHome: React.FC = () => {
   return (
     <div className="flex flex-col bg-[#f5f2ed] text-[#141414]">
       {/* Hero Section */}
-      <section className="relative h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-[#1a2e26]">
+      <section className="relative h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto:best,w_2560/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp" 
             alt="Elegante Hochzeitsreportage Hannover" 
-            className="w-full h-full object-cover opacity-40 grayscale"
+            className="w-full h-full object-cover opacity-30 grayscale"
             referrerPolicy="no-referrer"
             fetchPriority="high"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a2e26]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
         </div>
         
         <div className="relative z-10 w-full h-full flex flex-col items-center md:items-start justify-end text-center md:text-left px-6 md:px-24 pb-24 md:pb-32">

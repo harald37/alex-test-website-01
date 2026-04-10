@@ -31,35 +31,45 @@ import { AboutVariants } from "./AboutVariants";
 import { AboutVariantsMore } from "./AboutVariantsMore";
 import { ColorPaletteTest } from "./ColorPaletteTest";
 import { NewStyleHome } from "./NewStyle/NewStyleHome";
+import { NewStyleAbout } from "./NewStyle/NewStyleAbout";
+import { NewStyleServices } from "./NewStyle/NewStyleServices";
+import { NewStylePortfolio } from "./NewStyle/NewStylePortfolio";
+import { NewStyleFAQ } from "./NewStyle/NewStyleFAQ";
+import { NewStyleContact } from "./NewStyle/NewStyleContact";
 
 const TEST_PAGES = [
-  { id: "testimonials", label: "Testimonials", component: TestimonialComparison },
-  { id: "hero-showcase", label: "Hero Showcase", component: HeroShowcase },
-  { id: "hero-variants", label: "Hero Varianten", component: HeroVariants },
-  { id: "menu", label: "Menü Vergleich", component: MenuComparison },
-  { id: "logos", label: "Logo Varianten", component: LogoShowcase },
-  { id: "buttons", label: "Button Varianten", component: ButtonShowcase },
-  { id: "button-test", label: "Button Test", component: ButtonTest },
-  { id: "seo", label: "SEO Strategie", component: SEOTest },
-  { id: "hero-layout", label: "Hero Layout", component: HeroLayoutTest },
-  { id: "scroll", label: "Scroll Indicator", component: ScrollIndicatorTest },
-  { id: "intros", label: "Subpage Intros", component: TestIntros },
-  { id: "home-intros", label: "Home Intros", component: TestHome },
-  { id: "home-test", label: "Home Test", component: HomeTest },
-  { id: "home-test-2", label: "Home Test 2", component: HomeTest2 },
-  { id: "hero-15", label: "Hero (15)", component: HomeVariantsShowcase },
-  { id: "quotes", label: "Zitate (30)", component: QuoteVariants },
-  { id: "copy", label: "Texte (30)", component: CopyVariants },
-  { id: "faq-cats", label: "FAQ Kategorien (1-5)", component: FAQVariants },
-  { id: "faq-cats-more", label: "FAQ Kategorien (6-15)", component: FAQVariantsMore },
-  { id: "faq-cats-even-more", label: "FAQ Kategorien (16-25)", component: FAQVariantsEvenMore },
-  { id: "faq-cat-layouts", label: "FAQ Kategorie-Layouts (10)", component: FAQCategoryVariants },
-  { id: "contact-variants", label: "Kontaktformulare (1-10)", component: ContactVariants },
-  { id: "contact-variants-more", label: "Kontaktformulare (11-25)", component: ContactVariantsMore },
-  { id: "about-variants", label: "Über Mich (1-10)", component: AboutVariants },
-  { id: "about-variants-more", label: "Über Mich (11-20)", component: AboutVariantsMore },
-  { id: "color-palette", label: "Farben & Kontraste", component: ColorPaletteTest },
-  { id: "new-style-full", label: "Website (Neuer Stil - Komplett)", component: NewStyleHome },
+  { id: "testimonials", label: "Testimonials", component: TestimonialComparison, category: "Content" },
+  { id: "hero-showcase", label: "Hero Showcase", component: HeroShowcase, category: "Hero" },
+  { id: "hero-variants", label: "Hero Varianten", component: HeroVariants, category: "Hero" },
+  { id: "menu", label: "Menü Vergleich", component: MenuComparison, category: "Content" },
+  { id: "logos", label: "Logo Varianten", component: LogoShowcase, category: "Branding" },
+  { id: "buttons", label: "Button Varianten", component: ButtonShowcase, category: "Branding" },
+  { id: "button-test", label: "Button Test", component: ButtonTest, category: "Branding" },
+  { id: "seo", label: "SEO Strategie", component: SEOTest, category: "Branding" },
+  { id: "hero-layout", label: "Hero Layout", component: HeroLayoutTest, category: "Hero" },
+  { id: "scroll", label: "Scroll Indicator", component: ScrollIndicatorTest, category: "Hero" },
+  { id: "intros", label: "Subpage Intros", component: TestIntros, category: "Hero" },
+  { id: "home-intros", label: "Home Intros", component: TestHome, category: "Hero" },
+  { id: "home-test", label: "Home Test", component: HomeTest, category: "Home Tests" },
+  { id: "home-test-2", label: "Home Test 2", component: HomeTest2, category: "Home Tests" },
+  { id: "hero-15", label: "Hero (15)", component: HomeVariantsShowcase, category: "Hero" },
+  { id: "quotes", label: "Zitate (30)", component: QuoteVariants, category: "Content" },
+  { id: "copy", label: "Texte (30)", component: CopyVariants, category: "Content" },
+  { id: "faq-cats", label: "FAQ (1-5)", component: FAQVariants, category: "FAQ" },
+  { id: "faq-cats-more", label: "FAQ (6-15)", component: FAQVariantsMore, category: "FAQ" },
+  { id: "faq-cats-even-more", label: "FAQ (16-25)", component: FAQVariantsEvenMore, category: "FAQ" },
+  { id: "faq-cat-layouts", label: "FAQ Layouts", component: FAQCategoryVariants, category: "FAQ" },
+  { id: "contact-variants", label: "Kontakt (1-10)", component: ContactVariants, category: "Kontakt" },
+  { id: "contact-variants-more", label: "Kontakt (11-25)", component: ContactVariantsMore, category: "Kontakt" },
+  { id: "about-variants", label: "Über Mich (1-10)", component: AboutVariants, category: "Über Mich" },
+  { id: "about-variants-more", label: "Über Mich (11-20)", component: AboutVariantsMore, category: "Über Mich" },
+  { id: "color-palette", label: "Farben & Kontraste", component: ColorPaletteTest, category: "Branding" },
+  { id: "new-style-home", label: "Home", component: NewStyleHome, category: "NEUER STIL" },
+  { id: "new-style-about", label: "Über Mich", component: NewStyleAbout, category: "NEUER STIL" },
+  { id: "new-style-services", label: "Leistungen", component: NewStyleServices, category: "NEUER STIL" },
+  { id: "new-style-portfolio", label: "Portfolio", component: NewStylePortfolio, category: "NEUER STIL" },
+  { id: "new-style-faq", label: "FAQ", component: NewStyleFAQ, category: "NEUER STIL" },
+  { id: "new-style-contact", label: "Kontakt", component: NewStyleContact, category: "NEUER STIL" },
 ];
 
 export const TestCenter = () => {
@@ -73,31 +83,40 @@ export const TestCenter = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const categories = Array.from(new Set(TEST_PAGES.map(p => p.category)));
+
   return (
-    <div className="min-h-screen bg-surface flex flex-col md:flex-row">
+    <div className="min-h-screen bg-[#f5f2ed] flex flex-col md:flex-row">
       {/* Sidebar Navigation (Desktop) / Top Bar (Mobile) */}
-      <div className="md:w-72 md:h-screen md:sticky md:top-0 bg-white border-b md:border-b-0 md:border-r border-zinc-100 z-[90] flex flex-col transition-all duration-500">
-        <div className="p-6 md:p-8 border-b border-zinc-50">
-          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-zinc-400">
+      <div className="md:w-[400px] md:h-screen md:sticky md:top-0 bg-[#1a2e26] border-b md:border-b-0 md:border-r border-white/5 z-[90] flex flex-col transition-all duration-500">
+        <div className="p-4 md:p-6 border-b border-white/5">
+          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d]">
             Test Center
           </span>
-          <h1 className="font-serif italic text-xl mt-2 hidden md:block">Varianten & Tests</h1>
+          <h1 className="font-serif italic text-lg mt-1 hidden md:block text-white">Varianten & Tests</h1>
         </div>
         
-        <div className="flex md:flex-col overflow-x-auto md:overflow-y-auto no-scrollbar p-2 md:p-4 gap-1">
-          {TEST_PAGES.map((page) => (
-            <button
-              key={page.id}
-              onClick={() => setActiveTab(page.id)}
-              className={cn(
-                "font-sans uppercase tracking-[0.2em] text-[9px] px-4 py-3 rounded-lg transition-all whitespace-nowrap text-left",
-                activeTabId === page.id 
-                  ? "bg-zinc-900 text-white shadow-md" 
-                  : "text-zinc-400 hover:text-zinc-600 hover:bg-zinc-50"
-              )}
-            >
-              {page.label}
-            </button>
+        <div className="flex-grow overflow-y-auto no-scrollbar p-4 space-y-6">
+          {categories.map((cat) => (
+            <div key={cat} className="space-y-2">
+              <h3 className="text-[9px] uppercase tracking-[0.3em] text-[#a0522d] font-bold px-2">{cat}</h3>
+              <div className="grid grid-cols-2 gap-1">
+                {TEST_PAGES.filter(p => p.category === cat).map((page) => (
+                  <button
+                    key={page.id}
+                    onClick={() => setActiveTab(page.id)}
+                    className={cn(
+                      "font-sans uppercase tracking-[0.1em] text-[8px] px-2 py-2 rounded transition-all text-left leading-tight",
+                      activeTabId === page.id 
+                        ? "bg-[#a0522d] text-white shadow-lg" 
+                        : "text-white/30 hover:text-white hover:bg-white/5"
+                    )}
+                  >
+                    {page.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
