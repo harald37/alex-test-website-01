@@ -36,7 +36,7 @@ export const ButtonShowcase = () => {
       <div className="max-w-4xl mx-auto mb-20 text-center">
         <h1 className="font-serif text-5xl md:text-7xl italic mb-6">Button Design Varianten</h1>
         <p className="text-zinc-500 uppercase tracking-[0.4em] text-xs max-w-2xl mx-auto leading-relaxed">
-          40 exklusive Button-Konzepte für Alex Begopoulos. 
+          60 exklusive Button-Konzepte für Alex Begopoulos. 
           Von minimalistischer Eleganz bis hin zu funktionaler Klarheit.
         </p>
       </div>
@@ -331,6 +331,160 @@ export const ButtonShowcase = () => {
         <ButtonVariant name="40. Final Elegance" dark className="bg-zinc-950">
           <button className="px-12 py-4 border border-white/20 text-white text-[10px] uppercase tracking-[0.5em] hover:bg-white hover:text-zinc-950 transition-all duration-700">
             UNVERGESSLICH
+          </button>
+        </ButtonVariant>
+
+        {/* 41. 3D Push */}
+        <ButtonVariant name="41. 3D Push">
+          <button className="px-8 py-3 bg-zinc-900 text-white text-[10px] uppercase tracking-[0.3em] rounded-lg shadow-[0_6px_0_#3f3f46] active:shadow-[0_0px_0_#3f3f46] active:translate-y-[6px] transition-all">
+            Klick Mich
+          </button>
+        </ButtonVariant>
+
+        {/* 42. Cyberpunk Glow */}
+        <ButtonVariant name="42. Cyberpunk" dark>
+          <button className="px-8 py-3 bg-transparent border border-cyan-400 text-cyan-400 text-[10px] uppercase tracking-[0.3em] shadow-[0_0_10px_rgba(34,211,238,0.5),inset_0_0_10px_rgba(34,211,238,0.5)] hover:bg-cyan-400 hover:text-zinc-900 transition-all">
+            System Start
+          </button>
+        </ButtonVariant>
+
+        {/* 43. Gooey Blob */}
+        <ButtonVariant name="43. Soft Blob">
+          <button className="px-8 py-4 bg-zinc-100 text-zinc-900 text-[10px] uppercase tracking-[0.3em] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] hover:rounded-[60%_40%_30%_70%/60%_30%_70%_40%] transition-all duration-500">
+            Fließend
+          </button>
+        </ButtonVariant>
+
+        {/* 44. Terminal CLI */}
+        <ButtonVariant name="44. Terminal" dark>
+          <button className="px-8 py-3 bg-black border border-green-500 text-green-500 font-mono text-[10px] uppercase tracking-[0.2em] hover:bg-green-900/30 transition-all">
+            &gt; execute_
+          </button>
+        </ButtonVariant>
+
+        {/* 45. Retro Arcade */}
+        <ButtonVariant name="45. Retro Arcade">
+          <button className="px-8 py-3 bg-white border-4 border-black text-black font-bold text-[10px] uppercase tracking-[0.3em] shadow-[4px_4px_0_#000] active:shadow-[0_0_0_#000] active:translate-x-1 active:translate-y-1 transition-all">
+            Start Game
+          </button>
+        </ButtonVariant>
+
+        {/* 46. Underline Expand */}
+        <ButtonVariant name="46. Underline Expand">
+          <button className="relative py-2 text-[10px] uppercase tracking-[0.3em] group">
+            <span>Entdecken</span>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-zinc-900 group-hover:w-full transition-all duration-300" />
+          </button>
+        </ButtonVariant>
+
+        {/* 47. Outline Fill Right */}
+        <ButtonVariant name="47. Fill Right">
+          <button className="relative px-8 py-3 border border-zinc-900 text-[10px] uppercase tracking-[0.3em] overflow-hidden group">
+            <div className="absolute inset-0 bg-zinc-900 -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out" />
+            <span className="relative z-10 group-hover:text-white transition-colors duration-300">Hover Me</span>
+          </button>
+        </ButtonVariant>
+
+        {/* 48. Outline Fill Top */}
+        <ButtonVariant name="48. Fill Top">
+          <button className="relative px-8 py-3 border border-zinc-900 text-[10px] uppercase tracking-[0.3em] overflow-hidden group">
+            <div className="absolute inset-0 bg-zinc-900 -translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+            <span className="relative z-10 group-hover:text-white transition-colors duration-300">Slide Down</span>
+          </button>
+        </ButtonVariant>
+
+        {/* 49. Soft Inner Shadow */}
+        <ButtonVariant name="49. Inner Shadow">
+          <button className="px-8 py-3 bg-zinc-100 text-zinc-900 text-[10px] uppercase tracking-[0.3em] rounded-xl shadow-inner hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.1)] transition-all">
+            Pressed
+          </button>
+        </ButtonVariant>
+
+        {/* 50. Glitch Effect */}
+        <ButtonVariant name="50. Glitch Effect" dark>
+          <button className="px-8 py-3 bg-zinc-900 text-white text-[10px] uppercase tracking-[0.3em] hover:animate-pulse hover:text-red-500 transition-all">
+            G L I T C H
+          </button>
+        </ButtonVariant>
+
+        {/* 51. Split Color */}
+        <ButtonVariant name="51. Split Color">
+          <button className="relative px-8 py-3 text-[10px] uppercase tracking-[0.3em] overflow-hidden border border-zinc-900 group">
+            <div className="absolute inset-0 w-1/2 bg-zinc-900 group-hover:w-full transition-all duration-500 ease-in-out" />
+            <span className="relative z-10 text-zinc-900 group-hover:text-white mix-blend-difference transition-colors">Split Fill</span>
+          </button>
+        </ButtonVariant>
+
+        {/* 52. Expanding Search */}
+        <ButtonVariant name="52. Expand Search">
+          <button className="flex items-center bg-zinc-100 rounded-full p-3 group hover:pr-6 transition-all duration-300 overflow-hidden">
+            <Search size={16} className="text-zinc-600 shrink-0" />
+            <span className="w-0 overflow-hidden group-hover:w-16 group-hover:ml-2 text-[10px] uppercase tracking-widest text-zinc-600 transition-all duration-300 whitespace-nowrap">
+              Suche
+            </span>
+          </button>
+        </ButtonVariant>
+
+        {/* 53. Stacked Cards */}
+        <ButtonVariant name="53. Stacked Cards">
+          <button className="relative px-8 py-3 bg-white border border-zinc-900 text-[10px] uppercase tracking-[0.3em] hover:-translate-y-1 hover:-translate-x-1 transition-transform">
+            <div className="absolute inset-0 bg-zinc-100 border border-zinc-900 translate-x-1 translate-y-1 -z-10" />
+            <div className="absolute inset-0 bg-zinc-200 border border-zinc-900 translate-x-2 translate-y-2 -z-20" />
+            Stapel
+          </button>
+        </ButtonVariant>
+
+        {/* 54. Circular Badge */}
+        <ButtonVariant name="54. Circular Badge">
+          <button className="w-20 h-20 rounded-full bg-zinc-900 text-white flex items-center justify-center text-[8px] uppercase tracking-widest hover:scale-110 transition-transform">
+            <span className="text-center leading-tight">Book<br/>Now</span>
+          </button>
+        </ButtonVariant>
+
+        {/* 55. Typewriter */}
+        <ButtonVariant name="55. Typewriter">
+          <button className="font-mono text-sm border-b-2 border-zinc-900 pb-1 hover:bg-zinc-900 hover:text-white px-2 transition-colors">
+            _hello_world
+          </button>
+        </ButtonVariant>
+
+        {/* 56. Gradient Border */}
+        <ButtonVariant name="56. Gradient Border" dark>
+          <button className="relative px-8 py-3 bg-zinc-900 text-white text-[10px] uppercase tracking-[0.3em] group">
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-lg -z-10 p-[2px]">
+              <div className="w-full h-full bg-zinc-900 rounded-md group-hover:bg-transparent transition-colors" />
+            </div>
+            <span className="relative z-10">Premium</span>
+          </button>
+        </ButtonVariant>
+
+        {/* 57. Floating Action Button (FAB) */}
+        <ButtonVariant name="57. FAB Style">
+          <button className="w-14 h-14 bg-[#c5a059] text-white rounded-full shadow-[0_8px_16px_rgba(197,160,89,0.4)] flex items-center justify-center hover:scale-110 hover:shadow-[0_12px_20px_rgba(197,160,89,0.6)] transition-all">
+            <Plus size={24} />
+          </button>
+        </ButtonVariant>
+
+        {/* 58. Arrow Stretch */}
+        <ButtonVariant name="58. Arrow Stretch">
+          <button className="flex items-center space-x-2 text-[10px] uppercase tracking-[0.3em] group">
+            <span>Weiter</span>
+            <ArrowRight size={14} className="w-4 group-hover:w-8 transition-all duration-300" />
+          </button>
+        </ButtonVariant>
+
+        {/* 59. Diagonal Sweep */}
+        <ButtonVariant name="59. Diagonal Sweep">
+          <button className="relative px-8 py-3 border border-zinc-900 text-[10px] uppercase tracking-[0.3em] overflow-hidden group">
+            <div className="absolute inset-0 bg-zinc-900 translate-y-full rotate-45 scale-150 group-hover:translate-y-0 transition-transform duration-500 ease-out" />
+            <span className="relative z-10 group-hover:text-white transition-colors duration-300">Sweep</span>
+          </button>
+        </ButtonVariant>
+
+        {/* 60. The Monolith */}
+        <ButtonVariant name="60. The Monolith" dark>
+          <button className="w-full h-24 bg-zinc-900 text-zinc-500 hover:text-white text-[12px] uppercase tracking-[1em] transition-colors duration-700 flex items-center justify-center shadow-2xl">
+            ENTER
           </button>
         </ButtonVariant>
       </div>
