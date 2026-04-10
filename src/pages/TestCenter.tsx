@@ -24,6 +24,7 @@ import { CopyVariants } from "./CopyVariants";
 import { FAQVariants } from "./FAQVariants";
 import { FAQVariantsMore } from "./FAQVariantsMore";
 import { FAQVariantsEvenMore } from "./FAQVariantsEvenMore";
+import { FAQCategoryVariants } from "./FAQCategoryVariants";
 import { ContactVariants } from "./ContactVariants";
 import { ContactVariantsMore } from "./ContactVariantsMore";
 import { AboutVariants } from "./AboutVariants";
@@ -50,6 +51,7 @@ const TEST_PAGES = [
   { id: "faq-cats", label: "FAQ Kategorien (1-5)", component: FAQVariants },
   { id: "faq-cats-more", label: "FAQ Kategorien (6-15)", component: FAQVariantsMore },
   { id: "faq-cats-even-more", label: "FAQ Kategorien (16-25)", component: FAQVariantsEvenMore },
+  { id: "faq-cat-layouts", label: "FAQ Kategorie-Layouts (10)", component: FAQCategoryVariants },
   { id: "contact-variants", label: "Kontaktformulare (1-10)", component: ContactVariants },
   { id: "contact-variants-more", label: "Kontaktformulare (11-25)", component: ContactVariantsMore },
   { id: "about-variants", label: "Über Mich (1-10)", component: AboutVariants },
