@@ -34,6 +34,13 @@ import { HomeVariantsShowcase } from "./pages/HomeVariantsShowcase";
 import { QuoteVariants } from "./pages/QuoteVariants";
 import { CopyVariants } from "./pages/CopyVariants";
 import { TestCenter } from "./pages/TestCenter";
+import { NewStyleHome } from "./pages/NewStyle/NewStyleHome";
+import { NewStyleAbout } from "./pages/NewStyle/NewStyleAbout";
+import { NewStyleFAQ } from "./pages/NewStyle/NewStyleFAQ";
+import { NewStyleServices } from "./pages/NewStyle/NewStyleServices";
+import { NewStylePortfolio } from "./pages/NewStyle/NewStylePortfolio";
+import { NewStyleContact } from "./pages/NewStyle/NewStyleContact";
+import { NewStyleLayout } from "./pages/NewStyle/NewStyleLayout";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
@@ -41,21 +48,37 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <Analytics />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/leistungen" element={<Services />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/impressum" element={<Imprint />} />
-          <Route path="/datenschutz" element={<Privacy />} />
-          <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
-          <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
-          <Route path="/test" element={<TestCenter />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/new-style/*" element={
+          <NewStyleLayout>
+            <Routes>
+              <Route path="/" element={<NewStyleHome />} />
+              <Route path="/about" element={<NewStyleAbout />} />
+              <Route path="/faq" element={<NewStyleFAQ />} />
+              <Route path="/services" element={<NewStyleServices />} />
+              <Route path="/portfolio" element={<NewStylePortfolio />} />
+              <Route path="/contact" element={<NewStyleContact />} />
+            </Routes>
+          </NewStyleLayout>
+        } />
+        <Route path="*" element={
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/leistungen" element={<Services />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/impressum" element={<Imprint />} />
+              <Route path="/datenschutz" element={<Privacy />} />
+              <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
+              <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
+              <Route path="/test" element={<TestCenter />} />
+            </Routes>
+          </Layout>
+        } />
+      </Routes>
     </Router>
   );
 }

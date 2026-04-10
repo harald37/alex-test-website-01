@@ -29,6 +29,8 @@ import { ContactVariants } from "./ContactVariants";
 import { ContactVariantsMore } from "./ContactVariantsMore";
 import { AboutVariants } from "./AboutVariants";
 import { AboutVariantsMore } from "./AboutVariantsMore";
+import { ColorPaletteTest } from "./ColorPaletteTest";
+import { NewStyleHome } from "./NewStyle/NewStyleHome";
 
 const TEST_PAGES = [
   { id: "testimonials", label: "Testimonials", component: TestimonialComparison },
@@ -56,6 +58,8 @@ const TEST_PAGES = [
   { id: "contact-variants-more", label: "Kontaktformulare (11-25)", component: ContactVariantsMore },
   { id: "about-variants", label: "Über Mich (1-10)", component: AboutVariants },
   { id: "about-variants-more", label: "Über Mich (11-20)", component: AboutVariantsMore },
+  { id: "color-palette", label: "Farben & Kontraste", component: ColorPaletteTest },
+  { id: "new-style-full", label: "Website (Neuer Stil - Komplett)", component: NewStyleHome },
 ];
 
 export const TestCenter = () => {
@@ -70,34 +74,36 @@ export const TestCenter = () => {
   };
 
   return (
-    <div className="min-h-screen bg-surface">
-      {/* Navigation Bar */}
-      <div className="fixed top-[72px] md:top-[88px] left-0 w-full bg-white/90 backdrop-blur-md border-b border-zinc-100 z-[90] overflow-x-auto no-scrollbar transition-all duration-500">
-        <div className="max-w-screen-2xl mx-auto px-6 flex items-center h-14 gap-8">
-          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-zinc-400 whitespace-nowrap border-r border-zinc-100 pr-8 mr-2">
+    <div className="min-h-screen bg-surface flex flex-col md:flex-row">
+      {/* Sidebar Navigation (Desktop) / Top Bar (Mobile) */}
+      <div className="md:w-72 md:h-screen md:sticky md:top-0 bg-white border-b md:border-b-0 md:border-r border-zinc-100 z-[90] flex flex-col transition-all duration-500">
+        <div className="p-6 md:p-8 border-b border-zinc-50">
+          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-zinc-400">
             Test Center
           </span>
-          <div className="flex items-center gap-6 h-full">
-            {TEST_PAGES.map((page) => (
-              <button
-                key={page.id}
-                onClick={() => setActiveTab(page.id)}
-                className={cn(
-                  "font-sans uppercase tracking-[0.2em] text-[9px] h-full border-b-2 transition-all whitespace-nowrap",
-                  activeTabId === page.id 
-                    ? "border-zinc-900 text-zinc-900" 
-                    : "border-transparent text-zinc-400 hover:text-zinc-600"
-                )}
-              >
-                {page.label}
-              </button>
-            ))}
-          </div>
+          <h1 className="font-serif italic text-xl mt-2 hidden md:block">Varianten & Tests</h1>
+        </div>
+        
+        <div className="flex md:flex-col overflow-x-auto md:overflow-y-auto no-scrollbar p-2 md:p-4 gap-1">
+          {TEST_PAGES.map((page) => (
+            <button
+              key={page.id}
+              onClick={() => setActiveTab(page.id)}
+              className={cn(
+                "font-sans uppercase tracking-[0.2em] text-[9px] px-4 py-3 rounded-lg transition-all whitespace-nowrap text-left",
+                activeTabId === page.id 
+                  ? "bg-zinc-900 text-white shadow-md" 
+                  : "text-zinc-400 hover:text-zinc-600 hover:bg-zinc-50"
+              )}
+            >
+              {page.label}
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Content Area */}
-      <div className="pt-[128px] md:pt-[144px]">
+      <div className="flex-grow">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTabId}
