@@ -8,59 +8,38 @@ import { Button } from "../../components/ui/Button";
 export const MinimalistServices = () => {
   return (
     <div className="bg-[#f5f2ed] text-[#141414] overflow-x-hidden">
-      {/* Hero Section */}
-      <section className="relative h-[80vh] overflow-hidden">
-        <motion.div 
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0"
-        >
-          <img 
-            src={IMAGES.SERVICES.HERO} 
-            alt="Exklusive Hochzeitsfotografie" 
-            className="w-full h-full object-cover grayscale"
-            referrerPolicy="no-referrer"
-          />
-        </motion.div>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
+      {/* Hero Section - Variant 01: Klassisch Zentriert */}
+      <section className="pt-48 pb-24 md:pt-64 md:pb-32 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.span 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="font-sans uppercase tracking-[0.5em] text-[10px] text-[#141414]/40 mb-6 block"
+          >
+            Leistungen
+          </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="text-white font-serif text-4xl md:text-8xl italic font-light tracking-tight mb-4"
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="text-5xl md:text-8xl font-serif italic mb-12 leading-[0.9]"
           >
-            Eure Geschichte in Bildern
+            Euer Tag, meine Begleitung.
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="text-white/90 font-sans uppercase tracking-[0.4em] text-sm"
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-[#141414]/60 max-w-xl mx-auto leading-relaxed text-lg md:text-xl font-serif italic"
           >
-            Leistungen & Exklusive Begleitung
+            Vom Getting Ready bis zum Hochzeitstanz – ich halte die Geschichte eures Tages in zeitlosen Bildern fest.
           </motion.p>
-        </div>
-      </section>
-
-      {/* Intro Text */}
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-[#f5f2ed]">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="font-sans uppercase tracking-[0.3em] text-xs text-[#141414]/40 mb-8 block">Full Service Begleitung</span>
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-serif text-3xl md:text-6xl leading-tight mb-12 italic text-[#141414]"
-          >
-            Handgefertigte Erinnerungen für die Ewigkeit
-          </motion.h2>
-          <div className="space-y-8 text-[#141414]/70 text-base md:text-lg">
-            <p>
-              Als euer <strong>Hochzeitsfotograf in Hannover</strong> und ganz <strong>Niedersachsen</strong> begleite ich euch auf eurem Weg zum Ja-Wort. Mein Ziel ist es, nicht nur Bilder zu machen, sondern Kunstwerke zu schaffen, die die Emotionen eures Tages konservieren. Ob in der vertrauten Heimat oder als Destination Wedding – ich bin für euch <strong>weltweit buchbar</strong>.
-            </p>
-          </div>
+          <motion.div 
+            initial={{ opacity: 0, scaleX: 0 }}
+            animate={{ opacity: 1, scaleX: 1 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            className="w-12 h-[1px] bg-[#141414]/10 mx-auto mt-16"
+          />
         </div>
       </section>
 

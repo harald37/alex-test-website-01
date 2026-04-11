@@ -96,7 +96,7 @@ const TEST_PAGES = [
   { id: "min-portfolio", label: "Portfolio (S/W)", component: MinimalistPortfolio, category: "MINIMALISTISCH (S/W)" },
   { id: "min-faq", label: "FAQ (S/W)", component: MinimalistFAQ, category: "MINIMALISTISCH (S/W)" },
   { id: "min-contact", label: "Kontakt (S/W)", component: MinimalistContact, category: "MINIMALISTISCH (S/W)" },
-  { id: "portfolio-intros", label: "Portfolio Intros (20)", component: PortfolioIntros, category: "MINIMALISTISCH (S/W)" },
+  { id: "portfolio-intros", label: "Portfolio Intros (30)", component: PortfolioIntros, category: "MINIMALISTISCH (S/W)" },
   { id: "services-intros", label: "Leistungen Intros (20)", component: ServicesIntros, category: "MINIMALISTISCH (S/W)" },
   { id: "forest-mono-home", label: "Home (Monochrom)", component: ForestMonochromeHome, category: "FOREST MONOCHROME" },
   { id: "earth-home", label: "Home (Braun)", component: EarthToneHome, category: "EARTH TONES (BRAUN)" },

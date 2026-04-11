@@ -92,20 +92,38 @@ export const MinimalistPortfolio = () => {
 
   return (
     <main className="pt-48 md:pt-64 pb-32 px-6 md:px-12 max-w-screen-2xl mx-auto bg-[#f5f2ed] min-h-screen text-[#141414]">
-      {/* Editorial Header */}
-      <section className="mb-24 md:mb-32 max-w-5xl">
-        <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-[#141414]/40 mb-8 block">Portfolio II</span>
-        <h1 className="font-serif italic text-5xl md:text-8xl lg:text-9xl text-[#141414] leading-none tracking-tight mb-16">Momente.</h1>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div className="w-12 h-[1px] bg-[#141414]/10 mb-8 md:mb-0"></div>
-          <div className="space-y-8">
-            <p className="text-xl md:text-2xl leading-relaxed text-[#141414]/80 italic font-serif">
-              "Die Kunst, das Unsichtbare sichtbar zu machen. Momente, die bleiben, wenn das Licht verblasst."
-            </p>
-            <p className="text-[#141414]/70 leading-relaxed tracking-wide">
-              Als <span className="font-medium text-[#141414]">Hochzeitsfotograf in Hannover</span> begleite ich Paare an ihrem wichtigsten Tag, um authentische, emotionale und zeitlose Geschichten in Bildern zu erzählen. Mein Fokus liegt auf der Fine Art Fotografie, die Natürlichkeit und Eleganz vereint.
-            </p>
-          </div>
+      {/* Hero Section - Variant 01: Klassisch Zentriert */}
+      <section className="mb-24 md:mb-32">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.span 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="font-sans uppercase tracking-[0.5em] text-[10px] text-[#141414]/40 mb-6 block"
+          >
+            Portfolio
+          </motion.span>
+          <motion.h1 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="text-5xl md:text-8xl font-serif italic mb-8 leading-[0.9]"
+          >
+            Eure Geschichte in Bildern.
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-[#141414]/60 max-w-xl mx-auto leading-relaxed mb-12 text-lg md:text-xl font-serif italic"
+          >
+            Authentische Momente, echte Emotionen und zeitlose Erinnerungen, die eure Geschichte so erzählen, wie sie wirklich war.
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, scaleX: 0 }}
+            animate={{ opacity: 1, scaleX: 1 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            className="w-12 h-[1px] bg-[#141414]/10 mx-auto mt-12"
+          />
         </div>
       </section>
 
