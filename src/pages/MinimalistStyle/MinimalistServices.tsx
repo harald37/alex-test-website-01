@@ -65,7 +65,7 @@ export const MinimalistServices = () => {
       </section>
 
       {/* Service 01: Planning */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#141414] text-white">
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#1a2e26] text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -127,7 +127,7 @@ export const MinimalistServices = () => {
       </section>
 
       {/* Service 03: Post-Processing */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#141414] text-white">
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#1a2e26] text-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -201,7 +201,7 @@ export const MinimalistServices = () => {
       </section>
 
       {/* Extras Section */}
-      <section className="bg-[#141414] py-24 md:py-40 px-6 md:px-12 text-white">
+      <section className="bg-[#1a2e26] py-24 md:py-40 px-6 md:px-12 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 md:mb-32">
             <h2 className="font-serif text-4xl md:text-7xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>

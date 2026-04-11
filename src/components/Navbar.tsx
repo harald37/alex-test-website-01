@@ -195,7 +195,7 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="lg:hidden fixed inset-0 bg-black z-[90] flex flex-col"
+            className="lg:hidden fixed inset-0 !bg-[#1a2e26] z-[90] flex flex-col"
           >
             <div className="flex-1 flex flex-col items-center justify-center space-y-8 px-12 pt-20">
               {NAV_LINKS.map((link) => (

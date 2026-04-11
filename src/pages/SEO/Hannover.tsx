@@ -156,7 +156,7 @@ export const Hannover = () => {
       </section>
 
       {/* Weitere Optionen */}
-      <section className="bg-[#141414] py-24 md:py-32 px-6 md:px-12 text-white">
+      <section className="bg-[#1a2e26] py-24 md:py-32 px-6 md:px-12 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <h2 className="font-serif text-3xl md:text-5xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>
@@ -237,7 +237,7 @@ export const Hannover = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-32 px-6 md:px-12 bg-[#141414] text-white text-center">
+      <section className="py-32 px-6 md:px-12 bg-[#1a2e26] text-white text-center">
         <div className="max-w-3xl mx-auto space-y-12">
           <h2 className="font-serif italic text-3xl md:text-4xl leading-tight font-medium text-white">
             Bereit für eure Geschichte <br /> in Hannover?

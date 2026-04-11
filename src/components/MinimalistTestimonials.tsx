@@ -23,11 +23,11 @@ export const MinimalistTestimonials = () => {
   const prev = () => setCurrentIndex((prev) => (prev - 1 + REVIEWS.length) % REVIEWS.length);
 
   return (
-    <section className="bg-[#f5f2ed] py-24 md:py-32 px-6 md:px-12 text-[#141414] overflow-hidden">
+    <section className="bg-[#1a2e26] py-24 md:py-32 px-6 md:px-12 text-white overflow-hidden">
       <div className="max-w-4xl mx-auto relative">
         <div className="text-center mb-16">
-          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-[#141414]/40 block mb-4">Das sagen meine Paare</span>
-          <h2 className="font-serif text-3xl md:text-5xl italic uppercase tracking-widest text-[#141414]">Testimonials</h2>
+          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-white/40 block mb-4">Das sagen meine Paare</span>
+          <h2 className="font-serif text-3xl md:text-5xl italic uppercase tracking-widest text-white">Testimonials</h2>
         </div>
 
         <div className="relative min-h-[300px] flex flex-col items-center justify-center">
@@ -40,11 +40,11 @@ export const MinimalistTestimonials = () => {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="text-center w-full"
             >
-              <p className="font-serif text-xl md:text-3xl italic text-[#141414]/90 leading-relaxed mb-12 max-w-3xl mx-auto">
+              <p className="font-serif text-xl md:text-3xl italic text-white/90 leading-relaxed mb-12 max-w-3xl mx-auto">
                 "{REVIEWS[currentIndex].text}"
               </p>
               
-              <div className="font-serif text-lg md:text-xl italic text-[#141414]/60">
+              <div className="font-serif text-lg md:text-xl italic text-white/60">
                 — {REVIEWS[currentIndex].names}
               </div>
             </motion.div>
@@ -54,19 +54,19 @@ export const MinimalistTestimonials = () => {
           <div className="flex md:hidden items-center justify-center space-x-8 mt-12">
             <button 
               onClick={prev} 
-              className="text-[#141414]/40 hover:text-[#141414] transition-colors p-2"
+              className="text-white/40 hover:text-white transition-colors p-2"
               aria-label="Previous review"
             >
               <ChevronLeft aria-label="Vorheriges" size={24} strokeWidth={1.5} />
             </button>
             
-            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#141414]/20">
+            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/20">
               {currentIndex + 1} / {REVIEWS.length}
             </span>
 
             <button 
               onClick={next} 
-              className="text-[#141414]/40 hover:text-[#141414] transition-colors p-2"
+              className="text-white/40 hover:text-white transition-colors p-2"
               aria-label="Next review"
             >
               <ChevronRight aria-label="Nächstes" size={24} strokeWidth={1.5} />
@@ -77,14 +77,14 @@ export const MinimalistTestimonials = () => {
           <div className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 w-full justify-between pointer-events-none">
             <button 
               onClick={prev} 
-              className="pointer-events-auto text-[#141414]/20 hover:text-[#141414] transition-colors p-2 -ml-12"
+              className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -ml-12"
               aria-label="Previous review"
             >
               <ChevronLeft aria-label="Vorheriges" size={32} strokeWidth={1} />
             </button>
             <button 
               onClick={next} 
-              className="pointer-events-auto text-[#141414]/20 hover:text-[#141414] transition-colors p-2 -mr-12"
+              className="pointer-events-auto text-white/20 hover:text-white transition-colors p-2 -mr-12"
               aria-label="Next review"
             >
               <ChevronRight aria-label="Nächstes" size={32} strokeWidth={1} />
