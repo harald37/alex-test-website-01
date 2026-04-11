@@ -41,12 +41,6 @@ export const Footer = () => {
             Hochzeitsfotograf Braunschweig
           </Link>
           <Link
-            to="/test"
-            className="font-sans uppercase tracking-[0.2em] text-[9px] text-[#141414]/40 hover:text-[#141414] transition-all"
-          >
-            Test Center
-          </Link>
-          <Link
             to="/impressum"
             className="font-sans uppercase tracking-[0.2em] text-[9px] text-[#141414]/40 hover:text-[#141414] transition-all"
           >
@@ -61,7 +55,7 @@ export const Footer = () => {
         </div>
 
         <div className="font-sans uppercase tracking-[0.2em] text-[8px] text-[#141414]/30">
-          © {new Date().getFullYear()} ALEX BEGOPOULOS. ALL RIGHTS RESERVED.
+          <Link to="/test" className="hover:text-[#141414]/30 cursor-default">©</Link> {new Date().getFullYear()} ALEX BEGOPOULOS. ALL RIGHTS RESERVED.
         </div>
       </div>
     </footer>
