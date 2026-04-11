@@ -78,14 +78,10 @@ export const Hannover = () => {
     "Persönliche Beratung & individueller Zeitplan für euren Tag",
     "Exklusiver Wedding Guide mit wertvollen Planungstipps",
     "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
-    "Natürliche Retusche eurer Paarfotos für ein perfektes Ergebnis",
     "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
     "Passwortgeschützte Online-Galerie für euch und eure Gäste (12 Monate)",
     "Mobile Galerie-App für den schnellen Zugriff von überall",
     "Alle Fotos in voller Auflösung und ohne Wasserzeichen",
-    "Integrierter Online-Shop für hochwertige Abzüge und Wandbilder",
-    "Edles Fine-Art Album (20x20 cm) als bleibende Erinnerung",
-    "Drohnenaufnahmen für einzigartige Perspektiven (wetterabhängig)",
     "Kontinuierliche Unterstützung und Beratung während der gesamten Planung"
   ];
 

@@ -2,6 +2,7 @@ import React from "react";
 import { IMAGES } from "../../constants";
 import { motion } from "motion/react";
 import { Camera, Heart, Star } from "lucide-react";
+import { Button } from "../../components/ui/Button";
 
 export const MinimalistAbout = () => {
   return (
@@ -131,6 +132,24 @@ export const MinimalistAbout = () => {
           </div>
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
         </motion.div>
+
+        {/* Call to Action */}
+        <section className="mt-48 text-center">
+          <div className="max-w-2xl mx-auto space-y-12">
+            <div className="w-12 h-[1px] bg-[#141414]/10 mx-auto"></div>
+            <h2 className="font-serif italic text-3xl md:text-5xl text-[#141414] leading-relaxed">
+              Bereit für eure Geschichte?
+            </h2>
+            <p className="text-[#141414]/60 text-lg md:text-xl font-serif italic">
+              Ich freue mich darauf, euch kennenzulernen und eure besonderen Momente festzuhalten.
+            </p>
+            <div className="flex justify-center pt-4">
+              <Button to="/contact" variant="forest">
+                Schreibt mir eine Nachricht
+              </Button>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
   );

@@ -185,9 +185,8 @@ export const MinimalistContact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Hochzeitsdatum *</label>
+                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Hochzeitsdatum (optional)</label>
                     <input 
-                      required
                       type="date" 
                       name="date"
                       value={formData.date}

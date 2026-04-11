@@ -183,9 +183,8 @@ export const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitsdatum</label>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitsdatum (optional)</label>
                     <input 
-                      required
                       type="date" 
                       name="date"
                       value={formData.date}

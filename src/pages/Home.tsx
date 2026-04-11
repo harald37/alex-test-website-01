@@ -171,7 +171,7 @@ export const Home: React.FC = () => {
             "Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen."
           </h2>
           <div className="flex justify-center">
-            <Button to="/contact">
+            <Button to="/contact" variant="forest">
               Erzählt mir eure Geschichte
             </Button>
           </div>

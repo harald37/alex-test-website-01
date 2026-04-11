@@ -172,14 +172,10 @@ export const Services = () => {
               "Persönliche Beratung & individueller Zeitplan für euren Tag",
               "Exklusiver Wedding Guide with wertvollen Planungstipps",
               "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
-              "Natürliche Retusche eurer Paarfotos für ein perfektes Ergebnis",
               "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
               "Passwortgeschützte Online-Galerie für euch und eure Gäste (12 Monate)",
               "Mobile Galerie-App für den schnellen Zugriff von überall",
               "Alle Fotos in voller Auflösung und ohne Wasserzeichen",
-              "Integrierter Online-Shop für hochwertige Abzüge und Wandbilder",
-              "Edles Fine-Art Album (20x20 cm) als bleibende Erinnerung",
-              "Drohnenaufnahmen für einzigartige Perspektiven (wetterabhängig)",
               "Kontinuierliche Unterstützung und Beratung während der gesamten Planung"
             ].map((item, idx) => (
               <motion.div 
@@ -239,7 +235,7 @@ export const Services = () => {
           <h2 className="font-serif text-3xl md:text-7xl italic text-zinc-900 leading-tight">Lasst uns eure Geschichte erzählen.</h2>
           <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
           <div className="flex justify-center">
-            <Button to="/contact">
+            <Button to="/contact" variant="forest">
               Jetzt Anfragen
             </Button>
           </div>

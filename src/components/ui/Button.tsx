@@ -10,7 +10,7 @@ interface ButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
-  variant?: 'primary' | 'secondary' | 'link' | 'white';
+  variant?: 'primary' | 'secondary' | 'link' | 'white' | 'forest';
   dark?: boolean;
 }
 
@@ -26,6 +26,17 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const baseStyles = "group relative inline-flex items-center justify-center overflow-hidden font-sans uppercase tracking-[0.3em] text-[9px] transition-all duration-700 disabled:opacity-50 disabled:cursor-not-allowed";
   
+  if (variant === 'forest') {
+    const forestStyles = cn(
+      "inline-flex items-center justify-center font-sans uppercase tracking-[0.3em] text-[10px] transition-all duration-500 py-5 px-12 bg-[#1a2e26] text-white rounded-full hover:shadow-lg hover:-translate-y-1",
+      className
+    );
+    if (to && !disabled) {
+      return <Link to={to} className={forestStyles}>{children}</Link>;
+    }
+    return <button type={type} onClick={onClick} disabled={disabled} className={forestStyles}>{children}</button>;
+  }
+
   if (variant === 'link') {
     const linkContent = (
       <span className={cn(

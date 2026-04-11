@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Plus, Minus } from "lucide-react";
+import { Button } from "../components/ui/Button";
 
 const FAQ_DATA = [
   {
@@ -160,6 +161,24 @@ export const FAQ = () => {
             />
           ))}
         </div>
+
+        {/* Call to Action */}
+        <section className="mt-48 text-center pb-24">
+          <div className="max-w-2xl mx-auto space-y-12">
+            <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto"></div>
+            <h2 className="font-serif italic text-3xl md:text-5xl text-zinc-900 leading-relaxed">
+              Noch Fragen offen?
+            </h2>
+            <p className="text-zinc-600 text-lg md:text-xl font-serif italic">
+              Schreibt mir einfach eine Nachricht und wir klären alles in einem persönlichen Gespräch.
+            </p>
+            <div className="flex justify-center pt-4">
+              <Button to="/contact" variant="forest">
+                Schreibt mir eine Nachricht
+              </Button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

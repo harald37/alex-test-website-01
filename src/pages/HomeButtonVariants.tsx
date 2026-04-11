@@ -26,18 +26,41 @@ const CustomButton = ({ to, children, className, variant = 1 }: any) => {
     12: "bg-zinc-900 text-white py-6 px-16 text-xs tracking-[0.6em]",
     13: "border border-zinc-900 text-zinc-900 rounded-lg hover:bg-zinc-50",
     14: "bg-zinc-900 text-white ring-offset-2 ring-2 ring-transparent hover:ring-zinc-900",
-    15: "border-x border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
+    15: "border-x border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white",
+    // Deep Forest Variants (16-30)
+    16: "bg-[#1a2e26] text-white hover:bg-[#2d4a3e]",
+    17: "border border-[#1a2e26] text-[#1a2e26] hover:bg-[#1a2e26] hover:text-white",
+    18: "bg-[#1a2e26] text-white rounded-full hover:shadow-lg hover:-translate-y-1",
+    19: "border-b-2 border-[#1a2e26] text-[#1a2e26] px-0 hover:pb-2 transition-all",
+    20: "bg-transparent border-2 border-[#1a2e26] text-[#1a2e26] font-bold tracking-[0.4em]",
+    21: "bg-[#1a2e26] text-white italic font-serif lowercase tracking-normal text-xl px-16",
+    22: "bg-[#f5f2ed] text-[#1a2e26] border border-[#1a2e26]/20 hover:border-[#1a2e26]",
+    23: "bg-[#1a2e26] text-white shadow-[0_10px_20px_rgba(26,46,38,0.2)] hover:shadow-none",
+    24: "border border-[#1a2e26] text-[#1a2e26] relative overflow-hidden group/btn-forest",
+    25: "bg-[#1a2e26] text-white rounded-none -rotate-2 hover:rotate-0",
+    26: "border border-[#1a2e26]/30 text-[#1a2e26]/60 hover:text-[#1a2e26] hover:border-[#1a2e26]",
+    27: "bg-[#1a2e26] text-white py-8 px-20 text-sm tracking-[0.8em] font-light",
+    28: "border-2 border-[#1a2e26] text-[#1a2e26] rounded-2xl hover:bg-[#1a2e26]/5",
+    29: "bg-[#1a2e26] text-white ring-4 ring-[#1a2e26]/10 hover:ring-[#1a2e26]/30",
+    30: "border-y border-[#1a2e26] text-[#1a2e26] hover:tracking-[0.5em]"
   };
 
   const content = (
     <>
-      {variant === 9 && (
-        <div className="absolute inset-0 bg-zinc-900 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500" />
+      {(variant === 9 || variant === 24) && (
+        <div className={cn(
+          "absolute inset-0 translate-y-full transition-transform duration-500",
+          variant === 9 ? "bg-zinc-900 group-hover/btn:translate-y-0" : "bg-[#1a2e26] group-hover/btn-forest:translate-y-0"
+        )} />
       )}
-      <span className={cn("relative z-10", variant === 9 && "group-hover/btn:text-white")}>
+      <span className={cn(
+        "relative z-10", 
+        variant === 9 && "group-hover/btn:text-white",
+        variant === 24 && "group-hover/btn-forest:text-white"
+      )}>
         {children}
       </span>
-      {(variant === 3 || variant === 6) && <ArrowRight className="ml-4 w-4 h-4" />}
+      {(variant === 3 || variant === 6 || variant === 19 || variant === 21) && <ArrowRight className="ml-4 w-4 h-4" />}
     </>
   );
 
@@ -167,14 +190,14 @@ export const HomeButtonVariants = () => {
     <div className="min-h-screen bg-white">
       {/* Variant Selector */}
       <div className="fixed top-24 left-1/2 -translate-x-1/2 z-[100] bg-white/80 backdrop-blur-md p-2 rounded-full shadow-xl border border-zinc-200 flex gap-1 overflow-x-auto max-w-[90vw] no-scrollbar">
-        {Array.from({ length: 15 }).map((_, i) => (
+        {Array.from({ length: 30 }).map((_, i) => (
           <button
             key={i}
             onClick={() => setActiveVariant(i + 1)}
             className={cn(
-              "w-10 h-10 rounded-full text-xs font-medium transition-all",
+              "w-10 h-10 min-w-[40px] rounded-full text-xs font-medium transition-all",
               activeVariant === i + 1 
-                ? "bg-zinc-900 text-white" 
+                ? (i + 1 > 15 ? "bg-[#1a2e26] text-white" : "bg-zinc-900 text-white")
                 : "bg-zinc-100 text-zinc-500 hover:bg-zinc-200"
             )}
           >
