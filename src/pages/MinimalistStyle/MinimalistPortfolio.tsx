@@ -270,12 +270,20 @@ export const MinimalistPortfolio = () => {
         )}
       </AnimatePresence>
 
-      {/* Load More */}
-      <div className="mt-32 text-center">
-        <Button>
-          Mehr entdecken
-        </Button>
-      </div>
+      {/* Call to Action */}
+      <section className="mt-48 text-center">
+        <div className="max-w-2xl mx-auto space-y-12">
+          <div className="w-12 h-[1px] bg-[#141414]/10 mx-auto"></div>
+          <h2 className="font-serif italic text-3xl md:text-5xl text-[#141414] leading-relaxed">
+            Euch gefällt mein Stil? Lasst uns gemeinsam eure Geschichte festhalten.
+          </h2>
+          <div className="flex justify-center pt-4">
+            <Button to="/contact">
+              Erzählt mir eure Geschichte
+            </Button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

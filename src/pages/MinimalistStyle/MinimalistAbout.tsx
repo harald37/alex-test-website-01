@@ -36,10 +36,7 @@ export const MinimalistAbout = () => {
             <h1 className="text-4xl md:text-6xl font-serif mb-8 text-[#141414] leading-tight">Hi, ich bin Alex.</h1>
             <div className="space-y-6 text-[#141414]/70 text-base md:text-lg leading-relaxed">
               <p>
-                Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten.
-              </p>
-              <p>
-                Wenn ich nicht hinter der Kamera stehe, reise ich leidenschaftlich gern, tauche in neue Kulturen ein und lasse mich von ihnen inspirieren. Außerdem schlägt mein Herz für Fußball, Gaming und aktuelle Tech‑Trends.
+                Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten. Denn für mich geht es bei der Hochzeitsfotografie um weit mehr als nur um schöne Posen – es geht um das Einfangen echter, ungestellter Momente. Ich möchte eure Geschichte genau so erzählen, wie sie passiert: mit all dem lauten Lachen, den Freudentränen, der Aufregung und den kleinen, leisen Details dazwischen.
               </p>
             </div>
           </motion.div>
