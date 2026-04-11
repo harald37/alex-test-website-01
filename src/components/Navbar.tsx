@@ -73,10 +73,8 @@ export const Navbar = () => {
           isOpen
             ? "bg-transparent py-8"
             : isScrolled
-              ? "bg-[#f5f2ed]/95 backdrop-blur-xl py-5" 
-              : location.pathname === '/' 
-                ? "bg-transparent py-8" 
-                : "bg-[#f5f2ed]/80 backdrop-blur-md py-8"
+              ? "bg-[#f5f2ed] py-5" 
+              : "bg-[#f5f2ed] py-8"
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
@@ -87,7 +85,7 @@ export const Navbar = () => {
             to="/"
             className={cn(
               "flex flex-col lg:flex-row items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 lg:static lg:left-auto lg:translate-x-0",
-              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-[#141414]"
+              isOpen ? "text-white" : "text-[#141414]"
             )}
             onClick={() => setIsOpen(false)}
           >
@@ -100,7 +98,6 @@ export const Navbar = () => {
             <div className="flex items-center space-x-4 xl:space-x-8">
               {NAV_LINKS.map((link) => {
                 const isActive = location.pathname === link.path;
-                const isHero = !isScrolled && !isOpen && location.pathname === '/';
                 return (
                   <Link
                     key={link.name}
@@ -108,8 +105,8 @@ export const Navbar = () => {
                     className={cn(
                       "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b whitespace-nowrap",
                       isActive
-                        ? isHero ? "text-white border-white" : "text-[#141414] border-[#141414]"
-                        : isHero ? "text-white/60 border-transparent hover:text-white" : "text-[#141414]/40 border-transparent hover:text-[#141414]"
+                        ? "text-[#141414] border-[#141414]"
+                        : "text-[#141414]/40 border-transparent hover:text-[#141414]"
                     )}
                   >
                     {link.name}
@@ -127,7 +124,7 @@ export const Navbar = () => {
                 rel="noopener noreferrer" 
                 className={cn(
                   "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
+                  isOpen ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
                 )}
               >
                 <Instagram aria-label="Instagram Profil" size={16} strokeWidth={1.5} />
@@ -136,7 +133,7 @@ export const Navbar = () => {
                 href={SOCIAL_LINKS.email} 
                 className={cn(
                   "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
+                  isOpen ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
                 )}
               >
                 <Mail aria-label="E-Mail schreiben" size={16} strokeWidth={1.5} />
@@ -147,7 +144,7 @@ export const Navbar = () => {
                 rel="noopener noreferrer" 
                 className={cn(
                   "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
+                  isOpen ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
                 )}
               >
                 <MessageCircle aria-label="WhatsApp Nachricht senden" size={16} strokeWidth={1.5} />
@@ -159,7 +156,7 @@ export const Navbar = () => {
           <button
             className={cn(
               "lg:hidden p-2 focus:outline-none transition-colors duration-500 relative z-[110]",
-              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-[#141414]"
+              isOpen ? "text-white" : "text-[#141414]"
             )}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"

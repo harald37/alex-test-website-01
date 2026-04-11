@@ -72,35 +72,35 @@ export const MinimalistContact = () => {
             </p>
 
             <div className="space-y-12">
-              <div className="flex items-center gap-8 group cursor-pointer">
+              <a href="mailto:info@hochzeitsfotograf-alex.de" className="flex items-center gap-8 group cursor-pointer">
                 <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center group-hover:bg-[#1a2e26] group-hover:text-white transition-all">
                   <Mail size={24} strokeWidth={1.5} />
                 </div>
                 <div>
                   <h4 className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40 mb-1">Email</h4>
-                  <a href="mailto:info@hochzeitsfotograf-alex.de" className="text-xl md:text-2xl font-serif italic">info@hochzeitsfotograf-alex.de</a>
+                  <span className="text-xl md:text-2xl font-serif italic">info@hochzeitsfotograf-alex.de</span>
                 </div>
-              </div>
-              <div className="flex items-center gap-8 group cursor-pointer">
+              </a>
+              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-8 group cursor-pointer">
                 <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center group-hover:bg-[#1a2e26] group-hover:text-white transition-all">
                   <Instagram size={24} strokeWidth={1.5} />
                 </div>
                 <div>
                   <h4 className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40 mb-1">Instagram</h4>
-                  <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-serif italic">@alexbegopoulos.weddings</a>
+                  <span className="text-xl md:text-2xl font-serif italic">@alexbegopoulos.weddings</span>
                 </div>
-              </div>
-              <div className="flex items-center gap-8 group cursor-pointer">
+              </a>
+              <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="flex items-center gap-8 group cursor-pointer">
                 <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center group-hover:bg-[#1a2e26] group-hover:text-white transition-all">
                   <Facebook size={24} strokeWidth={1.5} />
                 </div>
                 <div>
                   <h4 className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40 mb-1">Facebook</h4>
-                  <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-serif italic">Alex Begopoulos</a>
+                  <span className="text-xl md:text-2xl font-serif italic">Alex Begopoulos</span>
                 </div>
-              </div>
-              <div className="flex items-center gap-8 group cursor-pointer">
-                <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center group-hover:bg-[#1a2e26] group-hover:text-white transition-all">
+              </a>
+              <div className="flex items-center gap-8 group cursor-default">
+                <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center">
                   <MapPin size={24} strokeWidth={1.5} />
                 </div>
                 <div>
@@ -108,15 +108,15 @@ export const MinimalistContact = () => {
                   <span className="text-xl md:text-2xl font-serif italic">Hannover, Deutschland</span>
                 </div>
               </div>
-              <div className="flex items-center gap-8 group cursor-pointer">
+              <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-8 group cursor-pointer">
                 <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center group-hover:bg-[#1a2e26] group-hover:text-white transition-all">
                   <MessageCircle size={24} strokeWidth={1.5} />
                 </div>
                 <div>
                   <h4 className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40 mb-1">WhatsApp</h4>
-                  <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-serif italic">Direkt via WhatsApp</a>
+                  <span className="text-xl md:text-2xl font-serif italic">Direkt via WhatsApp</span>
                 </div>
-              </div>
+              </a>
             </div>
           </motion.div>
 
@@ -154,7 +154,7 @@ export const MinimalistContact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="Anna & Lukas" 
+                      placeholder="Namen eingeben" 
                     />
                   </div>
                   <div className="space-y-2">
@@ -166,7 +166,7 @@ export const MinimalistContact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="hello@example.com" 
+                      placeholder="E-Mail Adresse eingeben" 
                     />
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export const MinimalistContact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="Eure Telefonnummer" 
+                      placeholder="Telefonnummer eingeben" 
                     />
                   </div>
                   <div className="space-y-2">
@@ -206,7 +206,7 @@ export const MinimalistContact = () => {
                       value={formData.location}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="z.B. Herrenhäuser Gärten" 
+                      placeholder="Ort oder Location" 
                     />
                   </div>
                   <div className="space-y-2">
