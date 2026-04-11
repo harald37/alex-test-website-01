@@ -72,13 +72,13 @@ export const MinimalistContact = () => {
             </p>
 
             <div className="space-y-12">
-              <a href="mailto:info@hochzeitsfotograf-alex.de" className="flex items-center gap-8 group cursor-pointer">
+              <a href="mailto:hey@alex-begopoulos.de" className="flex items-center gap-8 group cursor-pointer">
                 <div className="w-14 h-14 rounded-full border border-[#141414]/10 flex items-center justify-center group-hover:bg-[#1a2e26] group-hover:text-white transition-all">
                   <Mail size={24} strokeWidth={1.5} />
                 </div>
                 <div>
                   <h4 className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40 mb-1">Email</h4>
-                  <span className="text-xl md:text-2xl font-serif italic">info@hochzeitsfotograf-alex.de</span>
+                  <span className="text-xl md:text-2xl font-serif italic">hey@alex-begopoulos.de</span>
                 </div>
               </a>
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-8 group cursor-pointer">
