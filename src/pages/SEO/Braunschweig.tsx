@@ -76,9 +76,7 @@ export const Braunschweig = () => {
 
   const includedItems = [
     "Persönliche Beratung & individueller Zeitplan für euren Tag",
-    "Exklusiver Wedding Guide mit wertvollen Planungstipps",
-    "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
-    "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
+    "Sorgfältige Selektion & Veredelung aller Bilder mit meinem typischen Bildlook",
     "Passwortgeschützte Online-Galerie für euch und eure Gäste (12 Monate)",
     "Mobile Galerie-App für den schnellen Zugriff von überall",
     "Alle Fotos in voller Auflösung und ohne Wasserzeichen",
@@ -89,8 +87,8 @@ export const Braunschweig = () => {
     { title: "Engagement Shooting", desc: "Ein entspanntes Kennenlernen vor der Kamera in Braunschweig" },
     { title: "Zweitfotograf / Assistenz", desc: "Eine zusätzliche Perspektive für noch mehr eingefangene Details" },
     { title: "After-Wedding-Session", desc: "Stressfreie Paarfotos in Braunschweig – ganz ohne Zeitdruck nach der Hochzeit" },
-    { title: "Exklusive Print-Produkte", desc: "Von hochwertigen Wandbildern bis hin zu edlen Triplex-Aufstellern" },
-    { title: "Retusche & KI-Editierung", desc: "Ganz nach den individuellen Wünschen der Kunden" },
+    { title: "Exklusive Print-Produkte", desc: "Von hochwertigen Wandbildern bis hin zu edlen Fotobüchern" },
+    { title: "Retusche & KI-Editierung", desc: "Ganz nach euren individuellen Wünschen" },
     { title: "Physische Sicherung", desc: "Eure gesamte Hochzeitsreportage auf einem hochwertigen USB-Stick" }
   ];
 
@@ -125,9 +123,8 @@ export const Braunschweig = () => {
       <section className="py-24 md:py-32 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 block mb-4">Das Rundum-Sorglos-Paket</span>
-            <h2 className="font-serif text-3xl md:text-4xl italic text-[#141414] uppercase leading-tight">
-              In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit in Braunschweig enthalten
+            <h2 className="font-serif text-3xl md:text-5xl italic text-[#141414] uppercase leading-tight">
+              Was in jeder meiner Hochzeitsbegleitungen selbstverständlich inklusive ist
             </h2>
           </div>
           

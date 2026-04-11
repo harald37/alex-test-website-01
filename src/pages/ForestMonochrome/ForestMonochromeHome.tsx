@@ -78,7 +78,7 @@ export const ForestMonochromeHome: React.FC = () => {
               <span className="font-serif text-3xl italic text-[#1a2e26]">03.</span>
               <p className="text-[10px] uppercase tracking-widest font-bold text-[#1a2e26]">Zeitlosigkeit</p>
               <p className="text-[#1a2e26]/70 leading-relaxed tracking-wide text-sm md:text-base">
-                Trends kommen und gehen. Mein Fine-Art Stil sorgt dafür, dass eure Bilder auch in 30 Jahren noch modern wirken.
+                Trends kommen und gehen. Durch meine hochwertige Bildsprache garantiere ich euch, dass eure Hochzeitsreportage auch nach Jahrzehnten nichts von ihrer Schönheit verliert.
               </p>
             </div>
           </div>

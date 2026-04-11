@@ -100,7 +100,7 @@ export const HomeTest: React.FC = () => {
             <div className="space-y-6">
               <span className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400">03. Zeitlosigkeit</span>
               <p className="text-zinc-600 leading-relaxed tracking-wide text-sm md:text-base">
-                Trends kommen und gehen. Mein Fine-Art Stil sorgt dafür, dass eure Bilder auch in 30 Jahren noch modern und elegant wirken.
+                Trends kommen und gehen. Durch meine hochwertige Bildsprache garantiere ich euch, dass eure Hochzeitsreportage auch nach Jahrzehnten nichts von ihrer Schönheit verliert.
               </p>
             </div>
           </div>

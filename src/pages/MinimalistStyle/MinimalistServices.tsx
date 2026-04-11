@@ -64,10 +64,10 @@ export const MinimalistServices = () => {
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-white text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
             <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
-                Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir eure Wünsche und Visionen.
+                Jede großartige Hochzeitsreportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir eure Wünsche und Visionen.
               </p>
               <p className="max-w-xl mx-auto lg:mx-0">
-                Ich unterstütze euch aktiv bei der <strong>Timeline-Planung</strong> eures Hochzeitstages, damit wir das schönste Licht für eure Paarfotos nutzen können. Zudem übernehme ich das <strong>Location-Scouting</strong> vorab, um verborgene Juwele für euer Shooting zu finden – in der Region Hannover und an jedem anderen Ort der Welt.
+                Gemeinsam werfen wir einen detaillierten Blick auf euren Tagesablauf. Ich unterstütze euch mit all meiner Erfahrung bei der Timeline-Planung. Mein Ziel ist es, dass ihr euren großen Tag völlig ohne Hektik und Zeitdruck genießen könnt.
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ export const MinimalistServices = () => {
                 An eurem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
               </p>
               <p className="max-w-xl mx-auto lg:mx-0">
-                Vom ersten Pinselstrich beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein. Ich dokumentiere nicht nur was passiert, sondern wie es sich anfühlt. So entstehen lebendige Erinnerungen, die eure Persönlichkeit widerspiegeln.
+                Von der Vorfreude beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein. Ich dokumentiere nicht nur was passiert, sondern wie es sich anfühlt. So entstehen lebendige Erinnerungen, die eure Persönlichkeit widerspiegeln.
               </p>
             </div>
           </div>
@@ -126,10 +126,10 @@ export const MinimalistServices = () => {
             <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-white text-center lg:text-left w-full">Die Nachbearbeitung & Galerie</h3>
             <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg w-full text-center lg:text-left">
               <p className="max-w-xl mx-auto lg:mx-0">
-                Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
+                Nach der Hochzeit beginnt die sorgfältige Auswahl der Bilder. Jedes einzelne Foto wird von mir persönlich gesichtet und bekommt durch eine professionelle Bearbeitung seinen warmen und zeitlosen Look.
               </p>
               <p className="max-w-xl mx-auto lg:mx-0">
-                Ihr erhaltet innerhalb weniger Wochen Zugang zu einer passwortgeschützten, elegante <strong>Online-Galerie</strong>. Dort könnt ihr alle Bilder in voller Auflösung herunterladen und unkompliziert mit euren Liebsten teilen. Eine zeitlose Kollektion, die euch immer wieder in diesen besonderen Tag zurückversetzt.
+                Ihr erhaltet innerhalb weniger Wochen Zugang zu einer passwortgeschützten Online-Galerie. Dort könnt ihr alle Bilder in voller Auflösung herunterladen und unkompliziert mit euren Liebsten teilen. Eine zeitlose Kollektion, die euch immer wieder in diesen besonderen Tag zurückversetzt.
               </p>
             </div>
           </div>
@@ -140,18 +140,15 @@ export const MinimalistServices = () => {
       <section className="py-24 md:py-32 px-6 md:px-12 bg-[#f5f2ed]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 block mb-4">Das Rundum-Sorglos-Paket</span>
-            <h2 className="font-serif text-3xl md:text-6xl italic text-[#141414] uppercase leading-tight px-4">
-              In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit enthalten
+            <h2 className="font-serif text-3xl md:text-5xl italic text-[#141414] uppercase leading-tight px-4">
+              Was in jeder meiner Hochzeitsbegleitungen selbstverständlich inklusive ist
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {[
               "Persönliche Beratung & individueller Zeitplan für euren Tag",
-              "Exklusiver Wedding Guide with wertvollen Planungstipps",
-              "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
-              "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
+              "Sorgfältige Selektion & Veredelung aller Bilder mit meinem typischen Bildlook",
               "Passwortgeschützte Online-Galerie für euch und eure Gäste (12 Monate)",
               "Mobile Galerie-App für den schnellen Zugriff von überall",
               "Alle Fotos in voller Auflösung und ohne Wasserzeichen",
@@ -186,8 +183,8 @@ export const MinimalistServices = () => {
               { title: "Engagement Shooting", desc: "Ein entspanntes Kennenlernen vor der Kamera vor eurem großen Tag" },
               { title: "Zweitfotograf / Assistenz", desc: "Eine zusätzliche Perspektive für noch mehr eingefangene Details" },
               { title: "After-Wedding-Session", desc: "Stressfreie Paarfotos an eurem Wunschort – ganz ohne Zeitdruck" },
-              { title: "Exklusive Print-Produkte", desc: "Von hochwertigen Wandbildern bis hin zu edlen Triplex-Aufstellern" },
-              { title: "Retusche & KI-Editierung", desc: "Ganz nach den individuellen Wünschen der Kunden" },
+              { title: "Exklusive Print-Produkte", desc: "Von hochwertigen Wandbildern bis hin zu edlen Fotobüchern" },
+              { title: "Retusche & KI-Editierung", desc: "Ganz nach euren individuellen Wünschen" },
               { title: "Physische Sicherung", desc: "Eure gesamte Hochzeitsreportage auf einem hochwertigen USB-Stick" }
             ].map((option, idx) => (
               <motion.div 
