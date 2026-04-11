@@ -25,11 +25,8 @@ export default async function handler(req: any, res: any) {
 
   try {
     const { data, error } = await resend.emails.send({
-      // HINWEIS: Um an externe Adressen (wie hey@alex-begopoulos.de) zu senden, 
-      // muss die Domain 'alex-begopoulos.de' bei Resend verifiziert sein.
-      // Sobald verifiziert, ändere die 'from' Adresse zu einer deiner Domain-Mails.
-      from: "Alex Begopoulos <hey@alex-begopoulos.de>",
-      to: ["alex.begopoulos@yahoo.de", "hey@alex-begopoulos.de"],
+      from: "Alex Begopoulos Photography <onboarding@resend.dev>",
+      to: ["alex.begopoulos@yahoo.de"],
       subject: `Neue Anfrage von ${name}`,
       html: `
         <h1>Neue Kontaktanfrage</h1>

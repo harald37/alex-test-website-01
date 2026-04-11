@@ -32,7 +32,7 @@ async function startServer() {
     try {
       const { data, error } = await resend.emails.send({
         from: "Alex Begopoulos Photography <onboarding@resend.dev>", // Replace with your verified domain later
-        to: ["alex.begopoulos@yahoo.de", "hey@alex-begopoulos.de"],
+        to: ["alex.begopoulos@yahoo.de"],
         subject: `Neue Anfrage von ${name}`,
         html: `
           <h1>Neue Kontaktanfrage</h1>
