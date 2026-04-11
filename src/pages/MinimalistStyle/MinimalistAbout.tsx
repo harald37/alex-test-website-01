@@ -101,7 +101,7 @@ export const MinimalistAbout = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-[#141414] rounded-[2rem] p-8 md:p-20 text-white overflow-hidden relative"
+          className="bg-[#1a2e26] rounded-[2rem] p-8 md:p-20 text-white overflow-hidden relative"
         >
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

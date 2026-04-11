@@ -42,6 +42,8 @@ import { MinimalistServices } from "./MinimalistStyle/MinimalistServices";
 import { MinimalistPortfolio } from "./MinimalistStyle/MinimalistPortfolio";
 import { MinimalistFAQ } from "./MinimalistStyle/MinimalistFAQ";
 import { MinimalistContact } from "./MinimalistStyle/MinimalistContact";
+import { PortfolioIntros } from "./PortfolioIntros";
+import { ServicesIntros } from "./ServicesIntros";
 import { ForestMonochromeHome } from "./ForestMonochrome/ForestMonochromeHome";
 import { EarthToneHome } from "./EarthTone/EarthToneHome";
 import { EarthToneAbout } from "./EarthTone/EarthToneAbout";
@@ -94,6 +96,8 @@ const TEST_PAGES = [
   { id: "min-portfolio", label: "Portfolio (S/W)", component: MinimalistPortfolio, category: "MINIMALISTISCH (S/W)" },
   { id: "min-faq", label: "FAQ (S/W)", component: MinimalistFAQ, category: "MINIMALISTISCH (S/W)" },
   { id: "min-contact", label: "Kontakt (S/W)", component: MinimalistContact, category: "MINIMALISTISCH (S/W)" },
+  { id: "portfolio-intros", label: "Portfolio Intros (20)", component: PortfolioIntros, category: "MINIMALISTISCH (S/W)" },
+  { id: "services-intros", label: "Leistungen Intros (20)", component: ServicesIntros, category: "MINIMALISTISCH (S/W)" },
   { id: "forest-mono-home", label: "Home (Monochrom)", component: ForestMonochromeHome, category: "FOREST MONOCHROME" },
   { id: "earth-home", label: "Home (Braun)", component: EarthToneHome, category: "EARTH TONES (BRAUN)" },
   { id: "earth-about", label: "Über Mich (Braun)", component: EarthToneAbout, category: "EARTH TONES (BRAUN)" },
