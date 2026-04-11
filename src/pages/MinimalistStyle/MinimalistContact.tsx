@@ -154,7 +154,7 @@ export const MinimalistContact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="Namen eingeben" 
+                      placeholder="Namen" 
                     />
                   </div>
                   <div className="space-y-2">
@@ -166,7 +166,7 @@ export const MinimalistContact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="E-Mail Adresse eingeben" 
+                      placeholder="E-Mail" 
                     />
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export const MinimalistContact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="Telefonnummer eingeben" 
+                      placeholder="Telefon" 
                     />
                   </div>
                   <div className="space-y-2">
@@ -206,7 +206,7 @@ export const MinimalistContact = () => {
                       value={formData.location}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="Ort oder Location" 
+                      placeholder="Ort / Location" 
                     />
                   </div>
                   <div className="space-y-2">
@@ -244,7 +244,7 @@ export const MinimalistContact = () => {
                     onChange={handleChange}
                     rows={4} 
                     className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors resize-none" 
-                    placeholder="Erzählt mir von euren Plänen..." 
+                    placeholder="Eure Nachricht..." 
                   />
                 </div>
 

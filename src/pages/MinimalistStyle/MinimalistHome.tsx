@@ -123,7 +123,7 @@ export const MinimalistHome: React.FC = () => {
       <HomePortfolioGrid />
 
       {/* About Me Short */}
-      <section className="bg-white py-32 px-6 md:px-12 overflow-hidden">
+      <section className="bg-[#f5f2ed] py-32 px-6 md:px-12 overflow-hidden">
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-24 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
