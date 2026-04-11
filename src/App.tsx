@@ -6,12 +6,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { ScrollToTop } from "./components/ScrollToTop";
-import { Home } from "./pages/Home";
-import { Portfolio } from "./pages/Portfolio";
-import { About } from "./pages/About";
-import { Services } from "./pages/Services";
-import { FAQ } from "./pages/FAQ";
-import { Contact } from "./pages/Contact";
+import { MinimalistHome as Home } from "./pages/MinimalistStyle/MinimalistHome";
+import { MinimalistPortfolio as Portfolio } from "./pages/MinimalistStyle/MinimalistPortfolio";
+import { MinimalistAbout as About } from "./pages/MinimalistStyle/MinimalistAbout";
+import { MinimalistServices as Services } from "./pages/MinimalistStyle/MinimalistServices";
+import { MinimalistFAQ as FAQ } from "./pages/MinimalistStyle/MinimalistFAQ";
+import { MinimalistContact as Contact } from "./pages/MinimalistStyle/MinimalistContact";
 import { Imprint } from "./pages/Imprint";
 import { Privacy } from "./pages/Privacy";
 import { Hannover } from "./pages/SEO/Hannover";

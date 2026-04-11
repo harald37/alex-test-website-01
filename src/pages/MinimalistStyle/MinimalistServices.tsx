@@ -1,13 +1,15 @@
 import React from "react";
 import { motion } from "motion/react";
 import { IMAGES } from "../../constants";
-import { Check } from "lucide-react";
+import { Book, Users, Camera, Globe, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "../../components/ui/Button";
 
 export const MinimalistServices = () => {
   return (
     <div className="bg-[#f5f2ed] text-[#141414] overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[80vh] overflow-hidden bg-black">
+      <section className="relative h-[80vh] overflow-hidden">
         <motion.div 
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -17,25 +19,25 @@ export const MinimalistServices = () => {
           <img 
             src={IMAGES.SERVICES.HERO} 
             alt="Exklusive Hochzeitsfotografie" 
-            className="w-full h-full object-cover opacity-30 grayscale"
+            className="w-full h-full object-cover grayscale"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
         </motion.div>
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-white font-serif text-5xl md:text-9xl italic leading-[0.9] mb-8"
+            className="text-white font-serif text-4xl md:text-8xl italic font-light tracking-tight mb-4"
           >
-            Eure Geschichte<br />in Bildern.
+            Eure Geschichte in Bildern
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="text-white/60 font-sans uppercase tracking-[0.4em] text-[10px]"
+            className="text-white/90 font-sans uppercase tracking-[0.4em] text-sm"
           >
             Leistungen & Exklusive Begleitung
           </motion.p>
@@ -43,26 +45,28 @@ export const MinimalistServices = () => {
       </section>
 
       {/* Intro Text */}
-      <section className="py-32 md:py-48 px-6 md:px-12">
+      <section className="py-24 md:py-32 px-6 md:px-12 bg-[#f5f2ed]">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-12 block">Full Service Begleitung</span>
+          <span className="font-sans uppercase tracking-[0.3em] text-xs text-[#141414]/40 mb-8 block">Full Service Begleitung</span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="font-serif text-3xl md:text-6xl leading-tight mb-12 italic text-[#141414]"
           >
-            Handgefertigte Erinnerungen für die Ewigkeit.
+            Handgefertigte Erinnerungen für die Ewigkeit
           </motion.h2>
-          <p className="text-[#141414]/70 text-lg md:text-xl leading-relaxed">
-            Als euer Hochzeitsfotograf begleite ich euch auf eurem Weg zum Ja-Wort. Mein Ziel ist es, nicht nur Bilder zu machen, sondern Kunstwerke zu schaffen, die die Emotionen eures Tages konservieren.
-          </p>
+          <div className="space-y-8 text-[#141414]/70 text-base md:text-lg">
+            <p>
+              Als euer <strong>Hochzeitsfotograf in Hannover</strong> und ganz <strong>Niedersachsen</strong> begleite ich euch auf eurem Weg zum Ja-Wort. Mein Ziel ist es, nicht nur Bilder zu machen, sondern Kunstwerke zu schaffen, die die Emotionen eures Tages konservieren. Ob in der vertrauten Heimat oder als Destination Wedding – ich bin für euch <strong>weltweit buchbar</strong>.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Service 01: Planning - Deep Forest Block */}
-      <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-[#1a2e26] text-white rounded-[4rem] mx-4 md:mx-8 mb-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+      {/* Service 01: Planning */}
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#141414] text-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -72,28 +76,28 @@ export const MinimalistServices = () => {
             <img 
               src={IMAGES.SERVICES.PLANNING} 
               alt="Planung & Vorgespräch" 
-              className="w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl"
+              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div>
-            <span className="font-serif text-4xl md:text-6xl italic text-white/20 mb-8 block">01.</span>
-            <h3 className="font-serif text-3xl md:text-6xl mb-8 italic text-white leading-tight">Das Kennenlernen & Planung</h3>
-            <div className="space-y-8 text-white/70 text-lg leading-relaxed">
-              <p>
-                Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch besprechen wir eure Wünsche und Visionen.
+          <div className="w-full flex flex-col items-center lg:items-start">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-white/10 mb-4 md:mb-6 block text-center lg:text-left w-full">01.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-white text-center lg:text-left w-full">Das Kennenlernen & Planung</h3>
+            <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg w-full text-center lg:text-left">
+              <p className="max-w-xl mx-auto lg:mx-0">
+                Jede großartige Reportage beginnt mit Vertrauen. In einem ausführlichen Vorgespräch – persönlich in Hannover oder per Video-Call – besprechen wir eure Wünsche und Visionen.
               </p>
-              <p>
-                Ich unterstütze euch aktiv bei der Timeline-Planung eures Hochzeitstages, damit wir das schönste Licht für eure Paarfotos nutzen können.
+              <p className="max-w-xl mx-auto lg:mx-0">
+                Ich unterstütze euch aktiv bei der <strong>Timeline-Planung</strong> eures Hochzeitstages, damit wir das schönste Licht für eure Paarfotos nutzen können. Zudem übernehme ich das <strong>Location-Scouting</strong> vorab, um verborgene Juwele für euer Shooting zu finden – in der Region Hannover und an jedem anderen Ort der Welt.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Service 02: Coverage - Beige Block */}
-      <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+      {/* Service 02: Coverage */}
+      <section className="bg-white py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -103,45 +107,80 @@ export const MinimalistServices = () => {
             <img 
               src={IMAGES.SERVICES.COVERAGE} 
               alt="Hochzeitsbegleitung" 
-              className="w-full aspect-[4/5] object-cover rounded-[3rem] shadow-xl"
+              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
               referrerPolicy="no-referrer"
             />
           </motion.div>
-          <div className="lg:order-1">
-            <span className="font-serif text-4xl md:text-6xl italic text-[#141414]/20 mb-8 block">02.</span>
-            <h3 className="font-serif text-3xl md:text-6xl mb-8 italic text-[#141414] leading-tight">Die Hochzeitsbegleitung</h3>
-            <div className="space-y-8 text-[#141414]/70 text-lg leading-relaxed">
-              <p>
-                An eurem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert.
+          <div className="w-full lg:order-1 flex flex-col items-center lg:items-start">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-[#141414]/10 mb-4 md:mb-6 block text-center lg:text-left w-full">02.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-[#141414] text-center lg:text-left w-full">Die Hochzeitsbegleitung</h3>
+            <div className="space-y-4 md:space-y-6 text-[#141414]/70 text-base md:text-lg w-full text-center lg:text-left">
+              <p className="max-w-xl mx-auto lg:mx-0">
+                An eurem Hochzeitstag bin ich der stille Beobachter. Ich agiere diskret im Hintergrund, aber bin immer präsent, wenn der Moment es erfordert. Mein Fokus liegt auf <strong>authentischem Storytelling</strong>.
               </p>
-              <p>
-                Vom ersten Pinselstrich beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein.
+              <p className="max-w-xl mx-auto lg:mx-0">
+                Vom ersten Pinselstrich beim Getting Ready bis zum emotionalen Hochzeitstanz fange ich die echten, ungestellten Emotionen ein. Ich dokumentiere nicht nur was passiert, sondern wie es sich anfühlt. So entstehen lebendige Erinnerungen, die eure Persönlichkeit widerspiegeln.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Included Section - White Rounded Box */}
-      <section className="py-32 md:py-48 px-6 md:px-12 bg-white rounded-[4rem] mx-4 md:mx-8 mb-32">
+      {/* Service 03: Post-Processing */}
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-[#141414] text-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center justify-items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="w-full"
+          >
+            <img 
+              src={IMAGES.SERVICES.POST} 
+              alt="Nachbearbeitung & Galerie" 
+              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+          <div className="w-full flex flex-col items-center lg:items-start">
+            <span className="font-sans text-4xl md:text-5xl font-extralight text-white/10 mb-4 md:mb-6 block text-center lg:text-left w-full">03.</span>
+            <h3 className="font-serif text-3xl md:text-5xl mb-6 md:mb-8 italic text-white text-center lg:text-left w-full">Die Nachbearbeitung & Galerie</h3>
+            <div className="space-y-4 md:space-y-6 text-white/70 text-base md:text-lg w-full text-center lg:text-left">
+              <p className="max-w-xl mx-auto lg:mx-0">
+                Nach dem Fest beginnt die sorgfältige Kuration. Jedes einzelne Foto wird von mir persönlich gesichtet und in meinem unverwechselbaren <strong>Signature Style</strong> veredelt.
+              </p>
+              <p className="max-w-xl mx-auto lg:mx-0">
+                Ihr erhaltet innerhalb weniger Wochen Zugang zu einer passwortgeschützten, elegante <strong>Online-Galerie</strong>. Dort könnt ihr alle Bilder in voller Auflösung herunterladen und unkompliziert mit euren Liebsten teilen. Eine zeitlose Kollektion, die euch immer wieder in diesen besonderen Tag zurückversetzt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Included in Every Coverage */}
+      <section className="py-24 md:py-32 px-6 md:px-12 bg-[#f5f2ed]">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-24">
-            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 block mb-6">Das Rundum-Sorglos-Paket</span>
-            <h2 className="font-serif text-3xl md:text-7xl italic text-[#141414] leading-tight">
-              In jeder Begleitung enthalten.
+          <div className="text-center mb-16 md:mb-24">
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 block mb-4">Das Rundum-Sorglos-Paket</span>
+            <h2 className="font-serif text-3xl md:text-6xl italic text-[#141414] uppercase leading-tight px-4">
+              In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit enthalten
             </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {[
-              "Persönliche Beratung & individueller Zeitplan",
-              "Exklusiver Wedding Guide mit Planungstipps",
-              "Sorgfältige Selektion & Veredelung aller Bilder",
-              "Natürliche Retusche eurer Paarfotos",
-              "Erste Highlights innerhalb von 7 Tagen",
-              "Passwortgeschützte Online-Galerie",
-              "Alle Fotos in voller Auflösung ohne Wasserzeichen",
-              "Edles Fine-Art Album als bleibende Erinnerung"
+              "Persönliche Beratung & individueller Zeitplan für euren Tag",
+              "Exklusiver Wedding Guide with wertvollen Planungstipps",
+              "Sorgfältige Selektion & Veredelung aller Bilder in meinem Signature-Look",
+              "Natürliche Retusche eurer Paarfotos für ein perfektes Ergebnis",
+              "Erste Highlights bereits innerhalb von 7 Tagen (Preview)",
+              "Passwortgeschützte Online-Galerie für euch und eure Gäste (12 Monate)",
+              "Mobile Galerie-App für den schnellen Zugriff von überall",
+              "Alle Fotos in voller Auflösung und ohne Wasserzeichen",
+              "Integrierter Online-Shop für hochwertige Abzüge und Wandbilder",
+              "Edles Fine-Art Album (20x20 cm) als bleibende Erinnerung",
+              "Drohnenaufnahmen für einzigartige Perspektiven (wetterabhängig)",
+              "Kontinuierliche Unterstützung und Beratung während der gesamten Planung"
             ].map((item, idx) => (
               <motion.div 
                 key={idx}
@@ -151,10 +190,43 @@ export const MinimalistServices = () => {
                 transition={{ delay: idx * 0.05 }}
                 className="flex items-start gap-4 group"
               >
-                <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-[#f5f2ed] flex items-center justify-center text-[#141414]">
-                  <Check size={14} strokeWidth={3} />
+                <div className="mt-1 flex-shrink-0 w-5 h-5 border border-[#141414] flex items-center justify-center group-hover:bg-[#141414] group-hover:text-white transition-colors duration-300">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </div>
-                <span className="text-[#141414]/70 text-base font-medium">{item}</span>
+                <span className="text-[#141414]/70 text-sm md:text-base font-light tracking-wide">{item}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Extras Section */}
+      <section className="bg-[#141414] py-24 md:py-40 px-6 md:px-12 text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20 md:mb-32">
+            <h2 className="font-serif text-4xl md:text-7xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-24">
+            {[
+              { title: "Engagement Shooting", desc: "Ein entspanntes Kennenlernen vor der Kamera vor eurem großen Tag" },
+              { title: "Zweitfotograf / Assistenz", desc: "Eine zusätzliche Perspektive für noch mehr eingefangene Details" },
+              { title: "After-Wedding-Session", desc: "Stressfreie Paarfotos an eurem Wunschort – ganz ohne Zeitdruck" },
+              { title: "Exklusive Print-Produkte", desc: "Von hochwertigen Wandbildern bis hin zu edlen Triplex-Aufstellern" },
+              { title: "Retusche & KI-Editierung", desc: "Ganz nach den individuellen Wünschen der Kunden" },
+              { title: "Physische Sicherung", desc: "Eure gesamte Hochzeitsreportage auf einem hochwertigen USB-Stick" }
+            ].map((option, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="text-center space-y-4"
+              >
+                <h4 className="font-serif text-2xl md:text-3xl italic text-white">{option.title}</h4>
+                <p className="text-white/70 text-sm md:text-base italic font-light tracking-wider max-w-[250px] mx-auto">
+                  {option.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -162,13 +234,14 @@ export const MinimalistServices = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-48 px-6 text-center">
+      <section className="py-32 px-6 md:px-40 bg-white text-[#141414] text-center">
         <div className="max-w-4xl mx-auto space-y-12">
-          <h2 className="font-serif text-4xl md:text-8xl italic text-[#141414] leading-[0.9]">Lasst uns eure Geschichte erzählen.</h2>
+          <h2 className="font-serif text-3xl md:text-7xl italic text-[#141414] leading-tight">Lasst uns eure Geschichte erzählen.</h2>
+          <p className="font-sans text-[#141414]/40 uppercase tracking-[0.2em] text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
           <div className="flex justify-center">
-            <button className="bg-[#141414] text-white px-12 py-6 rounded-full text-[10px] uppercase tracking-[0.3em] font-bold hover:scale-105 transition-transform">
+            <Button to="/contact">
               Jetzt Anfragen
-            </button>
+            </Button>
           </div>
         </div>
       </section>

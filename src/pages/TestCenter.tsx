@@ -47,6 +47,14 @@ import { EarthToneHome } from "./EarthTone/EarthToneHome";
 import { EarthToneAbout } from "./EarthTone/EarthToneAbout";
 import { EarthToneFAQ } from "./EarthTone/EarthToneFAQ";
 
+// Original Pages Backup
+import { Home as OriginalHome } from "./Home";
+import { About as OriginalAbout } from "./About";
+import { Services as OriginalServices } from "./Services";
+import { Portfolio as OriginalPortfolio } from "./Portfolio";
+import { FAQ as OriginalFAQ } from "./FAQ";
+import { Contact as OriginalContact } from "./Contact";
+
 const TEST_PAGES = [
   { id: "testimonials", label: "Testimonials", component: TestimonialComparison, category: "Content" },
   { id: "hero-showcase", label: "Hero Showcase", component: HeroShowcase, category: "Hero" },
@@ -90,6 +98,14 @@ const TEST_PAGES = [
   { id: "earth-home", label: "Home (Braun)", component: EarthToneHome, category: "EARTH TONES (BRAUN)" },
   { id: "earth-about", label: "Über Mich (Braun)", component: EarthToneAbout, category: "EARTH TONES (BRAUN)" },
   { id: "earth-faq", label: "FAQ (Braun)", component: EarthToneFAQ, category: "EARTH TONES (BRAUN)" },
+  
+  // Original Backup
+  { id: "backup-home", label: "Home (Aktuell)", component: OriginalHome, category: "BACKUP (AKTUELL)" },
+  { id: "backup-about", label: "Über Mich (Aktuell)", component: OriginalAbout, category: "BACKUP (AKTUELL)" },
+  { id: "backup-services", label: "Leistungen (Aktuell)", component: OriginalServices, category: "BACKUP (AKTUELL)" },
+  { id: "backup-portfolio", label: "Portfolio (Aktuell)", component: OriginalPortfolio, category: "BACKUP (AKTUELL)" },
+  { id: "backup-faq", label: "FAQ (Aktuell)", component: OriginalFAQ, category: "BACKUP (AKTUELL)" },
+  { id: "backup-contact", label: "Kontakt (Aktuell)", component: OriginalContact, category: "BACKUP (AKTUELL)" },
 ];
 
 export const TestCenter = () => {
@@ -108,9 +124,9 @@ export const TestCenter = () => {
   return (
     <div className="min-h-screen bg-[#f5f2ed] flex flex-col md:flex-row">
       {/* Sidebar Navigation (Desktop) / Top Bar (Mobile) */}
-      <div className="md:w-[400px] md:h-screen md:sticky md:top-0 bg-[#1a2e26] border-b md:border-b-0 md:border-r border-white/5 z-[90] flex flex-col transition-all duration-500">
+      <div className="md:w-[400px] md:h-screen md:sticky md:top-0 bg-[#141414] border-b md:border-b-0 md:border-r border-white/5 z-[90] flex flex-col transition-all duration-500">
         <div className="p-4 md:p-6 border-b border-white/5">
-          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d]">
+          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-white/40">
             Test Center
           </span>
           <h1 className="font-serif italic text-lg mt-1 hidden md:block text-white">Varianten & Tests</h1>
@@ -119,7 +135,7 @@ export const TestCenter = () => {
         <div className="flex-grow overflow-y-auto no-scrollbar p-4 space-y-6">
           {categories.map((cat) => (
             <div key={cat} className="space-y-2">
-              <h3 className="text-[9px] uppercase tracking-[0.3em] text-[#a0522d] font-bold px-2">{cat}</h3>
+              <h3 className="text-[9px] uppercase tracking-[0.3em] text-white/40 font-bold px-2">{cat}</h3>
               <div className="grid grid-cols-2 gap-1">
                 {TEST_PAGES.filter(p => p.category === cat).map((page) => (
                   <button
@@ -128,7 +144,7 @@ export const TestCenter = () => {
                     className={cn(
                       "font-sans uppercase tracking-[0.1em] text-[8px] px-2 py-2 rounded transition-all text-left leading-tight",
                       activeTabId === page.id 
-                        ? "bg-[#a0522d] text-white shadow-lg" 
+                        ? "bg-white text-[#141414] shadow-lg" 
                         : "text-white/30 hover:text-white hover:bg-white/5"
                     )}
                   >

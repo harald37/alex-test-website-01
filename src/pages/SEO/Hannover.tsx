@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Camera, Heart, MapPin, MessageCircle, Phone, Plus } from "lucide-react";
 import { IMAGES, SOCIAL_LINKS } from "../../constants";
-import { GreenBannerTestimonials } from "../../components/GreenBannerTestimonials";
+import { MinimalistTestimonials } from "../../components/MinimalistTestimonials";
 import { HomePortfolioGrid } from "../../components/HomePortfolioGrid";
 import { Button } from "../../components/ui/Button";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
   return (
-    <div className="border-b border-zinc-100">
+    <div className="border-b border-[#141414]/10">
       <button
         onClick={onClick}
         className="w-full py-6 flex justify-between items-center text-left group"
       >
-        <span className="font-sans uppercase tracking-[0.2em] text-xs text-zinc-900 group-hover:text-zinc-500 transition-colors">
+        <span className="font-sans uppercase tracking-[0.2em] text-xs text-[#141414] group-hover:text-[#141414]/60 transition-colors">
           {question}
         </span>
         <motion.div
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="text-zinc-400"
+          className="text-[#141414]/40"
         >
           <Plus aria-label="Antwort anzeigen" className="w-5 h-5" strokeWidth={1} />
         </motion.div>
@@ -34,7 +34,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }: any) => {
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <p className="pb-6 text-zinc-500 leading-relaxed">
+            <p className="pb-6 text-[#141414]/60 leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -99,22 +99,22 @@ export const Hannover = () => {
   ];
 
   return (
-    <main className="bg-surface-container-lowest min-h-screen">
+    <main className="bg-[#f5f2ed] min-h-screen">
       {/* Hero Section */}
       <section className="pt-48 md:pt-64 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
         <div className="max-w-4xl">
-          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Region Hannover</span>
-          <h1 className="font-serif italic text-5xl md:text-8xl lg:text-9xl text-zinc-900 leading-none tracking-tight mb-16">
+          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-[#141414]/40 mb-8 block">Region Hannover</span>
+          <h1 className="font-serif italic text-5xl md:text-8xl lg:text-9xl text-[#141414] leading-none tracking-tight mb-16">
             Hochzeitsfotograf <br className="hidden md:block" /> Hannover.
           </h1>
           
           <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div className="w-12 h-[1px] bg-zinc-900/10 mb-8 md:mb-0"></div>
+            <div className="w-12 h-[1px] bg-[#141414]/10 mb-8 md:mb-0"></div>
             <div className="space-y-8">
-              <p className="text-xl md:text-2xl leading-relaxed text-zinc-800 italic font-serif">
+              <p className="text-xl md:text-2xl leading-relaxed text-[#141414]/80 italic font-serif">
                 "Authentische Hochzeitsreportagen in der Landeshauptstadt und Umgebung."
               </p>
-              <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide">
+              <p className="text-[#141414]/70 text-base md:text-lg leading-relaxed tracking-wide">
                 Als euer Hochzeitsfotograf in Hannover begleite ich euch an eurem besonderen Tag. Ob in den Herrenhäuser Gärten, im Neuen Rathaus oder in einer der vielen charmanten Locations in der Region – ich halte eure emotionalsten Momente in zeitlosen Bildern fest.
               </p>
             </div>
@@ -129,8 +129,8 @@ export const Hannover = () => {
       <section className="py-24 md:py-32 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
-            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-zinc-400 block mb-4">Das Rundum-Sorglos-Paket</span>
-            <h2 className="font-serif text-3xl md:text-4xl italic text-zinc-900 uppercase leading-tight">
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 block mb-4">Das Rundum-Sorglos-Paket</span>
+            <h2 className="font-serif text-3xl md:text-4xl italic text-[#141414] uppercase leading-tight">
               In jeder Ganztagesbegleitung <br className="hidden md:block" /> eurer Hochzeit in Hannover enthalten
             </h2>
           </div>
@@ -145,10 +145,10 @@ export const Hannover = () => {
                 transition={{ delay: idx * 0.05 }}
                 className="flex items-start gap-4 group"
               >
-                <div className="mt-1 flex-shrink-0 w-5 h-5 border border-zinc-900 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+                <div className="mt-1 flex-shrink-0 w-5 h-5 border border-[#141414] flex items-center justify-center group-hover:bg-[#141414] group-hover:text-white transition-colors duration-300">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </div>
-                <span className="text-zinc-600 text-sm md:text-base font-light tracking-wide">{item}</span>
+                <span className="text-[#141414]/70 text-sm md:text-base font-light tracking-wide">{item}</span>
               </motion.div>
             ))}
           </div>
@@ -156,7 +156,7 @@ export const Hannover = () => {
       </section>
 
       {/* Weitere Optionen */}
-      <section className="bg-[#1a2e26] py-24 md:py-32 px-6 md:px-12 text-white">
+      <section className="bg-[#141414] py-24 md:py-32 px-6 md:px-12 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 md:mb-24">
             <h2 className="font-serif text-3xl md:text-5xl italic uppercase tracking-widest text-white">Weitere Optionen</h2>
@@ -182,9 +182,9 @@ export const Hannover = () => {
       </section>
 
       {/* About Me Short */}
-      <section className="bg-zinc-50 py-32 px-6 md:px-12">
+      <section className="bg-white py-32 px-6 md:px-12">
         <div className="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-24 items-center">
-          <div className="aspect-[3/4] overflow-hidden rounded-2xl">
+          <div className="aspect-[3/4] overflow-hidden rounded-[3rem]">
             <img 
               src={IMAGES.ABOUT} 
               alt="Alex Begopoulos" 
@@ -194,9 +194,9 @@ export const Hannover = () => {
           </div>
           <div className="space-y-12">
             <div>
-              <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-6 block">Der Fotograf</span>
-              <h2 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight mb-8">Hallo, ich bin Alex.</h2>
-              <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide mb-8">
+              <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-[#141414]/40 mb-6 block">Der Fotograf</span>
+              <h2 className="font-serif italic text-4xl md:text-6xl text-[#141414] leading-tight mb-8">Hallo, ich bin Alex.</h2>
+              <p className="text-[#141414]/70 text-base md:text-lg leading-relaxed tracking-wide mb-8">
                 Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Hannover und Umgebung bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
               </p>
               <Button to="/about" variant="link">
@@ -208,13 +208,13 @@ export const Hannover = () => {
       </section>
 
       {/* Testimonials */}
-      <GreenBannerTestimonials />
+      <MinimalistTestimonials />
 
       {/* FAQ Short */}
       <section className="py-32 px-6 md:px-12 max-w-screen-2xl mx-auto">
         <div className="max-w-3xl mx-auto">
-          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block text-center">Häufige Fragen</span>
-          <h2 className="font-serif italic text-4xl md:text-6xl text-zinc-900 leading-tight mb-16 text-center">Kurz & Knapp für Hannover.</h2>
+          <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-[#141414]/40 mb-8 block text-center">Häufige Fragen</span>
+          <h2 className="font-serif italic text-4xl md:text-6xl text-[#141414] leading-tight mb-16 text-center">Kurz & Knapp für Hannover.</h2>
           
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
@@ -237,7 +237,7 @@ export const Hannover = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-32 px-6 md:px-12 bg-[#1a2e26] text-white text-center">
+      <section className="py-32 px-6 md:px-12 bg-[#141414] text-white text-center">
         <div className="max-w-3xl mx-auto space-y-12">
           <h2 className="font-serif italic text-3xl md:text-4xl leading-tight font-medium text-white">
             Bereit für eure Geschichte <br /> in Hannover?

@@ -57,11 +57,11 @@ export const HomePortfolioGrid: React.FC = () => {
 
   return (
     <>
-      <section className="py-24 md:py-48 px-6 md:px-12 bg-surface" id="highlights">
+      <section className="py-24 md:py-48 px-6 md:px-12 bg-[#f5f2ed]" id="highlights">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-24 md:mb-32">
-            <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Eingefangene Augenblicke</span>
-            <h2 className="font-serif italic text-4xl md:text-7xl text-zinc-900 leading-tight">
+            <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-[#141414]/40 mb-8 block">Eingefangene Augenblicke</span>
+            <h2 className="font-serif italic text-4xl md:text-7xl text-[#141414] leading-tight">
               Momente, die <br className="hidden md:block" /> die Zeit überdauern.
             </h2>
           </div>

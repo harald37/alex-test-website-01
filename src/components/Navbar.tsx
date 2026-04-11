@@ -73,10 +73,10 @@ export const Navbar = () => {
           isOpen
             ? "bg-transparent py-8"
             : isScrolled
-              ? "bg-surface/95 backdrop-blur-xl py-5" 
+              ? "bg-[#f5f2ed]/95 backdrop-blur-xl py-5" 
               : location.pathname === '/' 
                 ? "bg-transparent py-8" 
-                : "bg-surface/80 backdrop-blur-md py-8"
+                : "bg-[#f5f2ed]/80 backdrop-blur-md py-8"
         )}
       >
         <div className="flex justify-between items-center w-full px-6 md:px-12 max-w-screen-2xl mx-auto relative z-[100]">
@@ -87,7 +87,7 @@ export const Navbar = () => {
             to="/"
             className={cn(
               "flex flex-col lg:flex-row items-center transition-colors duration-500 absolute left-1/2 -translate-x-1/2 lg:static lg:left-auto lg:translate-x-0",
-              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
+              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-[#141414]"
             )}
             onClick={() => setIsOpen(false)}
           >
@@ -108,8 +108,8 @@ export const Navbar = () => {
                     className={cn(
                       "font-sans uppercase tracking-[0.2em] text-[10px] transition-all duration-500 pb-1 border-b whitespace-nowrap",
                       isActive
-                        ? isHero ? "text-white border-white" : "text-zinc-900 border-zinc-900"
-                        : isHero ? "text-white/60 border-transparent hover:text-white" : "text-zinc-400 border-transparent hover:text-zinc-900"
+                        ? isHero ? "text-white border-white" : "text-[#141414] border-[#141414]"
+                        : isHero ? "text-white/60 border-transparent hover:text-white" : "text-[#141414]/40 border-transparent hover:text-[#141414]"
                     )}
                   >
                     {link.name}
@@ -118,7 +118,7 @@ export const Navbar = () => {
               })}
             </div>
 
-            <div className="w-[1px] h-4 bg-zinc-200/20 mx-2" />
+             <div className="w-[1px] h-4 bg-[#141414]/10 mx-2" />
 
             <div className="flex items-center space-x-6">
               <a 
@@ -127,7 +127,7 @@ export const Navbar = () => {
                 rel="noopener noreferrer" 
                 className={cn(
                   "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
                 )}
               >
                 <Instagram aria-label="Instagram Profil" size={16} strokeWidth={1.5} />
@@ -136,7 +136,7 @@ export const Navbar = () => {
                 href={SOCIAL_LINKS.email} 
                 className={cn(
                   "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
                 )}
               >
                 <Mail aria-label="E-Mail schreiben" size={16} strokeWidth={1.5} />
@@ -147,7 +147,7 @@ export const Navbar = () => {
                 rel="noopener noreferrer" 
                 className={cn(
                   "transition-colors duration-500",
-                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-zinc-400 hover:text-zinc-900"
+                  !isScrolled && !isOpen && location.pathname === '/' ? "text-white/60 hover:text-white" : "text-[#141414]/40 hover:text-[#141414]"
                 )}
               >
                 <MessageCircle aria-label="WhatsApp Nachricht senden" size={16} strokeWidth={1.5} />
@@ -159,7 +159,7 @@ export const Navbar = () => {
           <button
             className={cn(
               "lg:hidden p-2 focus:outline-none transition-colors duration-500 relative z-[110]",
-              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-zinc-900"
+              isOpen || (!isScrolled && location.pathname === '/') ? "text-white" : "text-[#141414]"
             )}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
@@ -182,7 +182,7 @@ export const Navbar = () => {
         <div 
           className={cn(
             "absolute bottom-0 left-0 right-0 h-[1px] transition-colors duration-500",
-            isScrolled && !isOpen ? "bg-zinc-100" : "bg-transparent"
+            isScrolled && !isOpen ? "bg-[#141414]/5" : "bg-transparent"
           )} 
         />
       </nav>
@@ -195,7 +195,7 @@ export const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="lg:hidden fixed inset-0 bg-[#1a2e26] z-[90] flex flex-col"
+            className="lg:hidden fixed inset-0 bg-black z-[90] flex flex-col"
           >
             <div className="flex-1 flex flex-col items-center justify-center space-y-8 px-12 pt-20">
               {NAV_LINKS.map((link) => (

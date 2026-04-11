@@ -1,28 +1,29 @@
 import React from "react";
 import { IMAGES } from "../../constants";
 import { motion } from "motion/react";
+import { Camera, Heart, Star } from "lucide-react";
 
 export const MinimalistAbout = () => {
   return (
-    <div className="bg-[#f5f2ed] text-[#141414] pt-32 md:pt-48 pb-24">
+    <div className="bg-[#f5f2ed] text-[#141414] pt-32 md:pt-40 pb-24">
       <section className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Intro Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center mb-48">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-32">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-[3/4] overflow-hidden rounded-[3rem] shadow-2xl relative z-10 rotate-1 hover:rotate-0 transition-transform duration-700">
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl relative z-10">
               <img 
                 src={IMAGES.ABOUT} 
                 alt="Alex Begopoulos" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 w-full h-full border border-[#141414]/10 rounded-[3rem] -z-0 hidden md:block" />
+            <div className="absolute -bottom-6 -left-6 w-full h-full border border-[#141414]/10 rounded-2xl -z-0 hidden md:block" />
           </motion.div>
 
           <motion.div
@@ -31,9 +32,9 @@ export const MinimalistAbout = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-6 block">Der Mensch hinter der Kamera</span>
-            <h1 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Hi, ich bin Alex.</h1>
-            <div className="space-y-8 text-[#141414]/70 text-lg md:text-xl leading-relaxed">
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 mb-4 block">Der Mensch hinter der Kamera</span>
+            <h1 className="text-4xl md:text-6xl font-serif mb-8 text-[#141414] leading-tight">Hi, ich bin Alex.</h1>
+            <div className="space-y-6 text-[#141414]/70 text-base md:text-lg leading-relaxed">
               <p>
                 Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten.
               </p>
@@ -44,70 +45,95 @@ export const MinimalistAbout = () => {
           </motion.div>
         </div>
 
-        {/* Style Section - Deep Forest Block */}
-        <div className="bg-[#1a2e26] text-white rounded-[4rem] p-8 md:p-24 mb-48 overflow-hidden relative">
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-white/40 mb-6 block">Meine Philosophie</span>
-              <h2 className="text-4xl md:text-7xl font-serif italic mb-12 text-white leading-tight">Mein Bildstil</h2>
-              <div className="space-y-8 text-white/70 text-lg leading-relaxed">
-                <p>
-                  Euer Hochzeitstag gehört euch. Ihr sollt lachen, weinen und feiern, ohne ständig an die Kamera denken zu müssen. Deshalb ist mein Stil vor allem eines: authentisch und unaufdringlich.
-                </p>
-                <p>
-                  Ich sehe mich als stiller Beobachter, der die zärtlichen Blicke, die herzhaften Lacher und die ausgelassenen Momente auf der Tanzfläche einfängt, so wie sie passieren.
-                </p>
-                <p className="italic font-serif text-white text-2xl md:text-3xl border-l-2 border-white/20 pl-8">
-                  "Für euch bedeutet das: Ihr werdet vom Hintergrund abgehoben und es entsteht dieser weiche, fast malerische Bildstil."
-                </p>
-              </div>
-            </motion.div>
+        {/* Style Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-32">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="order-2 lg:order-1"
+          >
+            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 mb-4 block">Meine Philosophie</span>
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 text-[#141414]">Mein Bildstil</h2>
+            <div className="space-y-6 text-[#141414]/70 text-base md:text-lg leading-relaxed">
+              <p>
+                Euer Hochzeitstag gehört euch. Ihr sollt lachen, weinen und feiern, ohne ständig an die Kamera denken zu müssen. Deshalb ist mein Stil vor allem eines: authentisch und unaufdringlich.
+              </p>
+              <p>
+                Ich sehe mich als stiller Beobachter, der die zärtlichen Blicke, die herzhaften Lacher und die ausgelassenen Momente auf der Tanzfläche einfängt, so wie sie passieren.
+              </p>
+              <p>
+                Um diesen natürlichen Look zu erreichen, liebe ich es, mit dem vorhandenen Sonnenlicht zu arbeiten. Statt gestellter Posen mit hartem Blitzlicht nutze ich oft eine offene Blende.
+              </p>
+              <p className="italic font-serif text-[#141414] text-xl">
+                "Für euch bedeutet das: Ihr werdet vom Hintergrund abgehoben und es entsteht dieser weiche, fast malerische Bildstil, der den Fokus voll und ganz auf euch und eure Emotionen legt."
+              </p>
+            </div>
+          </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="grid grid-cols-2 gap-4"
-            >
-              <div className="aspect-[4/5] overflow-hidden rounded-3xl">
-                <img 
-                  src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
-                  alt="Alex in den Bergen" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="aspect-[4/5] overflow-hidden rounded-3xl mt-12">
-                <img 
-                  src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
-                  alt="Alex und Katharina" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            </motion.div>
-          </div>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="order-1 lg:order-2 grid grid-cols-2 gap-4"
+          >
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl">
+              <img 
+                src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
+                alt="Alex in den Bergen" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-12">
+              <img 
+                src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
+                alt="Alex und Katharina" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </motion.div>
         </div>
 
         {/* Hobbies / Inspiration Section */}
-        <div className="max-w-5xl mx-auto text-center mb-32">
-          <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-12 block">Inspiration & Leidenschaft</span>
-          <h3 className="text-4xl md:text-6xl font-serif italic mb-12">Was mich antreibt.</h3>
-          <p className="text-[#141414]/60 text-lg md:text-xl mb-16 max-w-3xl mx-auto leading-relaxed">
-            Wenn ich nicht gerade die Liebe anderer Menschen dokumentiere, findet man mich oft auf Reisen. Das Eintauchen in fremde Kulturen schärft meinen Blick für das Wesentliche.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {['Reisen', 'Fußball', 'Gaming', 'Tech-Trends', 'Kultur', 'Programmierung', 'Design'].map((tag) => (
-              <span key={tag} className="px-8 py-4 bg-white border border-[#141414]/5 rounded-full text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">
-                {tag}
-              </span>
-            ))}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-[#141414] rounded-[2rem] p-8 md:p-20 text-white overflow-hidden relative"
+        >
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl md:text-5xl font-serif mb-6 text-white">Inspiration & Leidenschaft</h3>
+              <p className="text-[#f5f2ed]/70 text-base md:text-lg mb-8 leading-relaxed">
+                Wenn ich nicht gerade die Liebe anderer Menschen dokumentiere, findet man mich oft auf Reisen. Das Eintauchen in fremde Kulturen schärft meinen Blick für das Wesentliche und lässt mich die Welt immer wieder neu entdecken.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                {['Reisen', 'Fußball', 'Gaming', 'Tech-Trends', 'Kultur', 'Programmierung', 'Design'].map((tag) => (
+                  <span key={tag} className="px-4 py-2 border border-white/10 rounded-full text-xs uppercase tracking-widest text-[#f5f2ed]/70">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800" 
+                alt="Travel" 
+                className="rounded-xl aspect-square object-cover opacity-60 hover:opacity-100 transition-opacity"
+                referrerPolicy="no-referrer"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" 
+                alt="Tech" 
+                className="rounded-xl aspect-square object-cover opacity-60 hover:opacity-100 transition-opacity"
+                referrerPolicy="no-referrer"
+              />
+            </div>
           </div>
-        </div>
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
+        </motion.div>
       </section>
     </div>
   );
