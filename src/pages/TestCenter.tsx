@@ -44,6 +44,7 @@ import { MinimalistFAQ } from "./MinimalistStyle/MinimalistFAQ";
 import { MinimalistContact } from "./MinimalistStyle/MinimalistContact";
 import { PortfolioIntros } from "./PortfolioIntros";
 import { ServicesIntros } from "./ServicesIntros";
+import { HomeButtonVariants } from "./HomeButtonVariants";
 import { ForestMonochromeHome } from "./ForestMonochrome/ForestMonochromeHome";
 import { EarthToneHome } from "./EarthTone/EarthToneHome";
 import { EarthToneAbout } from "./EarthTone/EarthToneAbout";
@@ -91,6 +92,7 @@ const TEST_PAGES = [
   { id: "new-style-faq", label: "FAQ", component: NewStyleFAQ, category: "NEUER STIL" },
   { id: "new-style-contact", label: "Kontakt", component: NewStyleContact, category: "NEUER STIL" },
   { id: "min-home", label: "Home (S/W)", component: MinimalistHome, category: "MINIMALISTISCH (S/W)" },
+  { id: "home-button-variants", label: "Home Button Varianten (15)", component: HomeButtonVariants, category: "MINIMALISTISCH (S/W)" },
   { id: "min-about", label: "Über Mich (S/W)", component: MinimalistAbout, category: "MINIMALISTISCH (S/W)" },
   { id: "min-services", label: "Leistungen (S/W)", component: MinimalistServices, category: "MINIMALISTISCH (S/W)" },
   { id: "min-portfolio", label: "Portfolio (S/W)", component: MinimalistPortfolio, category: "MINIMALISTISCH (S/W)" },

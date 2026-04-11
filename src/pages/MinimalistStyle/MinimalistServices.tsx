@@ -213,7 +213,7 @@ export const MinimalistServices = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-32 px-6 md:px-40 bg-white text-[#141414] text-center">
+      <section className="py-32 px-6 md:px-40 bg-[#f5f2ed] text-[#141414] text-center">
         <div className="max-w-4xl mx-auto space-y-12">
           <h2 className="font-serif text-3xl md:text-7xl italic text-[#141414] leading-tight">Lasst uns eure Geschichte erzählen.</h2>
           <p className="font-sans text-[#141414]/40 uppercase tracking-[0.2em] text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
