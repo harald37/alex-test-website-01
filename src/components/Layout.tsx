@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-screen flex flex-col overflow-x-hidden bg-[#f5f2ed] text-[#141414]">
+    <div className="min-h-screen flex flex-col bg-[#f5f2ed] text-[#141414]">
       <Navbar />
       <main className="flex-grow">
         <motion.div
