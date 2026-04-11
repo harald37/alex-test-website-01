@@ -22,7 +22,7 @@ export const Imprint: React.FC = () => {
             <h2 className="font-sans uppercase tracking-[0.2em] text-xs text-[#141414] mb-4">Kontakt</h2>
             <p>
               Telefon: 015165264449<br />
-              E-Mail: info@hochzeitsfotograf-alex.de
+              E-Mail: hey@alex-begopoulos.de
             </p>
           </div>
 

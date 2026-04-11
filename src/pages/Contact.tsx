@@ -80,7 +80,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-sans uppercase tracking-[0.2em] text-[10px] text-zinc-400 mb-2">Email</h4>
-                  <a href="mailto:info@hochzeitsfotograf-alex.de" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">info@hochzeitsfotograf-alex.de</a>
+                  <a href="mailto:hey@alex-begopoulos.de" className="font-serif italic text-xl md:text-2xl text-zinc-900 hover:text-zinc-500 transition-colors">hey@alex-begopoulos.de</a>
                 </div>
               </div>
               

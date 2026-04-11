@@ -75,7 +75,7 @@ export const Privacy: React.FC = () => {
                   Engelsburg 2<br />
                   30629 Hannover<br /><br />
                   Telefon: 015165264449<br />
-                  E-Mail: info@hochzeitsfotograf-alex.de
+                  E-Mail: hey@alex-begopoulos.de
                 </p>
               </div>
               <div>
