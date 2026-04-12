@@ -3,10 +3,15 @@ import { IMAGES } from "../constants";
 import { motion } from "motion/react";
 import { Camera, Heart, Star } from "lucide-react";
 import { Button } from "../components/ui/Button";
+import { SEO } from "../components/SEO";
 
 export const About = () => {
   return (
     <div className="bg-surface pt-32 md:pt-40 pb-24">
+      <SEO 
+        title="Über mich | Alex Begopoulos - Euer Hochzeitsfotograf" 
+        description="Hi, ich bin Alex! Lernt den Menschen hinter der Kamera kennen. Mein Bildstil, meine Philosophie und warum ich Hochzeiten so sehr liebe." 
+      />
       <section className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Intro Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center mb-32">

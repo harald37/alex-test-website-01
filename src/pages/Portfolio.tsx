@@ -4,6 +4,7 @@ import { IMAGES } from "../constants";
 import { cn } from "../lib/utils";
 import { Button } from "../components/ui/Button";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 export const Portfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -92,6 +93,10 @@ export const Portfolio = () => {
 
   return (
     <main className="pt-48 md:pt-64 pb-32 px-6 md:px-12 max-w-screen-2xl mx-auto bg-surface-container-lowest min-h-screen">
+      <SEO 
+        title="Portfolio | Echte Hochzeitsmomente | Alex Begopoulos" 
+        description="Lasst euch von meinen bisherigen Hochzeitsreportagen inspirieren. Authentische, emotionale und ungestellte Momente eures großen Tages." 
+      />
       {/* Editorial Header */}
       <section className="mb-24 md:mb-32 max-w-5xl">
         <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Portfolio II</span>

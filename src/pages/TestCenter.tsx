@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useSearchParams } from "react-router-dom";
 import { cn } from "../lib/utils";
+import { SEO } from "../components/SEO";
 
 // Import all test components
 import { TestimonialComparison } from "./TestimonialComparison";
@@ -129,6 +130,11 @@ export const TestCenter = () => {
 
   return (
     <div className="min-h-screen bg-[#f5f2ed] flex flex-col md:flex-row">
+      <SEO 
+        title="Test Center | Intern" 
+        description="Internes Test Center für Design-Varianten." 
+        noindex={true} 
+      />
       {/* Sidebar Navigation (Desktop) / Top Bar (Mobile) */}
       <div className="md:w-[400px] md:h-screen md:sticky md:top-0 bg-[#141414] border-b md:border-b-0 md:border-r border-white/5 z-[90] flex flex-col transition-all duration-500">
         <div className="p-4 md:p-6 border-b border-white/5">

@@ -4,10 +4,15 @@ import { IMAGES } from "../constants";
 import { Book, Users, Camera, Globe, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/Button";
+import { SEO } from "../components/SEO";
 
 export const Services = () => {
   return (
     <div className="bg-surface overflow-x-hidden">
+      <SEO 
+        title="Leistungen & Preise | Hochzeitsfotografie | Alex Begopoulos" 
+        description="Exklusive Hochzeitsbegleitungen, Paarshootings und After-Wedding-Shootings. Entdeckt meine Leistungen und was in jeder Reportage inklusive ist." 
+      />
       {/* Hero Section */}
       <section className="relative h-[80vh] overflow-hidden">
         <motion.div 

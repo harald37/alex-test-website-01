@@ -7,10 +7,15 @@ import { GreenBannerTestimonials } from '../components/GreenBannerTestimonials';
 import { HomePortfolioGrid } from '../components/HomePortfolioGrid';
 import { Button } from '../components/ui/Button';
 import { X, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
+      <SEO 
+        title="Hochzeitsfotograf Hannover | Alex Begopoulos" 
+        description="Natürliche und ungestellte Hochzeitsfotografie in Hannover und weltweit. Ich halte eure echten Momente und Emotionen in zeitlosen Bildern fest." 
+      />
       {/* Hero Section */}
       <section className="relative h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-zinc-900">
         <div className="absolute inset-0 z-0 bg-zinc-900">
