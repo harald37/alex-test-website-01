@@ -2,6 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Plus, Minus } from "lucide-react";
 import { Button } from "../../components/ui/Button";
+import { SEO } from "../../components/SEO";
 
 const FAQ_DATA = [
   {
@@ -145,6 +146,10 @@ export const MinimalistFAQ = () => {
 
   return (
     <div className="bg-[#f5f2ed] text-[#141414] min-h-screen pt-40 pb-24">
+      <SEO 
+        title="FAQ | Häufige Fragen zur Hochzeitsfotografie | Alex Begopoulos" 
+        description="Antworten auf die häufigsten Fragen rund um eure Hochzeitsreportage, meine Arbeitsweise, Buchung, Reisekosten und Bildübergabe." 
+      />
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-serif mb-6 text-[#141414]">Häufig gestellte Fragen</h1>

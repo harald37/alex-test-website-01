@@ -4,6 +4,7 @@ import { IMAGES } from "../../constants";
 import { cn } from "../../lib/utils";
 import { Button } from "../../components/ui/Button";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { SEO } from "../../components/SEO";
 
 export const MinimalistPortfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -92,6 +93,10 @@ export const MinimalistPortfolio = () => {
 
   return (
     <main className="pt-48 md:pt-64 pb-32 px-6 md:px-12 max-w-screen-2xl mx-auto bg-[#f5f2ed] min-h-screen text-[#141414]">
+      <SEO 
+        title="Portfolio | Echte Hochzeitsmomente | Alex Begopoulos" 
+        description="Lasst euch von meinen bisherigen Hochzeitsreportagen inspirieren. Authentische, emotionale und ungestellte Momente eures großen Tages." 
+      />
       {/* Hero Section - Variant 01: Klassisch Zentriert */}
       <section className="mb-24 md:mb-32">
         <div className="max-w-4xl mx-auto text-center">

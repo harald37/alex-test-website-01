@@ -7,10 +7,31 @@ import { MinimalistTestimonials } from '../../components/MinimalistTestimonials'
 import { HomePortfolioGrid } from '../../components/HomePortfolioGrid';
 import { Button } from '../../components/ui/Button';
 import { X, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { SEO } from '../../components/SEO';
 
 export const MinimalistHome: React.FC = () => {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "PhotographyBusiness",
+    "name": "Alex Begopoulos",
+    "image": "https://res.cloudinary.com/alexbegopoulos/image/upload/f_auto,q_auto:best,w_1200/v1775495575/hochzeitstanz-im-eigenen-garten-bei-nacht-mit-kuss-hannover.webp",
+    "telephone": "+4915165264449",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hannover",
+      "addressCountry": "DE"
+    },
+    "priceRange": "€€",
+    "url": "https://alexbegopoulos.com"
+  };
+
   return (
     <div className="flex flex-col bg-[#f5f2ed] text-[#141414]">
+      <SEO 
+        title="Hochzeitsfotograf Hannover | Alex Begopoulos" 
+        description="Natürliche und ungestellte Hochzeitsfotografie in Hannover und weltweit. Ich halte eure echten Momente und Emotionen in zeitlosen Bildern fest." 
+        schema={localBusinessSchema}
+      />
       {/* Hero Section */}
       <section className="relative h-[100svh] flex flex-col items-center justify-center overflow-hidden bg-[#141414]">
         <div className="absolute inset-0 z-0 bg-[#141414]">

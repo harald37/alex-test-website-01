@@ -16,6 +16,7 @@ import { Imprint } from "./pages/Imprint";
 import { Privacy } from "./pages/Privacy";
 import { Hannover } from "./pages/SEO/Hannover";
 import { Braunschweig } from "./pages/SEO/Braunschweig";
+import { NotFound } from "./pages/NotFound";
 import { TestimonialComparison } from "./pages/TestimonialComparison";
 import HeroShowcase from "./pages/HeroShowcase";
 import HeroVariants from "./pages/HeroVariants";
@@ -75,6 +76,7 @@ export default function App() {
               <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />
               <Route path="/hochzeitsfotograf-braunschweig" element={<Braunschweig />} />
               <Route path="/test" element={<TestCenter />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
         } />

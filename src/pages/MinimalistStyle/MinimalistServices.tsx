@@ -4,10 +4,15 @@ import { IMAGES } from "../../constants";
 import { Book, Users, Camera, Globe, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/Button";
+import { SEO } from "../../components/SEO";
 
 export const MinimalistServices = () => {
   return (
     <div className="bg-[#f5f2ed] text-[#141414] overflow-x-hidden">
+      <SEO 
+        title="Leistungen & Preise | Hochzeitsfotografie | Alex Begopoulos" 
+        description="Exklusive Hochzeitsbegleitungen, Paarshootings und After-Wedding-Shootings. Entdeckt meine Leistungen und was in jeder Reportage inklusive ist." 
+      />
       {/* Hero Section - Variant 01: Klassisch Zentriert */}
       <section className="pt-48 pb-24 md:pt-64 md:pb-32 px-6">
         <div className="max-w-4xl mx-auto text-center">

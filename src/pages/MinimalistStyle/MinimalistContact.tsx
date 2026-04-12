@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Send, Mail, Phone, Instagram, Facebook, MessageCircle, MapPin } from "lucide-react";
 import { SOCIAL_LINKS } from "../../constants";
 import { Button } from "../../components/ui/Button";
+import { SEO } from "../../components/SEO";
 
 export const MinimalistContact = () => {
   const [submitted, setSubmitted] = React.useState(false);
@@ -57,6 +58,10 @@ export const MinimalistContact = () => {
 
   return (
     <div className="bg-[#f5f2ed] text-[#141414] min-h-screen pt-32 md:pt-48 pb-24">
+      <SEO 
+        title="Kontakt | Lasst uns über eure Hochzeit sprechen | Alex Begopoulos" 
+        description="Ihr sucht einen Hochzeitsfotografen in Hannover oder weltweit? Schreibt mir eine Nachricht und lasst uns eure Geschichte gemeinsam erzählen." 
+      />
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-32">
           {/* Info Side */}
