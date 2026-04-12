@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import { Camera, Heart, Star } from "lucide-react";
 import { Button } from "../../components/ui/Button";
 import { SEO } from "../../components/SEO";
-import { SmoothImage } from "../../components/ui/SmoothImage";
 
 export const MinimalistAbout = () => {
   return (
@@ -22,12 +21,15 @@ export const MinimalistAbout = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <SmoothImage 
-              src={IMAGES.ABOUT} 
-              alt="Alex Begopoulos" 
-              aspectRatio="portrait"
-              className="transition-all duration-700"
-            />
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl relative z-10">
+              <img 
+                src={IMAGES.ABOUT} 
+                alt="Alex Begopoulos" 
+                className="w-full h-full object-cover transition-all duration-700"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
             <div className="absolute -bottom-6 -left-6 w-full h-full border border-[#141414]/10 rounded-2xl -z-0 hidden md:block" />
           </motion.div>
 
@@ -79,18 +81,24 @@ export const MinimalistAbout = () => {
             viewport={{ once: true }}
             className="order-1 lg:order-2 grid grid-cols-2 gap-4"
           >
-            <SmoothImage 
-              src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
-              alt="Alex in den Bergen" 
-              aspectRatio="portrait"
-              containerClassName="rounded-2xl"
-            />
-            <SmoothImage 
-              src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
-              alt="Alex und Katharina" 
-              aspectRatio="portrait"
-              containerClassName="rounded-2xl mt-12"
-            />
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl">
+              <img 
+                src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775486330/alex-in-den-bergen-von-oesterreich.webp" 
+                alt="Alex in den Bergen" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl mt-12">
+              <img 
+                src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775484706/fotograf-alex-begopoulos-mit-freundin-katharina.webp" 
+                alt="Alex und Katharina" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+              />
+            </div>
           </motion.div>
         </div>
 
@@ -116,17 +124,19 @@ export const MinimalistAbout = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <SmoothImage 
+              <img 
                 src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=800" 
                 alt="Travel" 
-                aspectRatio="square"
-                containerClassName="rounded-xl opacity-60 hover:opacity-100 transition-opacity"
+                className="rounded-xl aspect-square object-cover opacity-60 hover:opacity-100 transition-opacity"
+                referrerPolicy="no-referrer"
+                loading="lazy"
               />
-              <SmoothImage 
+              <img 
                 src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" 
                 alt="Tech" 
-                aspectRatio="square"
-                containerClassName="rounded-xl opacity-60 hover:opacity-100 transition-opacity"
+                className="rounded-xl aspect-square object-cover opacity-60 hover:opacity-100 transition-opacity"
+                referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
           </div>

@@ -5,7 +5,6 @@ import { cn } from "../../lib/utils";
 import { Button } from "../../components/ui/Button";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { SEO } from "../../components/SEO";
-import { SmoothImage } from "../../components/ui/SmoothImage";
 
 export const MinimalistPortfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -173,11 +172,15 @@ export const MinimalistPortfolio = () => {
                   className="break-inside-avoid mb-12 group cursor-pointer"
                   onClick={() => openLightbox(index)}
                 >
-                  <SmoothImage 
-                    src={item.url} 
-                    alt={item.alt} 
-                    className="transition-transform duration-1000 group-hover:scale-105"
-                  />
+                  <div className="overflow-hidden bg-[#141414]/5">
+                    <img 
+                      src={item.url} 
+                      alt={item.alt} 
+                      className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                    />
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -196,11 +199,15 @@ export const MinimalistPortfolio = () => {
                   className="break-inside-avoid mb-12 group cursor-pointer"
                   onClick={() => openLightbox(weddingImages.length + index)}
                 >
-                  <SmoothImage 
-                    src={item.url} 
-                    alt={item.alt} 
-                    className="transition-transform duration-1000 group-hover:scale-105"
-                  />
+                  <div className="overflow-hidden bg-[#141414]/5">
+                    <img 
+                      src={item.url} 
+                      alt={item.alt} 
+                      className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
+                    />
+                  </div>
                 </motion.div>
               ))}
             </div>

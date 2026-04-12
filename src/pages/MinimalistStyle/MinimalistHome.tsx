@@ -8,7 +8,6 @@ import { HomePortfolioGrid } from '../../components/HomePortfolioGrid';
 import { Button } from '../../components/ui/Button';
 import { X, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 import { SEO } from '../../components/SEO';
-import { SmoothImage } from '../../components/ui/SmoothImage';
 
 export const MinimalistHome: React.FC = () => {
   const localBusinessSchema = {
@@ -152,13 +151,14 @@ export const MinimalistHome: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full"
+            className="aspect-[3/4] overflow-hidden rounded-2xl"
           >
-            <SmoothImage 
+            <img 
               src={IMAGES.ABOUT} 
               alt="Alex Begopoulos" 
-              aspectRatio="portrait"
-              className="transition-all duration-1000"
+              className="w-full h-full object-cover transition-all duration-1000"
+              referrerPolicy="no-referrer"
+              loading="lazy"
             />
           </motion.div>
           <motion.div 

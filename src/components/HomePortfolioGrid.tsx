@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { IMAGES } from '../constants';
 import { Button } from './ui/Button';
-import { SmoothImage } from './ui/SmoothImage';
 
 export const HomePortfolioGrid: React.FC = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -78,10 +77,12 @@ export const HomePortfolioGrid: React.FC = () => {
                 className="break-inside-avoid bg-zinc-100 group rounded-sm overflow-hidden mb-6 md:mb-8 cursor-pointer"
                 onClick={() => openLightbox(i)}
               >
-                <SmoothImage 
+                <img 
                   src={image.url} 
                   alt={image.alt} 
-                  className="transition-transform duration-[2s] group-hover:scale-105"
+                  className="w-full h-auto transition-transform duration-[2s] group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
               </motion.div>
             ))}
