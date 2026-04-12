@@ -5,6 +5,7 @@ import { Book, Users, Camera, Globe, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/Button";
 import { SEO } from "../../components/SEO";
+import { SmoothImage } from "../../components/ui/SmoothImage";
 
 export const MinimalistServices = () => {
   return (
@@ -57,11 +58,11 @@ export const MinimalistServices = () => {
             viewport={{ once: true }}
             className="w-full"
           >
-            <img 
+            <SmoothImage 
               src={IMAGES.SERVICES.PLANNING} 
               alt="Planung & Vorgespräch" 
-              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
-              referrerPolicy="no-referrer"
+              aspectRatio="portrait"
+              className="transition-all duration-700 shadow-sm"
             />
           </motion.div>
           <div className="w-full flex flex-col items-center lg:items-start">
@@ -88,11 +89,11 @@ export const MinimalistServices = () => {
             viewport={{ once: true }}
             className="w-full lg:order-2"
           >
-            <img 
+            <SmoothImage 
               src={IMAGES.SERVICES.COVERAGE} 
               alt="Hochzeitsbegleitung" 
-              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
-              referrerPolicy="no-referrer"
+              aspectRatio="portrait"
+              className="transition-all duration-700 shadow-sm"
             />
           </motion.div>
           <div className="w-full lg:order-1 flex flex-col items-center lg:items-start">
@@ -119,11 +120,11 @@ export const MinimalistServices = () => {
             viewport={{ once: true }}
             className="w-full"
           >
-            <img 
+            <SmoothImage 
               src={IMAGES.SERVICES.POST} 
               alt="Nachbearbeitung & Galerie" 
-              className="w-full aspect-[4/5] object-cover transition-all duration-700 shadow-sm"
-              referrerPolicy="no-referrer"
+              aspectRatio="portrait"
+              className="transition-all duration-700 shadow-sm"
             />
           </motion.div>
           <div className="w-full flex flex-col items-center lg:items-start">
