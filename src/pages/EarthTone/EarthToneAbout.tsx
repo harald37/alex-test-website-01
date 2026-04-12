@@ -31,8 +31,8 @@ export const EarthToneAbout = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-6 block">Der Mensch hinter der Kamera</span>
-            <h1 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Hi, ich bin Alex.</h1>
+            <h1 className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-6 block">Über mich</h1>
+            <h2 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Hi, ich bin Alex.</h2>
             <div className="space-y-8 text-[#141414]/70 text-lg md:text-xl leading-relaxed">
               <p>
                 Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten.

@@ -278,7 +278,7 @@ export const MinimalistPortfolio = () => {
             Euch gefällt mein Stil? Lasst uns gemeinsam eure Geschichte festhalten.
           </h2>
           <div className="flex justify-center pt-4">
-            <Button to="/contact" variant="forest">
+            <Button to="/kontakt" variant="forest">
               Erzählt mir eure Geschichte
             </Button>
           </div>

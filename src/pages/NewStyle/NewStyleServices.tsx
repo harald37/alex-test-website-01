@@ -23,22 +23,22 @@ export const NewStyleServices = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1a2e26]/80 to-transparent" />
         </motion.div>
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-          <motion.h1 
+          <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="text-white font-serif text-5xl md:text-9xl italic leading-[0.9] mb-8"
           >
             Eure Geschichte<br />in Bildern.
-          </motion.h1>
-          <motion.p 
+          </motion.h2>
+          <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
             className="text-white/60 font-sans uppercase tracking-[0.4em] text-[10px]"
           >
             Leistungen & Exklusive Begleitung
-          </motion.p>
+          </motion.h1>
         </div>
       </section>
 

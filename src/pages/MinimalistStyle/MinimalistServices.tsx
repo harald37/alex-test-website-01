@@ -11,21 +11,21 @@ export const MinimalistServices = () => {
       {/* Hero Section - Variant 01: Klassisch Zentriert */}
       <section className="pt-48 pb-24 md:pt-64 md:pb-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.span 
+          <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="font-sans uppercase tracking-[0.5em] text-[10px] text-[#141414]/40 mb-6 block"
           >
             Leistungen
-          </motion.span>
-          <motion.h1 
+          </motion.h1>
+          <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="text-5xl md:text-8xl font-serif italic mb-12 leading-[0.9]"
           >
             Euer Tag, meine Begleitung.
-          </motion.h1>
+          </motion.h2>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -211,7 +211,7 @@ export const MinimalistServices = () => {
           <h2 className="font-serif text-3xl md:text-7xl italic text-[#141414] leading-tight">Lasst uns eure Geschichte erzählen.</h2>
           <p className="font-sans text-[#141414]/40 uppercase tracking-[0.2em] text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
           <div className="flex justify-center">
-            <Button to="/contact" variant="forest">
+            <Button to="/kontakt" variant="forest">
               Jetzt Anfragen
             </Button>
           </div>

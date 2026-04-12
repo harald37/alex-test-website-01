@@ -32,8 +32,8 @@ export const NewStyleAbout = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d] mb-6 block">Der Mensch hinter der Kamera</span>
-            <h1 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Hi, ich bin Alex.</h1>
+            <h1 className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d] mb-6 block">Über mich</h1>
+            <h2 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Hi, ich bin Alex.</h2>
             <div className="space-y-8 text-[#141414]/70 text-lg md:text-xl leading-relaxed">
               <p>
                 Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten.
@@ -55,7 +55,7 @@ export const NewStyleAbout = () => {
             >
               <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d] mb-6 block">Meine Philosophie</span>
               <h2 className="text-4xl md:text-7xl font-serif italic mb-12 text-white leading-tight">Mein Bildstil</h2>
-              <div className="space-y-8 text-white/70 text-lg leading-relaxed">
+              <div className="space-y-8 text-white text-lg leading-relaxed">
                 <p>
                   Euer Hochzeitstag gehört euch. Ihr sollt lachen, weinen und feiern, ohne ständig an die Kamera denken zu müssen. Deshalb ist mein Stil vor allem eines: authentisch und unaufdringlich.
                 </p>

@@ -13,8 +13,8 @@ export const NewStyleContact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d] mb-8 block">Kontakt</span>
-            <h1 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Sagt Hallo.</h1>
+            <h1 className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#a0522d] mb-8 block">Kontakt</h1>
+            <h2 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Sagt Hallo.</h2>
             <p className="mb-16 text-[#141414]/60 text-lg md:text-xl leading-relaxed max-w-md">
               Ich freue mich darauf, von euch zu hören. Füllt einfach das Formular aus oder kontaktiert mich direkt.
             </p>
@@ -60,8 +60,8 @@ export const NewStyleContact = () => {
             <form className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-2">
-                  <label className="text-[10px] uppercase tracking-widest font-bold text-[#a0522d]">Eure Namen</label>
-                  <input type="text" className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#a0522d] transition-colors" placeholder="Anna & Lukas" />
+                  <label className="text-[10px] uppercase tracking-widest font-bold text-[#a0522d]">Name</label>
+                  <input type="text" className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#a0522d] transition-colors" placeholder="Name" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest font-bold text-[#a0522d]">E-Mail Adresse</label>

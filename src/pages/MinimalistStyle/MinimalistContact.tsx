@@ -65,8 +65,8 @@ export const MinimalistContact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-8 block">Kontakt</span>
-            <h1 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Sagt Hallo.</h1>
+            <h1 className="font-sans uppercase tracking-[0.4em] text-[10px] text-[#141414]/40 mb-8 block">Kontakt</h1>
+            <h2 className="text-5xl md:text-8xl font-serif italic mb-12 text-[#141414] leading-[0.9]">Sagt Hallo.</h2>
             <p className="mb-16 text-[#141414]/60 text-lg md:text-xl leading-relaxed max-w-md">
               Ich freue mich darauf, von euch zu hören. Füllt einfach das Formular aus oder kontaktiert mich direkt.
             </p>
@@ -146,7 +146,7 @@ export const MinimalistContact = () => {
                 )}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
-                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Eure Namen *</label>
+                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Name *</label>
                     <input 
                       required
                       type="text" 
@@ -154,7 +154,7 @@ export const MinimalistContact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full bg-transparent border-b border-[#141414]/10 py-4 outline-none focus:border-[#141414] transition-colors" 
-                      placeholder="Namen" 
+                      placeholder="Name" 
                     />
                   </div>
                   <div className="space-y-2">
@@ -173,9 +173,8 @@ export const MinimalistContact = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
-                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Telefonnummer *</label>
+                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Telefonnummer</label>
                     <input 
-                      required
                       type="tel" 
                       name="phone"
                       value={formData.phone}
@@ -185,7 +184,7 @@ export const MinimalistContact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Hochzeitsdatum (optional)</label>
+                    <label className="text-[10px] uppercase tracking-widest font-bold text-[#141414]/40">Hochzeitsdatum</label>
                     <input 
                       type="date" 
                       name="date"

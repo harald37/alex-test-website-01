@@ -152,7 +152,7 @@ export const Home: React.FC = () => {
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide mb-8">
                 Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Hannover und Umgebung bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
               </p>
-              <Button to="/about" variant="link">
+              <Button to="/ueber-mich" variant="link">
                 Mehr über mich erfahren
               </Button>
             </div>
@@ -171,7 +171,7 @@ export const Home: React.FC = () => {
             "Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen."
           </h2>
           <div className="flex justify-center">
-            <Button to="/contact" variant="forest">
+            <Button to="/kontakt" variant="forest">
               Erzählt mir eure Geschichte
             </Button>
           </div>

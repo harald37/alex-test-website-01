@@ -192,7 +192,7 @@ export const Braunschweig = () => {
               <p className="text-[#141414]/70 text-base md:text-lg leading-relaxed tracking-wide mb-8">
                 Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Braunschweig und der gesamten Region bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
               </p>
-              <Button to="/about" variant="link">
+              <Button to="/ueber-mich" variant="link">
                 Mehr über mich erfahren
               </Button>
             </div>
@@ -239,7 +239,7 @@ export const Braunschweig = () => {
             Schreibt mir eine Nachricht und lasst uns über eure Pläne sprechen. Ich freue mich darauf, euch kennenzulernen.
           </p>
           <div className="flex flex-col items-center gap-12 pt-8">
-            <Button to="/contact" variant="white">
+            <Button to="/kontakt" variant="white">
               Termin anfragen
             </Button>
             <div className="flex items-center gap-12">

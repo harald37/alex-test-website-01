@@ -65,8 +65,8 @@ export const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Kontakt</span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif italic mb-12 text-zinc-900 leading-tight">Lasst uns <br /> sprechen</h1>
+            <h1 className="font-sans uppercase tracking-[0.4em] text-[9px] text-zinc-400 mb-8 block">Kontakt</h1>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif italic mb-12 text-zinc-900 leading-tight">Lasst uns <br /> sprechen</h2>
             <p className="mb-16 text-zinc-600 text-base md:text-lg leading-relaxed tracking-wide max-w-md">
               Egal ob es um eure Hochzeit, ein Porträt-Shooting oder ein kreatives Projekt geht – 
               ich freue mich darauf, von euch zu hören. Füllt einfach das Formular aus 
@@ -152,7 +152,7 @@ export const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
-                      placeholder="Eure Namen"
+                      placeholder="Name"
                     />
                   </div>
                   <div>
@@ -173,17 +173,16 @@ export const Contact = () => {
                   <div>
                     <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Telefonnummer</label>
                     <input 
-                      required
                       type="tel" 
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full bg-white border border-zinc-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-zinc-200 transition-all"
-                      placeholder="Eure Telefonnummer"
+                      placeholder="Telefonnummer"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitsdatum (optional)</label>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitsdatum</label>
                     <input 
                       type="date" 
                       name="date"
@@ -196,7 +195,7 @@ export const Contact = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitslocation (optional)</label>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Hochzeitslocation</label>
                     <input 
                       type="text" 
                       name="location"
@@ -207,7 +206,7 @@ export const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Wie habt ihr mich gefunden? (optional)</label>
+                    <label className="block text-xs font-medium uppercase tracking-widest text-zinc-400 mb-2">Wie habt ihr mich gefunden?</label>
                     <div className="relative">
                       <select 
                         name="found"

@@ -53,11 +53,11 @@ export default function App() {
           <NewStyleLayout>
             <Routes>
               <Route path="/" element={<NewStyleHome />} />
-              <Route path="/about" element={<NewStyleAbout />} />
+              <Route path="/ueber-mich" element={<NewStyleAbout />} />
               <Route path="/faq" element={<NewStyleFAQ />} />
-              <Route path="/services" element={<NewStyleServices />} />
+              <Route path="/leistungen" element={<NewStyleServices />} />
               <Route path="/portfolio" element={<NewStylePortfolio />} />
-              <Route path="/contact" element={<NewStyleContact />} />
+              <Route path="/kontakt" element={<NewStyleContact />} />
             </Routes>
           </NewStyleLayout>
         } />
@@ -66,10 +66,10 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/ueber-mich" element={<About />} />
               <Route path="/leistungen" element={<Services />} />
               <Route path="/faq" element={<FAQ />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/kontakt" element={<Contact />} />
               <Route path="/impressum" element={<Imprint />} />
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="/hochzeitsfotograf-hannover" element={<Hannover />} />

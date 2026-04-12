@@ -56,7 +56,7 @@ export const SEOTest = () => {
               </p>
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <Button to="/portfolio">Portfolio</Button>
-                <Button to="/contact" variant="outline">Anfragen</Button>
+                <Button to="/kontakt" variant="outline">Anfragen</Button>
               </div>
             </div>
             <div className="aspect-[4/5] lg:aspect-square bg-zinc-200 rounded-2xl overflow-hidden order-1 lg:order-2">
@@ -80,7 +80,7 @@ export const SEOTest = () => {
             <p className="font-serif italic text-lg md:text-2xl text-white/60 mb-12">
               Zeitlose Hochzeitsreportagen für Paare, die das Echte suchen.
             </p>
-            <Button to="/contact" dark>Termin anfragen</Button>
+            <Button to="/kontakt" dark>Termin anfragen</Button>
           </div>
         </section>
       </div>
@@ -121,7 +121,7 @@ export const SEOTest = () => {
               <p className="font-serif italic text-xl md:text-3xl text-white/80 mb-8">
                 Echte Geschichten. Weltweit erzählt.
               </p>
-              <Button to="/contact" dark>Verfügbarkeit prüfen</Button>
+              <Button to="/kontakt" dark>Verfügbarkeit prüfen</Button>
             </div>
           </div>
         </section>
@@ -235,7 +235,7 @@ export const SEOTest = () => {
               <p className="text-zinc-600 mb-8 leading-relaxed">
                 Ohne steifes Posing, dafür mit viel Gefühl für den Moment. Egal ob in der Region Hannover oder als Destination Wedding weltweit.
               </p>
-              <Button to="/about" variant="outline">Lerne mich kennen</Button>
+              <Button to="/ueber-mich" variant="outline">Lerne mich kennen</Button>
             </div>
             <div className="md:col-span-7 order-1 md:order-2">
               <img src="https://res.cloudinary.com/alexbegopoulos/image/upload/v1775495581/sinnliches-portrait-brautpaar-hannover.webp" className="w-full aspect-[4/3] object-cover rounded" alt="Sinnliches Portrait" />
@@ -257,7 +257,7 @@ export const SEOTest = () => {
                 Echte Emotionen. Zeitlose Bilder. Weltweit.
               </p>
               <div>
-                <Button to="/contact" className="w-full md:w-auto">Anfragen</Button>
+                <Button to="/kontakt" className="w-full md:w-auto">Anfragen</Button>
               </div>
             </div>
             <div className="col-span-1 md:col-span-1 aspect-square rounded-2xl overflow-hidden">
@@ -301,7 +301,7 @@ export const SEOTest = () => {
             <p className="text-zinc-600 mb-8">
               Für Paare, die das Echte lieben. Ich fange eure Geschichte in zeitlosen Bildern ein – in Hannover und überall auf der Welt.
             </p>
-            <Button to="/contact">Let's connect</Button>
+            <Button to="/kontakt">Let's connect</Button>
           </div>
         </section>
       </div>
@@ -355,7 +355,7 @@ export const SEOTest = () => {
               <p className="text-zinc-700 text-lg md:text-xl leading-relaxed mb-10">
                 Eure Geschichte, erzählt in ehrlichen und zeitlosen Bildern. In Hannover, Niedersachsen und weltweit.
               </p>
-              <Button to="/contact">Jetzt anfragen</Button>
+              <Button to="/kontakt">Jetzt anfragen</Button>
             </div>
           </div>
         </section>
@@ -397,7 +397,7 @@ export const SEOTest = () => {
             <p className="font-serif italic text-lg md:text-2xl text-white/80 mb-10">
               Magische Momente, die für immer bleiben.
             </p>
-            <Button to="/contact" dark className="bg-white text-zinc-950 hover:bg-zinc-200">Eure Geschichte erzählen</Button>
+            <Button to="/kontakt" dark className="bg-white text-zinc-950 hover:bg-zinc-200">Eure Geschichte erzählen</Button>
           </div>
         </section>
       </div>

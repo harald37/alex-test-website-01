@@ -47,7 +47,7 @@ const HeroLeft = ({ headline, subheadline, intro }: any) => (
       <p className="text-white/80 text-base md:text-lg leading-relaxed mb-10">{intro}</p>
       <div className="flex gap-4">
         <Button to="/portfolio" dark>Portfolio</Button>
-        <Button to="/contact" variant="outline" className="border-white/20 text-white hover:bg-white/10">Anfragen</Button>
+        <Button to="/kontakt" variant="outline" className="border-white/20 text-white hover:bg-white/10">Anfragen</Button>
       </div>
     </div>
   </section>
@@ -74,7 +74,7 @@ const HeroMinimal = ({ headline, subheadline, intro }: any) => (
       <h1 className="font-serif italic text-5xl md:text-8xl text-zinc-900 mb-12 leading-none">{headline}</h1>
       <div className="w-12 h-[1px] bg-zinc-900/10 mx-auto mb-12" />
       <p className="text-zinc-500 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-16 italic font-serif">"{intro}"</p>
-      <Button to="/contact" variant="link">Erzählt mir eure Geschichte</Button>
+      <Button to="/kontakt" variant="link">Erzählt mir eure Geschichte</Button>
     </div>
   </section>
 );

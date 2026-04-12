@@ -156,7 +156,7 @@ const HomeTemplate = ({ variant }: { variant: number }) => (
             <p className="text-[#141414]/70 text-base md:text-lg leading-relaxed tracking-wide mb-8">
               Ich liebe es, echte Emotionen und ungestellte Momente einzufangen. In Hannover und Umgebung bin ich seit Jahren als Hochzeitsfotograf tätig und kenne die schönsten Plätze für eure Geschichte.
             </p>
-            <CustomButton to="/about" variant={variant}>
+            <CustomButton to="/ueber-mich" variant={variant}>
               Mehr über mich erfahren
             </CustomButton>
           </div>
@@ -174,7 +174,7 @@ const HomeTemplate = ({ variant }: { variant: number }) => (
           "Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen."
         </h2>
         <div className="flex justify-center">
-          <CustomButton to="/contact" variant={variant}>
+          <CustomButton to="/kontakt" variant={variant}>
             Erzählt mir eure Geschichte
           </CustomButton>
         </div>

@@ -173,7 +173,7 @@ export const MinimalistFAQ = () => {
               Schreibt mir einfach eine Nachricht und wir klären alles in einem persönlichen Gespräch.
             </p>
             <div className="flex justify-center pt-4">
-              <Button to="/contact" variant="forest">
+              <Button to="/kontakt" variant="forest">
                 Schreibt mir eine Nachricht
               </Button>
             </div>

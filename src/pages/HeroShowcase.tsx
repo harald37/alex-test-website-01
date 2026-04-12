@@ -43,7 +43,7 @@ const HeroShowcase = () => {
           <div className="relative text-center text-white space-y-8 px-6">
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} className="font-serif text-5xl md:text-8xl italic">Eure Geschichte</motion.h2>
             <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.2 }} className="uppercase tracking-[0.4em] text-sm">In zeitlosen Bildern festgehalten</motion.p>
-            <Button to="/contact" dark>Anfragen</Button>
+            <Button to="/kontakt" dark>Anfragen</Button>
           </div>
         </section>
 
@@ -69,7 +69,7 @@ const HeroShowcase = () => {
             <div className="relative md:absolute top-1/2 left-0 md:-translate-y-1/2 bg-white p-8 md:p-20 shadow-xl max-w-md mt-[-40px] md:mt-0 mx-4 md:mx-0">
               <h2 className="font-serif text-3xl md:text-5xl italic mb-6">Die Kunst des Fühlens</h2>
               <p className="text-zinc-500 mb-8">Es geht nicht darum, wie die Dinge aussehen, sondern darum, wie sie sich anfühlen.</p>
-              <Button to="/about">Über mich</Button>
+              <Button to="/ueber-mich">Über mich</Button>
             </div>
           </div>
         </section>
@@ -83,7 +83,7 @@ const HeroShowcase = () => {
             <img src={portraitImages[3]} alt="Hero 4" className="absolute inset-0 w-full h-full object-cover opacity-60" referrerPolicy="no-referrer" />
             <div className="absolute bottom-10 left-6 md:bottom-20 md:left-20 space-y-6">
               <h2 className="font-serif text-5xl md:text-9xl italic">Stille <br/>Emotionen</h2>
-              <Button to="/contact" dark>Jetzt Termin sichern</Button>
+              <Button to="/kontakt" dark>Jetzt Termin sichern</Button>
             </div>
           </div>
         </section>
@@ -135,7 +135,7 @@ const HeroShowcase = () => {
           <div className="relative text-white max-w-xl space-y-6">
             <h2 className="font-serif text-4xl md:text-7xl leading-tight">Eure Liebe, <br/>mein Fokus.</h2>
             <p className="text-white/60 text-sm md:text-base">Ich fange die Momente ein, die ihr vor lauter Aufregung gar nicht mitbekommt.</p>
-            <Button to="/contact" dark>Kontakt aufnehmen</Button>
+            <Button to="/kontakt" dark>Kontakt aufnehmen</Button>
           </div>
         </section>
 
@@ -162,7 +162,7 @@ const HeroShowcase = () => {
             <div className="md:col-span-5 space-y-6 md:space-y-8">
               <h2 className="font-serif text-4xl md:text-6xl italic leading-tight">Lasst uns <br/>Geschichte <br/>schreiben.</h2>
               <p className="text-zinc-500 text-sm md:text-base">Jede Hochzeit ist einzigartig. Genau so sollten auch eure Fotos sein.</p>
-              <Button to="/contact">Erzählt mir mehr</Button>
+              <Button to="/kontakt">Erzählt mir mehr</Button>
             </div>
           </div>
         </section>
@@ -202,7 +202,7 @@ const HeroShowcase = () => {
               <div className="w-full aspect-[3/4] overflow-hidden mb-8 md:mb-12">
                 <img src={portraitImages[15]} alt="Hero 13b" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
-              <Button to="/contact">Termin anfragen</Button>
+              <Button to="/kontakt">Termin anfragen</Button>
             </div>
           </div>
         </section>
@@ -229,7 +229,7 @@ const HeroShowcase = () => {
                 <h3 className="font-serif text-2xl italic">The Art of Wedding</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">Capturing the essence of your most beautiful day with elegance and soul.</p>
               </div>
-              <Button to="/contact">Inquire Now</Button>
+              <Button to="/kontakt">Inquire Now</Button>
             </div>
             <div className="md:col-span-2">
               <div className="w-full aspect-[16/10] overflow-hidden relative">
@@ -269,7 +269,7 @@ const HeroShowcase = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full">
               <h2 className="font-serif text-5xl md:text-8xl italic drop-shadow-lg">Memories</h2>
               <div className="mt-8">
-                <Button to="/contact">Start Here</Button>
+                <Button to="/kontakt">Start Here</Button>
               </div>
             </div>
           </div>
@@ -296,7 +296,7 @@ const HeroShowcase = () => {
             <h2 className="text-white font-serif text-6xl md:text-9xl italic leading-none">Forever.</h2>
             <div className="max-w-xs space-y-4 md:space-y-6 text-right">
               <p className="text-white/60 text-xs md:text-sm">Eure Geschichte verdient es, in ihrer reinsten Form erzählt zu werden.</p>
-              <Button to="/contact" dark>Anfragen</Button>
+              <Button to="/kontakt" dark>Anfragen</Button>
             </div>
           </div>
         </section>
@@ -332,7 +332,7 @@ const HeroShowcase = () => {
           <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 p-10 md:p-24 text-center text-white max-w-2xl w-full">
             <h2 className="font-serif text-4xl md:text-7xl italic mb-6">Pure Liebe</h2>
             <p className="font-sans uppercase tracking-[0.3em] text-xs mb-10">In jedem Augenblick</p>
-            <Button to="/contact" dark>Jetzt Anfragen</Button>
+            <Button to="/kontakt" dark>Jetzt Anfragen</Button>
           </div>
         </section>
 
@@ -355,7 +355,7 @@ const HeroShowcase = () => {
           <div className="w-full md:w-1/3 p-12 md:p-24 flex flex-col justify-center space-y-8 order-2 md:order-1">
             <h2 className="font-serif text-5xl md:text-7xl italic leading-tight">Authentisch. <br/>Zeitlos.</h2>
             <p className="text-zinc-500 max-w-xs">Hochzeitsfotografie für Paare, die das Echte lieben.</p>
-            <Button to="/about">Über mich</Button>
+            <Button to="/ueber-mich">Über mich</Button>
           </div>
           <div className="w-full md:w-2/3 h-[60vh] md:h-screen order-1 md:order-2">
             <img src={portraitImages[10]} alt="Hero 23" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
@@ -386,7 +386,7 @@ const HeroShowcase = () => {
             <h2 className="font-serif text-5xl md:text-8xl italic">Das Leuchten</h2>
             <p className="uppercase tracking-[0.4em] text-xs opacity-60">In euren Augen</p>
             <div className="flex justify-end">
-              <Button to="/contact" dark>Anfragen</Button>
+              <Button to="/kontakt" dark>Anfragen</Button>
             </div>
           </div>
         </section>
@@ -417,7 +417,7 @@ const HeroShowcase = () => {
           </div>
           <div className="space-y-6 max-w-2xl">
             <h2 className="font-serif text-4xl md:text-6xl italic text-white">Ein Blick sagt mehr.</h2>
-            <Button to="/contact" dark>Jetzt Kennenlernen</Button>
+            <Button to="/kontakt" dark>Jetzt Kennenlernen</Button>
           </div>
         </section>
 
@@ -459,7 +459,7 @@ const HeroShowcase = () => {
             </div>
             <div className="text-center space-y-4">
               <h2 className="font-serif text-4xl md:text-6xl italic">Fokus auf euch</h2>
-              <Button to="/contact">Anfragen</Button>
+              <Button to="/kontakt">Anfragen</Button>
             </div>
           </div>
         </section>
@@ -489,7 +489,7 @@ const HeroShowcase = () => {
           <div className="flex-1 p-12 md:p-32 flex flex-col justify-center space-y-10">
             <h2 className="font-serif text-5xl md:text-7xl italic">Einfach <br/>Schön.</h2>
             <p className="text-zinc-400 uppercase tracking-widest text-xs">Hochzeitsfotograf Hannover</p>
-            <Button to="/contact">Kontakt</Button>
+            <Button to="/kontakt">Kontakt</Button>
           </div>
         </section>
 
@@ -514,7 +514,7 @@ const HeroShowcase = () => {
             <div className="relative z-10 text-center space-y-8">
               <h2 className="font-serif text-5xl md:text-9xl italic text-zinc-900">UNVERGESSLICH</h2>
               <p className="font-sans uppercase tracking-[0.5em] text-sm text-zinc-400">Jeder Kuss, jede Träne, jedes Lachen.</p>
-              <Button to="/contact">Jetzt Anfragen</Button>
+              <Button to="/kontakt">Jetzt Anfragen</Button>
             </div>
           </div>
         </section>
@@ -536,7 +536,7 @@ const HeroShowcase = () => {
             </div>
             <div className="col-span-2 bg-zinc-900 flex flex-col justify-center p-8 space-y-4">
               <h3 className="text-white font-serif italic text-2xl">Bereit für eure Story?</h3>
-              <Button to="/contact" dark>Kontakt</Button>
+              <Button to="/kontakt" dark>Kontakt</Button>
             </div>
           </div>
         </section>
@@ -561,7 +561,7 @@ const HeroShowcase = () => {
               <p className="text-zinc-400 text-xs uppercase tracking-widest leading-loose">
                 Authentische Fotografie <br/>für eure Hochzeit in <br/>Hannover & Umgebung.
               </p>
-              <Button to="/contact">Anfragen</Button>
+              <Button to="/kontakt">Anfragen</Button>
             </div>
             <div className="text-[10px] text-zinc-300 uppercase tracking-widest">© 2026</div>
           </div>
@@ -569,7 +569,7 @@ const HeroShowcase = () => {
             <img src={portraitImages[9]} alt="Hero 37" className="absolute inset-0 w-full h-full object-cover" referrerPolicy="no-referrer" />
             <div className="lg:hidden absolute bottom-10 left-6 right-6 bg-white/90 backdrop-blur p-8 text-center space-y-6">
               <h2 className="font-serif text-3xl italic">Authentisch & Echt</h2>
-              <Button to="/contact">Anfragen</Button>
+              <Button to="/kontakt">Anfragen</Button>
             </div>
           </div>
         </section>
@@ -595,7 +595,7 @@ const HeroShowcase = () => {
           <div className="w-full md:w-1/2 p-12 md:p-32 flex flex-col justify-center space-y-12 bg-zinc-50">
             <h2 className="font-serif text-5xl md:text-7xl italic text-zinc-900">Zeitlose <br/>Eleganz.</h2>
             <p className="text-zinc-500 max-w-sm leading-relaxed">Schwarz-Weiß Fotografie, die den Kern eurer Emotionen einfängt. Pur und unverfälscht.</p>
-            <Button to="/contact">Jetzt Kennenlernen</Button>
+            <Button to="/kontakt">Jetzt Kennenlernen</Button>
           </div>
         </section>
 
@@ -609,7 +609,7 @@ const HeroShowcase = () => {
           <div className="relative z-10 flex justify-center">
             <div className="bg-white/10 backdrop-blur-xl p-10 md:p-16 text-center space-y-8 w-full max-w-xl">
               <p className="text-white font-sans uppercase tracking-[0.4em] text-xs">Bereit für unvergessliche Fotos?</p>
-              <Button to="/contact" dark>Termin sichern</Button>
+              <Button to="/kontakt" dark>Termin sichern</Button>
             </div>
           </div>
         </section>

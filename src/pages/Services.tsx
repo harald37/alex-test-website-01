@@ -25,22 +25,22 @@ export const Services = () => {
         </motion.div>
         <div className="absolute inset-0 bg-black/15" />
         <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-          <motion.h1 
+          <motion.h2 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="text-white font-serif text-4xl md:text-8xl italic font-light tracking-tight mb-4"
           >
             Eure Geschichte in Bildern
-          </motion.h1>
-          <motion.p 
+          </motion.h2>
+          <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
             className="text-white/90 font-sans uppercase tracking-[0.4em] text-sm"
           >
             Leistungen & Exklusive Begleitung
-          </motion.p>
+          </motion.h1>
         </div>
       </section>
 
@@ -232,7 +232,7 @@ export const Services = () => {
           <h2 className="font-serif text-3xl md:text-7xl italic text-zinc-900 leading-tight">Lasst uns eure Geschichte erzählen.</h2>
           <p className="font-sans text-zinc-500 uppercase tracking-[0.2em] text-xs md:text-sm">Ich freue mich darauf, euch bei einem ersten Gespräch kennenzulernen.</p>
           <div className="flex justify-center">
-            <Button to="/contact" variant="forest">
+            <Button to="/kontakt" variant="forest">
               Jetzt Anfragen
             </Button>
           </div>

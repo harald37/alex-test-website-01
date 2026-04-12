@@ -33,8 +33,8 @@ export const MinimalistAbout = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <span className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 mb-4 block">Der Mensch hinter der Kamera</span>
-            <h1 className="text-4xl md:text-6xl font-serif mb-8 text-[#141414] leading-tight">Hi, ich bin Alex.</h1>
+            <h1 className="font-sans uppercase tracking-[0.3em] text-[10px] text-[#141414]/40 mb-4 block">Über mich</h1>
+            <h2 className="text-4xl md:text-6xl font-serif mb-8 text-[#141414] leading-tight">Hi, ich bin Alex.</h2>
             <div className="space-y-6 text-[#141414]/70 text-base md:text-lg leading-relaxed">
               <p>
                 Ich bin 32 Jahre alt, leidenschaftlicher Hochzeitsfotograf aus Hannover und es ist für mich jedes Mal aufs Neue das größte Privileg, das Vertrauen von zwei Menschen für ihren wichtigsten Tag zu erhalten. Denn für mich geht es bei der Hochzeitsfotografie um weit mehr als nur um schöne Posen – es geht um das Einfangen echter, ungestellter Momente. Ich möchte eure Geschichte genau so erzählen, wie sie passiert: mit all dem lauten Lachen, den Freudentränen, der Aufregung und den kleinen, leisen Details dazwischen.
@@ -104,12 +104,12 @@ export const MinimalistAbout = () => {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-5xl font-serif mb-6 text-white">Inspiration & Leidenschaft</h3>
-              <p className="text-[#f5f2ed]/70 text-base md:text-lg mb-8 leading-relaxed">
+              <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
                 Wenn ich nicht gerade die Liebe anderer Menschen dokumentiere, findet man mich oft auf Reisen. Das Eintauchen in fremde Kulturen schärft meinen Blick für das Wesentliche und lässt mich die Welt immer wieder neu entdecken.
               </p>
               <div className="flex flex-wrap gap-4">
                 {['Reisen', 'Fußball', 'Gaming', 'Tech-Trends', 'Kultur', 'Programmierung', 'Design'].map((tag) => (
-                  <span key={tag} className="px-4 py-2 border border-white/10 rounded-full text-xs uppercase tracking-widest text-[#f5f2ed]/70">
+                  <span key={tag} className="px-4 py-2 border border-white/20 rounded-full text-xs uppercase tracking-widest text-white">
                     {tag}
                   </span>
                 ))}
@@ -144,7 +144,7 @@ export const MinimalistAbout = () => {
               Ich freue mich darauf, euch kennenzulernen und eure besonderen Momente festzuhalten.
             </p>
             <div className="flex justify-center pt-4">
-              <Button to="/contact" variant="forest">
+              <Button to="/kontakt" variant="forest">
                 Schreibt mir eine Nachricht
               </Button>
             </div>
