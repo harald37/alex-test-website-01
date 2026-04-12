@@ -50,6 +50,7 @@ import { ForestMonochromeHome } from "./ForestMonochrome/ForestMonochromeHome";
 import { EarthToneHome } from "./EarthTone/EarthToneHome";
 import { EarthToneAbout } from "./EarthTone/EarthToneAbout";
 import { EarthToneFAQ } from "./EarthTone/EarthToneFAQ";
+import { SmoothLoadingTest } from "./SmoothLoadingTest";
 
 // Original Pages Backup
 import { Home as OriginalHome } from "./Home";
@@ -105,6 +106,7 @@ const TEST_PAGES = [
   { id: "earth-home", label: "Home (Braun)", component: EarthToneHome, category: "EARTH TONES (BRAUN)" },
   { id: "earth-about", label: "Über Mich (Braun)", component: EarthToneAbout, category: "EARTH TONES (BRAUN)" },
   { id: "earth-faq", label: "FAQ (Braun)", component: EarthToneFAQ, category: "EARTH TONES (BRAUN)" },
+  { id: "smooth-loading", label: "Smooth Loading", component: SmoothLoadingTest, category: "Performance" },
   
   // Original Backup
   { id: "backup-home", label: "Home (Aktuell)", component: OriginalHome, category: "BACKUP (AKTUELL)" },
